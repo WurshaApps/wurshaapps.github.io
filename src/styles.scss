@@ -5,11 +5,72 @@
 @import "primeng/resources/themes/aura-light-amber/theme.css";
 @import "primeng/resources/primeng.css";
 
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap");
+
 html,
 body {
     height: 100%;
+    min-height: 100vh;
+    max-width: 100%;
 }
 body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: "El Messiri", sans-serif;
+}
+
+.font-elmessiri-4 {
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-elmessiri-5 {
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.font-elmessiri-6 {
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.font-elmessiri-7 {
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-markazi-4 {
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-markazi-5 {
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.font-markazi-6 {
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.font-markazi-7 {
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }

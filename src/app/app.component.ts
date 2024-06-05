@@ -4,11 +4,20 @@ import { HeroComponent } from './hero/hero.component';
 import { PrimeNGConfig } from 'primeng/api';
 import { FeatureComponent } from './feature/feature.component';
 import { CtaComponent } from './cta/cta.component';
+import { HeaderComponent } from './header/header.component';
+import { LinkComponent } from './link/link.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [RouterOutlet, HeroComponent, FeatureComponent, CtaComponent],
+    imports: [
+        RouterOutlet,
+        HeroComponent,
+        FeatureComponent,
+        CtaComponent,
+        HeaderComponent,
+        LinkComponent,
+    ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
 })

@@ -1,7 +1,15 @@
-<main class="main">
-    <div class="content">بسم الله الرحمن الرحيم وبه نستعين</div>
-</main>
-<app-hero></app-hero>
-<app-feature></app-feature>
-<app-cta></app-cta>
-<router-outlet />
+<div class="viewport">
+    <main class="content">
+        <app-header></app-header>
+        <section class="links">
+            <app-link></app-link>
+            <app-link></app-link>
+            <app-link></app-link>
+            <app-link></app-link>
+        </section>
+        <app-hero></app-hero>
+        <app-feature></app-feature>
+        <app-cta></app-cta>
+        <router-outlet />
+    </main>
+</div>
