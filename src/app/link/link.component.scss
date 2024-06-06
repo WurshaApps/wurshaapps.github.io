@@ -1,9 +1,9 @@
-.link {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+:host {
+    // display: flex;
+    // text-align: center;
+    // justify-content: center;
+    // align-items: center;
+    // position: relative;
     text-decoration: none;
     color: rgb(0, 0, 0);
     background-color: rgb(254, 229, 142);
@@ -12,19 +12,19 @@
 }
 
 .content {
-    padding-inline: 5.1rem;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
     padding: 1.75rem 0.8rem;
+    padding-inline: 5.1rem;
+    // display: flex;
+    // flex-direction: column;
+    // flex: 1;
 }
 
 .thumbnail {
     border-radius: 0.8em;
-    position: absolute;
-    left: 0.4rem;
-    top: 50%;
-    transform: translateY(-50%);
+    // position: absolute;
+    // left: 0.4rem;
+    // top: 50%;
+    // transform: translateY(-50%);
     height: 4.6rem;
     width: 4.6rem;
     object-fit: cover;
