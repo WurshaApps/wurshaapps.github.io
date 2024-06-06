@@ -1,24 +1,32 @@
 <div class="grid pt-3 px-3">
     <div class="col-3 flex flex-column justify-content-center align-items-start">
-        <img class="thumbnail" [ngSrc]="image()" width="70" height="70" priority alt="صورة {{ name() }}" />
+        <img
+            class="thumbnail border-round-xl shadow-6 w-5rem h-auto"
+            [ngSrc]="image()"
+            width="70"
+            height="70"
+            priority
+            alt="صورة {{ name() }}" />
     </div>
     <div class="col-9 flex flex-column justify-content-center align-items-start">
-        <span class="text-3xl">{{ name() }}</span>
+        <span [style.color]="nameColor()" style="text-shadow: rgb(120, 120, 120) 0px 2px 5px" class="text-3xl">
+            {{ name() }}
+        </span>
         <span class="text-xl">{{ description() }}</span>
     </div>
     <div class="col-6 md:col-3 lg:col-3">
         <a [href]="android()" rel="noopener noreferrer" target="_blank">
-            <img class="w-full" src="playstore.svg" alt="تنزيل بلاي ستور" />
+            <img class="w-full shadow-6 border-round-lg" src="playstore.svg" alt="تنزيل بلاي ستور" />
         </a>
     </div>
     <div class="col-6 md:col-3 lg:col-3">
         <a [href]="ios()" rel="noopener noreferrer" target="_blank">
-            <img class="w-full" src="appstore.svg" alt="تنزيل آب ستور" />
+            <img class="w-full shadow-6 border-round-lg" src="appstore.svg" alt="تنزيل آب ستور" />
         </a>
     </div>
     <div class="col-6 md:col-3 lg:col-3" pTooltip="يعمل على ويندوز 10 فما فوق" tooltipPosition="bottom">
         <a [href]="windows()" rel="noopener noreferrer" target="_blank">
-            <img class="w-full" src="windows.svg" alt="تنزيل ويندوز" />
+            <img class="w-full shadow-6 border-round-lg" src="windows.svg" alt="تنزيل ويندوز" />
         </a>
     </div>
     <div
@@ -26,7 +34,7 @@
         pTooltip="بعد فك الضغط انقر عليه بالزر الأيمن للماوس واختر فتح"
         tooltipPosition="bottom">
         <a [href]="mac()" rel="noopener noreferrer" target="_blank">
-            <img class="w-full" src="mac.svg" alt="تنزيل ماك" />
+            <img class="w-full shadow-6 border-round-lg" src="mac.svg" alt="تنزيل ماك" />
         </a>
     </div>
 </div>

@@ -8,10 +8,14 @@ import { TooltipModule } from 'primeng/tooltip';
     imports: [NgOptimizedImage, TooltipModule],
     templateUrl: './link.component.html',
     styleUrl: './link.component.scss',
+    host: {
+        class: 'border-round-xl shadow-6',
+    },
 })
 export class LinkComponent {
     image = input<string>('image');
     name = input<string>();
+    nameColor = input<string>('#000000');
     description = input<string>();
     android = input<string>();
     ios = input<string>();

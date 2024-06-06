@@ -1,42 +1,8 @@
 :host {
-    // display: flex;
-    // text-align: center;
-    // justify-content: center;
-    // align-items: center;
-    // position: relative;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
     background-color: rgb(254, 229, 142);
-    box-shadow: rgba(0, 0, 0, 0.2) 0.2em 0.2em 0.4em 0px;
-    border-radius: 0.8em;
-}
-
-.content {
-    padding: 1.75rem 0.8rem;
-    padding-inline: 5.1rem;
-    // display: flex;
-    // flex-direction: column;
-    // flex: 1;
 }
 
 .thumbnail {
-    border-radius: 0.8em;
-    // position: absolute;
-    // left: 0.4rem;
-    // top: 50%;
-    // transform: translateY(-50%);
-    height: 4.6rem;
-    width: 4.6rem;
     object-fit: cover;
     object-position: center;
-}
-
-.title {
-    font-size: 1rem;
-    line-height: 150%;
-}
-
-.description {
-    font-size: 1rem;
-    font-weight: 400;
 }
