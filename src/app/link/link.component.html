@@ -1,40 +1,40 @@
-<div class="grid pt-3 px-3">
-    <div class="col-3 flex flex-column justify-content-center align-items-start">
+<div class="grid grid-cols-4 gap-4 py-3 px-3">
+    <div class="col-span-1 flex flex-col justify-center items-start">
         <img
-            class="thumbnail border-round-xl shadow-6 w-5rem h-auto"
+            class="thumbnail rounded-xl shadow-2xl w-20 h-auto"
             [ngSrc]="image()"
             width="70"
             height="70"
             priority
             alt="صورة {{ name() }}" />
     </div>
-    <div class="col-9 flex flex-column justify-content-center align-items-start">
+    <div class="col-span-3 flex flex-col justify-center items-start">
         <span [style.color]="nameColor()" style="text-shadow: rgb(120, 120, 120) 0px 2px 5px" class="text-3xl">
             {{ name() }}
         </span>
-        <span class="text-xl">{{ description() }}</span>
+        <span class="pt-2 text-xl">{{ description() }}</span>
     </div>
-    <div class="col-6 md:col-3 lg:col-3">
+    <div class="col-span-2 md:col-span-1">
         <a [href]="android()" rel="noopener noreferrer" target="_blank">
-            <img class="w-full shadow-6 border-round-lg" src="playstore.svg" alt="تنزيل بلاي ستور" />
+            <img class="w-full shadow-2xl rounded-xl" src="playstore.svg" alt="تنزيل بلاي ستور" />
         </a>
     </div>
-    <div class="col-6 md:col-3 lg:col-3">
+    <div class="col-span-2 md:col-span-1">
         <a [href]="ios()" rel="noopener noreferrer" target="_blank">
-            <img class="w-full shadow-6 border-round-lg" src="appstore.svg" alt="تنزيل آب ستور" />
+            <img class="w-full shadow-2xl rounded-xl" src="appstore.svg" alt="تنزيل آب ستور" />
         </a>
     </div>
-    <div class="col-6 md:col-3 lg:col-3" pTooltip="يعمل على ويندوز 10 فما فوق" tooltipPosition="bottom">
+    <div class="col-span-2 md:col-span-1" pTooltip="يعمل على ويندوز 10 فما فوق" tooltipPosition="bottom">
         <a [href]="windows()" rel="noopener noreferrer" target="_blank">
-            <img class="w-full shadow-6 border-round-lg" src="windows.svg" alt="تنزيل ويندوز" />
+            <img class="w-full shadow-2xl rounded-xl" src="windows.svg" alt="تنزيل ويندوز" />
         </a>
     </div>
     <div
-        class="col-6 md:col-3 lg:col-3"
+        class="col-span-2 md:col-span-1"
         pTooltip="بعد فك الضغط انقر عليه بالزر الأيمن للماوس واختر فتح"
         tooltipPosition="bottom">
         <a [href]="mac()" rel="noopener noreferrer" target="_blank">
-            <img class="w-full shadow-6 border-round-lg" src="mac.svg" alt="تنزيل ماك" />
+            <img class="w-full shadow-2xl rounded-xl" src="mac.svg" alt="تنزيل ماك" />
         </a>
     </div>
 </div>

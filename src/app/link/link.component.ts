@@ -1,15 +1,14 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component, input } from '@angular/core';
-import { TooltipModule } from 'primeng/tooltip';
 
 @Component({
     selector: 'app-link',
     standalone: true,
-    imports: [NgOptimizedImage, TooltipModule],
+    imports: [NgOptimizedImage],
     templateUrl: './link.component.html',
     styleUrl: './link.component.scss',
     host: {
-        class: 'border-round-xl shadow-6',
+        class: 'rounded-xl shadow-2xl',
     },
 })
 export class LinkComponent {

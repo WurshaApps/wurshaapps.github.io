@@ -1,14 +1,10 @@
-import { Component, type OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeroComponent } from './hero/hero.component';
-import { PrimeNGConfig } from 'primeng/api';
-import { FeatureComponent } from './feature/feature.component';
-import { CtaComponent } from './cta/cta.component';
 import { HeaderComponent } from './header/header.component';
 import { LinkComponent } from './link/link.component';
 import { FooterComponent } from './footer/footer.component';
 
-type link = {
+interface link {
     image: string;
     name: string;
     nameColor: string;
@@ -17,218 +13,17 @@ type link = {
     ios?: string;
     mac?: string;
     windows?: string;
-};
+}
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [
-        RouterOutlet,
-        HeroComponent,
-        FeatureComponent,
-        CtaComponent,
-        HeaderComponent,
-        LinkComponent,
-        FooterComponent,
-    ],
+    imports: [RouterOutlet, HeaderComponent, LinkComponent, FooterComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
     title = 'wdc';
-
-    constructor(private primengConfig: PrimeNGConfig) {}
-
-    ngOnInit(): void {
-        this.primengConfig.ripple = true;
-        this.primengConfig.setTranslation({
-            after: 'بعد',
-            before: 'قبل',
-            is: 'يكون',
-            isNot: 'ليس',
-            accept: 'نعم',
-            addRule: 'أضافة قاعدة',
-            am: 'قبل الظهر',
-            apply: 'تطبيق',
-            cancel: 'الغاء',
-            choose: 'إختر',
-            chooseDate: 'إختر اليوم',
-            chooseMonth: 'إختر الشهر',
-            chooseYear: 'إختر السنة',
-            clear: 'إزاله',
-            contains: 'يحتوى على',
-            dateAfter: 'التاريخ بعد',
-            dateBefore: 'التاريخ قبل',
-            dateFormat: 'شهر/يوم/سنة',
-            dateIs: 'التاريخ هو',
-            dateIsNot: 'التاريخ ليس',
-            dayNames: [
-                'الأحد',
-                'الإثنين',
-                'الثلاثاء',
-                'الاربعاء',
-                'الخميس',
-                'الجمعة',
-                'السبت',
-            ],
-            dayNamesMin: [
-                'الأحد',
-                'الإثنين',
-                'الثلاثاء',
-                'الاربعاء',
-                'الخميس',
-                'الجمعة',
-                'السبت',
-            ],
-            dayNamesShort: [
-                'الأحد',
-                'الإثنين',
-                'الثلاثاء',
-                'الاربعاء',
-                'الخميس',
-                'الجمعة',
-                'السبت',
-            ],
-            emptyFilterMessage: 'لا يوجد خيارات',
-            emptyMessage: 'لا توجد نتيجة',
-            emptySearchMessage: 'لا تتوفر بيانات',
-            emptySelectionMessage: 'لم يتم اختيار اي عنصر',
-            endsWith: 'ينتهي ب',
-            equals: 'يساوي',
-            fileSizeTypes: [
-                'بايت',
-                'كيلو بايت',
-                'ميجا بايت',
-                'جيجا بايت',
-                'تيرا بايت',
-                'بيتا بايت',
-                'إكسا بايت',
-                'زيتا بايت',
-                'يوتا بايت',
-            ],
-            firstDayOfWeek: 0,
-            gt: 'أكبر من',
-            gte: 'أكبر من او يساوي',
-            lt: 'أقل من',
-            lte: 'اقل من او يساوي',
-            matchAll: 'يطابق الكل',
-            matchAny: 'يطابق أى',
-            medium: 'متوسط',
-            monthNames: [
-                'يناير',
-                'فبراير',
-                'مارس',
-                'ابريل',
-                'مايو',
-                'يونيو',
-                'يوليو',
-                'اغسطس',
-                'سبتمبر',
-                'اكتوبر',
-                'نوفمبر',
-                'ديسمبر',
-            ],
-            monthNamesShort: [
-                'يناير',
-                'فبراير',
-                'مارس',
-                'ابريل',
-                'مايو',
-                'يونيو',
-                'يوليو',
-                'اغسطس',
-                'سبتمبر',
-                'اكتوبر',
-                'نوفمبر',
-                'ديسمبر',
-            ],
-            nextDecade: 'العقد القادم',
-            nextHour: 'الساعة التالية',
-            nextMinute: 'الدقيقة التالية',
-            nextMonth: 'الشهر التالي',
-            nextSecond: 'الثانية التالية',
-            nextYear: 'السنة التالية',
-            noFilter: 'بدون تصفية',
-            notContains: 'لا يحتوى على',
-            notEquals: 'لا يساوي',
-            passwordPrompt: 'أدخل كلمة السر',
-            pending: 'قيد الإنتظار',
-            pm: 'بعد الظهر',
-            prevDecade: 'العقد السابق',
-            prevHour: 'الساعة السابقة',
-            prevMinute: 'الدقيقة السابقة',
-            prevMonth: 'الشهر السابق',
-            prevSecond: 'الثانية السابقة',
-            prevYear: 'السنة السابقة',
-            reject: 'لا',
-            removeRule: 'حذف قاعدة',
-            searchMessage: '{0} النتائج المتاحة',
-            selectionMessage: '{0} عناصر تم اختيارها',
-            startsWith: 'يبدأ ب',
-            strong: 'قوي',
-            today: 'اليوم',
-            upload: 'تحمّيل',
-            weak: 'ضعيف',
-            weekHeader: 'الأسبوع',
-            aria: {
-                cancelEdit: 'الغاء التعديل',
-                close: 'اغلاق',
-                collapseRow: 'اخفاء الصف',
-                editRow: 'تعديل الصف',
-                expandRow: 'اظهار الصف',
-                falseLabel: 'خطأ',
-                filterConstraint: 'تصفية القيود',
-                filterOperator: 'تصفية العاملين',
-                firstPageLabel: 'الصفحة الاولى',
-                gridView: 'واجهة جدول',
-                hideFilterMenu: 'اخفاء تصفية القائمة',
-                jumpToPageDropdownLabel:
-                    'الذهاب إلى عنوان القائمة المنسدلة للصفحة',
-                jumpToPageInputLabel: 'الذهاب إلى عنوان حقل الإدخال للصفحة',
-                lastPageLabel: 'الصفحة الاخيرة',
-                listView: 'واجهة قائمة',
-                moveAllToSource: 'نقل الجميع الى المصدر',
-                moveAllToTarget: 'نقل الجميع الى الهدف',
-                moveBottom: 'الانتقال للأخير',
-                moveDown: 'الإنتقال للأسفل',
-                moveTop: 'الأنتقال للأول',
-                moveToSource: 'نقل الى المصدر',
-                moveToTarget: 'نقل الى الهدف',
-                moveUp: 'الأنتقال للأعلى',
-                navigation: 'التنقل بين الصفحات',
-                next: 'التالي',
-                nextPageLabel: 'الصفحة التالية',
-                nullLabel: 'لا يوجد اختيار',
-                pageLabel: 'صفحة {page}',
-                previous: 'السابق',
-                previousPageLabel: 'الصفحة السابقة',
-                rotateLeft: 'تدوير بأتجاه اليسار',
-                rotateRight: 'تدوير بإتجاه اليمين',
-                rowsPerPageLabel: 'عدد الصفوف في الصفحة الواحدة',
-                saveEdit: 'حفظ التعديلات',
-                scrollTop: 'انتقل إلى الأعلى',
-                selectAll: 'جميع العناصر مختارة',
-                selectRow: 'اختيار الصف',
-                showFilterMenu: 'أظهار تصفية القائمة',
-                slide: 'زلاقة',
-                slideNumber: '{slideNumber}',
-                star: 'نجمه واحدة',
-                stars: '{star} نجوم',
-                trueLabel: 'صحيح',
-                unselectAll: 'جميع العناصر غير مختارة',
-                unselectRow: 'عدم اختيار الصف',
-                zoomImage: 'تكبير الصورة',
-                zoomIn: 'تكبير',
-                zoomOut: 'تصغير',
-                browseFiles: 'تصفح الملفات',
-                listLabel: 'قائمة',
-                maximizeLabel: 'تكبير',
-                prevPageLabel: 'الصفحة السابقة',
-                removeLabel: 'حذف',
-                selectColor: 'اختيار اللون',
-            },
-        });
-    }
 
     links: link[] = [
         {
