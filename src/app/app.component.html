@@ -1,6 +1,6 @@
 <div class="viewport">
     <main class="content">
-        <app-header></app-header>
+        <app-header />
         <section class="links">
             @for (link of links; track $index) {
                 <app-link
@@ -11,7 +11,7 @@
                     [android]="link.android"
                     [ios]="link.ios"
                     [mac]="link.mac"
-                    [windows]="link.windows"></app-link>
+                    [windows]="link.windows" />
             }
         </section>
         <!-- <app-footer></app-footer> -->
