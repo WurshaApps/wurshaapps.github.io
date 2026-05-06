@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { LinkComponent } from './link/link.component';
-import { FooterComponent } from './footer/footer.component';
 
 interface link {
     image: string;
@@ -17,9 +16,9 @@ interface link {
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, HeaderComponent, LinkComponent, FooterComponent],
+    imports: [RouterOutlet, HeaderComponent, LinkComponent],
     templateUrl: './app.component.html',
-    styleUrl: './app.component.scss'
+    styleUrl: './app.component.scss',
 })
 export class AppComponent {
     title = 'wdc';
