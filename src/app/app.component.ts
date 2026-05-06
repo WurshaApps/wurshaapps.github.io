@@ -17,10 +17,9 @@ interface link {
 
 @Component({
     selector: 'app-root',
-    standalone: true,
     imports: [RouterOutlet, HeaderComponent, LinkComponent, FooterComponent],
     templateUrl: './app.component.html',
-    styleUrl: './app.component.scss',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
     title = 'wdc';

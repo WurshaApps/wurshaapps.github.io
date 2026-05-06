@@ -3,13 +3,12 @@ import { Component, input } from '@angular/core';
 
 @Component({
     selector: 'app-link',
-    standalone: true,
     imports: [NgOptimizedImage],
     templateUrl: './link.component.html',
     styleUrl: './link.component.scss',
     host: {
         class: 'rounded-xl shadow-2xl',
-    },
+    }
 })
 export class LinkComponent {
     image = input<string>('image');
