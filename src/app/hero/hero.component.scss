@@ -10,15 +10,31 @@
     inset: 0;
     z-index: -1;
     background:
-        radial-gradient(60% 50% at 80% 0%, rgba(217, 119, 6, 0.18), transparent 70%),
-        radial-gradient(45% 60% at 10% 30%, rgba(15, 118, 110, 0.18), transparent 70%),
+        radial-gradient(
+            60% 50% at 80% 0%,
+            rgba(217, 119, 6, 0.18),
+            transparent 70%
+        ),
+        radial-gradient(
+            45% 60% at 10% 30%,
+            rgba(15, 118, 110, 0.18),
+            transparent 70%
+        ),
         linear-gradient(180deg, #fffaf0 0%, #fdf6e8 45%, #f6efe0 100%);
 }
 
 :host-context([dir="rtl"]) .hero__bg {
     background:
-        radial-gradient(60% 50% at 20% 0%, rgba(217, 119, 6, 0.18), transparent 70%),
-        radial-gradient(45% 60% at 90% 30%, rgba(15, 118, 110, 0.18), transparent 70%),
+        radial-gradient(
+            60% 50% at 20% 0%,
+            rgba(217, 119, 6, 0.18),
+            transparent 70%
+        ),
+        radial-gradient(
+            45% 60% at 90% 30%,
+            rgba(15, 118, 110, 0.18),
+            transparent 70%
+        ),
         linear-gradient(180deg, #fffaf0 0%, #fdf6e8 45%, #f6efe0 100%);
 }
 

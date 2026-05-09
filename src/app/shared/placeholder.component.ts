@@ -1,4 +1,4 @@
-import { Component, inject, input } from '@angular/core';
+import { Component, computed, inject, input } from '@angular/core';
 import { I18nService } from '../i18n/i18n.service';
 
 /**
@@ -6,35 +6,62 @@ import { I18nService } from '../i18n/i18n.service';
  * Search the codebase for `app-placeholder` to find every spot where a real
  * asset should be dropped in. The slot name + `kind` make the intent explicit.
  */
+const ASSET_MAP: Record<string, string> = {
+    'hero-phone': 'hero-phone.png',
+    'hero-feature-a': 'hero-feature-a.png',
+    'hero-feature-b': 'hero-feature-b.png',
+    'features-overview': 'features-overview.png',
+    'reciters-player': 'reciters-player.png',
+    'books-aya-panel': 'books-aya-panel.png',
+    'sciences-word-page': 'sciences-word-page.png',
+    'gestures-demo': 'gestures-demo.png',
+    'editions-comparison': 'editions-comparison.png',
+    'tech-platforms': 'tech-platforms.png',
+};
+
 @Component({
     selector: 'app-placeholder',
     template: `
-        <div
-            class="placeholder"
-            [class.placeholder--phone]="kind() === 'phone'"
-            [class.placeholder--wide]="kind() === 'wide'"
-            [class.placeholder--square]="kind() === 'square'"
-            [class.placeholder--background]="kind() === 'background'"
-            [attr.data-slot]="slot()"
-            [attr.data-kind]="kind()"
-            role="img"
-            [attr.aria-label]="label() || i18n.t().common.placeholder">
-            <div class="placeholder__inner">
-                <svg class="placeholder__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <path
-                        d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5z"
-                        stroke="currentColor"
-                        stroke-width="1.5" />
-                    <path d="M4 17l4-4 3 3 4-5 5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                    <circle cx="9" cy="9" r="1.5" fill="currentColor" />
-                </svg>
-                <div class="placeholder__slot">{{ slot() }}</div>
-                @if (label()) {
-                    <div class="placeholder__label">{{ label() }}</div>
-                }
-                <div class="placeholder__hint">{{ i18n.t().common.placeholder }}</div>
+        @if (assetSrc()) {
+            <img
+                class="placeholder placeholder--image"
+                [class.placeholder--phone]="kind() === 'phone'"
+                [class.placeholder--wide]="kind() === 'wide'"
+                [class.placeholder--square]="kind() === 'square'"
+                [class.placeholder--background]="kind() === 'background'"
+                [attr.data-slot]="slot()"
+                [attr.data-kind]="kind()"
+                [src]="assetSrc()"
+                [alt]="label() || slot()"
+                loading="lazy" />
+        } @else {
+            <div
+                class="placeholder"
+                [class.placeholder--phone]="kind() === 'phone'"
+                [class.placeholder--wide]="kind() === 'wide'"
+                [class.placeholder--square]="kind() === 'square'"
+                [class.placeholder--background]="kind() === 'background'"
+                [attr.data-slot]="slot()"
+                [attr.data-kind]="kind()"
+                role="img"
+                [attr.aria-label]="label() || i18n.t().common.placeholder">
+                <div class="placeholder__inner">
+                    <svg class="placeholder__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path
+                            d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5z"
+                            stroke="currentColor"
+                            stroke-width="1.5" />
+                        <path d="M4 17l4-4 3 3 4-5 5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        <circle cx="9" cy="9" r="1.5" fill="currentColor" />
+                    </svg>
+                    <div class="placeholder__slot">{{ slot() }}</div>
+                    @if (label()) {
+                        <div class="placeholder__label">{{ label() }}</div>
+                    }
+                    <div class="placeholder__hint">{{ i18n.t().common.placeholder }}</div>
+                </div>
             </div>
-        </div>
+        }
     `,
     styles: `
         :host {
@@ -58,6 +85,13 @@ import { I18nService } from '../i18n/i18n.service';
         }
         .placeholder:hover {
             border-color: rgba(15, 118, 110, 0.6);
+        }
+        .placeholder--image {
+            border: none;
+            background: none;
+            object-fit: cover;
+            display: block;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
         }
         .placeholder--phone {
             aspect-ratio: 9 / 19;
@@ -116,4 +150,10 @@ export class PlaceholderComponent {
     readonly label = input<string>('');
     /** Aspect ratio preset. */
     readonly kind = input<'phone' | 'wide' | 'square' | 'background'>('wide');
+
+    /** Resolves to an asset path when a real image has been provided for this slot. */
+    readonly assetSrc = computed(() => {
+        const file = ASSET_MAP[this.slot()];
+        return file ? file : null;
+    });
 }
