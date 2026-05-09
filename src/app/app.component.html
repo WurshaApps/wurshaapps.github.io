@@ -1,20 +1,15 @@
-<div class="viewport">
-    <main class="content">
-        <app-header />
-        <section class="links">
-            @for (link of links; track $index) {
-                <app-link
-                    [image]="link.image"
-                    [name]="link.name"
-                    [nameColor]="link.nameColor"
-                    [description]="link.description"
-                    [android]="link.android"
-                    [ios]="link.ios"
-                    [mac]="link.mac"
-                    [windows]="link.windows" />
-            }
-        </section>
-        <!-- <app-footer></app-footer> -->
-        <router-outlet />
-    </main>
-</div>
+<app-header />
+<main>
+    <app-hero />
+    <app-stats />
+    <app-audiences />
+    <app-feature />
+    <app-editions />
+    <app-reciters />
+    <app-sciences />
+    <app-books />
+    <app-gestures />
+    <app-tech />
+    <app-downloads />
+</main>
+<app-footer />

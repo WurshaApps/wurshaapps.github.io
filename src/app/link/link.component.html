@@ -1,40 +1,34 @@
-<div class="grid grid-cols-4 gap-4 py-3 px-3">
-    <div class="col-span-1 flex flex-col justify-center items-start">
-        <img
-            class="thumbnail rounded-xl shadow-2xl w-20 h-auto"
-            [ngSrc]="image()"
-            width="70"
-            height="70"
-            priority
-            alt="صورة {{ name() }}" />
+@let t = i18n.t().downloads;
+<article class="dl-card">
+    <header class="dl-card__head">
+        <img class="dl-card__thumb" [src]="image()" [alt]="name() || ''" loading="lazy" width="64" height="64" />
+        <div class="dl-card__title">
+            <h3 [style.color]="nameColor()">{{ name() }}</h3>
+            @if (description()) {
+                <p>{{ description() }}</p>
+            }
+        </div>
+    </header>
+    <div class="dl-card__stores">
+        @if (android()) {
+            <a class="store" [href]="android()" rel="noopener noreferrer" target="_blank" [attr.aria-label]="t.platforms.android">
+                <img src="playstore.svg" [alt]="t.platforms.android" />
+            </a>
+        }
+        @if (ios()) {
+            <a class="store" [href]="ios()" rel="noopener noreferrer" target="_blank" [attr.aria-label]="t.platforms.ios">
+                <img src="appstore.svg" [alt]="t.platforms.ios" />
+            </a>
+        }
+        @if (windows()) {
+            <a class="store" [href]="windows()" rel="noopener noreferrer" target="_blank" [attr.aria-label]="t.platforms.windows" [title]="t.winNote">
+                <img src="windows.svg" [alt]="t.platforms.windows" />
+            </a>
+        }
+        @if (mac()) {
+            <a class="store" [href]="mac()" rel="noopener noreferrer" target="_blank" [attr.aria-label]="t.platforms.mac" [title]="t.macNote">
+                <img src="mac.svg" [alt]="t.platforms.mac" />
+            </a>
+        }
     </div>
-    <div class="col-span-3 flex flex-col justify-center items-start">
-        <span [style.color]="nameColor()" style="text-shadow: rgb(120, 120, 120) 0px 2px 5px" class="text-3xl">
-            {{ name() }}
-        </span>
-        <span class="pt-2 text-xl">{{ description() }}</span>
-    </div>
-    <div class="col-span-2 md:col-span-1">
-        <a [href]="android()" rel="noopener noreferrer" target="_blank">
-            <img class="w-full shadow-2xl rounded-xl" src="playstore.svg" alt="تنزيل بلاي ستور" />
-        </a>
-    </div>
-    <div class="col-span-2 md:col-span-1">
-        <a [href]="ios()" rel="noopener noreferrer" target="_blank">
-            <img class="w-full shadow-2xl rounded-xl" src="appstore.svg" alt="تنزيل آب ستور" />
-        </a>
-    </div>
-    <div class="col-span-2 md:col-span-1" pTooltip="يعمل على ويندوز 10 فما فوق" tooltipPosition="bottom">
-        <a [href]="windows()" rel="noopener noreferrer" target="_blank">
-            <img class="w-full shadow-2xl rounded-xl" src="windows.svg" alt="تنزيل ويندوز" />
-        </a>
-    </div>
-    <div
-        class="col-span-2 md:col-span-1"
-        pTooltip="بعد فك الضغط انقر عليه بالزر الأيمن للماوس واختر فتح"
-        tooltipPosition="bottom">
-        <a [href]="mac()" rel="noopener noreferrer" target="_blank">
-            <img class="w-full shadow-2xl rounded-xl" src="mac.svg" alt="تنزيل ماك" />
-        </a>
-    </div>
-</div>
+</article>

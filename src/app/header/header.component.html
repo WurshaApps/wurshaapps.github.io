@@ -1,3 +1,23 @@
-<div class="logo"></div>
-<h1 class="text-3xl py-3">الورشة الرقمية</h1>
-<p class="pb-3">تطبيقات حامل القرآن</p>
+@let t = i18n.t();
+<header class="site-header">
+    <div class="container">
+        <a class="brand" href="#top" aria-label="Wursha QuranHolder">
+            <img class="brand__logo" src="wursha-logo.png" alt="" width="40" height="40" />
+            <span class="brand__name">{{ t.hero.eyebrow }}</span>
+        </a>
+        <nav class="nav" aria-label="primary">
+            <a href="#features">{{ t.nav.features }}</a>
+            <a href="#editions">{{ t.nav.editions }}</a>
+            <a href="#reciters">{{ t.nav.reciters }}</a>
+            <a href="#books">{{ t.nav.books }}</a>
+            <a href="#downloads" class="nav__cta">{{ t.nav.downloads }}</a>
+        </nav>
+        <button type="button" class="lang-toggle" (click)="i18n.toggle()" [attr.aria-label]="t.nav.switchLang">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5" />
+                <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+            <span>{{ t.nav.switchLang }}</span>
+        </button>
+    </div>
+</header>

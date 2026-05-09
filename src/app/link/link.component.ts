@@ -1,22 +1,20 @@
-import { NgOptimizedImage } from '@angular/common';
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
+import { I18nService } from '../i18n/i18n.service';
 
 @Component({
     selector: 'app-link',
-    imports: [NgOptimizedImage],
     templateUrl: './link.component.html',
     styleUrl: './link.component.scss',
-    host: {
-        class: 'rounded-xl shadow-2xl',
-    }
 })
 export class LinkComponent {
-    image = input<string>('image');
-    name = input<string>();
-    nameColor = input<string>('#000000');
-    description = input<string>();
-    android = input<string>();
-    ios = input<string>();
-    mac = input<string>();
-    windows = input<string>();
+    readonly i18n = inject(I18nService);
+
+    readonly image = input<string>('');
+    readonly name = input<string>();
+    readonly nameColor = input<string>('#0c2d2c');
+    readonly description = input<string>();
+    readonly android = input<string>();
+    readonly ios = input<string>();
+    readonly mac = input<string>();
+    readonly windows = input<string>();
 }

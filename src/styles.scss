@@ -1,5 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Markazi+Text:wght@400..700&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+    --c-ink: #14241f;
+    --c-ink-soft: #4b5852;
+    --c-primary: #0f766e;
+    --c-primary-deep: #064e3b;
+    --c-accent: #d97706;
+    --c-accent-soft: #fcd34d;
+    --c-surface: #fffaf0;
+    --c-surface-warm: #fdfaf3;
+    --c-surface-card: #ffffff;
+    --c-border: rgba(15, 118, 110, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
 
 html,
 body {
@@ -7,63 +23,93 @@ body {
     min-height: 100vh;
     max-width: 100%;
 }
+
 body {
     margin: 0;
-    font-family: "El Messiri", sans-serif;
+    color: var(--c-ink);
+    background: var(--c-surface);
+    font-family: "El Messiri", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html[lang="en"] body {
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: inherit;
+    color: #0c2d2c;
+}
+
+a {
+    color: var(--c-primary);
+}
+
+a:hover {
+    color: #115e59;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+::selection {
+    background: rgba(15, 118, 110, 0.18);
+    color: var(--c-primary-deep);
 }
 
 .font-elmessiri-4 {
     font-family: "El Messiri", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
 }
 
 .font-elmessiri-5 {
     font-family: "El Messiri", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;
 }
 
 .font-elmessiri-6 {
     font-family: "El Messiri", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
-    font-style: normal;
 }
 
 .font-elmessiri-7 {
     font-family: "El Messiri", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
 }
 
 .font-markazi-4 {
     font-family: "Markazi Text", serif;
-    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
 }
 
 .font-markazi-5 {
     font-family: "Markazi Text", serif;
-    font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;
 }
 
 .font-markazi-6 {
     font-family: "Markazi Text", serif;
-    font-optical-sizing: auto;
     font-weight: 600;
-    font-style: normal;
 }
 
 .font-markazi-7 {
     font-family: "Markazi Text", serif;
-    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition-duration: 0.01ms !important;
+    }
+    html {
+        scroll-behavior: auto;
+    }
 }

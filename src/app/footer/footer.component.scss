@@ -1,0 +1,119 @@
+.site-footer {
+    background: #0c2d2c;
+    color: rgba(236, 253, 245, 0.85);
+    padding: 4rem 0 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.grid {
+    display: grid;
+    gap: 2.4rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1040px) {
+    .grid {
+        grid-template-columns: 1.2fr 1.4fr 1.4fr;
+    }
+}
+
+.brand img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.7rem;
+    margin-bottom: 0.9rem;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.brand h2 {
+    margin: 0 0 0.5rem;
+    color: #fcd34d;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.brand p {
+    margin: 0;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+h3 {
+    color: #fcd34d;
+    font-size: 0.95rem;
+    margin: 0 0 1rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.kv {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.kv li {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.kv__k {
+    font-size: 0.78rem;
+    color: rgba(252, 211, 77, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.15rem;
+}
+
+.kv__v {
+    font-size: 0.92rem;
+    color: rgba(236, 253, 245, 0.95);
+}
+
+.bullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.bullets li {
+    position: relative;
+    padding-inline-start: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.bullets li::before {
+    content: "·";
+    position: absolute;
+    inset-inline-start: 0;
+    color: #fcd34d;
+}
+
+.legal {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    font-size: 0.85rem;
+    color: rgba(236, 253, 245, 0.6);
+}
