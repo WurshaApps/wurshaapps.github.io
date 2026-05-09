@@ -283,29 +283,6 @@
                 "name": "Aspek Qalun & Warsh"
             }
         ],
-        "sourcesTitle": "Sumber audio",
-        "sources": [
-            {
-                "name": "mp3quran.net",
-                "sub": "CDN utama — sehingga 192 kbps"
-            },
-            {
-                "name": "everyayah.com",
-                "sub": "Sumber alternatif setiap ayat"
-            },
-            {
-                "name": "quran.ksu.edu.sa",
-                "sub": "Universiti King Saud"
-            },
-            {
-                "name": "sound.quraat.info",
-                "sub": "Pustaka klasik & qiraat khusus"
-            },
-            {
-                "name": "wursha-backup.github.io",
-                "sub": "Sandaran untuk Al-Husari"
-            }
-        ],
         "featuredTitle": "Qari pilihan",
         "featured": [
             {

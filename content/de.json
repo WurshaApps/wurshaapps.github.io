@@ -283,29 +283,6 @@
                 "name": "Aspekte von Qālūn & Warsh"
             }
         ],
-        "sourcesTitle": "Audio-Quellen",
-        "sources": [
-            {
-                "name": "mp3quran.net",
-                "sub": "Hauptquelle — bis zu 192 kbps"
-            },
-            {
-                "name": "everyayah.com",
-                "sub": "Vers-für-Vers-Alternative"
-            },
-            {
-                "name": "quran.ksu.edu.sa",
-                "sub": "King Saud University"
-            },
-            {
-                "name": "sound.quraat.info",
-                "sub": "Klassische und Qira’at-spezialisierte Bibliothek"
-            },
-            {
-                "name": "wursha-backup.github.io",
-                "sub": "Sicherung der Al-Husary-Rezitationen"
-            }
-        ],
         "featuredTitle": "Empfohlene Rezitatoren",
         "featured": [
             {

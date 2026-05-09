@@ -283,29 +283,6 @@
                 "name": "Verş ve Kâlûn vecihleri"
             }
         ],
-        "sourcesTitle": "Ses kaynakları",
-        "sources": [
-            {
-                "name": "mp3quran.net",
-                "sub": "Birincil CDN — 192 kbps’ye kadar"
-            },
-            {
-                "name": "everyayah.com",
-                "sub": "Ayet ayet alternatif kaynak"
-            },
-            {
-                "name": "quran.ksu.edu.sa",
-                "sub": "Kral Suud Üniversitesi"
-            },
-            {
-                "name": "sound.quraat.info",
-                "sub": "Klasik ve kıraata özel arşiv"
-            },
-            {
-                "name": "wursha-backup.github.io",
-                "sub": "Husarî için yedek arşiv"
-            }
-        ],
         "featuredTitle": "Öne çıkan kâriler",
         "featured": [
             {

@@ -283,29 +283,6 @@
                 "name": "بيان أوجه قالون وورش"
             }
         ],
-        "sourcesTitle": "المصادر الصوتية",
-        "sources": [
-            {
-                "name": "mp3quran.net",
-                "sub": "المكتبة الصوتية للقرآن — حتى 192 كبت/ث"
-            },
-            {
-                "name": "everyayah.com",
-                "sub": "كل آية — مصدر بديل"
-            },
-            {
-                "name": "quran.ksu.edu.sa",
-                "sub": "المصحف الإلكتروني — جامعة الملك سعود"
-            },
-            {
-                "name": "sound.quraat.info",
-                "sub": "قراءات صوتية كلاسيكية ومتخصّصة"
-            },
-            {
-                "name": "wursha-backup.github.io",
-                "sub": "نسخة احتياطية لتلاوات الحصري"
-            }
-        ],
         "featuredTitle": "من القراء المميَّزين",
         "featured": [
             {

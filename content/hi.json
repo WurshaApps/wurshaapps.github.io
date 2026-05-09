@@ -283,29 +283,6 @@
                 "name": "क़ालून और वर्श के पहलू"
             }
         ],
-        "sourcesTitle": "ऑडियो स्रोत",
-        "sources": [
-            {
-                "name": "mp3quran.net",
-                "sub": "मुख्य CDN — 192 kbps तक"
-            },
-            {
-                "name": "everyayah.com",
-                "sub": "आयत-दर-आयत वैकल्पिक स्रोत"
-            },
-            {
-                "name": "quran.ksu.edu.sa",
-                "sub": "किंग सऊद विश्वविद्यालय"
-            },
-            {
-                "name": "sound.quraat.info",
-                "sub": "शास्त्रीय और क़िराआत विशेष पुस्तकालय"
-            },
-            {
-                "name": "wursha-backup.github.io",
-                "sub": "हुसरी के लिए बैकअप"
-            }
-        ],
         "featuredTitle": "विशेष क़ारी",
         "featured": [
             {

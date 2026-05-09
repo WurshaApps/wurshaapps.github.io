@@ -283,29 +283,6 @@
                 "name": "Aspects de Qalon & Warsh"
             }
         ],
-        "sourcesTitle": "Sources audio",
-        "sources": [
-            {
-                "name": "mp3quran.net",
-                "sub": "CDN principal — jusqu’à 192 kbps"
-            },
-            {
-                "name": "everyayah.com",
-                "sub": "Source alternative verset par verset"
-            },
-            {
-                "name": "quran.ksu.edu.sa",
-                "sub": "Université du Roi Saoud"
-            },
-            {
-                "name": "sound.quraat.info",
-                "sub": "Bibliothèque classique et spécialisée en qira’at"
-            },
-            {
-                "name": "wursha-backup.github.io",
-                "sub": "Sauvegarde des récitations d’Al-Husary"
-            }
-        ],
         "featuredTitle": "Récitateurs en vedette",
         "featured": [
             {

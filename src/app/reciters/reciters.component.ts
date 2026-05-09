@@ -58,17 +58,6 @@ import { PlaceholderComponent } from '../shared/placeholder.component';
                             </div>
                         </article>
 
-                        <article class="panel">
-                            <h3>{{ r.sourcesTitle }}</h3>
-                            <ul class="sources">
-                                @for (src of r.sources; track $index) {
-                                    <li>
-                                        <code>{{ src.name }}</code>
-                                        <span>{{ src.sub }}</span>
-                                    </li>
-                                }
-                            </ul>
-                        </article>
                     </div>
                 </div>
             </div>
@@ -216,30 +205,6 @@ import { PlaceholderComponent } from '../shared/placeholder.component';
             font-size: 0.7rem;
             color: #0f766e;
             margin-top: 0.15rem;
-        }
-        .sources {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 0.6rem;
-        }
-        .sources li {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.6rem;
-            align-items: baseline;
-            color: #4b5852;
-            font-size: 0.9rem;
-        }
-        .sources code {
-            font-family: 'JetBrains Mono', ui-monospace, monospace;
-            background: rgba(15, 118, 110, 0.08);
-            color: #0f766e;
-            padding: 0.15rem 0.45rem;
-            border-radius: 0.4rem;
-            font-size: 0.8rem;
         }
     `,
 })

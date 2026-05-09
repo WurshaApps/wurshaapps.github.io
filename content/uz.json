@@ -283,29 +283,6 @@
                 "name": "Qolun va Varsh jihatlari"
             }
         ],
-        "sourcesTitle": "Audio manbalari",
-        "sources": [
-            {
-                "name": "mp3quran.net",
-                "sub": "Asosiy CDN — 192 kbps gacha"
-            },
-            {
-                "name": "everyayah.com",
-                "sub": "Oyat-oyat alternativ manba"
-            },
-            {
-                "name": "quran.ksu.edu.sa",
-                "sub": "King Saud universiteti"
-            },
-            {
-                "name": "sound.quraat.info",
-                "sub": "Klassik va qiroatga ixtisoslashtirilgan kutubxona"
-            },
-            {
-                "name": "wursha-backup.github.io",
-                "sub": "Husariy uchun zaxira"
-            }
-        ],
         "featuredTitle": "Tanlangan qorilar",
         "featured": [
             {

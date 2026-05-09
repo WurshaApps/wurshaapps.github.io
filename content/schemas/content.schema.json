@@ -210,8 +210,6 @@
                 "subtitle",
                 "riwayatTitle",
                 "riwayat",
-                "sourcesTitle",
-                "sources",
                 "featuredTitle",
                 "featured",
                 "downloadNote"
@@ -226,19 +224,6 @@
                         "type": "object",
                         "additionalProperties": false,
                         "required": ["name"],
-                        "properties": {
-                            "name": { "type": "string" },
-                            "sub": { "type": "string" }
-                        }
-                    }
-                },
-                "sourcesTitle": { "type": "string" },
-                "sources": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "additionalProperties": false,
-                        "required": ["name", "sub"],
                         "properties": {
                             "name": { "type": "string" },
                             "sub": { "type": "string" }

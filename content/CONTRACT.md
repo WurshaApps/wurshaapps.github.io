@@ -29,7 +29,7 @@ A single object with these top-level sections:
 | `audiences` | `audiences/audiences.component`        | The "who is this for" persona cards                    |
 | `features`  | `feature/feature.component`            | The 11-category feature grid                           |
 | `editions`  | `editions/editions.component`          | Mushaf collections + per-edition cards                 |
-| `reciters`  | `reciters/reciters.component`          | Featured reciters, riwayat covered, audio sources      |
+| `reciters`  | `reciters/reciters.component`          | Featured reciters, riwayat covered                     |
 | `books`     | `books/books.component`                | Tabbed library: tafseer / sciences / qira'at / trans.  |
 | `sciences`  | `sciences/sciences.component`          | The 5 word-page tabs (meaning, sarf, i'rab, …)         |
 | `gestures`  | `gestures/gestures.component`          | Gesture → action grid                                  |
@@ -90,9 +90,8 @@ Designed for **4 items** (4-col on wide screens). Other counts work but won't ma
 #### `reciters`
 ```ts
 {
-  title, subtitle, riwayatTitle, sourcesTitle, featuredTitle, downloadNote,
+  title, subtitle, riwayatTitle, featuredTitle, downloadNote,
   riwayat: [{ name, sub? }, …],
-  sources: [{ name, sub }, …],
   featured: [{ name, riwaya, version }, …]
 }
 ```

@@ -283,29 +283,6 @@
                 "name": "قالون اور ورش کے وجوہ"
             }
         ],
-        "sourcesTitle": "آڈیو ذرائع",
-        "sources": [
-            {
-                "name": "mp3quran.net",
-                "sub": "بنیادی CDN — 192 kbps تک"
-            },
-            {
-                "name": "everyayah.com",
-                "sub": "آیت بہ آیت متبادل ذریعہ"
-            },
-            {
-                "name": "quran.ksu.edu.sa",
-                "sub": "کنگ سعود یونیورسٹی"
-            },
-            {
-                "name": "sound.quraat.info",
-                "sub": "کلاسیکی اور قراءاتی خاص لائبریری"
-            },
-            {
-                "name": "wursha-backup.github.io",
-                "sub": "حصری کے لیے بیک اپ"
-            }
-        ],
         "featuredTitle": "نمایاں قراء",
         "featured": [
             {

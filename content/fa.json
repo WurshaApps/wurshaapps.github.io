@@ -254,14 +254,6 @@
             { "name": "الکبری و الصغری", "sub": "بیان قرائات ده‌گانه" },
             { "name": "وجوه قالون و ورش" }
         ],
-        "sourcesTitle": "منابع صوتی",
-        "sources": [
-            { "name": "mp3quran.net", "sub": "منبع اصلی — تا ۱۹۲ کیلوبیت" },
-            { "name": "everyayah.com", "sub": "منبع جایگزین آیه‌به‌آیه" },
-            { "name": "quran.ksu.edu.sa", "sub": "دانشگاه ملک سعود" },
-            { "name": "sound.quraat.info", "sub": "کتابخانهٔ کلاسیک و تخصصی قرائات" },
-            { "name": "wursha-backup.github.io", "sub": "نسخهٔ پشتیبان حصری" }
-        ],
         "featuredTitle": "قاریان منتخب",
         "featured": [
             {

@@ -283,29 +283,6 @@
                 "name": "Qalun və Vərş aspektləri"
             }
         ],
-        "sourcesTitle": "Səs mənbələri",
-        "sources": [
-            {
-                "name": "mp3quran.net",
-                "sub": "Əsas CDN — 192 kbps-ə qədər"
-            },
-            {
-                "name": "everyayah.com",
-                "sub": "Ayə-ayə alternativ mənbə"
-            },
-            {
-                "name": "quran.ksu.edu.sa",
-                "sub": "Kral Səud Universiteti"
-            },
-            {
-                "name": "sound.quraat.info",
-                "sub": "Klassik və qiraət ixtisaslı kitabxana"
-            },
-            {
-                "name": "wursha-backup.github.io",
-                "sub": "Husari üçün ehtiyat nüsxə"
-            }
-        ],
         "featuredTitle": "Seçilmiş qarilər",
         "featured": [
             {

@@ -254,14 +254,6 @@
             { "name": "আল-কুবরা ও আস-সুগরা", "sub": "দশ ক্বিরাআতের বিবরণ" },
             { "name": "ক্বালূন ও ওয়ারশের ভঙ্গি" }
         ],
-        "sourcesTitle": "অডিও উৎস",
-        "sources": [
-            { "name": "mp3quran.net", "sub": "প্রধান CDN — ১৯২ kbps পর্যন্ত" },
-            { "name": "everyayah.com", "sub": "আয়াত-ভিত্তিক বিকল্প উৎস" },
-            { "name": "quran.ksu.edu.sa", "sub": "কিং সৌদ বিশ্ববিদ্যালয়" },
-            { "name": "sound.quraat.info", "sub": "ক্লাসিক ও ক্বিরাআত-বিশেষায়িত গ্রন্থাগার" },
-            { "name": "wursha-backup.github.io", "sub": "হুসারীর জন্য ব্যাকআপ" }
-        ],
         "featuredTitle": "বিশেষ ক্বারীগণ",
         "featured": [
             {

@@ -254,14 +254,6 @@
             { "name": "الکبری او الصغری", "sub": "د لس قراءتونو بیان" },
             { "name": "د قالون او ورش وجوه" }
         ],
-        "sourcesTitle": "د غږ سرچینې",
-        "sources": [
-            { "name": "mp3quran.net", "sub": "اصلي CDN — تر ۱۹۲ کبپس" },
-            { "name": "everyayah.com", "sub": "د آیت په آیت بدیله سرچینه" },
-            { "name": "quran.ksu.edu.sa", "sub": "د کنګ سعود پوهنتون" },
-            { "name": "sound.quraat.info", "sub": "کلاسیک او د قراءاتو ځانګړې کتابتون" },
-            { "name": "wursha-backup.github.io", "sub": "د حصري لپاره د بیک‌اپ" }
-        ],
         "featuredTitle": "ځانګړي قاریان",
         "featured": [
             {

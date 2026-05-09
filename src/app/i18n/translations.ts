@@ -70,8 +70,6 @@ export interface Dict {
         subtitle: string;
         riwayatTitle: string;
         riwayat: { name: string; sub?: string }[];
-        sourcesTitle: string;
-        sources: { name: string; sub: string }[];
         featuredTitle: string;
         featured: { name: string; riwaya: string; version: string }[];
         downloadNote: string;
