@@ -16,7 +16,7 @@
         "eyebrow": "Wursha QuranHolder — Wursha Digital Apps tomonidan",
         "title": "Qur’on uchun to‘liq hamroh",
         "titleHighlight": "o‘qish, tilovat qilish, o‘rganish va yodlash.",
-        "subtitle": "15 ta sahih Mushaf nashri, 68 ta jahon darajasidagi qori, 15+ klassik va zamonaviy tafsir, yonma-yon qiroatlar va har bir so‘z bo‘yicha sarf-i’rob tahlili — birinchi yuklashdan so‘ng to‘liq oflayn ishlaydi.",
+        "subtitle": "15 ta sahih Mushaf nashri, 68 ta jahon darajasidagi qori, 17 klassik va zamonaviy tafsir, yonma-yon qiroatlar va har bir so‘z bo‘yicha sarf-i’rob tahlili — birinchi yuklashdan so‘ng to‘liq oflayn ishlaydi.",
         "ctaPrimary": "Ilovani olish",
         "ctaSecondary": "Imkoniyatlarni ko‘rish",
         "screenshotAlt": "Wursha QuranHolder ekran tasviri"
@@ -134,7 +134,7 @@
                 "id": "sciences",
                 "title": "Qur’on ilmlari",
                 "count": 10,
-                "blurb": "So‘z darajasida sarf va i’rob, 15+ tafsir, rang kodli qiroat farshi va asbabu-n-nuzul.",
+                "blurb": "So‘z darajasida sarf va i’rob, 17 tafsir, rang kodli qiroat farshi va asbabu-n-nuzul.",
                 "highlights": [
                     "So‘z sahifasi (ma’no, sarf, i’rob)",
                     "O‘nta qoridan qiroatlar",

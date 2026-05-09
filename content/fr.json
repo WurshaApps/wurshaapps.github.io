@@ -16,7 +16,7 @@
         "eyebrow": "Wursha QuranHolder — par Wursha Digital Apps",
         "title": "Le compagnon complet du Coran",
         "titleHighlight": "lire, réciter, étudier et mémoriser.",
-        "subtitle": "15 éditions authentiques du Mushaf, 68 récitateurs de classe mondiale, plus de 15 tafsirs classiques et modernes, qira’at en regard, et analyse morphologique et grammaticale mot par mot — entièrement utilisable hors ligne après le téléchargement initial.",
+        "subtitle": "15 éditions authentiques du Mushaf, 68 récitateurs de classe mondiale, 17 tafsirs classiques et modernes, qira’at en regard, et analyse morphologique et grammaticale mot par mot — entièrement utilisable hors ligne après le téléchargement initial.",
         "ctaPrimary": "Obtenir l’application",
         "ctaSecondary": "Découvrir les fonctionnalités",
         "screenshotAlt": "Capture d’écran de Wursha QuranHolder"
@@ -134,7 +134,7 @@
                 "id": "sciences",
                 "title": "Sciences coraniques",
                 "count": 10,
-                "blurb": "Morphologie et grammaire au niveau du mot, plus de 15 tafsirs, farsh des qira’at en couleurs, et asbab al-nuzul.",
+                "blurb": "Morphologie et grammaire au niveau du mot, 17 tafsirs, farsh des qira’at en couleurs, et asbab al-nuzul.",
                 "highlights": [
                     "Page du mot (sens, sarf, i’rab)",
                     "Lectures des dix récitateurs",
