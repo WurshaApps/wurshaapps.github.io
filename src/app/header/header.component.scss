@@ -75,33 +75,15 @@
     color: #fff !important;
 }
 
-.lang-toggle {
+.lang-picker {
     margin-inline-start: auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    background: rgba(15, 118, 110, 0.08);
-    color: #134e4a;
-    border: 1px solid rgba(15, 118, 110, 0.15);
-    border-radius: 0.7rem;
-    padding: 0.45rem 0.85rem;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition:
-        background-color 0.15s,
-        border-color 0.15s;
-}
-
-.lang-toggle:hover {
-    background: rgba(15, 118, 110, 0.14);
-    border-color: rgba(15, 118, 110, 0.3);
 }
 
 @media (min-width: 880px) {
     .nav {
         display: flex;
     }
-    .lang-toggle {
+    .lang-picker {
         margin-inline-start: 0;
     }
 }

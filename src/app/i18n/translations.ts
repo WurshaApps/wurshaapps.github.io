@@ -1,12 +1,24 @@
 import arJson from '@content/ar.json';
+import azJson from '@content/az.json';
+import bnJson from '@content/bn.json';
+import deJson from '@content/de.json';
 import enJson from '@content/en.json';
+import faJson from '@content/fa.json';
+import frJson from '@content/fr.json';
+import hiJson from '@content/hi.json';
+import idJson from '@content/id.json';
+import msJson from '@content/ms.json';
+import psJson from '@content/ps.json';
+import trJson from '@content/tr.json';
+import urJson from '@content/ur.json';
+import uzJson from '@content/uz.json';
 
-export type Lang = 'ar' | 'en';
+import type { Lang } from './locales';
 
 /**
  * Shape of one locale's content. Mirrors `content/schemas/content.schema.json`.
- * Source of truth for copy: `content/ar.json` and `content/en.json`.
- * If you change this, update the JSON Schema and both locale files together.
+ * Source of truth for copy: `content/<code>.json` files.
+ * If you change this, update the JSON Schema and every locale file together.
  */
 export interface Dict {
     meta: {
@@ -138,7 +150,19 @@ export interface Dict {
     apps: Record<string, { name: string; description?: string }>;
 }
 
-const ar: Dict = arJson as Dict;
-const en: Dict = enJson as Dict;
-
-export const TRANSLATIONS: Record<Lang, Dict> = { ar, en };
+export const TRANSLATIONS: Record<Lang, Dict> = {
+    ar: arJson as Dict,
+    en: enJson as Dict,
+    az: azJson as Dict,
+    bn: bnJson as Dict,
+    de: deJson as Dict,
+    fa: faJson as Dict,
+    fr: frJson as Dict,
+    hi: hiJson as Dict,
+    id: idJson as Dict,
+    ms: msJson as Dict,
+    ps: psJson as Dict,
+    tr: trJson as Dict,
+    ur: urJson as Dict,
+    uz: uzJson as Dict,
+};

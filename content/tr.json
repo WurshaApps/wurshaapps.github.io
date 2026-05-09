@@ -1,0 +1,526 @@
+{
+    "$schema": "./schemas/content.schema.json",
+    "meta": {
+        "title": "Wursha QuranHolder — Kur’an’ı oku, tilavet et, çalış ve ezberle",
+        "description": "15 sahih Mushaf baskısı, 68 kâri, 63 referans kitap ve meal, yan yana kıraatlar ve kelime kelime gramer çözümlemesi — tek bir uygulamada."
+    },
+    "nav": {
+        "features": "Özellikler",
+        "editions": "Mushaflar",
+        "reciters": "Kâriler",
+        "books": "Kitaplar ve Tefsir",
+        "downloads": "İndir",
+        "switchLang": "Dili değiştir"
+    },
+    "hero": {
+        "eyebrow": "Wursha QuranHolder — Wursha Digital Apps",
+        "title": "Kur’an için tam yol arkadaşı",
+        "titleHighlight": "okumak, tilavet etmek, çalışmak ve ezberlemek.",
+        "subtitle": "15 sahih Mushaf baskısı, 68 dünyaca tanınmış kâri, 15’ten fazla klasik ve modern tefsir, yan yana kıraatlar ve kelime kelime sarf-nahiv tahlili — ilk indirmenin ardından tamamen çevrim dışı çalışır.",
+        "ctaPrimary": "Uygulamayı edinin",
+        "ctaSecondary": "Özellikleri keşfet",
+        "screenshotAlt": "Wursha QuranHolder ekran görüntüsü"
+    },
+    "stats": {
+        "editions": "15",
+        "editionsLabel": "Sahih Mushaf baskısı",
+        "reciters": "68",
+        "recitersLabel": "Seçkin kâri",
+        "books": "63",
+        "booksLabel": "Kitap, tefsir, meal",
+        "features": "78+",
+        "featuresLabel": "Kullanıcı özelliği"
+    },
+    "audiences": {
+        "title": "Dört tür okuyucu için tasarlandı",
+        "subtitle": "Her kitleye derinlik sunan tek bir uygulama — ödün vermeden.",
+        "items": [
+            {
+                "title": "Günlük okuyucu",
+                "body": "Tamamen özelleştirilebilir, güzel bir dijital Mushaf — renkler, yazı tipleri, düzen ve günlük vird için yumuşak dokunma hareketleri."
+            },
+            {
+                "title": "Hafızlar",
+                "body": "Birden fazla hatim, otomatik konum kaydı, ayet tekrarı, ayetler arası ayarlanabilir bekleme ve hassas tekrar araçları."
+            },
+            {
+                "title": "Kur’an ilimleri öğrencileri",
+                "body": "On kıraatın farşı, irâb, sarf, esbâbü’n-nüzûl, vakıf işaretleri ve 22’den fazla uzmanlık kıraat referansı."
+            },
+            {
+                "title": "Arapça konuşmayanlar",
+                "body": "14’ten fazla yetkili meal ve Sahih International seslendirmesiyle daha derin bir anlayış için İngilizce meal okumalı."
+            }
+        ]
+    },
+    "features": {
+        "title": "Tek uygulamada sayısız özellik",
+        "subtitle": "11 kategoride 78’den fazla özenle tasarlanmış özellik — okumak, dinlemek, çalışmak ve ezberlemek için.",
+        "categories": [
+            {
+                "id": "reading",
+                "title": "Okuma ve görüntü",
+                "count": 8,
+                "blurb": "Birden fazla düzen, özelleştirilebilir temalar, yedi yazı tipi ve gündüz/gece paletleriyle tam ekran Mushaf.",
+                "highlights": [
+                    "Dikey ve yatay düzenler",
+                    "Aydınlık, gece ve otomatik temalar",
+                    "7 yazı tipi (Amîrî, Osmanî, Nesih, Rik’a, Şehrazat…)",
+                    "Okuma sırasında ekranı açık tut"
+                ]
+            },
+            {
+                "id": "navigation",
+                "title": "Gezinme",
+                "count": 6,
+                "blurb": "Herhangi bir sûreye, cüze, hizbe veya sayfaya — adı, numarası veya sayfa ile — atla.",
+                "highlights": [
+                    "Aramalı 114 sûre",
+                    "30 cüz ve 120 hizip",
+                    "Sayfaya doğrudan atla (1–604)",
+                    "Ayarlanabilir otomatik kaydırma"
+                ]
+            },
+            {
+                "id": "tracks",
+                "title": "Hatimler ve ilerleme",
+                "count": 3,
+                "blurb": "Birden fazla hatim oluştur (günlük vird, ezber, kıyam, mukabele) ve otomatik kaldığın yerden devam et.",
+                "highlights": [
+                    "Özel renkli birden fazla hatim",
+                    "Her hatim için son sayfa otomatik kaydı",
+                    "Görsel ilerleme göstergesi"
+                ]
+            },
+            {
+                "id": "bookmarks",
+                "title": "Yer imleri ve notlar",
+                "count": 4,
+                "blurb": "Sayfa ve ayet yer imleri, hatim bazlı kişisel notlar; ayrıca dışa aktarma ve paylaşım.",
+                "highlights": [
+                    "Tek dokunuşla sayfa yer imi",
+                    "Derinlemesine çalışma için ayet yer imleri",
+                    "Hatim bazlı kişisel notlar",
+                    "Yer imleri ve notları metin olarak dışa aktar"
+                ]
+            },
+            {
+                "id": "audio",
+                "title": "Ses ve tilavet",
+                "count": 10,
+                "blurb": "68 kâriyi dinle; istediğin aralığı tekrarla, hızı ayarla ve sûre, cüz, sayfa veya süreye göre durdur.",
+                "highlights": [
+                    "Ayet, sûre veya özel aralığı tekrarla",
+                    "Ayetler arasında ayarlanabilir bekleme",
+                    "Çalma hızı (1×, 1,25×, 1,5×…)",
+                    "Otomatik vurgulama ve takip kaydırma",
+                    "Çevrim dışı dinleme için tilavetleri indir",
+                    "Sûre, sayfa, hizip, cüz veya süreye göre durdur"
+                ]
+            },
+            {
+                "id": "search",
+                "title": "Arama ve referans",
+                "count": 7,
+                "blurb": "Dört modlu tam metin arama: sade, harekeli, Osmanî veya kök tabanlı.",
+                "highlights": [
+                    "Desen araması (joker / regex)",
+                    "Tam kelime eşleşmesi",
+                    "Yalnızca güncel sûrede ara",
+                    "Tam ayet ayrıntı sayfası"
+                ]
+            },
+            {
+                "id": "sciences",
+                "title": "Kur’an ilimleri",
+                "count": 10,
+                "blurb": "Kelime düzeyinde sarf ve nahiv, 15’ten fazla tefsir, renk kodlu kıraat farşları ve esbâbü’n-nüzûl.",
+                "highlights": [
+                    "Kelime sayfası (anlam, sarf, irâb)",
+                    "On kâriden okuyuşlar",
+                    "Esbâbü’n-nüzûl (Vâhidî vb.)",
+                    "Vakıf ve ibtida işaretleri",
+                    "Renk kodlu farş kuralları"
+                ]
+            },
+            {
+                "id": "customization",
+                "title": "Özelleştirme ve ayarlar",
+                "count": 10,
+                "blurb": "Mushaflar arasında geç, hareketleri yapılandır, ekran yönelimini kilitle ve masaüstünde klavye-fare kullan.",
+                "highlights": [
+                    "Rivayete göre filtrelenen kâriler",
+                    "Hareket bazlı açma/kapama",
+                    "Fare tekerleği ve ok tuşları desteği",
+                    "Arapça ve İngilizce arayüz"
+                ]
+            },
+            {
+                "id": "tools",
+                "title": "Araçlar ve ekstralar",
+                "count": 9,
+                "blurb": "Seçilmiş dualar, ayar içe/dışa aktarma, veri güncellemeleri, paylaşım ve tek dokunuşla kopyalama.",
+                "highlights": [
+                    "Kur’an ve Sünnet’ten dualar",
+                    "Ayarlar ve yer imleri için JSON içe/dışa aktarma",
+                    "Ayet ve notları paylaş",
+                    "Etkileşimli karşılama turu"
+                ]
+            },
+            {
+                "id": "gestures",
+                "title": "Hareketler ve etkileşim",
+                "count": 5,
+                "blurb": "Sayfayı çevirmek için kaydır, yakınlaştırmak için sıkıştır, kenar notları için uzun bas, arayüzü gizlemek için ortaya dokun.",
+                "highlights": [
+                    "Sayfalar arasında sağa/sola kaydır",
+                    "Sıkıştırarak yakınlaştır",
+                    "Kenar notlarını görmek için uzun bas",
+                    "Ortaya dokunma ile çubukları aç/kapat"
+                ]
+            },
+            {
+                "id": "editions",
+                "title": "Mushafa özel özellikler",
+                "count": 4,
+                "blurb": "Tecvit renklendirmesi, kelime koordinatları ve kıraatlar arası karşılaştırmalı kenarlar — mushafa göre.",
+                "highlights": [
+                    "Medine Mushafı (varsayılan Osmanî)",
+                    "Renkli kurallarla Tecvit Mushafı",
+                    "Geniş kenarlı Şemerlî Mushafı",
+                    "Hafs, Verş, Kâlûn, Şu’be desteği…"
+                ]
+            }
+        ]
+    },
+    "editions": {
+        "title": "5 sahih Mushaf baskısı",
+        "subtitle": "İki ana koleksiyon: Kıraat çeşitliliği için “Hâmilü’l-Kur’ân”, hafızlar için “Hayrü Zâd”. Her biri farş, renk göstergesi ve karşılaştırmalı kenarlarla birlikte gelir.",
+        "collections": [
+            {
+                "name": "Hâmilü’l-Kur’ân",
+                "description": "Önemli kıraat ve rivâyetleri kapsayan, Osmanî yazılı geniş bir koleksiyon.",
+                "items": ["Medine", "Şemerlî", "Tecvit"]
+            },
+            {
+                "name": "Hayrü Zâd",
+                "description": "Yapılandırılmış pedagojik bir yaklaşımla hafızlık odaklı seri.",
+                "items": ["Verş", "Kâlûn"]
+            }
+        ],
+        "list": [
+            {
+                "code": "Madina",
+                "name": "Medine Mushafı",
+                "note": "Osmanî yazı ve kelime koordinatları. Karşılaştırmaların temeli.",
+                "isDefault": true
+            },
+            {
+                "code": "Shmrly",
+                "name": "Şemerlî Mushafı",
+                "note": "Geniş hâmiş kenarlı Şemerlî yazısı."
+            },
+            {
+                "code": "Tjwid",
+                "name": "Tecvit Mushafı",
+                "note": "Harf bazında tecvit kurallarının renklendirilmesi (Dârü’l-Ma‘ârif)."
+            },
+            {
+                "code": "Warsh",
+                "name": "Verş Mushafı",
+                "note": "Verş an Nâfi‘ — el-Ezrak tarîki."
+            },
+            {
+                "code": "Qalon",
+                "name": "Kâlûn Mushafı",
+                "note": "Kâlûn an Nâfi‘ rivâyeti."
+            }
+        ],
+        "crossNote": "Mushafların çoğu renk göstergeleri, kıraatlar arası karşılaştırmalı kenarlar, vakıf işaretleri ve menhec görünümünü destekler."
+    },
+    "reciters": {
+        "title": "Rivâyet ve kıraatlarda 68 kâri",
+        "subtitle": "Her kâri belirli bir rivâyet, baskı (Mürettel, Mücevvet, Muallim, Radyo, Tam) ve yüksek kaliteli bir CDN ile eşlenir. Özel kâri URL’si de eklenebilir.",
+        "riwayatTitle": "Kapsanan rivâyet ve kıraatlar",
+        "riwayat": [
+            { "name": "Hafs an Âsım", "sub": "En yaygın" },
+            { "name": "Verş an Nâfi‘" },
+            { "name": "Kâlûn an Nâfi‘" },
+            { "name": "Şu’be an Âsım" },
+            { "name": "ed-Dûrî an Ebî Amr" },
+            { "name": "es-Sûsî an Ebî Amr" },
+            { "name": "el-Esbahânî" },
+            { "name": "Hamza’nın rivâyetleri" },
+            { "name": "Cem‘-i Kübrâ ve Suğrâ", "sub": "On kıraatın beyanı" },
+            { "name": "Verş ve Kâlûn vecihleri" }
+        ],
+        "sourcesTitle": "Ses kaynakları",
+        "sources": [
+            { "name": "mp3quran.net", "sub": "Birincil CDN — 192 kbps’ye kadar" },
+            { "name": "everyayah.com", "sub": "Ayet ayet alternatif kaynak" },
+            { "name": "quran.ksu.edu.sa", "sub": "Kral Suud Üniversitesi" },
+            { "name": "sound.quraat.info", "sub": "Klasik ve kıraata özel arşiv" },
+            { "name": "wursha-backup.github.io", "sub": "Husarî için yedek arşiv" }
+        ],
+        "featuredTitle": "Öne çıkan kâriler",
+        "featured": [
+            {
+                "name": "Mahmud Halil el-Husarî",
+                "riwaya": "Hafs an Âsım",
+                "version": "Mürettel / Mücevvet / Radyo / Muallim"
+            },
+            {
+                "name": "Muhammed Sıddık el-Minşâvî",
+                "riwaya": "Hafs an Âsım",
+                "version": "Mürettel / Mücevvet / Muallim"
+            },
+            {
+                "name": "Abdülbâsıt Abdüssamed",
+                "riwaya": "Hafs / Verş",
+                "version": "Mürettel / Mücevvet"
+            },
+            {
+                "name": "Mişârî Râşid el-Afâsî",
+                "riwaya": "Hafs an Âsım",
+                "version": "Mürettel"
+            },
+            { "name": "Yâsir ed-Devserî", "riwaya": "Hafs an Âsım", "version": "Mürettel" },
+            { "name": "Suûd eş-Şureym", "riwaya": "Hafs an Âsım", "version": "Mürettel" },
+            { "name": "Ahmed Talba", "riwaya": "Cem‘-i Kübrâ", "version": "Tam" },
+            { "name": "İbrâhim el-Mağribî", "riwaya": "el-Esbahânî", "version": "Tam" }
+        ],
+        "downloadNote": "Çevrim dışı dinleme için tüm tilavetleri indir; ilerleme, hız ve depolama bilgisi görünür."
+    },
+    "books": {
+        "title": "63 kitap ve referans",
+        "subtitle": "Ayet paneli; tefsirleri, Kur’an ilimlerini, kıraatları ve mealleri tek yerde toplar.",
+        "categories": [
+            {
+                "key": "tafseer",
+                "title": "Tefsir",
+                "count": "17 eser",
+                "samples": [
+                    "İbn Kesîr",
+                    "Taberî",
+                    "Kurtubî",
+                    "Saʿdî",
+                    "Beğavî",
+                    "el-Müyesser",
+                    "el-Muhtasar",
+                    "et-Tahrîr ve’t-Tenvîr",
+                    "Celâleyn",
+                    "Zâdü’l-Mesîr (İbnü’l-Cevzî)",
+                    "el-Muharrerü’l-Vecîz (İbn Atıyye)",
+                    "Nesefî",
+                    "Nazmü’d-Dürer (Bikâî)",
+                    "Edvâü’l-Beyân (Şinkîtî)"
+                ]
+            },
+            {
+                "key": "sciences",
+                "title": "Kur’an ilimleri",
+                "count": "10 eser",
+                "samples": [
+                    "Esbâbü’n-Nüzûl (Vâhidî)",
+                    "İrâbü’l-Kur’ân (Daʿʿâs)",
+                    "el-Cedvel (irâb ve sarf)",
+                    "ed-Dürrü’l-Masûn (Semîn el-Halebî)",
+                    "el-Müyesser fi’l-Garîb",
+                    "en-Neşr fi’l-Kırââti’l-Aşr (İbnü’l-Cezerî)",
+                    "el-Vakf ve’l-İbtidâ",
+                    "Müteşâbihü’l-Elfâz"
+                ]
+            },
+            {
+                "key": "qiraat",
+                "title": "Kıraatlar",
+                "count": "22 eser",
+                "samples": [
+                    "Kâlûn an Nâfi‘",
+                    "Verş an Nâfi‘",
+                    "İbn Kesîr",
+                    "Ebû Amr",
+                    "İbn Âmir",
+                    "Şu’be an Âsım",
+                    "Hamza",
+                    "Kisâî",
+                    "Ebû Caʿfer",
+                    "Yaʿkûb",
+                    "Halef el-Âşir",
+                    "Aşr-ı Suğrâ",
+                    "Teysîrü’l-Aşr",
+                    "Şevâhid Tayyibetü’n-Neşr"
+                ]
+            },
+            {
+                "key": "translations",
+                "title": "Mealler",
+                "count": "14 dil",
+                "samples": [
+                    "İngilizce — Hilali & Khan",
+                    "Saheeh International",
+                    "Pickthall",
+                    "Fransızca",
+                    "Almanca (Abu Rida)",
+                    "Rusça",
+                    "Türkçe",
+                    "Endonezce",
+                    "Malayca",
+                    "Urduca",
+                    "Farsça",
+                    "Felemenkçe",
+                    "Azerice",
+                    "Fonetik transliterasyon"
+                ]
+            }
+        ]
+    },
+    "sciences": {
+        "title": "Derinlemesine kelime ve ayet incelemesi",
+        "subtitle": "Herhangi bir kelimeye dokun ve sayfasını aç — beş sekme anlamı, sarfı, irâbı, kıraatı ve meali gösterir.",
+        "items": [
+            {
+                "title": "Anlam",
+                "body": "Az kullanılan kelimeleri kısa ve net biçimde tanımlayan Kur’an sözlüğü."
+            },
+            {
+                "title": "Sarf",
+                "body": "Kelime yapısı, kökü ve türevlerini ortaya koyan ayrıntılı sarf tahlili."
+            },
+            {
+                "title": "İrâb",
+                "body": "Uzman kaynaklardan ayet ve kelimenin titiz nahiv tahlili."
+            },
+            {
+                "title": "Kıraatlar",
+                "body": "On kâriden farklı okuyuşlar ve renk kodlu farş notları."
+            },
+            {
+                "title": "Mealler",
+                "body": "Dünyanın başlıca dillerinde 14’ten fazla yetkili meal."
+            }
+        ]
+    },
+    "gestures": {
+        "title": "Doğal ve esnek dokunma kontrolü",
+        "subtitle": "Her hareket açılıp kapatılabilir — birçoğu yeniden atanabilir.",
+        "items": [
+            { "gesture": "Sağa/sola kaydır", "action": "Sayfayı çevir" },
+            { "gesture": "Kenardan yukarı/aşağı kaydır", "action": "Ekran parlaklığı" },
+            { "gesture": "Sıkıştır", "action": "Sayfayı yakınlaştır" },
+            { "gesture": "Ayete dokun", "action": "Ayet sayfasını aç" },
+            {
+                "gesture": "Ayete uzun bas",
+                "action": "Kenar notlarını (hâmiş) göster"
+            },
+            { "gesture": "Kelimeye dokun", "action": "Kelime sayfasını aç" },
+            { "gesture": "Ortaya dokun", "action": "Çubukları aç/kapat" },
+            { "gesture": "Ortadan kaydır", "action": "Sûre dizini / arama" },
+            {
+                "gesture": "Fare tekerleği ve ok tuşları",
+                "action": "Masaüstü ve web’de gezinme"
+            }
+        ]
+    },
+    "downloads": {
+        "title": "Uygulamayı edin",
+        "subtitle": "Android, iPhone/iPad, Windows, macOS ve web’de — ilk indirmenin ardından tamamen çevrim dışı çalışır.",
+        "eyebrow": "En son sürüm",
+        "supportedOn": "Şurada kullanılabilir",
+        "platformNames": {
+            "android": "Android",
+            "ios": "iPhone & iPad",
+            "windows": "Windows",
+            "mac": "macOS",
+            "web": "Web"
+        },
+        "platforms": {
+            "android": "Google Play’den indir",
+            "ios": "App Store’dan indir",
+            "windows": "Windows için indir",
+            "mac": "macOS için indir"
+        },
+        "storeLabels": {
+            "android": { "small": "BURADAN İNDİR", "big": "Google Play" },
+            "ios": { "small": "İndir:", "big": "App Store" },
+            "windows": { "small": "İndir:", "big": "Windows" },
+            "mac": { "small": "İndir:", "big": "macOS" }
+        },
+        "primaryCta": "İndir",
+        "winNote": "Windows 10 ve üzerinde çalışır",
+        "macNote": "Sıkıştırmayı açtıktan sonra sağ tıklayıp “Aç”ı seçin",
+        "webSoon": "Web — yakında"
+    },
+    "tech": {
+        "title": "Sağlam mühendislik, modüler mimari",
+        "subtitle": "Mushaflar, kâriler ve referansların hızla eklenebilmesi için servis tabanlı bir mimari üzerine kuruldu.",
+        "bullets": [
+            "İlk indirmenin ardından tamamen çevrim dışı çalışır",
+            "Mushaf başına 15 ayrı dizin servisi — kıraatlar arası taviz yok",
+            "Android, iOS ve web’de mevcut (PWA / masaüstü)",
+            "Birinci sınıf Arapça RTL ve tam İngilizce desteği",
+            "Bağımsız veri güncellemeleri (Kur’an metni, arama indeksi, farş, kelimeler)"
+        ]
+    },
+    "footer": {
+        "about": "Wursha QuranHolder, Wursha Digital Apps tarafından yayımlanır.",
+        "creditsTitle": "Katkı ve teşekkür",
+        "credits": [
+            { "label": "Yayıncı", "value": "Wursha Digital Apps" },
+            { "label": "Mühendislik ve tasarım", "value": "Müh. Kerim Mecdi" },
+            {
+                "label": "Hayrü Zâd Mushafları",
+                "value": "Şeyh Ali b. Abdülmün‘im Salih"
+            },
+            {
+                "label": "Tecvit Mushafı",
+                "value": "Dârü’l-Ma‘ârif (tüm hakları saklıdır)"
+            },
+            {
+                "label": "Farş ve kenarlar",
+                "value": "Müh. Muhammed Şelebî ve uzman ekip"
+            },
+            {
+                "label": "Tefsirler",
+                "value": "el-Bâhisü’l-Kur’ânî — Tefsir Araştırmaları Merkezi"
+            }
+        ],
+        "sourcesTitle": "Ses ve veri kaynakları",
+        "sources": [
+            "mp3quran.net — Kur’an ses kütüphanesi",
+            "everyayah.com",
+            "Kral Suud Üniversitesi Elektronik Mushaf",
+            "sound.quraat.info — kıraat sesleri",
+            "jamharat-uloom.org — kelime anlamları, sarf ve nahiv",
+            "Kur’an-ı Azîm — er-Râcihî Vakfı — vakıf verileri"
+        ],
+        "rights": "© Wursha Digital Apps — tüm hakları saklıdır."
+    },
+    "common": {
+        "placeholder": "Görsel yer tutucu",
+        "screenshot": "Ekran görüntüsü",
+        "comingSoon": "Yakında"
+    },
+    "apps": {
+        "madina": {
+            "name": "QuranHolder: Medine Mushafı",
+            "description": "Osmanî yazı — Hafs rivâyeti"
+        },
+        "shamarli": {
+            "name": "QuranHolder: Şemerlî Mushafı",
+            "description": "Geniş kenarlı Şemerlî yazısı"
+        },
+        "tajweed": {
+            "name": "QuranHolder: Tecvit Mushafı",
+            "description": "Renk kodlu tecvitle Hafs rivâyeti"
+        },
+        "warsh": {
+            "name": "Verş Mushafı",
+            "description": "Verş an Nâfi‘ — el-Ezrak tarîki"
+        },
+        "qalon": {
+            "name": "Kâlûn Mushafı",
+            "description": "Kâlûn an Nâfi‘ rivâyeti"
+        }
+    }
+}

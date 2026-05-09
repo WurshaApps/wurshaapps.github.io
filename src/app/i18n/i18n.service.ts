@@ -1,5 +1,6 @@
 import { Injectable, computed, effect, signal } from '@angular/core';
-import { TRANSLATIONS, type Dict, type Lang } from './translations';
+import { LOCALES, RTL_LANGS, getLocale, isLang, type Direction, type Lang } from './locales';
+import { TRANSLATIONS, type Dict } from './translations';
 
 const STORAGE_KEY = 'wursha-lang';
 
@@ -8,9 +9,10 @@ export class I18nService {
     private readonly _lang = signal<Lang>(this.detectInitial());
 
     readonly lang = this._lang.asReadonly();
-    readonly dir = computed<'rtl' | 'ltr'>(() => (this._lang() === 'ar' ? 'rtl' : 'ltr'));
+    readonly dir = computed<Direction>(() => (RTL_LANGS.has(this._lang()) ? 'rtl' : 'ltr'));
     readonly t = computed<Dict>(() => TRANSLATIONS[this._lang()]);
-    readonly other = computed<Lang>(() => (this._lang() === 'ar' ? 'en' : 'ar'));
+    readonly locales = LOCALES;
+    readonly currentLocale = computed(() => getLocale(this._lang()));
 
     constructor() {
         effect(() => {
@@ -35,14 +37,10 @@ export class I18nService {
         this._lang.set(lang);
     }
 
-    toggle() {
-        this._lang.set(this._lang() === 'ar' ? 'en' : 'ar');
-    }
-
     private detectInitial(): Lang {
         try {
-            const saved = localStorage?.getItem(STORAGE_KEY) as Lang | null;
-            if (saved === 'ar' || saved === 'en') return saved;
+            const saved = localStorage?.getItem(STORAGE_KEY);
+            if (isLang(saved)) return saved;
         } catch {
             /* ignore */
         }
@@ -50,8 +48,8 @@ export class I18nService {
             const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
             for (const l of langs) {
                 if (!l) continue;
-                if (l.toLowerCase().startsWith('ar')) return 'ar';
-                if (l.toLowerCase().startsWith('en')) return 'en';
+                const code = l.split('-')[0]?.toLowerCase();
+                if (isLang(code)) return code;
             }
         }
         return 'ar';
