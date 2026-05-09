@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
+import { Component, inject } from '@angular/core';
+import { I18nService } from '../i18n/i18n.service';
+import { PlaceholderComponent } from '../shared/placeholder.component';
 
 @Component({
     selector: 'app-hero',
-    standalone: true,
-    imports: [ButtonModule, RippleModule],
+    imports: [PlaceholderComponent],
     templateUrl: './hero.component.html',
     styleUrl: './hero.component.scss',
 })
-export class HeroComponent {}
+export class HeroComponent {
+    readonly i18n = inject(I18nService);
+}

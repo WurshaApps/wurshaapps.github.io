@@ -1,22 +1,35 @@
-<div class="grid grid-nogutter surface-section text-800">
-    <div class="col-12 md:col-6 p-6 text-center md:text-right flex align-items-center">
-        <section>
-            <span class="block text-6xl font-bold mb-1">Create the screens</span>
-            <div class="text-6xl text-primary font-bold mb-3">your visitors deserve to see</div>
-            <p class="mt-0 mb-4 text-700 line-height-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-            </p>
-
-            <p-button pRipple [raised]="true" label="Learn More" type="button" class="ml-3"></p-button>
-            <p-button pRipple [outlined]="true" label="Live Demo" type="button"></p-button>
-        </section>
+@let t = i18n.t();
+<section id="top" class="hero">
+    <div class="hero__bg" aria-hidden="true">
+        <!-- BACKGROUND IMAGE PLACEHOLDER: replace this div's background-image with a soft mushaf or geometric pattern artwork -->
     </div>
-    <div class="col-12 md:col-6 overflow-hidden">
-        <img
-            src="https://placehold.co/716x630/orange/white.png"
-            alt="Image"
-            class="md:mr-auto block md:h-full"
-            style="clip-path: polygon(0px 0px, 92% 0px, 100% 100%, 0px 100%)" />
+    <div class="container">
+        <div class="hero__copy">
+            <span class="hero__eyebrow">{{ t.hero.eyebrow }}</span>
+            <h1 class="hero__title">
+                {{ t.hero.title }}
+                <span class="hero__highlight">{{ t.hero.titleHighlight }}</span>
+            </h1>
+            <p class="hero__subtitle">{{ t.hero.subtitle }}</p>
+            <div class="hero__cta">
+                <a href="#downloads" class="btn btn--primary">{{ t.hero.ctaPrimary }}</a>
+                <a href="#features" class="btn btn--ghost">{{ t.hero.ctaSecondary }}</a>
+            </div>
+            <div class="hero__chips">
+                <span class="chip">{{ t.stats.editions }} {{ t.stats.editionsLabel }}</span>
+                <span class="chip">{{ t.stats.reciters }} {{ t.stats.recitersLabel }}</span>
+                <span class="chip">{{ t.stats.books }} {{ t.stats.booksLabel }}</span>
+            </div>
+        </div>
+        <div class="hero__visual">
+            <app-placeholder
+                slot="hero-phone"
+                kind="phone"
+                [label]="t.hero.screenshotAlt" />
+            <div class="hero__visual-secondary">
+                <app-placeholder slot="hero-feature-a" kind="square" label="Feature snapshot" />
+                <app-placeholder slot="hero-feature-b" kind="square" label="Feature snapshot" />
+            </div>
+        </div>
     </div>
-</div>
+</section>

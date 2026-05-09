@@ -1,0 +1,625 @@
+{
+    "$schema": "./schemas/content.schema.json",
+    "meta": {
+        "title": "Wursha QuranHolder — Qur’onni o‘qish, tilovat qilish, o‘rganish va yodlash",
+        "description": "15 ta sahih Mushaf nashri, 68 qori, 63 manba kitob va tarjima, yonma-yon qiroatlar va har bir so‘z bo‘yicha grammatik tahlil — barchasi bitta ilovada."
+    },
+    "nav": {
+        "features": "Imkoniyatlar",
+        "editions": "Mushaflar",
+        "reciters": "Qorilar",
+        "books": "Kitoblar va tafsirlar",
+        "downloads": "Yuklab olish",
+        "switchLang": "Tilni almashtirish"
+    },
+    "hero": {
+        "eyebrow": "Wursha QuranHolder — Wursha Digital Apps tomonidan",
+        "title": "Qur’on uchun to‘liq hamroh",
+        "titleHighlight": "o‘qish, tilovat qilish, o‘rganish va yodlash.",
+        "subtitle": "15 ta sahih Mushaf nashri, 68 ta jahon darajasidagi qori, 15+ klassik va zamonaviy tafsir, yonma-yon qiroatlar va har bir so‘z bo‘yicha sarf-i’rob tahlili — birinchi yuklashdan so‘ng to‘liq oflayn ishlaydi.",
+        "ctaPrimary": "Ilovani olish",
+        "ctaSecondary": "Imkoniyatlarni ko‘rish",
+        "screenshotAlt": "Wursha QuranHolder ekran tasviri"
+    },
+    "stats": {
+        "editions": "5",
+        "editionsLabel": "Sahih Mushaf nashri",
+        "reciters": "68",
+        "recitersLabel": "Tanlangan qori",
+        "books": "63",
+        "booksLabel": "Kitob, tafsir, tarjima",
+        "features": "78+",
+        "featuresLabel": "Foydalanuvchi imkoniyati"
+    },
+    "audiences": {
+        "title": "To‘rt xil o‘quvchi uchun mo‘ljallangan",
+        "subtitle": "Har bir auditoriyaga chuqur xizmat qiladigan bitta ilova — kompromisssiz.",
+        "items": [
+            {
+                "title": "Kunlik o‘quvchi",
+                "body": "To‘liq sozlanadigan, chiroyli raqamli Mushaf — ranglar, shriftlar, joylashuv va kunlik vird uchun yumshoq sensorli imo-ishoralar."
+            },
+            {
+                "title": "Hofizlar",
+                "body": "Bir nechta xatm, joyni avtomatik saqlash, oyatlarni takrorlash, oyatlar orasidagi sozlanadigan tanaffus va aniq takrorlash vositalari."
+            },
+            {
+                "title": "Qur’on ilmlari talabalari",
+                "body": "O‘nta qiroatning farshi, i’rob, sarf, asbabu-n-nuzul, vaqf belgilari va 22+ ixtisoslashtirilgan qiroat manbalari."
+            },
+            {
+                "title": "Arabchani bilmaydiganlar",
+                "body": "14+ obro‘li tarjima va chuqurroq tushunish uchun Sahih International tomonidan tilovat qilingan inglizcha tarjima."
+            }
+        ]
+    },
+    "features": {
+        "title": "Bitta ilovada son-sanoqsiz imkoniyatlar",
+        "subtitle": "11 toifa bo‘yicha 78+ puxta ishlangan imkoniyat — o‘qish, tinglash, o‘rganish va yodlash uchun.",
+        "categories": [
+            {
+                "id": "reading",
+                "title": "O‘qish va ko‘rinish",
+                "count": 8,
+                "blurb": "Bir nechta joylashuv, sozlanadigan mavzular, yetti shrift va kun/tun palitralari bilan to‘liq ekran Mushaf.",
+                "highlights": [
+                    "Vertikal va gorizontal joylashuvlar",
+                    "Yorug‘, tungi va avtomatik mavzular",
+                    "7 shrift (Amiriy, Usmoniy, Naskh, Ruq‘a, Shahrazoda…)",
+                    "O‘qish davomida ekran yoniq tursin"
+                ]
+            },
+            {
+                "id": "navigation",
+                "title": "Navigatsiya",
+                "count": 6,
+                "blurb": "Istalgan suraga, juzga, hizbga yoki sahifaga — nomi, raqami yoki sahifa bo‘yicha o‘ting.",
+                "highlights": [
+                    "Qidiruvli barcha 114 sura",
+                    "30 juz va 120 hizb",
+                    "Istalgan sahifaga to‘g‘ridan-to‘g‘ri o‘tish (1–604)",
+                    "Sozlanadigan avtosrol"
+                ]
+            },
+            {
+                "id": "tracks",
+                "title": "Xatmlar va taraqqiyot",
+                "count": 3,
+                "blurb": "Bir nechta xatm yarating (kunlik vird, hifz, qiyom, mukarrar) va avtomatik davom ettiring.",
+                "highlights": [
+                    "Maxsus rangli bir nechta xatm",
+                    "Har xatm uchun oxirgi sahifani avtomatik saqlash",
+                    "Vizual taraqqiyot ko‘rsatkichi"
+                ]
+            },
+            {
+                "id": "bookmarks",
+                "title": "Xatcho‘plar va eslatmalar",
+                "count": 4,
+                "blurb": "Sahifa va oyat xatcho‘plari, har bir xatmga bog‘langan shaxsiy eslatmalar, eksport va ulashish.",
+                "highlights": [
+                    "Bitta tegish bilan sahifa xatcho‘pi",
+                    "Chuqur o‘rganish uchun oyat xatcho‘plari",
+                    "Xatmga bog‘langan shaxsiy eslatmalar",
+                    "Xatcho‘p va eslatmalarni matn sifatida eksport qilish"
+                ]
+            },
+            {
+                "id": "audio",
+                "title": "Audio va tilovat",
+                "count": 10,
+                "blurb": "68 ta qorini tinglang, istalgan oraliqni takrorlang, tezlikni boshqaring va sura, juz, sahifa yoki vaqt bo‘yicha to‘xtating.",
+                "highlights": [
+                    "Oyat, sura yoki maxsus oraliqni takrorlash",
+                    "Oyatlar orasidagi sozlanadigan tanaffus",
+                    "Tezlik (1×, 1.25×, 1.5×…)",
+                    "Avtomatik ajratish va kuzatib boruvchi srol",
+                    "Oflayn tinglash uchun tilovatlarni yuklash",
+                    "Sura, sahifa, hizb, juz yoki vaqt bo‘yicha to‘xtatish"
+                ]
+            },
+            {
+                "id": "search",
+                "title": "Qidiruv va manbalar",
+                "count": 7,
+                "blurb": "To‘rtta rejimda to‘liq matn qidiruvi: oddiy, harakatli, Usmoniy yoki o‘zak asosida.",
+                "highlights": [
+                    "Shablon qidiruvi (wildcard / regex)",
+                    "Butun so‘z mosligi",
+                    "Faqat joriy surada qidirish",
+                    "To‘liq oyat tafsilotlari sahifasi"
+                ]
+            },
+            {
+                "id": "sciences",
+                "title": "Qur’on ilmlari",
+                "count": 10,
+                "blurb": "So‘z darajasida sarf va i’rob, 15+ tafsir, rang kodli qiroat farshi va asbabu-n-nuzul.",
+                "highlights": [
+                    "So‘z sahifasi (ma’no, sarf, i’rob)",
+                    "O‘nta qoridan qiroatlar",
+                    "Asbabu-n-nuzul (Vohidiy va boshqalar)",
+                    "Vaqf va ibtido belgilari",
+                    "Rang kodli farsh qoidalari"
+                ]
+            },
+            {
+                "id": "customization",
+                "title": "Sozlash va parametrlar",
+                "count": 10,
+                "blurb": "Mushaflar orasida o‘ting, imo-ishoralarni sozlang, ekran yo‘nalishini qulflang va kompyuterda klaviatura va sichqonchadan foydalaning.",
+                "highlights": [
+                    "Rivoyat bo‘yicha filtrlangan qorilar",
+                    "Har bir imo-ishora uchun yoqish/o‘chirish",
+                    "Sichqoncha g‘ildiragi va strelkalar qo‘llab-quvvatlanishi",
+                    "Arab va ingliz tillarida interfeys"
+                ]
+            },
+            {
+                "id": "tools",
+                "title": "Vositalar va qo‘shimchalar",
+                "count": 9,
+                "blurb": "Tanlangan duolar, parametrlarni import/eksport, ma’lumot yangilanishlari, ulashish va bitta tegish bilan nusxalash.",
+                "highlights": [
+                    "Qur’on va Sunnatdan duolar",
+                    "Parametr va xatcho‘plar uchun JSON import/eksport",
+                    "Oyat va eslatmalarni ulashish",
+                    "Interaktiv salomlashish ekskursiyasi"
+                ]
+            },
+            {
+                "id": "gestures",
+                "title": "Imo-ishoralar va ta’sir",
+                "count": 5,
+                "blurb": "Sahifani o‘girish uchun suring, kattalashtirish uchun siqing, hoshiya uchun uzoq bosing, interfeysni yashirish uchun markazga teging.",
+                "highlights": [
+                    "Sahifalar orasida chap/o‘ng surilish",
+                    "Siqib kattalashtirish",
+                    "Hoshiya yozuvlari uchun uzoq bosish",
+                    "Markazga tegish panellarni yashiradi/ko‘rsatadi"
+                ]
+            },
+            {
+                "id": "editions",
+                "title": "Mushafga xos imkoniyatlar",
+                "count": 4,
+                "blurb": "Tajvid ranglash, so‘z koordinatalari va qiroatlar orasidagi qiyosiy hoshiyalar — mushafga qarab.",
+                "highlights": [
+                    "Madina Mushafi (boshlang‘ich Usmoniy)",
+                    "Rang qoidalari bilan Tajvid Mushafi",
+                    "Keng hoshiyali Shamarli Mushafi",
+                    "Hafs, Varsh, Qolun, Shu’ba qo‘llab-quvvatlanishi…"
+                ]
+            }
+        ]
+    },
+    "editions": {
+        "title": "5 ta sahih Mushaf nashri",
+        "subtitle": "Ikki asosiy to‘plam: qiroatlar kengligi uchun “Hamil al-Quran” va hofizlar uchun “Khair Zad”. Har biri farsh, rang ko‘rsatkichi va qiyosiy hoshiyalar bilan keladi.",
+        "collections": [
+            {
+                "name": "Hamil al-Quran",
+                "description": "Asosiy qiroatlar va rivoyatlarni qamrab oluvchi, Usmoniy yozuvdagi keng to‘plam.",
+                "items": [
+                    "Madina",
+                    "Shamarli",
+                    "Tajvid"
+                ]
+            },
+            {
+                "name": "Khair Zad",
+                "description": "Tuzilgan pedagogik yondashuvga ega bo‘lgan hofizlarga yo‘naltirilgan seriya.",
+                "items": [
+                    "Varsh",
+                    "Qolun"
+                ]
+            }
+        ],
+        "list": [
+            {
+                "code": "Madina",
+                "name": "Madina Mushafi",
+                "note": "So‘z koordinatalari bilan Usmoniy yozuv. Qiyoslar uchun asos.",
+                "isDefault": true
+            },
+            {
+                "code": "Shmrly",
+                "name": "Shamarli Mushafi",
+                "note": "Keng hoshiyali Shamarli yozuvi."
+            },
+            {
+                "code": "Tjwid",
+                "name": "Tajvid Mushafi",
+                "note": "Tajvid qoidalarini harf-harf ranglash (Dar Al-Ma’arifah)."
+            },
+            {
+                "code": "Warsh",
+                "name": "Varsh Mushafi",
+                "note": "Varsh — Nofe’dan, Al-Azraq yo‘li."
+            },
+            {
+                "code": "Qalon",
+                "name": "Qolun Mushafi",
+                "note": "Qolun — Nofe’dan rivoyat."
+            }
+        ],
+        "crossNote": "Mushaflarning aksariyati rang ko‘rsatkichlarini, qiroatlar orasidagi qiyosiy hoshiyalarni, vaqf belgilarini va manhaj ko‘rinishini qo‘llab-quvvatlaydi."
+    },
+    "reciters": {
+        "title": "Rivoyat va qiroatlar bo‘yicha 68 ta qori",
+        "subtitle": "Har bir qori muayyan rivoyat, nashr (Murattal, Mujavvad, Mu’allim, Radio, To‘liq) va yuqori sifatli CDN bilan jamlangan. Maxsus qori URL’ini ham qo‘shishingiz mumkin.",
+        "riwayatTitle": "Qamrab olingan rivoyat va qiroatlar",
+        "riwayat": [
+            {
+                "name": "Hafs — Osimdan",
+                "sub": "Eng keng tarqalgan"
+            },
+            {
+                "name": "Varsh — Nofe’dan"
+            },
+            {
+                "name": "Qolun — Nofe’dan"
+            },
+            {
+                "name": "Shu’ba — Osimdan"
+            },
+            {
+                "name": "Ad-Duriy — Abu Amrdan"
+            },
+            {
+                "name": "As-Susiy — Abu Amrdan"
+            },
+            {
+                "name": "Al-Asbahoniy"
+            },
+            {
+                "name": "Hamza rivoyatlari"
+            },
+            {
+                "name": "Al-Kubro va As-Sug‘ro",
+                "sub": "O‘nta qiroat"
+            },
+            {
+                "name": "Qolun va Varsh jihatlari"
+            }
+        ],
+        "sourcesTitle": "Audio manbalari",
+        "sources": [
+            {
+                "name": "mp3quran.net",
+                "sub": "Asosiy CDN — 192 kbps gacha"
+            },
+            {
+                "name": "everyayah.com",
+                "sub": "Oyat-oyat alternativ manba"
+            },
+            {
+                "name": "quran.ksu.edu.sa",
+                "sub": "King Saud universiteti"
+            },
+            {
+                "name": "sound.quraat.info",
+                "sub": "Klassik va qiroatga ixtisoslashtirilgan kutubxona"
+            },
+            {
+                "name": "wursha-backup.github.io",
+                "sub": "Husariy uchun zaxira"
+            }
+        ],
+        "featuredTitle": "Tanlangan qorilar",
+        "featured": [
+            {
+                "name": "Mahmud Xolil Al-Husariy",
+                "riwaya": "Hafs — Osimdan",
+                "version": "Murattal / Mujavvad / Radio / Mu’allim"
+            },
+            {
+                "name": "Muhammad Siddiq Al-Minshoviy",
+                "riwaya": "Hafs — Osimdan",
+                "version": "Murattal / Mujavvad / Mu’allim"
+            },
+            {
+                "name": "Abdulbosit Abdussamad",
+                "riwaya": "Hafs / Varsh",
+                "version": "Murattal / Mujavvad"
+            },
+            {
+                "name": "Mishari Roshid Al-Afasiy",
+                "riwaya": "Hafs — Osimdan",
+                "version": "Murattal"
+            },
+            {
+                "name": "Yosir Ad-Dosariy",
+                "riwaya": "Hafs — Osimdan",
+                "version": "Murattal"
+            },
+            {
+                "name": "Saud Ash-Shurayim",
+                "riwaya": "Hafs — Osimdan",
+                "version": "Murattal"
+            },
+            {
+                "name": "Ahmad Talba",
+                "riwaya": "Al-Kubro",
+                "version": "To‘liq"
+            },
+            {
+                "name": "Ibrohim Al-Mag‘ribiy",
+                "riwaya": "Al-Asbahoniy",
+                "version": "To‘liq"
+            }
+        ],
+        "downloadNote": "To‘liq tilovatlarni oflayn tinglash uchun yuklang — taraqqiyot, tezlik va xotira ko‘rsatiladi."
+    },
+    "books": {
+        "title": "63 kitob va manba",
+        "subtitle": "Oyat paneli tafsirlar, Qur’on ilmlari, qiroatlar va tarjimalarni bir joyda jamlaydi.",
+        "categories": [
+            {
+                "key": "tafseer",
+                "title": "Tafsir",
+                "count": "17 asar",
+                "samples": [
+                    "Ibn Kasir",
+                    "At-Tabariy",
+                    "Al-Qurtubiy",
+                    "As-Sa’diy",
+                    "Al-Bag‘aviy",
+                    "Al-Muyassar",
+                    "Al-Muxtasar",
+                    "At-Tahrir vat-Tanvir",
+                    "Jaloloyn",
+                    "Zod Al-Masir (Ibn al-Javziy)",
+                    "Al-Muharrar Al-Vajiz (Ibn ‘Atiya)",
+                    "An-Nasafiy",
+                    "Nazm Ad-Durar (Al-Biqo’iy)",
+                    "Adva’ Al-Bayon (Ash-Shinqitiy)"
+                ]
+            },
+            {
+                "key": "sciences",
+                "title": "Qur’on ilmlari",
+                "count": "10 asar",
+                "samples": [
+                    "Asbab An-Nuzul (Al-Vohidiy)",
+                    "I’robu’l-Qur’an (Ad-Da’os)",
+                    "Al-Jadval (i’rob va sarfda)",
+                    "Ad-Durr Al-Masun (As-Samin Al-Halabiy)",
+                    "Al-Muyassar fi-l-G‘arib",
+                    "An-Nashr fi-l-Qiroot al-‘Ashr (Ibn Al-Jazariy)",
+                    "Al-Vaqf va Al-Ibtido’",
+                    "Mushtaba’otu Al-Alfoz"
+                ]
+            },
+            {
+                "key": "qiraat",
+                "title": "Qiroatlar",
+                "count": "22 asar",
+                "samples": [
+                    "Qolun rivoyati — Nofe’dan",
+                    "Varsh rivoyati — Nofe’dan",
+                    "Ibn Kasir qiroati",
+                    "Abu Amr qiroati",
+                    "Ibn Omir qiroati",
+                    "Shu’ba rivoyati — Osimdan",
+                    "Hamza qiroati",
+                    "Kisoiy qiroati",
+                    "Abu Ja’far qiroati",
+                    "Ya’qub qiroati",
+                    "Xalaf al-‘Oshir qiroati",
+                    "Al-‘Ashr As-Sug‘ro",
+                    "Tayseer Al-‘Ashr",
+                    "Shavohid Tayyibatu’n-Nashr"
+                ]
+            },
+            {
+                "key": "translations",
+                "title": "Tarjimalar",
+                "count": "14 til",
+                "samples": [
+                    "Inglizcha — Hilali & Khan",
+                    "Saheeh International",
+                    "Pickthall",
+                    "Fransuzcha",
+                    "Nemischa (Abu Rida)",
+                    "Ruscha",
+                    "Turkcha",
+                    "Indoneziyacha",
+                    "Malaycha",
+                    "Urducha",
+                    "Forscha",
+                    "Gollandcha",
+                    "Ozarbayjoncha",
+                    "Fonetik transliteratsiya"
+                ]
+            }
+        ]
+    },
+    "sciences": {
+        "title": "So‘z va oyatni chuqur o‘rganish",
+        "subtitle": "Istalgan so‘zga teging va uning sahifasini oching — beshta tab ma’no, sarf, i’rob, qiroat va tarjimalarni ochib beradi.",
+        "items": [
+            {
+                "title": "Ma’no",
+                "body": "Qur’on lug‘ati — kam uchraydigan so‘zlarga qisqa va aniq ta’riflar."
+            },
+            {
+                "title": "Sarf",
+                "body": "So‘z tuzilishi, o‘zagi va undan kelib chiqqan shakllarni ochuvchi batafsil sarf tahlili."
+            },
+            {
+                "title": "I’rob",
+                "body": "Maxsus manbalardan oyat va so‘zning aniq grammatik tahlili."
+            },
+            {
+                "title": "Qiroatlar",
+                "body": "O‘nta qoridan turli o‘qishlar va rang kodli farsh izohlari."
+            },
+            {
+                "title": "Tarjimalar",
+                "body": "Dunyoning yetakchi tillarida 14+ obro‘li tarjima."
+            }
+        ]
+    },
+    "gestures": {
+        "title": "Tabiiy va moslashuvchan sensorli boshqaruv",
+        "subtitle": "Har bir imo-ishora yoqilishi yoki o‘chirilishi mumkin — ko‘pchiligi qayta tayinlanadi.",
+        "items": [
+            {
+                "gesture": "Chap/o‘ng surilish",
+                "action": "Sahifani o‘girish"
+            },
+            {
+                "gesture": "Chetda yuqoriga/pastga surilish",
+                "action": "Ekran yorqinligi"
+            },
+            {
+                "gesture": "Siqish",
+                "action": "Sahifani kattalashtirish"
+            },
+            {
+                "gesture": "Oyatga tegish",
+                "action": "Oyat sahifasini ochish"
+            },
+            {
+                "gesture": "Oyatga uzoq bosish",
+                "action": "Hoshiya (hashiya) ko‘rsatish"
+            },
+            {
+                "gesture": "So‘zga tegish",
+                "action": "So‘z sahifasini ochish"
+            },
+            {
+                "gesture": "Markazga tegish",
+                "action": "Panellarni yashirish/ko‘rsatish"
+            },
+            {
+                "gesture": "Markazdan surilish",
+                "action": "Sura indeksi / qidiruv"
+            },
+            {
+                "gesture": "Sichqoncha g‘ildiragi va strelkalar",
+                "action": "Kompyuter va vebda navigatsiya"
+            }
+        ]
+    },
+    "downloads": {
+        "title": "Ilovani yuklab oling",
+        "subtitle": "Android, iPhone/iPad, Windows, macOS va vebda mavjud — birinchi yuklashdan so‘ng to‘liq oflayn ishlaydi.",
+        "eyebrow": "Eng so‘nggi versiya",
+        "supportedOn": "Quyidagi platformalarda mavjud",
+        "platformNames": {
+            "android": "Android",
+            "ios": "iPhone & iPad",
+            "windows": "Windows",
+            "mac": "macOS",
+            "web": "Veb"
+        },
+        "platforms": {
+            "android": "Google Play’dan yuklab oling",
+            "ios": "App Store’dan yuklab oling",
+            "windows": "Windows uchun yuklab oling",
+            "mac": "macOS uchun yuklab oling"
+        },
+        "storeLabels": {
+            "android": {
+                "small": "OLISH MUMKIN",
+                "big": "Google Play"
+            },
+            "ios": {
+                "small": "Yuklab olish:",
+                "big": "App Store"
+            },
+            "windows": {
+                "small": "Yuklab olish:",
+                "big": "Windows"
+            },
+            "mac": {
+                "small": "Yuklab olish:",
+                "big": "macOS"
+            }
+        },
+        "primaryCta": "Yuklab olish",
+        "winNote": "Windows 10 va undan yuqori versiyalarda ishlaydi",
+        "macNote": "Arxivdan chiqargach, o‘ng tugmani bosib “Ochish”ni tanlang",
+        "webSoon": "Veb — yaqinda"
+    },
+    "tech": {
+        "title": "Mustahkam muhandislik, modulli arxitektura",
+        "subtitle": "Mushaflar, qorilar va manbalarni tezda qo‘shish imkonini beruvchi xizmatga asoslangan arxitektura.",
+        "bullets": [
+            "Birinchi yuklashdan so‘ng to‘liq oflayn ishlaydi",
+            "Har bir mushaf uchun 15 ta alohida indeks xizmati — qiroatlar orasida murosasiz",
+            "Android, iOS va vebda mavjud (PWA / kompyuter)",
+            "Birinchi darajali arabcha RTL va to‘liq inglizcha qo‘llab-quvvatlash",
+            "Mustaqil ma’lumot yangilanishlari (Qur’on matni, qidiruv indeksi, farsh, so‘zlar)"
+        ]
+    },
+    "footer": {
+        "about": "Wursha QuranHolder Wursha Digital Apps tomonidan nashr etiladi.",
+        "creditsTitle": "Mualliflar va minnatdorchiliklar",
+        "credits": [
+            {
+                "label": "Nashriyot",
+                "value": "Wursha Digital Apps"
+            },
+            {
+                "label": "Muhandislik va dizayn",
+                "value": "Muh. Karim Majdiy"
+            },
+            {
+                "label": "Khair Zad mushaflari",
+                "value": "Shayx Ali ibn Abdulmun’im Solih"
+            },
+            {
+                "label": "Tajvid Mushafi",
+                "value": "Dar Al-Ma’arifah (barcha huquqlar himoyalangan)"
+            },
+            {
+                "label": "Farsh va hoshiyalar",
+                "value": "Muh. Muhammad Shalabi va ixtisos guruhi"
+            },
+            {
+                "label": "Tafsirlar",
+                "value": "Al-Bahis Al-Qur’oni — Qur’on ilmlari markazi"
+            }
+        ],
+        "sourcesTitle": "Audio va ma’lumot manbalari",
+        "sources": [
+            "mp3quran.net — Qur’on audio kutubxonasi",
+            "everyayah.com",
+            "King Saud universiteti elektron Mushaf",
+            "sound.quraat.info — qiroat audio",
+            "jamharat-uloom.org — so‘z ma’nolari, sarf va grammatika",
+            "Al-Qur’on Al-Adim — Ar-Rojihiy vaqfi — vaqf ma’lumotlari"
+        ],
+        "rights": "© Wursha Digital Apps — barcha huquqlar himoyalangan."
+    },
+    "common": {
+        "placeholder": "Rasm uchun joy",
+        "screenshot": "Ekran tasviri",
+        "comingSoon": "Yaqinda"
+    },
+    "apps": {
+        "madina": {
+            "name": "QuranHolder: Madina Mushafi",
+            "description": "Usmoniy yozuv — Hafs rivoyati"
+        },
+        "shamarli": {
+            "name": "QuranHolder: Shamarli Mushafi",
+            "description": "Keng hoshiyali Shamarli yozuvi"
+        },
+        "tajweed": {
+            "name": "QuranHolder: Tajvid Mushafi",
+            "description": "Rang kodli tajvid bilan Hafs rivoyati"
+        },
+        "warsh": {
+            "name": "Varsh Mushafi",
+            "description": "Varsh — Nofe’dan, Al-Azraq yo‘li"
+        },
+        "qalon": {
+            "name": "Qolun Mushafi",
+            "description": "Qolun — Nofe’dan rivoyat"
+        }
+    }
+}

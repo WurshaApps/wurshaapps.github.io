@@ -1,0 +1,625 @@
+{
+    "$schema": "./schemas/content.schema.json",
+    "meta": {
+        "title": "Wursha QuranHolder — Read, Recite, Study, and Memorize the Quran",
+        "description": "15 authentic Mushaf editions, 68 reciters, 63 reference books and translations, side-by-side qira’at, and word-level grammatical analysis — all in one app."
+    },
+    "nav": {
+        "features": "Features",
+        "editions": "Editions",
+        "reciters": "Reciters",
+        "books": "Books & Tafseers",
+        "downloads": "Download",
+        "switchLang": "العربية"
+    },
+    "hero": {
+        "eyebrow": "Wursha QuranHolder — by Wursha Digital Apps",
+        "title": "A complete companion for the Quran",
+        "titleHighlight": "reading, reciting, studying, and memorizing.",
+        "subtitle": "5 authentic Mushaf editions, 68 world-class reciters, 15+ classical and modern tafseers, side-by-side qira’at, and word-by-word morphological and grammatical analysis — fully offline-capable after the initial download.",
+        "ctaPrimary": "Get the app",
+        "ctaSecondary": "Explore features",
+        "screenshotAlt": "Screenshot of Wursha QuranHolder"
+    },
+    "stats": {
+        "editions": "5",
+        "editionsLabel": "Authentic Mushaf editions",
+        "reciters": "68",
+        "recitersLabel": "Curated reciters",
+        "books": "63",
+        "booksLabel": "Books, tafseers, translations",
+        "features": "78+",
+        "featuresLabel": "User-facing features"
+    },
+    "audiences": {
+        "title": "Built for four kinds of readers",
+        "subtitle": "A single app that goes deep for each audience — without compromise.",
+        "items": [
+            {
+                "title": "The daily reader",
+                "body": "A beautiful, fully customizable digital mushaf — colors, fonts, layout, and gentle touch gestures for the daily wird."
+            },
+            {
+                "title": "Memorizers (huffaz)",
+                "body": "Multiple tracks (khatmahs), automatic position saving, verse repetition, configurable verse pauses, and precise review tools."
+            },
+            {
+                "title": "Students of Quranic sciences",
+                "body": "Farsh of the ten qira’at, i’rab, sarf, asbab al-nuzul, waqf markers, and 22+ specialized qira’at references."
+            },
+            {
+                "title": "Non-Arabic speakers",
+                "body": "14+ authoritative translations, plus a recited English translation by Sahih International for deeper understanding."
+            }
+        ]
+    },
+    "features": {
+        "title": "Countless features in one app",
+        "subtitle": "78+ thoughtful features across 11 categories — for reading, listening, study, and memorization.",
+        "categories": [
+            {
+                "id": "reading",
+                "title": "Reading & display",
+                "count": 8,
+                "blurb": "Full-screen mushaf with multiple layouts, custom themes, seven font families, and configurable day and night palettes.",
+                "highlights": [
+                    "Portrait and landscape layouts",
+                    "Light, night, and auto themes",
+                    "7 fonts (Amiri, Uthmani, Naskh, Ruqaa, Scheherazade…)",
+                    "Keep screen on during reading"
+                ]
+            },
+            {
+                "id": "navigation",
+                "title": "Navigation",
+                "count": 6,
+                "blurb": "Jump to any sura, juz’, rub’, or page — by name, number, or page.",
+                "highlights": [
+                    "All 114 suras with search",
+                    "All 30 juz’ and 120 quarters",
+                    "Direct page jump (1–604)",
+                    "Configurable auto-scroll"
+                ]
+            },
+            {
+                "id": "tracks",
+                "title": "Tracks & progress",
+                "count": 3,
+                "blurb": "Create multiple reading tracks (daily wird, memorization, qiyam, review) and resume automatically.",
+                "highlights": [
+                    "Multiple tracks with custom colors",
+                    "Auto-save last page per track",
+                    "Visual progress indicator"
+                ]
+            },
+            {
+                "id": "bookmarks",
+                "title": "Bookmarks & notes",
+                "count": 4,
+                "blurb": "Page and verse bookmarks, personal notes scoped to each track, plus export and share.",
+                "highlights": [
+                    "One-tap page bookmarks",
+                    "Per-verse bookmarks for deep study",
+                    "Track-scoped personal notes",
+                    "Export bookmarks and notes as text"
+                ]
+            },
+            {
+                "id": "audio",
+                "title": "Audio & recitation",
+                "count": 10,
+                "blurb": "Listen to 68 reciters, repeat any range, control speed, and stop on sura, juz’, page, or after a duration.",
+                "highlights": [
+                    "Repeat verse, sura, or custom range",
+                    "Configurable pause between verses",
+                    "Playback speed (1×, 1.25×, 1.5×…)",
+                    "Auto-highlight and follow-along scroll",
+                    "Download recitations for offline listening",
+                    "Stop on sura, page, quarter, hizb, juz’, or duration"
+                ]
+            },
+            {
+                "id": "search",
+                "title": "Search & reference",
+                "count": 7,
+                "blurb": "Full-text search across four modes: plain, with diacritics, Uthmani, and root-based.",
+                "highlights": [
+                    "Pattern search (wildcard / regex)",
+                    "Whole-word matching",
+                    "Restrict to current sura",
+                    "Full verse details page"
+                ]
+            },
+            {
+                "id": "sciences",
+                "title": "Quranic sciences",
+                "count": 10,
+                "blurb": "Word-level morphology and grammar, 15+ tafseers, color-coded farsh of qira’at, and asbab al-nuzul.",
+                "highlights": [
+                    "Word page (meaning, sarf, i’rab)",
+                    "Readings from the ten reciters",
+                    "Asbab al-nuzul (Al-Wahidi & others)",
+                    "Waqf and ibtida’ markers",
+                    "Color-coded farsh rules"
+                ]
+            },
+            {
+                "id": "customization",
+                "title": "Customization & settings",
+                "count": 10,
+                "blurb": "Switch among 15 editions, configure gestures, lock orientation, and use keyboard and mouse on desktop.",
+                "highlights": [
+                    "Reciters filtered per riwaya",
+                    "Per-gesture toggles",
+                    "Mouse wheel & arrow-key support",
+                    "Arabic and English UI"
+                ]
+            },
+            {
+                "id": "tools",
+                "title": "Tools & extras",
+                "count": 9,
+                "blurb": "Curated supplications, settings import/export, data updates, share, and one-tap copy.",
+                "highlights": [
+                    "Du’a from Quran and Sunna",
+                    "JSON import/export of settings & bookmarks",
+                    "Share verses and notes",
+                    "Interactive onboarding tour"
+                ]
+            },
+            {
+                "id": "gestures",
+                "title": "Gestures & interaction",
+                "count": 5,
+                "blurb": "Swipe to turn, pinch to zoom, long-press for margins, and tap center to hide UI.",
+                "highlights": [
+                    "Swipe left/right between pages",
+                    "Pinch-to-zoom",
+                    "Long-press to view margin notes",
+                    "Center tap toggles UI bars"
+                ]
+            },
+            {
+                "id": "editions",
+                "title": "Edition-specific features",
+                "count": 4,
+                "blurb": "Tajweed coloring, word coordinates, and comparative margins between qira’at — per edition.",
+                "highlights": [
+                    "Madina mushaf (default Uthmani)",
+                    "Tajweed mushaf with color rules",
+                    "Shamarli mushaf with wide margins",
+                    "Hafs, Warsh, Qalon, Sho’ba support…"
+                ]
+            }
+        ]
+    },
+    "editions": {
+        "title": "5 authentic Mushaf editions",
+        "subtitle": "Two main collections: “Hamil al-Quran” for breadth across qira’at, and “Khair Zad” for memorizers. Each ships with farsh, color legends, and comparative margins.",
+        "collections": [
+            {
+                "name": "Hamil al-Quran",
+                "description": "A wide collection in Uthmani script covering major qira’at and riwayat.",
+                "items": [
+                    "Madina",
+                    "Shamarli",
+                    "Tajweed"
+                ]
+            },
+            {
+                "name": "Khair Zad",
+                "description": "A memorizer-focused series with a structured pedagogical approach.",
+                "items": [
+                    "Warsh",
+                    "Qalon"
+                ]
+            }
+        ],
+        "list": [
+            {
+                "code": "Madina",
+                "name": "Madina Mushaf",
+                "note": "Uthmani script with word coordinates. Baseline for comparisons.",
+                "isDefault": true
+            },
+            {
+                "code": "Shmrly",
+                "name": "Shamarli Mushaf",
+                "note": "Shamarli script with wide hamish margins."
+            },
+            {
+                "code": "Tjwid",
+                "name": "Tajweed Mushaf",
+                "note": "Letter-level color coding of tajweed rules (Dar Al-Ma’arifah)."
+            },
+            {
+                "code": "Warsh",
+                "name": "Warsh Mushaf",
+                "note": "Warsh an Nafi’ — via Al-Azraq."
+            },
+            {
+                "code": "Qalon",
+                "name": "Qalon Mushaf",
+                "note": "Qalon an Nafi’ riwaya."
+            }
+        ],
+        "crossNote": "Most editions support color legends, comparative margins between qira’at, waqf markers, and the manhaj curriculum view."
+    },
+    "reciters": {
+        "title": "68 reciters across riwayat and qira’at",
+        "subtitle": "Each reciter is paired with a riwaya, an edition (Murattal, Mujawwad, Teacher, Broadcast, Complete), and a high-quality CDN. You can also add a custom reciter URL.",
+        "riwayatTitle": "Riwayat & Qira’at covered",
+        "riwayat": [
+            {
+                "name": "Hafs an Asim",
+                "sub": "Most common"
+            },
+            {
+                "name": "Warsh an Nafi’"
+            },
+            {
+                "name": "Qalon an Nafi’"
+            },
+            {
+                "name": "Sho’ba an Asim"
+            },
+            {
+                "name": "Ad-Duri an Abi Amr"
+            },
+            {
+                "name": "As-Susi an Abi Amr"
+            },
+            {
+                "name": "Al-Asbahani"
+            },
+            {
+                "name": "Hamza’s narrations"
+            },
+            {
+                "name": "Al-Kobra & As-Soghra",
+                "sub": "The ten qira’at"
+            },
+            {
+                "name": "Aspects of Qalon & Warsh"
+            }
+        ],
+        "sourcesTitle": "Audio sources",
+        "sources": [
+            {
+                "name": "mp3quran.net",
+                "sub": "Primary CDN — up to 192 kbps"
+            },
+            {
+                "name": "everyayah.com",
+                "sub": "Verse-by-verse alternative source"
+            },
+            {
+                "name": "quran.ksu.edu.sa",
+                "sub": "King Saud University"
+            },
+            {
+                "name": "sound.quraat.info",
+                "sub": "Classical and qira’at-specialized library"
+            },
+            {
+                "name": "wursha-backup.github.io",
+                "sub": "Custom backup for Al-Husary"
+            }
+        ],
+        "featuredTitle": "Featured reciters",
+        "featured": [
+            {
+                "name": "Mahmoud Khalil Al-Husary",
+                "riwaya": "Hafs an Asim",
+                "version": "Murattal / Mujawwad / Broadcast / Teacher"
+            },
+            {
+                "name": "Muhammad Siddiq Al-Minshawi",
+                "riwaya": "Hafs an Asim",
+                "version": "Murattal / Mujawwad / Teacher"
+            },
+            {
+                "name": "Abd al-Basit Abd as-Samad",
+                "riwaya": "Hafs / Warsh",
+                "version": "Murattal / Mujawwad"
+            },
+            {
+                "name": "Mishari Rashid Al-Afasy",
+                "riwaya": "Hafs an Asim",
+                "version": "Murattal"
+            },
+            {
+                "name": "Yasser Al-Dossary",
+                "riwaya": "Hafs an Asim",
+                "version": "Murattal"
+            },
+            {
+                "name": "Saud Ash-Shuraym",
+                "riwaya": "Hafs an Asim",
+                "version": "Murattal"
+            },
+            {
+                "name": "Ahmad Talba",
+                "riwaya": "Al-Kobra",
+                "version": "Complete"
+            },
+            {
+                "name": "Ibrahim Al-Maghribi",
+                "riwaya": "Al-Asbahani",
+                "version": "Complete"
+            }
+        ],
+        "downloadNote": "Download full recitations for offline listening with progress, speed, and storage usage."
+    },
+    "books": {
+        "title": "63 books and references",
+        "subtitle": "The Aya panel brings tafseers, sciences, qira’at, and translations into one place.",
+        "categories": [
+            {
+                "key": "tafseer",
+                "title": "Tafseer",
+                "count": "17 works",
+                "samples": [
+                    "Ibn Kathir",
+                    "At-Tabari",
+                    "Al-Qurtubi",
+                    "As-Sa’di",
+                    "Al-Baghawi",
+                    "Al-Muyassar",
+                    "Al-Mukhtasar",
+                    "At-Tahrir wat-Tanwir",
+                    "Al-Jalalayn",
+                    "Zad Al-Maseer (Ibn al-Jawzi)",
+                    "Al-Muharrar Al-Wajeez (Ibn Atiyya)",
+                    "An-Nasafi",
+                    "Nazm Ad-Durar (Al-Biqa’i)",
+                    "Adwa’ Al-Bayan (Ash-Shanqiti)"
+                ]
+            },
+            {
+                "key": "sciences",
+                "title": "Quranic sciences",
+                "count": "10 works",
+                "samples": [
+                    "Asbab An-Nuzul (Al-Wahidi)",
+                    "I’rab Al-Quran (Ad-Daa’as)",
+                    "Al-Jadwal in I’rab and Sarf",
+                    "Ad-Durr Al-Masun (As-Samin Al-Halabi)",
+                    "Al-Muyassar in Gharib",
+                    "An-Nashr in the Ten Qira’at (Ibn Al-Jazari)",
+                    "Al-Waqf wa Al-Ibtida’",
+                    "Mutashabihat Al-Alfaz"
+                ]
+            },
+            {
+                "key": "qiraat",
+                "title": "Qira’at",
+                "count": "22 works",
+                "samples": [
+                    "Riwayat Qalon an Nafi’",
+                    "Riwayat Warsh an Nafi’",
+                    "Qira’at Ibn Kathir",
+                    "Qira’at Abi Amr",
+                    "Qira’at Ibn Aamer",
+                    "Riwayat Sho’ba an Asim",
+                    "Qira’at Hamza",
+                    "Qira’at Al-Kisa’i",
+                    "Qira’at Abi Ja’far",
+                    "Qira’at Ya’qub",
+                    "Qira’at Khalaf Al-Aashir",
+                    "Al-Ashr As-Soghra",
+                    "Tayseer Al-Ashr",
+                    "Shawahid Tayyibat An-Nashr"
+                ]
+            },
+            {
+                "key": "translations",
+                "title": "Translations",
+                "count": "14 languages",
+                "samples": [
+                    "English — Hilali & Khan",
+                    "Saheeh International",
+                    "Pickthall",
+                    "French",
+                    "German (Abu Rida)",
+                    "Russian",
+                    "Turkish",
+                    "Indonesian",
+                    "Malay",
+                    "Urdu",
+                    "Farsi",
+                    "Dutch",
+                    "Azerbaijani",
+                    "Phonetic transliteration"
+                ]
+            }
+        ]
+    },
+    "sciences": {
+        "title": "Deep word and verse study",
+        "subtitle": "Tap any word to open its page — five tabs reveal meaning, morphology, parsing, qira’at, and translations.",
+        "items": [
+            {
+                "title": "Meaning",
+                "body": "A Quranic vocabulary dictionary with concise, clear definitions for unusual words."
+            },
+            {
+                "title": "Sarf (Morphology)",
+                "body": "Detailed morphological analysis: word structure, root, and derivations."
+            },
+            {
+                "title": "I’rab (Parsing)",
+                "body": "Precise grammatical parsing of the verse and its words from specialist sources."
+            },
+            {
+                "title": "Qira’at",
+                "body": "Variant readings from the ten reciters with color-coded farsh notes."
+            },
+            {
+                "title": "Translations",
+                "body": "14+ authoritative translations covering the world’s major languages."
+            }
+        ]
+    },
+    "gestures": {
+        "title": "Natural, flexible touch control",
+        "subtitle": "Every gesture can be toggled — and many can be remapped.",
+        "items": [
+            {
+                "gesture": "Swipe left/right",
+                "action": "Turn pages"
+            },
+            {
+                "gesture": "Edge swipe up/down",
+                "action": "Adjust screen brightness"
+            },
+            {
+                "gesture": "Pinch",
+                "action": "Zoom into the page"
+            },
+            {
+                "gesture": "Tap on a verse",
+                "action": "Open the verse page"
+            },
+            {
+                "gesture": "Long-press a verse",
+                "action": "Show margin notes (hamsh)"
+            },
+            {
+                "gesture": "Tap on a word",
+                "action": "Open the word page"
+            },
+            {
+                "gesture": "Tap center",
+                "action": "Toggle UI bars"
+            },
+            {
+                "gesture": "Swipe from center",
+                "action": "Suras index / search"
+            },
+            {
+                "gesture": "Mouse wheel & arrow keys",
+                "action": "Desktop and web navigation"
+            }
+        ]
+    },
+    "downloads": {
+        "title": "Get the app",
+        "subtitle": "Available on Android, iPhone/iPad, Windows, macOS, and the web — fully offline-capable after the first download.",
+        "eyebrow": "Latest release",
+        "supportedOn": "Available on",
+        "platformNames": {
+            "android": "Android",
+            "ios": "iPhone & iPad",
+            "windows": "Windows",
+            "mac": "macOS",
+            "web": "Web"
+        },
+        "platforms": {
+            "android": "Get it on Google Play",
+            "ios": "Download on the App Store",
+            "windows": "Download for Windows",
+            "mac": "Download for macOS"
+        },
+        "storeLabels": {
+            "android": {
+                "small": "GET IT ON",
+                "big": "Google Play"
+            },
+            "ios": {
+                "small": "Download on the",
+                "big": "App Store"
+            },
+            "windows": {
+                "small": "Download for",
+                "big": "Windows"
+            },
+            "mac": {
+                "small": "Download for",
+                "big": "macOS"
+            }
+        },
+        "primaryCta": "Download",
+        "winNote": "Works on Windows 10 and above",
+        "macNote": "After unzipping, right-click and choose “Open”",
+        "webSoon": "Web — coming soon"
+    },
+    "tech": {
+        "title": "Solid engineering, modular architecture",
+        "subtitle": "Built on a service-based architecture so editions, reciters, and references can be added quickly.",
+        "bullets": [
+            "Fully offline-capable after the initial download",
+            "15 dedicated edition index services — no compromise across qira’at",
+            "Available on Android, iOS, and the web (PWA / desktop)",
+            "First-class Arabic RTL with full English support",
+            "Independent data updates (Quran text, search index, farsh, words)"
+        ]
+    },
+    "footer": {
+        "about": "Wursha QuranHolder is published by Wursha Digital Apps.",
+        "creditsTitle": "Credits & acknowledgements",
+        "credits": [
+            {
+                "label": "Publisher",
+                "value": "Wursha Digital Apps"
+            },
+            {
+                "label": "Engineering & design",
+                "value": "Eng. Karim Magdy"
+            },
+            {
+                "label": "Khair Zad mushafs",
+                "value": "Sheikh Ali ibn Abd al-Mun’im Saleh"
+            },
+            {
+                "label": "Tajweed Mushaf",
+                "value": "Dar Al-Ma’arifah (all rights reserved)"
+            },
+            {
+                "label": "Farsh and margins",
+                "value": "Eng. Muhammad Shalaby & a specialized team"
+            },
+            {
+                "label": "Tafseers",
+                "value": "Al-Bahith Al-Qurani — Tafseer Center for Quranic Studies"
+            }
+        ],
+        "sourcesTitle": "Audio & data sources",
+        "sources": [
+            "mp3quran.net — Quran audio library",
+            "everyayah.com",
+            "King Saud University Electronic Mushaf",
+            "sound.quraat.info — qira’at audio",
+            "jamharat-uloom.org — word meanings, sarf, and grammar",
+            "Al-Quran Al-Adheem — Al-Rajhi Endowment — waqf data"
+        ],
+        "rights": "© Wursha Digital Apps — all rights reserved."
+    },
+    "common": {
+        "placeholder": "Image placeholder",
+        "screenshot": "Screenshot",
+        "comingSoon": "Coming soon"
+    },
+    "apps": {
+        "madina": {
+            "name": "QuranHolder: Madina Mushaf",
+            "description": "Uthmani script — Hafs riwaya"
+        },
+        "shamarli": {
+            "name": "QuranHolder: Shamarli Mushaf",
+            "description": "Shamarli script with wide margins"
+        },
+        "tajweed": {
+            "name": "QuranHolder: Tajweed Mushaf",
+            "description": "Hafs riwaya with color-coded tajweed"
+        },
+        "warsh": {
+            "name": "Warsh Mushaf",
+            "description": "Warsh an Nafi’ — via Al-Azraq"
+        },
+        "qalon": {
+            "name": "Qalon Mushaf",
+            "description": "Qalon an Nafi’ riwaya"
+        }
+    }
+}

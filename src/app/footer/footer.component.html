@@ -1,1 +1,37 @@
-<p>footer works!</p>
+@let f = i18n.t().footer;
+<footer class="site-footer">
+    <div class="container">
+        <div class="grid">
+            <section class="brand">
+                <img src="wursha-logo.png" alt="" width="48" height="48" />
+                <h2>{{ i18n.t().hero.eyebrow }}</h2>
+                <p>{{ f.about }}</p>
+            </section>
+
+            <section>
+                <h3>{{ f.creditsTitle }}</h3>
+                <ul class="kv">
+                    @for (c of f.credits; track $index) {
+                        <li>
+                            <span class="kv__k">{{ c.label }}</span>
+                            <span class="kv__v">{{ c.value }}</span>
+                        </li>
+                    }
+                </ul>
+            </section>
+
+            <section>
+                <h3>{{ f.sourcesTitle }}</h3>
+                <ul class="bullets">
+                    @for (s of f.sources; track $index) {
+                        <li>{{ s }}</li>
+                    }
+                </ul>
+            </section>
+        </div>
+
+        <div class="legal">
+            <span>{{ year }} — {{ f.rights }}</span>
+        </div>
+    </div>
+</footer>

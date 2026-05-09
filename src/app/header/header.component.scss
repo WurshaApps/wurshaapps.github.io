@@ -1,24 +1,89 @@
-:host {
-    text-align: center;
-    padding-top: 3rem;
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: saturate(140%) blur(14px);
+    background: rgba(255, 251, 245, 0.78);
+    border-bottom: 1px solid rgba(15, 118, 110, 0.08);
 }
 
-.logo {
-    background-image: url("/wursha-logo.png");
-    width: 9.6rem;
-    height: 9.6rem;
-    border-radius: 4.8rem;
+.container {
+    max-width: 1200px;
     margin: 0 auto;
-    border-style: solid;
-    border: 0.1rem dashed #c3cbdc;
-    border-top-style: dashed;
-    border-right-style: dashed;
-    border-bottom-style: dashed;
-    border-left-style: dashed;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
+    padding: 0.85rem 1.25rem;
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 1rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+.brand__logo {
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 0.6rem;
+    object-fit: cover;
+}
+
+.brand__name {
+    font-size: 0.95rem;
+    color: #134e4a;
+    max-width: 18rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.nav {
+    display: none;
+    margin-inline-start: auto;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+.nav a {
+    color: #1f2937;
+    text-decoration: none;
+    padding: 0.5rem 0.85rem;
+    border-radius: 0.7rem;
+    font-size: 0.95rem;
+    transition:
+        color 0.15s,
+        background-color 0.15s;
+}
+
+.nav a:hover {
+    color: #0f766e;
+    background: rgba(15, 118, 110, 0.08);
+}
+
+.nav__cta {
+    background: #0f766e;
+    color: #fff !important;
+    box-shadow: 0 6px 20px -8px rgba(15, 118, 110, 0.6);
+}
+
+.nav__cta:hover {
+    background: #115e59 !important;
+    color: #fff !important;
+}
+
+.lang-picker {
+    margin-inline-start: auto;
+}
+
+@media (min-width: 880px) {
+    .nav {
+        display: flex;
+    }
+    .lang-picker {
+        margin-inline-start: 0;
+    }
 }
