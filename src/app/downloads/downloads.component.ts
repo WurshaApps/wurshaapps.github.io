@@ -132,7 +132,7 @@ const APPS: AppDownload[] = [
                     @for (app of apps; track app.image) {
                         <app-link
                             [image]="app.image"
-                            [name]="app.name[i18n.lang()]"
+                            [appName]="app.name[i18n.lang()]"
                             [nameColor]="app.nameColor"
                             [description]="app.description ? app.description[i18n.lang()] : ''"
                             [version]="version"

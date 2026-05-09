@@ -3,10 +3,10 @@
     <div class="dl-card__glow" aria-hidden="true"></div>
     <header class="dl-card__head">
         <div class="dl-card__icon">
-            <img [src]="image()" [alt]="name() || ''" loading="lazy" width="64" height="64" />
+            <img [src]="image()" [alt]="appName() || ''" loading="lazy" width="64" height="64" />
         </div>
         <div class="dl-card__meta">
-            <h3>{{ name() }}</h3>
+            <h3>{{ appName() }}</h3>
             @if (description()) {
                 <p class="dl-card__sub">{{ description() }}</p>
             }

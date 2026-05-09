@@ -1,10 +1,11 @@
-import { Component, computed, inject, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Tab, TabContent, TabList, TabPanel, Tabs } from '@angular/aria/tabs';
 import { I18nService } from '../i18n/i18n.service';
 import { PlaceholderComponent } from '../shared/placeholder.component';
 
 @Component({
     selector: 'app-books',
-    imports: [PlaceholderComponent],
+    imports: [PlaceholderComponent, Tabs, TabList, Tab, TabPanel, TabContent],
     template: `
         @let b = i18n.t().books;
         <section id="books" class="books">
@@ -22,31 +23,29 @@ import { PlaceholderComponent } from '../shared/placeholder.component';
                             label="Aya panel — tafseer / qira’at / sciences / translations tabs" />
                     </div>
 
-                    <div class="books__main">
-                        <nav class="tabs" aria-label="book categories">
+                    <div class="books__main" ngTabs>
+                        <ul ngTabList class="tabs" aria-label="book categories">
                             @for (cat of b.categories; track cat.key) {
-                                <button
-                                    type="button"
-                                    class="tab"
-                                    [class.tab--active]="active() === cat.key"
-                                    (click)="active.set(cat.key)">
+                                <li ngTab [value]="cat.key" class="tab">
                                     <span class="tab__name">{{ cat.title }}</span>
                                     <span class="tab__count">{{ cat.count }}</span>
-                                </button>
+                                </li>
                             }
-                        </nav>
+                        </ul>
 
-                        @if (current(); as cat) {
-                            <div class="tab-panel">
-                                <div class="tab-panel__head">
-                                    <h3>{{ cat.title }}</h3>
-                                    <span class="tab-panel__count">{{ cat.count }}</span>
-                                </div>
-                                <ul class="samples">
-                                    @for (item of cat.samples; track $index) {
-                                        <li>{{ item }}</li>
-                                    }
-                                </ul>
+                        @for (cat of b.categories; track cat.key) {
+                            <div ngTabPanel [value]="cat.key" class="tab-panel">
+                                <ng-template ngTabContent>
+                                    <div class="tab-panel__head">
+                                        <h3>{{ cat.title }}</h3>
+                                        <span class="tab-panel__count">{{ cat.count }}</span>
+                                    </div>
+                                    <ul class="samples">
+                                        @for (item of cat.samples; track $index) {
+                                            <li>{{ item }}</li>
+                                        }
+                                    </ul>
+                                </ng-template>
                             </div>
                         }
                     </div>
@@ -110,8 +109,9 @@ import { PlaceholderComponent } from '../shared/placeholder.component';
             flex-wrap: wrap;
             gap: 0.5rem;
             border-bottom: 1px solid rgba(15, 118, 110, 0.1);
-            padding-bottom: 1rem;
-            margin-bottom: 1.4rem;
+            padding: 0 0 1rem;
+            margin: 0 0 1.4rem;
+            list-style: none;
         }
         .tab {
             display: inline-flex;
@@ -129,25 +129,33 @@ import { PlaceholderComponent } from '../shared/placeholder.component';
                 background-color 0.15s,
                 border-color 0.15s,
                 color 0.15s;
+            user-select: none;
         }
         .tab:hover {
             background: rgba(15, 118, 110, 0.1);
         }
-        .tab--active {
+        .tab:focus-visible {
+            outline: 2px solid #0f766e;
+            outline-offset: 2px;
+        }
+        .tab[aria-selected="true"] {
             background: #0f766e;
             color: #fff;
             border-color: #0f766e;
         }
         .tab__count {
-            background: rgba(255, 255, 255, 0.18);
-            color: inherit;
+            background: rgba(15, 118, 110, 0.12);
+            color: #0f766e;
             padding: 0.1rem 0.45rem;
             border-radius: 999px;
             font-size: 0.72rem;
         }
-        .tab:not(.tab--active) .tab__count {
-            background: rgba(15, 118, 110, 0.12);
-            color: #0f766e;
+        .tab[aria-selected="true"] .tab__count {
+            background: rgba(255, 255, 255, 0.18);
+            color: inherit;
+        }
+        .tab-panel:not([aria-hidden="false"]) {
+            display: none;
         }
         .tab-panel__head {
             display: flex;
@@ -203,10 +211,4 @@ import { PlaceholderComponent } from '../shared/placeholder.component';
 })
 export class BooksComponent {
     readonly i18n = inject(I18nService);
-    readonly active = signal<string>('tafseer');
-
-    readonly current = computed(() => {
-        const list = this.i18n.t().books.categories;
-        return list.find((c) => c.key === this.active()) ?? list[0];
-    });
 }

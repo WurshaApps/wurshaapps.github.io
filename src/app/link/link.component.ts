@@ -18,7 +18,7 @@ export class LinkComponent {
     readonly i18n = inject(I18nService);
 
     readonly image = input<string>('');
-    readonly name = input<string>();
+    readonly appName = input<string>();
     readonly nameColor = input<string>('#0f766e');
     readonly description = input<string>();
     readonly version = input<string>();
