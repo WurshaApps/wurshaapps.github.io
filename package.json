@@ -10,7 +10,8 @@
         "test": "ng test",
         "fmt": "prettier -w *",
         "lint": "ng lint",
-        "update-links": "node scripts/update-links.mjs"
+        "update-links": "node scripts/update-links.mjs",
+        "generate-placeholders": "node scripts/generate-placeholders.mjs"
     },
     "private": true,
     "dependencies": {
