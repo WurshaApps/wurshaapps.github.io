@@ -94,9 +94,21 @@ export interface Dict {
     downloads: {
         title: string;
         subtitle: string;
+        eyebrow: string;
+        version: string;
+        supportedOn: string;
+        platformNames: { android: string; ios: string; windows: string; mac: string; web: string };
         platforms: { android: string; ios: string; windows: string; mac: string };
+        storeLabels: {
+            android: { small: string; big: string };
+            ios: { small: string; big: string };
+            windows: { small: string; big: string };
+            mac: { small: string; big: string };
+        };
+        primaryCta: string;
         winNote: string;
         macNote: string;
+        webSoon: string;
     };
     tech: {
         title: string;
@@ -502,14 +514,32 @@ const ar: Dict = {
     downloads: {
         title: 'حمّل التطبيق على جهازك',
         subtitle: 'متاح على الأندرويد والآيفون والآيباد والويندوز والماك والويب — وبدعم كامل للقراءة بدون إنترنت.',
+        eyebrow: 'الإصدار الأحدث',
+        version: '33.0.0',
+        supportedOn: 'متوفّر على',
+        platformNames: {
+            android: 'أندرويد',
+            ios: 'آيفون وآيباد',
+            windows: 'ويندوز',
+            mac: 'ماك',
+            web: 'الويب',
+        },
         platforms: {
             android: 'تنزيل من Google Play',
             ios: 'تنزيل من App Store',
             windows: 'تنزيل لويندوز',
             mac: 'تنزيل لماك',
         },
+        storeLabels: {
+            android: { small: 'حمّل من', big: 'Google Play' },
+            ios: { small: 'حمّل من', big: 'App Store' },
+            windows: { small: 'حمّل لـ', big: 'Windows' },
+            mac: { small: 'حمّل لـ', big: 'macOS' },
+        },
+        primaryCta: 'تحميل',
         winNote: 'يعمل على ويندوز 10 فما فوق',
         macNote: 'بعد فك الضغط، انقر بالزر الأيمن واختر «فتح»',
+        webSoon: 'الويب — قريباً',
     },
     tech: {
         title: 'تقنية متينة، بنية مفتوحة للتوسع',
@@ -931,14 +961,32 @@ const en: Dict = {
     downloads: {
         title: 'Get the app',
         subtitle: 'Available on Android, iPhone/iPad, Windows, macOS, and the web — fully offline-capable after the first download.',
+        eyebrow: 'Latest release',
+        version: '33.0.0',
+        supportedOn: 'Available on',
+        platformNames: {
+            android: 'Android',
+            ios: 'iPhone & iPad',
+            windows: 'Windows',
+            mac: 'macOS',
+            web: 'Web',
+        },
         platforms: {
             android: 'Get it on Google Play',
             ios: 'Download on the App Store',
             windows: 'Download for Windows',
             mac: 'Download for macOS',
         },
+        storeLabels: {
+            android: { small: 'GET IT ON', big: 'Google Play' },
+            ios: { small: 'Download on the', big: 'App Store' },
+            windows: { small: 'Download for', big: 'Windows' },
+            mac: { small: 'Download for', big: 'macOS' },
+        },
+        primaryCta: 'Download',
         winNote: 'Works on Windows 10 and above',
         macNote: 'After unzipping, right-click and choose “Open”',
+        webSoon: 'Web — coming soon',
     },
     tech: {
         title: 'Solid engineering, modular architecture',
