@@ -1,74 +1,20 @@
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
+import appsCatalog from '@content/apps.json';
 import { I18nService } from '../i18n/i18n.service';
 import { LinkComponent } from '../link/link.component';
 
-interface AppDownload {
+interface AppEntry {
+    id: string;
     image: string;
-    name: { ar: string; en: string };
     nameColor: string;
-    description?: { ar: string; en: string };
-    android?: string;
-    ios?: string;
-    mac?: string;
-    windows?: string;
     featured?: boolean;
+    urls: {
+        android?: string;
+        ios?: string;
+        mac?: string;
+        windows?: string;
+    };
 }
-
-const VERSION = '33.0.0';
-
-const APPS: AppDownload[] = [
-    {
-        image: 'madina.png',
-        name: { ar: 'حامل القرآن: مصحف المدينة', en: 'QuranHolder: Madina Mushaf' },
-        nameColor: '#5eead4',
-        featured: true,
-        description: { ar: 'الخط العثماني — رواية حفص', en: 'Uthmani script — Hafs riwaya' },
-        android: 'https://play.google.com/store/apps/details?id=apps.wursha.quran_madina',
-        ios: 'https://apps.apple.com/app/id1436371392',
-        mac: 'https://github.com/WurshaApps/QuranHolder_Releases/releases/download/madina-v33.0.0/-33.0.0-universal.dmg',
-        windows: 'https://github.com/WurshaApps/QuranHolder_Releases/releases/download/madina-v33.0.0/-33.0.0.Setup.exe',
-    },
-    {
-        image: 'shmrly.png',
-        name: { ar: 'حامل القرآن: مصحف الشمرلي', en: 'QuranHolder: Shamarli Mushaf' },
-        nameColor: '#a78bfa',
-        description: { ar: 'بخط الشمرلي مع هوامش واسعة', en: 'Shamarli script with wide margins' },
-        android: 'https://play.google.com/store/apps/details?id=apps.wursha.mosshfshmrly',
-        ios: 'https://apps.apple.com/app/id1434342823',
-        mac: 'https://github.com/WurshaApps/QuranHolder_Releases/releases/download/shmrly-v33.0.0/-33.0.0-universal.dmg',
-        windows: 'https://github.com/WurshaApps/QuranHolder_Releases/releases/download/shmrly-v33.0.0/-33.0.0.Setup.exe',
-    },
-    {
-        image: 'tjwid.png',
-        name: { ar: 'حامل القرآن: مصحف التجويد', en: 'QuranHolder: Tajweed Mushaf' },
-        nameColor: '#86efac',
-        description: { ar: 'برواية حفص مع تلوين أحكام التجويد', en: 'Hafs riwaya with color-coded tajweed' },
-        android: 'https://play.google.com/store/apps/details?id=apps.wursha.quran_tjwid',
-        ios: 'https://apps.apple.com/app/id1509386930',
-        mac: 'https://github.com/WurshaApps/QuranHolder_Releases/releases/download/tjwid-v33.0.0/-33.0.0-universal.dmg',
-        windows: 'https://github.com/WurshaApps/QuranHolder_Releases/releases/download/tjwid-v33.0.0/-33.0.0.Setup.exe',
-    },
-    {
-        image: 'warsh.png',
-        name: { ar: 'مصحف ورش', en: 'Warsh Mushaf' },
-        nameColor: '#fbbf24',
-        description: { ar: 'برواية ورش عن نافع، من طريق الأزرق', en: 'Warsh an Nafi’ — via Al-Azraq' },
-        android: 'https://play.google.com/store/apps/details?id=apps.wursha.quran_warsh',
-        ios: 'https://apps.apple.com/app/id1436361790',
-        mac: 'https://github.com/WurshaApps/QuranHolder_Releases/releases/download/warsh-v33.0.0/-33.0.0-universal.dmg',
-        windows: 'https://github.com/WurshaApps/QuranHolder_Releases/releases/download/warsh-v33.0.0/-33.0.0.Setup.exe',
-    },
-    {
-        image: 'qalon.png',
-        name: { ar: 'مصحف قالون', en: 'Qalon Mushaf' },
-        nameColor: '#fb923c',
-        description: { ar: 'برواية قالون عن نافع', en: 'Qalon an Nafi’ riwaya' },
-        android: 'https://play.google.com/store/apps/details?id=apps.wursha.quran_qalon',
-        ios: 'https://apps.apple.com/app/id1437326658',
-        mac: 'https://github.com/WurshaApps/QuranHolder_Releases/releases/download/qalon-v33.0.0/-33.0.0-universal.dmg',
-        windows: 'https://github.com/WurshaApps/QuranHolder_Releases/releases/download/qalon-v33.0.0/-33.0.0.Setup.exe',
-    },
-];
 
 @Component({
     selector: 'app-downloads',
@@ -86,7 +32,7 @@ const APPS: AppDownload[] = [
                     <span class="dl-header__eyebrow">
                         <span class="dl-header__pulse" aria-hidden="true"></span>
                         {{ d.eyebrow }}
-                        <code>v{{ d.version }}</code>
+                        <code>v{{ version }}</code>
                     </span>
                     <h2>{{ d.title }}</h2>
                     <p>{{ d.subtitle }}</p>
@@ -129,18 +75,18 @@ const APPS: AppDownload[] = [
                 </header>
 
                 <div class="dl-grid">
-                    @for (app of apps; track app.image) {
+                    @for (app of apps; track app.id) {
                         <app-link
                             [image]="app.image"
-                            [appName]="app.name[i18n.lang()]"
+                            [appName]="appCopy()[app.id]?.name"
                             [nameColor]="app.nameColor"
-                            [description]="app.description ? app.description[i18n.lang()] : ''"
+                            [description]="appCopy()[app.id]?.description"
                             [version]="version"
                             [featured]="!!app.featured"
-                            [android]="app.android"
-                            [ios]="app.ios"
-                            [mac]="app.mac"
-                            [windows]="app.windows" />
+                            [android]="app.urls.android"
+                            [ios]="app.urls.ios"
+                            [mac]="app.urls.mac"
+                            [windows]="app.urls.windows" />
                     }
                 </div>
 
@@ -396,6 +342,7 @@ const APPS: AppDownload[] = [
 })
 export class DownloadsComponent {
     readonly i18n = inject(I18nService);
-    readonly apps = APPS;
-    readonly version = VERSION;
+    readonly apps: AppEntry[] = appsCatalog.apps;
+    readonly version = appsCatalog.version;
+    readonly appCopy = computed(() => this.i18n.t().apps);
 }

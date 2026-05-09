@@ -1,0 +1,62 @@
+{
+    "$schema": "./schemas/apps.schema.json",
+    "version": "33.0.0",
+    "apps": [
+        {
+            "id": "madina",
+            "image": "madina.png",
+            "nameColor": "#5eead4",
+            "featured": true,
+            "urls": {
+                "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_madina",
+                "ios": "https://apps.apple.com/app/id1436371392",
+                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/madina-v33.0.0/-33.0.0-universal.dmg",
+                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/madina-v33.0.0/-33.0.0.Setup.exe"
+            }
+        },
+        {
+            "id": "shamarli",
+            "image": "shmrly.png",
+            "nameColor": "#a78bfa",
+            "urls": {
+                "android": "https://play.google.com/store/apps/details?id=apps.wursha.mosshfshmrly",
+                "ios": "https://apps.apple.com/app/id1434342823",
+                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/shmrly-v33.0.0/-33.0.0-universal.dmg",
+                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/shmrly-v33.0.0/-33.0.0.Setup.exe"
+            }
+        },
+        {
+            "id": "tajweed",
+            "image": "tjwid.png",
+            "nameColor": "#86efac",
+            "urls": {
+                "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_tjwid",
+                "ios": "https://apps.apple.com/app/id1509386930",
+                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/tjwid-v33.0.0/-33.0.0-universal.dmg",
+                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/tjwid-v33.0.0/-33.0.0.Setup.exe"
+            }
+        },
+        {
+            "id": "warsh",
+            "image": "warsh.png",
+            "nameColor": "#fbbf24",
+            "urls": {
+                "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_warsh",
+                "ios": "https://apps.apple.com/app/id1436361790",
+                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/warsh-v33.0.0/-33.0.0-universal.dmg",
+                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/warsh-v33.0.0/-33.0.0.Setup.exe"
+            }
+        },
+        {
+            "id": "qalon",
+            "image": "qalon.png",
+            "nameColor": "#fb923c",
+            "urls": {
+                "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_qalon",
+                "ios": "https://apps.apple.com/app/id1437326658",
+                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/qalon-v33.0.0/-33.0.0-universal.dmg",
+                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/qalon-v33.0.0/-33.0.0.Setup.exe"
+            }
+        }
+    ]
+}
