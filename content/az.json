@@ -22,7 +22,7 @@
         "screenshotAlt": "Wursha QuranHolder ekran görüntüsü"
     },
     "stats": {
-        "editions": "15",
+        "editions": "5",
         "editionsLabel": "Səhih Müshəf nəşri",
         "reciters": "68",
         "recitersLabel": "Seçilmiş qari",
@@ -200,12 +200,19 @@
             {
                 "name": "Hamil al-Quran",
                 "description": "Əsas qiraətləri və rəvayətləri əhatə edən, Osmanlı xəttilə hazırlanmış geniş kolleksiya.",
-                "items": ["Mədinə", "Şəmərli", "Tecvid"]
+                "items": [
+                    "Mədinə",
+                    "Şəmərli",
+                    "Tecvid"
+                ]
             },
             {
                 "name": "Khair Zad",
                 "description": "Strukturlaşdırılmış pedaqoji yanaşmalı, hafizələrə yönəlmiş seriya.",
-                "items": ["Vərş", "Qalun"]
+                "items": [
+                    "Vərş",
+                    "Qalun"
+                ]
             }
         ],
         "list": [
@@ -243,24 +250,61 @@
         "subtitle": "Hər qari müəyyən bir rəvayət, nəşr (Mürəttəl, Mücəvvəd, Müəllim, Radio, Tam) və yüksək keyfiyyətli CDN ilə uyğunlaşdırılır. Fərdi qari URL-i də əlavə edə bilərsiniz.",
         "riwayatTitle": "Əhatə olunan rəvayətlər və qiraətlər",
         "riwayat": [
-            { "name": "Hafs — ‘Asımdan", "sub": "Ən geniş yayılmış" },
-            { "name": "Vərş — Nafi‘dən" },
-            { "name": "Qalun — Nafi‘dən" },
-            { "name": "Şu’bə — ‘Asımdan" },
-            { "name": "Əd-Düri — Əbi ‘Amrdan" },
-            { "name": "Əs-Süsi — Əbi ‘Amrdan" },
-            { "name": "Əl-Əsbahani" },
-            { "name": "Həmzənin rəvayətləri" },
-            { "name": "Əl-Kübra və Əs-Suğra", "sub": "On qiraət" },
-            { "name": "Qalun və Vərş aspektləri" }
+            {
+                "name": "Hafs — ‘Asımdan",
+                "sub": "Ən geniş yayılmış"
+            },
+            {
+                "name": "Vərş — Nafi‘dən"
+            },
+            {
+                "name": "Qalun — Nafi‘dən"
+            },
+            {
+                "name": "Şu’bə — ‘Asımdan"
+            },
+            {
+                "name": "Əd-Düri — Əbi ‘Amrdan"
+            },
+            {
+                "name": "Əs-Süsi — Əbi ‘Amrdan"
+            },
+            {
+                "name": "Əl-Əsbahani"
+            },
+            {
+                "name": "Həmzənin rəvayətləri"
+            },
+            {
+                "name": "Əl-Kübra və Əs-Suğra",
+                "sub": "On qiraət"
+            },
+            {
+                "name": "Qalun və Vərş aspektləri"
+            }
         ],
         "sourcesTitle": "Səs mənbələri",
         "sources": [
-            { "name": "mp3quran.net", "sub": "Əsas CDN — 192 kbps-ə qədər" },
-            { "name": "everyayah.com", "sub": "Ayə-ayə alternativ mənbə" },
-            { "name": "quran.ksu.edu.sa", "sub": "Kral Səud Universiteti" },
-            { "name": "sound.quraat.info", "sub": "Klassik və qiraət ixtisaslı kitabxana" },
-            { "name": "wursha-backup.github.io", "sub": "Husari üçün ehtiyat nüsxə" }
+            {
+                "name": "mp3quran.net",
+                "sub": "Əsas CDN — 192 kbps-ə qədər"
+            },
+            {
+                "name": "everyayah.com",
+                "sub": "Ayə-ayə alternativ mənbə"
+            },
+            {
+                "name": "quran.ksu.edu.sa",
+                "sub": "Kral Səud Universiteti"
+            },
+            {
+                "name": "sound.quraat.info",
+                "sub": "Klassik və qiraət ixtisaslı kitabxana"
+            },
+            {
+                "name": "wursha-backup.github.io",
+                "sub": "Husari üçün ehtiyat nüsxə"
+            }
         ],
         "featuredTitle": "Seçilmiş qarilər",
         "featured": [
@@ -284,10 +328,26 @@
                 "riwaya": "Hafs — ‘Asımdan",
                 "version": "Mürəttəl"
             },
-            { "name": "Yasir Əd-Dövsəri", "riwaya": "Hafs — ‘Asımdan", "version": "Mürəttəl" },
-            { "name": "Səud Əş-Şüreym", "riwaya": "Hafs — ‘Asımdan", "version": "Mürəttəl" },
-            { "name": "Əhməd Talba", "riwaya": "Əl-Kübra", "version": "Tam" },
-            { "name": "İbrahim Əl-Məğribi", "riwaya": "Əl-Əsbahani", "version": "Tam" }
+            {
+                "name": "Yasir Əd-Dövsəri",
+                "riwaya": "Hafs — ‘Asımdan",
+                "version": "Mürəttəl"
+            },
+            {
+                "name": "Səud Əş-Şüreym",
+                "riwaya": "Hafs — ‘Asımdan",
+                "version": "Mürəttəl"
+            },
+            {
+                "name": "Əhməd Talba",
+                "riwaya": "Əl-Kübra",
+                "version": "Tam"
+            },
+            {
+                "name": "İbrahim Əl-Məğribi",
+                "riwaya": "Əl-Əsbahani",
+                "version": "Tam"
+            }
         ],
         "downloadNote": "Tam tilavətləri offline dinləmək üçün yüklə — irəliləyiş, sürət və yaddaş istifadəsi göstərilir."
     },
@@ -405,17 +465,38 @@
         "title": "Təbii və çevik sensor idarəetmə",
         "subtitle": "Hər jest açılıb-bağlana bilər — bir çoxu yenidən təyin oluna bilər.",
         "items": [
-            { "gesture": "Sola/sağa sürüşdürmə", "action": "Səhifəni vərəqləmə" },
-            { "gesture": "Kənarda yuxarı/aşağı sürüşdürmə", "action": "Ekran parlaqlığı" },
-            { "gesture": "Sıxma", "action": "Səhifəni böyütmə" },
-            { "gesture": "Ayəyə toxunma", "action": "Ayə səhifəsini açma" },
+            {
+                "gesture": "Sola/sağa sürüşdürmə",
+                "action": "Səhifəni vərəqləmə"
+            },
+            {
+                "gesture": "Kənarda yuxarı/aşağı sürüşdürmə",
+                "action": "Ekran parlaqlığı"
+            },
+            {
+                "gesture": "Sıxma",
+                "action": "Səhifəni böyütmə"
+            },
+            {
+                "gesture": "Ayəyə toxunma",
+                "action": "Ayə səhifəsini açma"
+            },
             {
                 "gesture": "Ayəyə uzun basma",
                 "action": "Kənar qeydləri (haşiyə) göstərmə"
             },
-            { "gesture": "Sözə toxunma", "action": "Söz səhifəsini açma" },
-            { "gesture": "Mərkəzə toxunma", "action": "Panelləri gizlət/göstər" },
-            { "gesture": "Mərkəzdən sürüşdürmə", "action": "Surə indeksi / axtarış" },
+            {
+                "gesture": "Sözə toxunma",
+                "action": "Söz səhifəsini açma"
+            },
+            {
+                "gesture": "Mərkəzə toxunma",
+                "action": "Panelləri gizlət/göstər"
+            },
+            {
+                "gesture": "Mərkəzdən sürüşdürmə",
+                "action": "Surə indeksi / axtarış"
+            },
             {
                 "gesture": "Siçan təkəri və ox düymələri",
                 "action": "Masaüstü və veb naviqasiyası"
@@ -441,10 +522,22 @@
             "mac": "macOS üçün yüklə"
         },
         "storeLabels": {
-            "android": { "small": "BURADAN ƏLDƏ ET", "big": "Google Play" },
-            "ios": { "small": "Yüklə", "big": "App Store" },
-            "windows": { "small": "Yüklə:", "big": "Windows" },
-            "mac": { "small": "Yüklə:", "big": "macOS" }
+            "android": {
+                "small": "BURADAN ƏLDƏ ET",
+                "big": "Google Play"
+            },
+            "ios": {
+                "small": "Yüklə",
+                "big": "App Store"
+            },
+            "windows": {
+                "small": "Yüklə:",
+                "big": "Windows"
+            },
+            "mac": {
+                "small": "Yüklə:",
+                "big": "macOS"
+            }
         },
         "primaryCta": "Yüklə",
         "winNote": "Windows 10 və daha yeni versiyalarda işləyir",
@@ -466,8 +559,14 @@
         "about": "Wursha QuranHolder Wursha Digital Apps tərəfindən nəşr olunur.",
         "creditsTitle": "Etiraflar və təşəkkürlər",
         "credits": [
-            { "label": "Naşir", "value": "Wursha Digital Apps" },
-            { "label": "Mühəndislik və dizayn", "value": "Müh. Kərim Məcdi" },
+            {
+                "label": "Naşir",
+                "value": "Wursha Digital Apps"
+            },
+            {
+                "label": "Mühəndislik və dizayn",
+                "value": "Müh. Kərim Məcdi"
+            },
             {
                 "label": "Khair Zad müshəfləri",
                 "value": "Şeyx Əli ibn Əbdülmün‘im Saleh"

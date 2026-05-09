@@ -22,7 +22,7 @@
         "screenshotAlt": "Tangkapan layar Wursha QuranHolder"
     },
     "stats": {
-        "editions": "15",
+        "editions": "5",
         "editionsLabel": "Mushaf otentik",
         "reciters": "68",
         "recitersLabel": "Qari pilihan",
@@ -200,12 +200,19 @@
             {
                 "name": "Hamil al-Quran",
                 "description": "Koleksi luas dalam khat Utsmani yang mencakup qiraat dan riwayat utama.",
-                "items": ["Madinah", "Syamarli", "Tajwid"]
+                "items": [
+                    "Madinah",
+                    "Syamarli",
+                    "Tajwid"
+                ]
             },
             {
                 "name": "Khair Zad",
                 "description": "Seri yang berfokus pada penghafal dengan pendekatan pedagogis terstruktur.",
-                "items": ["Warsy", "Qalun"]
+                "items": [
+                    "Warsy",
+                    "Qalun"
+                ]
             }
         ],
         "list": [
@@ -243,24 +250,61 @@
         "subtitle": "Setiap qari dipasangkan dengan satu riwayat, edisi (Murattal, Mujawwad, Mu’allim, Siaran, Lengkap), dan CDN berkualitas tinggi. Anda juga bisa menambahkan URL qari kustom.",
         "riwayatTitle": "Riwayat & qiraat yang dicakup",
         "riwayat": [
-            { "name": "Hafs dari ‘Asim", "sub": "Paling umum" },
-            { "name": "Warsy dari Nafi‘" },
-            { "name": "Qalun dari Nafi‘" },
-            { "name": "Syuʿbah dari ‘Asim" },
-            { "name": "Ad-Duri dari Abu ‘Amr" },
-            { "name": "As-Susi dari Abu ‘Amr" },
-            { "name": "Al-Asbahani" },
-            { "name": "Riwayat Hamzah" },
-            { "name": "Al-Kobra & As-Soghra", "sub": "Sepuluh qiraat" },
-            { "name": "Aspek Qalun & Warsy" }
+            {
+                "name": "Hafs dari ‘Asim",
+                "sub": "Paling umum"
+            },
+            {
+                "name": "Warsy dari Nafi‘"
+            },
+            {
+                "name": "Qalun dari Nafi‘"
+            },
+            {
+                "name": "Syuʿbah dari ‘Asim"
+            },
+            {
+                "name": "Ad-Duri dari Abu ‘Amr"
+            },
+            {
+                "name": "As-Susi dari Abu ‘Amr"
+            },
+            {
+                "name": "Al-Asbahani"
+            },
+            {
+                "name": "Riwayat Hamzah"
+            },
+            {
+                "name": "Al-Kobra & As-Soghra",
+                "sub": "Sepuluh qiraat"
+            },
+            {
+                "name": "Aspek Qalun & Warsy"
+            }
         ],
         "sourcesTitle": "Sumber audio",
         "sources": [
-            { "name": "mp3quran.net", "sub": "CDN utama — hingga 192 kbps" },
-            { "name": "everyayah.com", "sub": "Sumber alternatif per ayat" },
-            { "name": "quran.ksu.edu.sa", "sub": "Universitas King Saud" },
-            { "name": "sound.quraat.info", "sub": "Pustaka klasik & qiraat khusus" },
-            { "name": "wursha-backup.github.io", "sub": "Cadangan untuk Al-Husari" }
+            {
+                "name": "mp3quran.net",
+                "sub": "CDN utama — hingga 192 kbps"
+            },
+            {
+                "name": "everyayah.com",
+                "sub": "Sumber alternatif per ayat"
+            },
+            {
+                "name": "quran.ksu.edu.sa",
+                "sub": "Universitas King Saud"
+            },
+            {
+                "name": "sound.quraat.info",
+                "sub": "Pustaka klasik & qiraat khusus"
+            },
+            {
+                "name": "wursha-backup.github.io",
+                "sub": "Cadangan untuk Al-Husari"
+            }
         ],
         "featuredTitle": "Qari pilihan",
         "featured": [
@@ -284,10 +328,26 @@
                 "riwaya": "Hafs dari ‘Asim",
                 "version": "Murattal"
             },
-            { "name": "Yasser Al-Dossary", "riwaya": "Hafs dari ‘Asim", "version": "Murattal" },
-            { "name": "Sa’ud Asy-Syuraim", "riwaya": "Hafs dari ‘Asim", "version": "Murattal" },
-            { "name": "Ahmad Talba", "riwaya": "Al-Kobra", "version": "Lengkap" },
-            { "name": "Ibrahim Al-Maghribi", "riwaya": "Al-Asbahani", "version": "Lengkap" }
+            {
+                "name": "Yasser Al-Dossary",
+                "riwaya": "Hafs dari ‘Asim",
+                "version": "Murattal"
+            },
+            {
+                "name": "Sa’ud Asy-Syuraim",
+                "riwaya": "Hafs dari ‘Asim",
+                "version": "Murattal"
+            },
+            {
+                "name": "Ahmad Talba",
+                "riwaya": "Al-Kobra",
+                "version": "Lengkap"
+            },
+            {
+                "name": "Ibrahim Al-Maghribi",
+                "riwaya": "Al-Asbahani",
+                "version": "Lengkap"
+            }
         ],
         "downloadNote": "Unduh tilawah lengkap untuk dengar luring lengkap dengan progres, kecepatan, dan penggunaan penyimpanan."
     },
@@ -405,17 +465,38 @@
         "title": "Kontrol sentuh yang alami dan fleksibel",
         "subtitle": "Setiap gerakan dapat diaktifkan — dan banyak yang dapat dipetakan ulang.",
         "items": [
-            { "gesture": "Geser kiri/kanan", "action": "Membalik halaman" },
-            { "gesture": "Geser di tepi", "action": "Atur kecerahan layar" },
-            { "gesture": "Jepit", "action": "Zum halaman" },
-            { "gesture": "Ketuk ayat", "action": "Buka halaman ayat" },
+            {
+                "gesture": "Geser kiri/kanan",
+                "action": "Membalik halaman"
+            },
+            {
+                "gesture": "Geser di tepi",
+                "action": "Atur kecerahan layar"
+            },
+            {
+                "gesture": "Jepit",
+                "action": "Zum halaman"
+            },
+            {
+                "gesture": "Ketuk ayat",
+                "action": "Buka halaman ayat"
+            },
             {
                 "gesture": "Tekan lama pada ayat",
                 "action": "Tampilkan catatan tepi (hamish)"
             },
-            { "gesture": "Ketuk kata", "action": "Buka halaman kata" },
-            { "gesture": "Ketuk tengah", "action": "Tampilkan/sembunyikan bilah" },
-            { "gesture": "Geser dari tengah", "action": "Daftar surat / pencarian" },
+            {
+                "gesture": "Ketuk kata",
+                "action": "Buka halaman kata"
+            },
+            {
+                "gesture": "Ketuk tengah",
+                "action": "Tampilkan/sembunyikan bilah"
+            },
+            {
+                "gesture": "Geser dari tengah",
+                "action": "Daftar surat / pencarian"
+            },
             {
                 "gesture": "Roda tetikus & tombol panah",
                 "action": "Navigasi desktop dan web"
@@ -441,10 +522,22 @@
             "mac": "Unduh untuk macOS"
         },
         "storeLabels": {
-            "android": { "small": "DAPATKAN DI", "big": "Google Play" },
-            "ios": { "small": "Unduh di", "big": "App Store" },
-            "windows": { "small": "Unduh untuk", "big": "Windows" },
-            "mac": { "small": "Unduh untuk", "big": "macOS" }
+            "android": {
+                "small": "DAPATKAN DI",
+                "big": "Google Play"
+            },
+            "ios": {
+                "small": "Unduh di",
+                "big": "App Store"
+            },
+            "windows": {
+                "small": "Unduh untuk",
+                "big": "Windows"
+            },
+            "mac": {
+                "small": "Unduh untuk",
+                "big": "macOS"
+            }
         },
         "primaryCta": "Unduh",
         "winNote": "Berjalan di Windows 10 dan ke atas",
@@ -466,8 +559,14 @@
         "about": "Wursha QuranHolder diterbitkan oleh Wursha Digital Apps.",
         "creditsTitle": "Kredit & ucapan terima kasih",
         "credits": [
-            { "label": "Penerbit", "value": "Wursha Digital Apps" },
-            { "label": "Rekayasa & desain", "value": "Eng. Karim Magdy" },
+            {
+                "label": "Penerbit",
+                "value": "Wursha Digital Apps"
+            },
+            {
+                "label": "Rekayasa & desain",
+                "value": "Eng. Karim Magdy"
+            },
             {
                 "label": "Mushaf Khair Zad",
                 "value": "Syaikh Ali bin Abdul Mun‘im Saleh"

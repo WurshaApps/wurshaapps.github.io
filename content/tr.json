@@ -22,7 +22,7 @@
         "screenshotAlt": "Wursha QuranHolder ekran görüntüsü"
     },
     "stats": {
-        "editions": "15",
+        "editions": "5",
         "editionsLabel": "Sahih Mushaf baskısı",
         "reciters": "68",
         "recitersLabel": "Seçkin kâri",
@@ -200,12 +200,19 @@
             {
                 "name": "Hâmilü’l-Kur’ân",
                 "description": "Önemli kıraat ve rivâyetleri kapsayan, Osmanî yazılı geniş bir koleksiyon.",
-                "items": ["Medine", "Şemerlî", "Tecvit"]
+                "items": [
+                    "Medine",
+                    "Şemerlî",
+                    "Tecvit"
+                ]
             },
             {
                 "name": "Hayrü Zâd",
                 "description": "Yapılandırılmış pedagojik bir yaklaşımla hafızlık odaklı seri.",
-                "items": ["Verş", "Kâlûn"]
+                "items": [
+                    "Verş",
+                    "Kâlûn"
+                ]
             }
         ],
         "list": [
@@ -243,24 +250,61 @@
         "subtitle": "Her kâri belirli bir rivâyet, baskı (Mürettel, Mücevvet, Muallim, Radyo, Tam) ve yüksek kaliteli bir CDN ile eşlenir. Özel kâri URL’si de eklenebilir.",
         "riwayatTitle": "Kapsanan rivâyet ve kıraatlar",
         "riwayat": [
-            { "name": "Hafs an Âsım", "sub": "En yaygın" },
-            { "name": "Verş an Nâfi‘" },
-            { "name": "Kâlûn an Nâfi‘" },
-            { "name": "Şu’be an Âsım" },
-            { "name": "ed-Dûrî an Ebî Amr" },
-            { "name": "es-Sûsî an Ebî Amr" },
-            { "name": "el-Esbahânî" },
-            { "name": "Hamza’nın rivâyetleri" },
-            { "name": "Cem‘-i Kübrâ ve Suğrâ", "sub": "On kıraatın beyanı" },
-            { "name": "Verş ve Kâlûn vecihleri" }
+            {
+                "name": "Hafs an Âsım",
+                "sub": "En yaygın"
+            },
+            {
+                "name": "Verş an Nâfi‘"
+            },
+            {
+                "name": "Kâlûn an Nâfi‘"
+            },
+            {
+                "name": "Şu’be an Âsım"
+            },
+            {
+                "name": "ed-Dûrî an Ebî Amr"
+            },
+            {
+                "name": "es-Sûsî an Ebî Amr"
+            },
+            {
+                "name": "el-Esbahânî"
+            },
+            {
+                "name": "Hamza’nın rivâyetleri"
+            },
+            {
+                "name": "Cem‘-i Kübrâ ve Suğrâ",
+                "sub": "On kıraatın beyanı"
+            },
+            {
+                "name": "Verş ve Kâlûn vecihleri"
+            }
         ],
         "sourcesTitle": "Ses kaynakları",
         "sources": [
-            { "name": "mp3quran.net", "sub": "Birincil CDN — 192 kbps’ye kadar" },
-            { "name": "everyayah.com", "sub": "Ayet ayet alternatif kaynak" },
-            { "name": "quran.ksu.edu.sa", "sub": "Kral Suud Üniversitesi" },
-            { "name": "sound.quraat.info", "sub": "Klasik ve kıraata özel arşiv" },
-            { "name": "wursha-backup.github.io", "sub": "Husarî için yedek arşiv" }
+            {
+                "name": "mp3quran.net",
+                "sub": "Birincil CDN — 192 kbps’ye kadar"
+            },
+            {
+                "name": "everyayah.com",
+                "sub": "Ayet ayet alternatif kaynak"
+            },
+            {
+                "name": "quran.ksu.edu.sa",
+                "sub": "Kral Suud Üniversitesi"
+            },
+            {
+                "name": "sound.quraat.info",
+                "sub": "Klasik ve kıraata özel arşiv"
+            },
+            {
+                "name": "wursha-backup.github.io",
+                "sub": "Husarî için yedek arşiv"
+            }
         ],
         "featuredTitle": "Öne çıkan kâriler",
         "featured": [
@@ -284,10 +328,26 @@
                 "riwaya": "Hafs an Âsım",
                 "version": "Mürettel"
             },
-            { "name": "Yâsir ed-Devserî", "riwaya": "Hafs an Âsım", "version": "Mürettel" },
-            { "name": "Suûd eş-Şureym", "riwaya": "Hafs an Âsım", "version": "Mürettel" },
-            { "name": "Ahmed Talba", "riwaya": "Cem‘-i Kübrâ", "version": "Tam" },
-            { "name": "İbrâhim el-Mağribî", "riwaya": "el-Esbahânî", "version": "Tam" }
+            {
+                "name": "Yâsir ed-Devserî",
+                "riwaya": "Hafs an Âsım",
+                "version": "Mürettel"
+            },
+            {
+                "name": "Suûd eş-Şureym",
+                "riwaya": "Hafs an Âsım",
+                "version": "Mürettel"
+            },
+            {
+                "name": "Ahmed Talba",
+                "riwaya": "Cem‘-i Kübrâ",
+                "version": "Tam"
+            },
+            {
+                "name": "İbrâhim el-Mağribî",
+                "riwaya": "el-Esbahânî",
+                "version": "Tam"
+            }
         ],
         "downloadNote": "Çevrim dışı dinleme için tüm tilavetleri indir; ilerleme, hız ve depolama bilgisi görünür."
     },
@@ -405,17 +465,38 @@
         "title": "Doğal ve esnek dokunma kontrolü",
         "subtitle": "Her hareket açılıp kapatılabilir — birçoğu yeniden atanabilir.",
         "items": [
-            { "gesture": "Sağa/sola kaydır", "action": "Sayfayı çevir" },
-            { "gesture": "Kenardan yukarı/aşağı kaydır", "action": "Ekran parlaklığı" },
-            { "gesture": "Sıkıştır", "action": "Sayfayı yakınlaştır" },
-            { "gesture": "Ayete dokun", "action": "Ayet sayfasını aç" },
+            {
+                "gesture": "Sağa/sola kaydır",
+                "action": "Sayfayı çevir"
+            },
+            {
+                "gesture": "Kenardan yukarı/aşağı kaydır",
+                "action": "Ekran parlaklığı"
+            },
+            {
+                "gesture": "Sıkıştır",
+                "action": "Sayfayı yakınlaştır"
+            },
+            {
+                "gesture": "Ayete dokun",
+                "action": "Ayet sayfasını aç"
+            },
             {
                 "gesture": "Ayete uzun bas",
                 "action": "Kenar notlarını (hâmiş) göster"
             },
-            { "gesture": "Kelimeye dokun", "action": "Kelime sayfasını aç" },
-            { "gesture": "Ortaya dokun", "action": "Çubukları aç/kapat" },
-            { "gesture": "Ortadan kaydır", "action": "Sûre dizini / arama" },
+            {
+                "gesture": "Kelimeye dokun",
+                "action": "Kelime sayfasını aç"
+            },
+            {
+                "gesture": "Ortaya dokun",
+                "action": "Çubukları aç/kapat"
+            },
+            {
+                "gesture": "Ortadan kaydır",
+                "action": "Sûre dizini / arama"
+            },
             {
                 "gesture": "Fare tekerleği ve ok tuşları",
                 "action": "Masaüstü ve web’de gezinme"
@@ -441,10 +522,22 @@
             "mac": "macOS için indir"
         },
         "storeLabels": {
-            "android": { "small": "BURADAN İNDİR", "big": "Google Play" },
-            "ios": { "small": "İndir:", "big": "App Store" },
-            "windows": { "small": "İndir:", "big": "Windows" },
-            "mac": { "small": "İndir:", "big": "macOS" }
+            "android": {
+                "small": "BURADAN İNDİR",
+                "big": "Google Play"
+            },
+            "ios": {
+                "small": "İndir:",
+                "big": "App Store"
+            },
+            "windows": {
+                "small": "İndir:",
+                "big": "Windows"
+            },
+            "mac": {
+                "small": "İndir:",
+                "big": "macOS"
+            }
         },
         "primaryCta": "İndir",
         "winNote": "Windows 10 ve üzerinde çalışır",
@@ -466,8 +559,14 @@
         "about": "Wursha QuranHolder, Wursha Digital Apps tarafından yayımlanır.",
         "creditsTitle": "Katkı ve teşekkür",
         "credits": [
-            { "label": "Yayıncı", "value": "Wursha Digital Apps" },
-            { "label": "Mühendislik ve tasarım", "value": "Müh. Kerim Mecdi" },
+            {
+                "label": "Yayıncı",
+                "value": "Wursha Digital Apps"
+            },
+            {
+                "label": "Mühendislik ve tasarım",
+                "value": "Müh. Kerim Mecdi"
+            },
             {
                 "label": "Hayrü Zâd Mushafları",
                 "value": "Şeyh Ali b. Abdülmün‘im Salih"

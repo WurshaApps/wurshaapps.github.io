@@ -22,7 +22,7 @@
         "screenshotAlt": "Wursha QuranHolder ekran tasviri"
     },
     "stats": {
-        "editions": "15",
+        "editions": "5",
         "editionsLabel": "Sahih Mushaf nashri",
         "reciters": "68",
         "recitersLabel": "Tanlangan qori",
@@ -200,12 +200,19 @@
             {
                 "name": "Hamil al-Quran",
                 "description": "Asosiy qiroatlar va rivoyatlarni qamrab oluvchi, Usmoniy yozuvdagi keng to‘plam.",
-                "items": ["Madina", "Shamarli", "Tajvid"]
+                "items": [
+                    "Madina",
+                    "Shamarli",
+                    "Tajvid"
+                ]
             },
             {
                 "name": "Khair Zad",
                 "description": "Tuzilgan pedagogik yondashuvga ega bo‘lgan hofizlarga yo‘naltirilgan seriya.",
-                "items": ["Varsh", "Qolun"]
+                "items": [
+                    "Varsh",
+                    "Qolun"
+                ]
             }
         ],
         "list": [
@@ -243,24 +250,61 @@
         "subtitle": "Har bir qori muayyan rivoyat, nashr (Murattal, Mujavvad, Mu’allim, Radio, To‘liq) va yuqori sifatli CDN bilan jamlangan. Maxsus qori URL’ini ham qo‘shishingiz mumkin.",
         "riwayatTitle": "Qamrab olingan rivoyat va qiroatlar",
         "riwayat": [
-            { "name": "Hafs — Osimdan", "sub": "Eng keng tarqalgan" },
-            { "name": "Varsh — Nofe’dan" },
-            { "name": "Qolun — Nofe’dan" },
-            { "name": "Shu’ba — Osimdan" },
-            { "name": "Ad-Duriy — Abu Amrdan" },
-            { "name": "As-Susiy — Abu Amrdan" },
-            { "name": "Al-Asbahoniy" },
-            { "name": "Hamza rivoyatlari" },
-            { "name": "Al-Kubro va As-Sug‘ro", "sub": "O‘nta qiroat" },
-            { "name": "Qolun va Varsh jihatlari" }
+            {
+                "name": "Hafs — Osimdan",
+                "sub": "Eng keng tarqalgan"
+            },
+            {
+                "name": "Varsh — Nofe’dan"
+            },
+            {
+                "name": "Qolun — Nofe’dan"
+            },
+            {
+                "name": "Shu’ba — Osimdan"
+            },
+            {
+                "name": "Ad-Duriy — Abu Amrdan"
+            },
+            {
+                "name": "As-Susiy — Abu Amrdan"
+            },
+            {
+                "name": "Al-Asbahoniy"
+            },
+            {
+                "name": "Hamza rivoyatlari"
+            },
+            {
+                "name": "Al-Kubro va As-Sug‘ro",
+                "sub": "O‘nta qiroat"
+            },
+            {
+                "name": "Qolun va Varsh jihatlari"
+            }
         ],
         "sourcesTitle": "Audio manbalari",
         "sources": [
-            { "name": "mp3quran.net", "sub": "Asosiy CDN — 192 kbps gacha" },
-            { "name": "everyayah.com", "sub": "Oyat-oyat alternativ manba" },
-            { "name": "quran.ksu.edu.sa", "sub": "King Saud universiteti" },
-            { "name": "sound.quraat.info", "sub": "Klassik va qiroatga ixtisoslashtirilgan kutubxona" },
-            { "name": "wursha-backup.github.io", "sub": "Husariy uchun zaxira" }
+            {
+                "name": "mp3quran.net",
+                "sub": "Asosiy CDN — 192 kbps gacha"
+            },
+            {
+                "name": "everyayah.com",
+                "sub": "Oyat-oyat alternativ manba"
+            },
+            {
+                "name": "quran.ksu.edu.sa",
+                "sub": "King Saud universiteti"
+            },
+            {
+                "name": "sound.quraat.info",
+                "sub": "Klassik va qiroatga ixtisoslashtirilgan kutubxona"
+            },
+            {
+                "name": "wursha-backup.github.io",
+                "sub": "Husariy uchun zaxira"
+            }
         ],
         "featuredTitle": "Tanlangan qorilar",
         "featured": [
@@ -284,10 +328,26 @@
                 "riwaya": "Hafs — Osimdan",
                 "version": "Murattal"
             },
-            { "name": "Yosir Ad-Dosariy", "riwaya": "Hafs — Osimdan", "version": "Murattal" },
-            { "name": "Saud Ash-Shurayim", "riwaya": "Hafs — Osimdan", "version": "Murattal" },
-            { "name": "Ahmad Talba", "riwaya": "Al-Kubro", "version": "To‘liq" },
-            { "name": "Ibrohim Al-Mag‘ribiy", "riwaya": "Al-Asbahoniy", "version": "To‘liq" }
+            {
+                "name": "Yosir Ad-Dosariy",
+                "riwaya": "Hafs — Osimdan",
+                "version": "Murattal"
+            },
+            {
+                "name": "Saud Ash-Shurayim",
+                "riwaya": "Hafs — Osimdan",
+                "version": "Murattal"
+            },
+            {
+                "name": "Ahmad Talba",
+                "riwaya": "Al-Kubro",
+                "version": "To‘liq"
+            },
+            {
+                "name": "Ibrohim Al-Mag‘ribiy",
+                "riwaya": "Al-Asbahoniy",
+                "version": "To‘liq"
+            }
         ],
         "downloadNote": "To‘liq tilovatlarni oflayn tinglash uchun yuklang — taraqqiyot, tezlik va xotira ko‘rsatiladi."
     },
@@ -405,17 +465,38 @@
         "title": "Tabiiy va moslashuvchan sensorli boshqaruv",
         "subtitle": "Har bir imo-ishora yoqilishi yoki o‘chirilishi mumkin — ko‘pchiligi qayta tayinlanadi.",
         "items": [
-            { "gesture": "Chap/o‘ng surilish", "action": "Sahifani o‘girish" },
-            { "gesture": "Chetda yuqoriga/pastga surilish", "action": "Ekran yorqinligi" },
-            { "gesture": "Siqish", "action": "Sahifani kattalashtirish" },
-            { "gesture": "Oyatga tegish", "action": "Oyat sahifasini ochish" },
+            {
+                "gesture": "Chap/o‘ng surilish",
+                "action": "Sahifani o‘girish"
+            },
+            {
+                "gesture": "Chetda yuqoriga/pastga surilish",
+                "action": "Ekran yorqinligi"
+            },
+            {
+                "gesture": "Siqish",
+                "action": "Sahifani kattalashtirish"
+            },
+            {
+                "gesture": "Oyatga tegish",
+                "action": "Oyat sahifasini ochish"
+            },
             {
                 "gesture": "Oyatga uzoq bosish",
                 "action": "Hoshiya (hashiya) ko‘rsatish"
             },
-            { "gesture": "So‘zga tegish", "action": "So‘z sahifasini ochish" },
-            { "gesture": "Markazga tegish", "action": "Panellarni yashirish/ko‘rsatish" },
-            { "gesture": "Markazdan surilish", "action": "Sura indeksi / qidiruv" },
+            {
+                "gesture": "So‘zga tegish",
+                "action": "So‘z sahifasini ochish"
+            },
+            {
+                "gesture": "Markazga tegish",
+                "action": "Panellarni yashirish/ko‘rsatish"
+            },
+            {
+                "gesture": "Markazdan surilish",
+                "action": "Sura indeksi / qidiruv"
+            },
             {
                 "gesture": "Sichqoncha g‘ildiragi va strelkalar",
                 "action": "Kompyuter va vebda navigatsiya"
@@ -441,10 +522,22 @@
             "mac": "macOS uchun yuklab oling"
         },
         "storeLabels": {
-            "android": { "small": "OLISH MUMKIN", "big": "Google Play" },
-            "ios": { "small": "Yuklab olish:", "big": "App Store" },
-            "windows": { "small": "Yuklab olish:", "big": "Windows" },
-            "mac": { "small": "Yuklab olish:", "big": "macOS" }
+            "android": {
+                "small": "OLISH MUMKIN",
+                "big": "Google Play"
+            },
+            "ios": {
+                "small": "Yuklab olish:",
+                "big": "App Store"
+            },
+            "windows": {
+                "small": "Yuklab olish:",
+                "big": "Windows"
+            },
+            "mac": {
+                "small": "Yuklab olish:",
+                "big": "macOS"
+            }
         },
         "primaryCta": "Yuklab olish",
         "winNote": "Windows 10 va undan yuqori versiyalarda ishlaydi",
@@ -466,8 +559,14 @@
         "about": "Wursha QuranHolder Wursha Digital Apps tomonidan nashr etiladi.",
         "creditsTitle": "Mualliflar va minnatdorchiliklar",
         "credits": [
-            { "label": "Nashriyot", "value": "Wursha Digital Apps" },
-            { "label": "Muhandislik va dizayn", "value": "Muh. Karim Majdiy" },
+            {
+                "label": "Nashriyot",
+                "value": "Wursha Digital Apps"
+            },
+            {
+                "label": "Muhandislik va dizayn",
+                "value": "Muh. Karim Majdiy"
+            },
             {
                 "label": "Khair Zad mushaflari",
                 "value": "Shayx Ali ibn Abdulmun’im Solih"

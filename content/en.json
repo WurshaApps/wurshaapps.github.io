@@ -16,13 +16,13 @@
         "eyebrow": "Wursha QuranHolder — by Wursha Digital Apps",
         "title": "A complete companion for the Quran",
         "titleHighlight": "reading, reciting, studying, and memorizing.",
-        "subtitle": "15 authentic Mushaf editions, 68 world-class reciters, 15+ classical and modern tafseers, side-by-side qira’at, and word-by-word morphological and grammatical analysis — fully offline-capable after the initial download.",
+        "subtitle": "5 authentic Mushaf editions, 68 world-class reciters, 15+ classical and modern tafseers, side-by-side qira’at, and word-by-word morphological and grammatical analysis — fully offline-capable after the initial download.",
         "ctaPrimary": "Get the app",
         "ctaSecondary": "Explore features",
         "screenshotAlt": "Screenshot of Wursha QuranHolder"
     },
     "stats": {
-        "editions": "15",
+        "editions": "5",
         "editionsLabel": "Authentic Mushaf editions",
         "reciters": "68",
         "recitersLabel": "Curated reciters",
@@ -200,12 +200,19 @@
             {
                 "name": "Hamil al-Quran",
                 "description": "A wide collection in Uthmani script covering major qira’at and riwayat.",
-                "items": ["Madina", "Shamarli", "Tajweed"]
+                "items": [
+                    "Madina",
+                    "Shamarli",
+                    "Tajweed"
+                ]
             },
             {
                 "name": "Khair Zad",
                 "description": "A memorizer-focused series with a structured pedagogical approach.",
-                "items": ["Warsh", "Qalon"]
+                "items": [
+                    "Warsh",
+                    "Qalon"
+                ]
             }
         ],
         "list": [
@@ -243,24 +250,61 @@
         "subtitle": "Each reciter is paired with a riwaya, an edition (Murattal, Mujawwad, Teacher, Broadcast, Complete), and a high-quality CDN. You can also add a custom reciter URL.",
         "riwayatTitle": "Riwayat & Qira’at covered",
         "riwayat": [
-            { "name": "Hafs an Asim", "sub": "Most common" },
-            { "name": "Warsh an Nafi’" },
-            { "name": "Qalon an Nafi’" },
-            { "name": "Sho’ba an Asim" },
-            { "name": "Ad-Duri an Abi Amr" },
-            { "name": "As-Susi an Abi Amr" },
-            { "name": "Al-Asbahani" },
-            { "name": "Hamza’s narrations" },
-            { "name": "Al-Kobra & As-Soghra", "sub": "The ten qira’at" },
-            { "name": "Aspects of Qalon & Warsh" }
+            {
+                "name": "Hafs an Asim",
+                "sub": "Most common"
+            },
+            {
+                "name": "Warsh an Nafi’"
+            },
+            {
+                "name": "Qalon an Nafi’"
+            },
+            {
+                "name": "Sho’ba an Asim"
+            },
+            {
+                "name": "Ad-Duri an Abi Amr"
+            },
+            {
+                "name": "As-Susi an Abi Amr"
+            },
+            {
+                "name": "Al-Asbahani"
+            },
+            {
+                "name": "Hamza’s narrations"
+            },
+            {
+                "name": "Al-Kobra & As-Soghra",
+                "sub": "The ten qira’at"
+            },
+            {
+                "name": "Aspects of Qalon & Warsh"
+            }
         ],
         "sourcesTitle": "Audio sources",
         "sources": [
-            { "name": "mp3quran.net", "sub": "Primary CDN — up to 192 kbps" },
-            { "name": "everyayah.com", "sub": "Verse-by-verse alternative source" },
-            { "name": "quran.ksu.edu.sa", "sub": "King Saud University" },
-            { "name": "sound.quraat.info", "sub": "Classical and qira’at-specialized library" },
-            { "name": "wursha-backup.github.io", "sub": "Custom backup for Al-Husary" }
+            {
+                "name": "mp3quran.net",
+                "sub": "Primary CDN — up to 192 kbps"
+            },
+            {
+                "name": "everyayah.com",
+                "sub": "Verse-by-verse alternative source"
+            },
+            {
+                "name": "quran.ksu.edu.sa",
+                "sub": "King Saud University"
+            },
+            {
+                "name": "sound.quraat.info",
+                "sub": "Classical and qira’at-specialized library"
+            },
+            {
+                "name": "wursha-backup.github.io",
+                "sub": "Custom backup for Al-Husary"
+            }
         ],
         "featuredTitle": "Featured reciters",
         "featured": [
@@ -284,10 +328,26 @@
                 "riwaya": "Hafs an Asim",
                 "version": "Murattal"
             },
-            { "name": "Yasser Al-Dossary", "riwaya": "Hafs an Asim", "version": "Murattal" },
-            { "name": "Saud Ash-Shuraym", "riwaya": "Hafs an Asim", "version": "Murattal" },
-            { "name": "Ahmad Talba", "riwaya": "Al-Kobra", "version": "Complete" },
-            { "name": "Ibrahim Al-Maghribi", "riwaya": "Al-Asbahani", "version": "Complete" }
+            {
+                "name": "Yasser Al-Dossary",
+                "riwaya": "Hafs an Asim",
+                "version": "Murattal"
+            },
+            {
+                "name": "Saud Ash-Shuraym",
+                "riwaya": "Hafs an Asim",
+                "version": "Murattal"
+            },
+            {
+                "name": "Ahmad Talba",
+                "riwaya": "Al-Kobra",
+                "version": "Complete"
+            },
+            {
+                "name": "Ibrahim Al-Maghribi",
+                "riwaya": "Al-Asbahani",
+                "version": "Complete"
+            }
         ],
         "downloadNote": "Download full recitations for offline listening with progress, speed, and storage usage."
     },
@@ -405,17 +465,38 @@
         "title": "Natural, flexible touch control",
         "subtitle": "Every gesture can be toggled — and many can be remapped.",
         "items": [
-            { "gesture": "Swipe left/right", "action": "Turn pages" },
-            { "gesture": "Edge swipe up/down", "action": "Adjust screen brightness" },
-            { "gesture": "Pinch", "action": "Zoom into the page" },
-            { "gesture": "Tap on a verse", "action": "Open the verse page" },
+            {
+                "gesture": "Swipe left/right",
+                "action": "Turn pages"
+            },
+            {
+                "gesture": "Edge swipe up/down",
+                "action": "Adjust screen brightness"
+            },
+            {
+                "gesture": "Pinch",
+                "action": "Zoom into the page"
+            },
+            {
+                "gesture": "Tap on a verse",
+                "action": "Open the verse page"
+            },
             {
                 "gesture": "Long-press a verse",
                 "action": "Show margin notes (hamsh)"
             },
-            { "gesture": "Tap on a word", "action": "Open the word page" },
-            { "gesture": "Tap center", "action": "Toggle UI bars" },
-            { "gesture": "Swipe from center", "action": "Suras index / search" },
+            {
+                "gesture": "Tap on a word",
+                "action": "Open the word page"
+            },
+            {
+                "gesture": "Tap center",
+                "action": "Toggle UI bars"
+            },
+            {
+                "gesture": "Swipe from center",
+                "action": "Suras index / search"
+            },
             {
                 "gesture": "Mouse wheel & arrow keys",
                 "action": "Desktop and web navigation"
@@ -441,10 +522,22 @@
             "mac": "Download for macOS"
         },
         "storeLabels": {
-            "android": { "small": "GET IT ON", "big": "Google Play" },
-            "ios": { "small": "Download on the", "big": "App Store" },
-            "windows": { "small": "Download for", "big": "Windows" },
-            "mac": { "small": "Download for", "big": "macOS" }
+            "android": {
+                "small": "GET IT ON",
+                "big": "Google Play"
+            },
+            "ios": {
+                "small": "Download on the",
+                "big": "App Store"
+            },
+            "windows": {
+                "small": "Download for",
+                "big": "Windows"
+            },
+            "mac": {
+                "small": "Download for",
+                "big": "macOS"
+            }
         },
         "primaryCta": "Download",
         "winNote": "Works on Windows 10 and above",
@@ -466,8 +559,14 @@
         "about": "Wursha QuranHolder is published by Wursha Digital Apps.",
         "creditsTitle": "Credits & acknowledgements",
         "credits": [
-            { "label": "Publisher", "value": "Wursha Digital Apps" },
-            { "label": "Engineering & design", "value": "Eng. Karim Magdy" },
+            {
+                "label": "Publisher",
+                "value": "Wursha Digital Apps"
+            },
+            {
+                "label": "Engineering & design",
+                "value": "Eng. Karim Magdy"
+            },
             {
                 "label": "Khair Zad mushafs",
                 "value": "Sheikh Ali ibn Abd al-Mun’im Saleh"

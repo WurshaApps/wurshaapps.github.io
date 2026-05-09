@@ -22,7 +22,7 @@
         "screenshotAlt": "Screenshot von Wursha QuranHolder"
     },
     "stats": {
-        "editions": "15",
+        "editions": "5",
         "editionsLabel": "Authentische Mushaf-Ausgaben",
         "reciters": "68",
         "recitersLabel": "Ausgewählte Rezitatoren",
@@ -200,12 +200,19 @@
             {
                 "name": "Hamil al-Quran",
                 "description": "Eine umfangreiche Sammlung in Uthmanī-Schrift, die wichtige Qira’at und Riwāyāt abdeckt.",
-                "items": ["Madina", "Shamarli", "Tajweed"]
+                "items": [
+                    "Madina",
+                    "Shamarli",
+                    "Tajweed"
+                ]
             },
             {
                 "name": "Khair Zad",
                 "description": "Eine auf Auswendiglernen ausgerichtete Reihe mit strukturiertem pädagogischem Ansatz.",
-                "items": ["Warsh", "Qalon"]
+                "items": [
+                    "Warsh",
+                    "Qalon"
+                ]
             }
         ],
         "list": [
@@ -243,24 +250,61 @@
         "subtitle": "Jeder Rezitator ist mit einer Riwāya, einer Edition (Murattal, Mujawwad, Lehrer, Rundfunk, Komplett) und einem hochwertigen CDN gekoppelt. Eigene URLs sind möglich.",
         "riwayatTitle": "Abgedeckte Riwāyāt & Qira’at",
         "riwayat": [
-            { "name": "Hafs ‘an ‘Āsim", "sub": "Am verbreitetsten" },
-            { "name": "Warsh ‘an Nāfi‘" },
-            { "name": "Qālūn ‘an Nāfi‘" },
-            { "name": "Sho’ba ‘an ‘Āsim" },
-            { "name": "Ad-Dūrī ‘an Abī ‘Amr" },
-            { "name": "As-Sūsī ‘an Abī ‘Amr" },
-            { "name": "Al-Asbahānī" },
-            { "name": "Hamzas Riwāyāt" },
-            { "name": "Al-Kobra & As-Soghra", "sub": "Die zehn Qira’at" },
-            { "name": "Aspekte von Qālūn & Warsh" }
+            {
+                "name": "Hafs ‘an ‘Āsim",
+                "sub": "Am verbreitetsten"
+            },
+            {
+                "name": "Warsh ‘an Nāfi‘"
+            },
+            {
+                "name": "Qālūn ‘an Nāfi‘"
+            },
+            {
+                "name": "Sho’ba ‘an ‘Āsim"
+            },
+            {
+                "name": "Ad-Dūrī ‘an Abī ‘Amr"
+            },
+            {
+                "name": "As-Sūsī ‘an Abī ‘Amr"
+            },
+            {
+                "name": "Al-Asbahānī"
+            },
+            {
+                "name": "Hamzas Riwāyāt"
+            },
+            {
+                "name": "Al-Kobra & As-Soghra",
+                "sub": "Die zehn Qira’at"
+            },
+            {
+                "name": "Aspekte von Qālūn & Warsh"
+            }
         ],
         "sourcesTitle": "Audio-Quellen",
         "sources": [
-            { "name": "mp3quran.net", "sub": "Hauptquelle — bis zu 192 kbps" },
-            { "name": "everyayah.com", "sub": "Vers-für-Vers-Alternative" },
-            { "name": "quran.ksu.edu.sa", "sub": "King Saud University" },
-            { "name": "sound.quraat.info", "sub": "Klassische und Qira’at-spezialisierte Bibliothek" },
-            { "name": "wursha-backup.github.io", "sub": "Sicherung der Al-Husary-Rezitationen" }
+            {
+                "name": "mp3quran.net",
+                "sub": "Hauptquelle — bis zu 192 kbps"
+            },
+            {
+                "name": "everyayah.com",
+                "sub": "Vers-für-Vers-Alternative"
+            },
+            {
+                "name": "quran.ksu.edu.sa",
+                "sub": "King Saud University"
+            },
+            {
+                "name": "sound.quraat.info",
+                "sub": "Klassische und Qira’at-spezialisierte Bibliothek"
+            },
+            {
+                "name": "wursha-backup.github.io",
+                "sub": "Sicherung der Al-Husary-Rezitationen"
+            }
         ],
         "featuredTitle": "Empfohlene Rezitatoren",
         "featured": [
@@ -284,10 +328,26 @@
                 "riwaya": "Hafs ‘an ‘Āsim",
                 "version": "Murattal"
             },
-            { "name": "Yāsir Ad-Dosary", "riwaya": "Hafs ‘an ‘Āsim", "version": "Murattal" },
-            { "name": "Sa‘ūd Ash-Shuraym", "riwaya": "Hafs ‘an ‘Āsim", "version": "Murattal" },
-            { "name": "Ahmad Talba", "riwaya": "Al-Kobra", "version": "Komplett" },
-            { "name": "Ibrāhīm Al-Maghribī", "riwaya": "Al-Asbahānī", "version": "Komplett" }
+            {
+                "name": "Yāsir Ad-Dosary",
+                "riwaya": "Hafs ‘an ‘Āsim",
+                "version": "Murattal"
+            },
+            {
+                "name": "Sa‘ūd Ash-Shuraym",
+                "riwaya": "Hafs ‘an ‘Āsim",
+                "version": "Murattal"
+            },
+            {
+                "name": "Ahmad Talba",
+                "riwaya": "Al-Kobra",
+                "version": "Komplett"
+            },
+            {
+                "name": "Ibrāhīm Al-Maghribī",
+                "riwaya": "Al-Asbahānī",
+                "version": "Komplett"
+            }
         ],
         "downloadNote": "Lade vollständige Rezitationen für die Offline-Nutzung herunter — mit Fortschritt, Geschwindigkeit und Speicherbelegung."
     },
@@ -405,17 +465,38 @@
         "title": "Natürliche, flexible Touch-Steuerung",
         "subtitle": "Jede Geste lässt sich an- oder ausschalten — viele auch neu zuweisen.",
         "items": [
-            { "gesture": "Wischen links/rechts", "action": "Seiten umblättern" },
-            { "gesture": "Wischen am Rand hoch/runter", "action": "Bildschirmhelligkeit" },
-            { "gesture": "Pinch", "action": "Auf der Seite zoomen" },
-            { "gesture": "Tippen auf einen Vers", "action": "Versseite öffnen" },
+            {
+                "gesture": "Wischen links/rechts",
+                "action": "Seiten umblättern"
+            },
+            {
+                "gesture": "Wischen am Rand hoch/runter",
+                "action": "Bildschirmhelligkeit"
+            },
+            {
+                "gesture": "Pinch",
+                "action": "Auf der Seite zoomen"
+            },
+            {
+                "gesture": "Tippen auf einen Vers",
+                "action": "Versseite öffnen"
+            },
             {
                 "gesture": "Langes Drücken auf Vers",
                 "action": "Randnotizen (Hamsh) anzeigen"
             },
-            { "gesture": "Tippen auf ein Wort", "action": "Wortseite öffnen" },
-            { "gesture": "Mittel-Tap", "action": "Leisten ein-/ausblenden" },
-            { "gesture": "Wischen aus der Mitte", "action": "Suren-Index / Suche" },
+            {
+                "gesture": "Tippen auf ein Wort",
+                "action": "Wortseite öffnen"
+            },
+            {
+                "gesture": "Mittel-Tap",
+                "action": "Leisten ein-/ausblenden"
+            },
+            {
+                "gesture": "Wischen aus der Mitte",
+                "action": "Suren-Index / Suche"
+            },
             {
                 "gesture": "Mausrad und Pfeiltasten",
                 "action": "Navigation am Desktop und Web"
@@ -441,10 +522,22 @@
             "mac": "Für macOS herunterladen"
         },
         "storeLabels": {
-            "android": { "small": "BEKOMMEN BEI", "big": "Google Play" },
-            "ios": { "small": "Laden im", "big": "App Store" },
-            "windows": { "small": "Herunterladen für", "big": "Windows" },
-            "mac": { "small": "Herunterladen für", "big": "macOS" }
+            "android": {
+                "small": "BEKOMMEN BEI",
+                "big": "Google Play"
+            },
+            "ios": {
+                "small": "Laden im",
+                "big": "App Store"
+            },
+            "windows": {
+                "small": "Herunterladen für",
+                "big": "Windows"
+            },
+            "mac": {
+                "small": "Herunterladen für",
+                "big": "macOS"
+            }
         },
         "primaryCta": "Herunterladen",
         "winNote": "Funktioniert ab Windows 10",
@@ -466,8 +559,14 @@
         "about": "Wursha QuranHolder wird von Wursha Digital Apps herausgegeben.",
         "creditsTitle": "Mitwirkende & Danksagungen",
         "credits": [
-            { "label": "Herausgeber", "value": "Wursha Digital Apps" },
-            { "label": "Entwicklung & Design", "value": "Eng. Karim Magdy" },
+            {
+                "label": "Herausgeber",
+                "value": "Wursha Digital Apps"
+            },
+            {
+                "label": "Entwicklung & Design",
+                "value": "Eng. Karim Magdy"
+            },
             {
                 "label": "Khair-Zad-Mushafs",
                 "value": "Scheich Ali ibn Abd al-Mun‘im Saleh"
