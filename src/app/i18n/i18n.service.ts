@@ -1,8 +1,17 @@
 import { Injectable, computed, effect, signal } from '@angular/core';
-import { LOCALES, RTL_LANGS, getLocale, isLang, type Direction, type Lang } from './locales';
+import {
+    LOCALES,
+    RTL_LANGS,
+    detectLangFromUserAgent,
+    getLocale,
+    isLang,
+    type Direction,
+    type Lang,
+} from './locales';
 import { TRANSLATIONS, type Dict } from './translations';
 
 const STORAGE_KEY = 'wursha-lang';
+const FALLBACK: Lang = 'ar';
 
 @Injectable({ providedIn: 'root' })
 export class I18nService {
@@ -33,25 +42,42 @@ export class I18nService {
         });
     }
 
+    /**
+     * Manually set the active language. The choice is persisted to localStorage
+     * via the constructor effect, so it overrides user-agent auto-detection on
+     * subsequent visits.
+     */
     setLang(lang: Lang) {
         this._lang.set(lang);
     }
 
+    /**
+     * Forget the saved manual choice. The next page load will fall back to
+     * user-agent detection. Provided for completeness; not wired to any UI.
+     */
+    clearSavedLang() {
+        try {
+            localStorage?.removeItem(STORAGE_KEY);
+        } catch {
+            /* ignore */
+        }
+    }
+
+    /**
+     * Detection chain (highest priority first):
+     *   1. Persisted manual choice in localStorage — keeps the user's explicit
+     *      pick stable across visits, untouched by auto-detection.
+     *   2. User-agent locale (`navigator.languages`) — language subtag match,
+     *      ISO 639 aliases, then region/country fallback. See locales.ts.
+     *   3. Hard fallback: Arabic (the canonical content language).
+     */
     private detectInitial(): Lang {
         try {
             const saved = localStorage?.getItem(STORAGE_KEY);
             if (isLang(saved)) return saved;
         } catch {
-            /* ignore */
+            /* SSR / private browsing */
         }
-        if (typeof navigator !== 'undefined') {
-            const langs = navigator.languages?.length ? navigator.languages : [navigator.language];
-            for (const l of langs) {
-                if (!l) continue;
-                const code = l.split('-')[0]?.toLowerCase();
-                if (isLang(code)) return code;
-            }
-        }
-        return 'ar';
+        return detectLangFromUserAgent() ?? FALLBACK;
     }
 }
