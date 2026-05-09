@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const REPO = 'WurshaApps/QuranHolder_Releases';
-const TARGET = 'src/app/app.component.ts';
+const TARGET = 'content/apps.json';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -25,34 +25,61 @@ function pickLatestForPrefix(releases, prefix) {
     const exe = match.assets.find((a) => a.name.endsWith('.exe'));
     if (!dmg) throw new Error(`No .dmg asset in ${match.tag_name}`);
     if (!exe) throw new Error(`No .exe asset in ${match.tag_name}`);
-    return { tag: match.tag_name, mac: dmg.browser_download_url, windows: exe.browser_download_url };
+    const version = match.tag_name.slice(prefix.length + 2); // strip "<prefix>-v"
+    return {
+        tag: match.tag_name,
+        version,
+        mac: dmg.browser_download_url,
+        windows: exe.browser_download_url,
+    };
+}
+
+function compareSemver(a, b) {
+    const pa = a.split('.').map(Number);
+    const pb = b.split('.').map(Number);
+    for (let i = 0; i < Math.max(pa.length, pb.length); i++) {
+        const diff = (pa[i] ?? 0) - (pb[i] ?? 0);
+        if (diff !== 0) return diff;
+    }
+    return 0;
 }
 
 async function main() {
     const path = join(root, TARGET);
-    let content = await readFile(path, 'utf8');
+    const original = await readFile(path, 'utf8');
+    const catalog = JSON.parse(original);
 
-    const prefixes = [...content.matchAll(/image: '(\w+)\.png'/g)].map((m) => m[1]);
-    if (prefixes.length === 0) throw new Error(`No apps found in ${TARGET}`);
+    if (!Array.isArray(catalog.apps) || catalog.apps.length === 0) {
+        throw new Error(`No apps[] found in ${TARGET}`);
+    }
 
     const releases = await fetchReleases();
 
-    let changed = false;
-    for (const prefix of prefixes) {
-        const { tag, mac, windows } = pickLatestForPrefix(releases, prefix);
-        const blockRe = new RegExp(
-            `(image: '${prefix}\\.png'[\\s\\S]*?)mac: '[^']*',(\\s+)windows: '[^']*',`,
-        );
-        if (!blockRe.test(content)) throw new Error(`Block not found for ${prefix}`);
-        const next = content.replace(blockRe, `$1mac: '${mac}',$2windows: '${windows}',`);
-        if (next !== content) changed = true;
-        content = next;
-        console.log(`${prefix}: ${tag}`);
+    let highestVersion = null;
+    for (const app of catalog.apps) {
+        if (typeof app.image !== 'string' || !app.image.endsWith('.png')) {
+            throw new Error(`App '${app.id}' is missing a .png image filename`);
+        }
+        const prefix = app.image.replace(/\.png$/, '');
+        const { tag, version, mac, windows } = pickLatestForPrefix(releases, prefix);
+
+        app.urls = app.urls ?? {};
+        app.urls.mac = mac;
+        app.urls.windows = windows;
+
+        if (!highestVersion || compareSemver(version, highestVersion) > 0) {
+            highestVersion = version;
+        }
+
+        console.log(`${app.id} (${prefix}): ${tag}`);
     }
 
-    if (changed) {
-        await writeFile(path, content);
-        console.log(`Updated ${TARGET}`);
+    if (highestVersion) catalog.version = highestVersion;
+
+    const next = JSON.stringify(catalog, null, 4) + '\n';
+    if (next !== original) {
+        await writeFile(path, next);
+        console.log(`Updated ${TARGET} → version ${catalog.version}`);
     } else {
         console.log('Already up to date.');
     }
