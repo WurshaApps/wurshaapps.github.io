@@ -8,7 +8,7 @@ import {
     type Direction,
     type Lang,
 } from './locales';
-import { TRANSLATIONS, type Dict } from './translations';
+import { loadDict, type Dict } from './translations';
 
 const STORAGE_KEY = 'wursha-lang';
 const FALLBACK: Lang = 'ar';
@@ -16,10 +16,18 @@ const FALLBACK: Lang = 'ar';
 @Injectable({ providedIn: 'root' })
 export class I18nService {
     private readonly _lang = signal<Lang>(this.detectInitial());
+    private readonly _dict = signal<Dict | null>(null);
+    private readonly cache = new Map<Lang, Dict>();
 
     readonly lang = this._lang.asReadonly();
     readonly dir = computed<Direction>(() => (RTL_LANGS.has(this._lang()) ? 'rtl' : 'ltr'));
-    readonly t = computed<Dict>(() => TRANSLATIONS[this._lang()]);
+    readonly t = computed<Dict>(() => {
+        const dict = this._dict();
+        if (!dict) {
+            throw new Error('I18n dictionary accessed before initial load completed.');
+        }
+        return dict;
+    });
     readonly locales = LOCALES;
     readonly currentLocale = computed(() => getLocale(this._lang()));
 
@@ -27,12 +35,15 @@ export class I18nService {
         effect(() => {
             const lang = this._lang();
             const dir = this.dir();
+            const dict = this._dict();
             if (typeof document !== 'undefined') {
                 document.documentElement.lang = lang;
                 document.documentElement.dir = dir;
-                document.title = TRANSLATIONS[lang].meta.title;
-                const meta = document.querySelector('meta[name="description"]');
-                if (meta) meta.setAttribute('content', TRANSLATIONS[lang].meta.description);
+                if (dict) {
+                    document.title = dict.meta.title;
+                    const meta = document.querySelector('meta[name="description"]');
+                    if (meta) meta.setAttribute('content', dict.meta.description);
+                }
             }
             try {
                 localStorage?.setItem(STORAGE_KEY, lang);
@@ -43,12 +54,25 @@ export class I18nService {
     }
 
     /**
-     * Manually set the active language. The choice is persisted to localStorage
-     * via the constructor effect, so it overrides user-agent auto-detection on
-     * subsequent visits.
+     * Loads the currently selected language and exposes its dictionary.
+     * Used by the app initializer to block first paint until copy is ready.
+     */
+    async ensureLoaded(): Promise<void> {
+        const lang = this._lang();
+        const dict = await this.fetch(lang);
+        if (this._lang() === lang) this._dict.set(dict);
+    }
+
+    /**
+     * Switch active language. Loads the locale chunk on demand, then swaps the
+     * dictionary and lang signal together so the UI never renders mismatched
+     * direction/text.
      */
     setLang(lang: Lang) {
-        this._lang.set(lang);
+        void this.fetch(lang).then((dict) => {
+            this._dict.set(dict);
+            this._lang.set(lang);
+        });
     }
 
     /**
@@ -61,6 +85,14 @@ export class I18nService {
         } catch {
             /* ignore */
         }
+    }
+
+    private async fetch(lang: Lang): Promise<Dict> {
+        const cached = this.cache.get(lang);
+        if (cached) return cached;
+        const dict = await loadDict(lang);
+        this.cache.set(lang, dict);
+        return dict;
     }
 
     /**

@@ -1,18 +1,3 @@
-import arJson from '@content/ar.json';
-import azJson from '@content/az.json';
-import bnJson from '@content/bn.json';
-import deJson from '@content/de.json';
-import enJson from '@content/en.json';
-import faJson from '@content/fa.json';
-import frJson from '@content/fr.json';
-import hiJson from '@content/hi.json';
-import idJson from '@content/id.json';
-import msJson from '@content/ms.json';
-import psJson from '@content/ps.json';
-import trJson from '@content/tr.json';
-import urJson from '@content/ur.json';
-import uzJson from '@content/uz.json';
-
 import type { Lang } from './locales';
 
 /**
@@ -150,19 +135,29 @@ export interface Dict {
     apps: Record<string, { name: string; description?: string }>;
 }
 
-export const TRANSLATIONS: Record<Lang, Dict> = {
-    ar: arJson as Dict,
-    en: enJson as Dict,
-    az: azJson as Dict,
-    bn: bnJson as Dict,
-    de: deJson as Dict,
-    fa: faJson as Dict,
-    fr: frJson as Dict,
-    hi: hiJson as Dict,
-    id: idJson as Dict,
-    ms: msJson as Dict,
-    ps: psJson as Dict,
-    tr: trJson as Dict,
-    ur: urJson as Dict,
-    uz: uzJson as Dict,
+/**
+ * Per-language dynamic import factories. Each call site is statically analyzable
+ * by the bundler, so esbuild emits one chunk per locale and only the requested
+ * one is fetched at runtime.
+ */
+const LOADERS: Record<Lang, () => Promise<{ default: unknown }>> = {
+    ar: () => import('@content/ar.json'),
+    az: () => import('@content/az.json'),
+    bn: () => import('@content/bn.json'),
+    de: () => import('@content/de.json'),
+    en: () => import('@content/en.json'),
+    fa: () => import('@content/fa.json'),
+    fr: () => import('@content/fr.json'),
+    hi: () => import('@content/hi.json'),
+    id: () => import('@content/id.json'),
+    ms: () => import('@content/ms.json'),
+    ps: () => import('@content/ps.json'),
+    tr: () => import('@content/tr.json'),
+    ur: () => import('@content/ur.json'),
+    uz: () => import('@content/uz.json'),
 };
+
+export async function loadDict(lang: Lang): Promise<Dict> {
+    const mod = await LOADERS[lang]();
+    return mod.default as Dict;
+}
