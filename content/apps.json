@@ -1,6 +1,6 @@
 {
     "$schema": "./schemas/apps.schema.json",
-    "version": "35.0.0",
+    "version": "35.0.1",
     "apps": [
         {
             "id": "madina",
@@ -10,8 +10,8 @@
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_madina",
                 "ios": "https://apps.apple.com/app/id1436371392",
-                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/madina-v35.0.0/-35.0.0-universal.dmg",
-                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/madina-v35.0.0/-35.0.0.Setup.exe"
+                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/madina-v35.0.1/-35.0.1-universal.dmg",
+                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/madina-v35.0.1/-35.0.1.Setup.exe"
             }
         },
         {
@@ -21,8 +21,8 @@
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.mosshfshmrly",
                 "ios": "https://apps.apple.com/app/id1434342823",
-                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/shmrly-v35.0.0/-35.0.0-universal.dmg",
-                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/shmrly-v35.0.0/-35.0.0.Setup.exe"
+                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/shmrly-v35.0.1/-35.0.1-universal.dmg",
+                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/shmrly-v35.0.1/-35.0.1.Setup.exe"
             }
         },
         {
@@ -32,8 +32,8 @@
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_tjwid",
                 "ios": "https://apps.apple.com/app/id1509386930",
-                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/tjwid-v35.0.0/-35.0.0-universal.dmg",
-                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/tjwid-v35.0.0/-35.0.0.Setup.exe"
+                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/tjwid-v35.0.1/-35.0.1-universal.dmg",
+                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/tjwid-v35.0.1/-35.0.1.Setup.exe"
             }
         },
         {
@@ -43,8 +43,8 @@
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_warsh",
                 "ios": "https://apps.apple.com/app/id1436361790",
-                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/warsh-v35.0.0/-35.0.0-universal.dmg",
-                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/warsh-v35.0.0/-35.0.0.Setup.exe"
+                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/warsh-v35.0.1/-35.0.1-universal.dmg",
+                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/warsh-v35.0.1/-35.0.1.Setup.exe"
             }
         },
         {
@@ -54,8 +54,8 @@
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_qalon",
                 "ios": "https://apps.apple.com/app/id1437326658",
-                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/qalon-v35.0.0/-35.0.0-universal.dmg",
-                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/qalon-v35.0.0/-35.0.0.Setup.exe"
+                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/qalon-v35.0.1/-35.0.1-universal.dmg",
+                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/qalon-v35.0.1/-35.0.1.Setup.exe"
             }
         }
     ]
