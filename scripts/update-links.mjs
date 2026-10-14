@@ -9,28 +9,37 @@ const TARGET = 'content/apps.json';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
 async function fetchReleases() {
-    const res = await fetch(`https://api.github.com/repos/${REPO}/releases?per_page=100`, {
-        headers: { 'User-Agent': 'wursha-update-links', Accept: 'application/vnd.github+json' },
-    });
+    const headers = { 'User-Agent': 'wursha-update-links', Accept: 'application/vnd.github+json' };
+    // Optional: CI runners share IPs, so unauthenticated calls hit the rate limit quickly.
+    const token = process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
+    if (token) headers.Authorization = `Bearer ${token}`;
+    const res = await fetch(`https://api.github.com/repos/${REPO}/releases?per_page=100`, { headers });
     if (!res.ok) throw new Error(`GitHub API ${res.status}: ${await res.text()}`);
     return res.json();
 }
 
+// Newest published release per platform, so a mac-only or windows-only release
+// updates its own link without blanking or failing the other one.
 function pickLatestForPrefix(releases, prefix) {
-    const match = releases.find(
+    const published = releases.filter(
         (r) => !r.draft && !r.prerelease && r.tag_name.startsWith(`${prefix}-v`),
     );
-    if (!match) throw new Error(`No release found for prefix '${prefix}'`);
-    const dmg = match.assets.find((a) => a.name.endsWith('.dmg'));
-    const exe = match.assets.find((a) => a.name.endsWith('.exe'));
-    if (!dmg) throw new Error(`No .dmg asset in ${match.tag_name}`);
-    if (!exe) throw new Error(`No .exe asset in ${match.tag_name}`);
-    const version = match.tag_name.slice(prefix.length + 2); // strip "<prefix>-v"
+    if (published.length === 0) throw new Error(`No release found for prefix '${prefix}'`);
+    const latestWith = (ext) => {
+        for (const r of published) {
+            const asset = r.assets.find((a) => a.name.endsWith(ext));
+            if (asset) return { tag: r.tag_name, url: asset.browser_download_url };
+        }
+        throw new Error(`No ${ext} asset in any '${prefix}' release`);
+    };
+    const mac = latestWith('.dmg');
+    const windows = latestWith('.exe');
+    const version = published[0].tag_name.slice(prefix.length + 2); // strip "<prefix>-v"
     return {
-        tag: match.tag_name,
+        tag: mac.tag === windows.tag ? mac.tag : `mac ${mac.tag}, windows ${windows.tag}`,
         version,
-        mac: dmg.browser_download_url,
-        windows: exe.browser_download_url,
+        mac: mac.url,
+        windows: windows.url,
     };
 }
 
