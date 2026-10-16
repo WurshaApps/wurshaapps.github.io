@@ -29,8 +29,12 @@
                                 "input": "public"
                             }
                         ],
-                        "styles": ["src/tailwind.css", "src/styles.scss"],
-                        "scripts": []
+                        "styles": [
+                            "src/styles.scss"
+                        ],
+                        "scripts": [],
+                        "server": "src/main.server.ts",
+                        "outputMode": "static"
                     },
                     "configurations": {
                         "production": {
@@ -83,14 +87,19 @@
                                 "input": "public"
                             }
                         ],
-                        "styles": ["src/styles.scss"],
+                        "styles": [
+                            "src/styles.scss"
+                        ],
                         "scripts": []
                     }
                 },
                 "lint": {
                     "builder": "@angular-eslint/builder:lint",
                     "options": {
-                        "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+                        "lintFilePatterns": [
+                            "src/**/*.ts",
+                            "src/**/*.html"
+                        ]
                     }
                 }
             }
@@ -98,7 +107,9 @@
     },
     "cli": {
         "analytics": "81b35e53-fa33-4f1b-b686-5e01b3947b72",
-        "schematicCollections": ["@angular-eslint/schematics"]
+        "schematicCollections": [
+            "@angular-eslint/schematics"
+        ]
     },
     "schematics": {
         "@schematics/angular:component": {

@@ -1,598 +1,215 @@
 {
     "$schema": "./schemas/content.schema.json",
     "meta": {
-        "title": "Wursha QuranHolder — Membaca, Membaca Lantang, Mempelajari, dan Menghafal Al-Qur’an",
-        "description": "15 mushaf otentik, 68 qari, 63 kitab rujukan dan terjemahan, qiraat berdampingan, dan analisis tata bahasa per kata — semuanya dalam satu aplikasi."
+        "title": "Wursha — Aplikasi Mushaf Al-Qur'an dengan tafsir dan murottal",
+        "description": "Enam Mushaf (Madinah, Hafs, Tajwid, Warsy, Qalun, Syamarli), 50+ kitab tafsir dan terjemahan, 200+ qari. Gratis, tanpa iklan, untuk iPhone, iPad, Android, Mac, Windows."
     },
+    "brand": "Wursha",
     "nav": {
-        "features": "Fitur",
         "editions": "Mushaf",
-        "reciters": "Qari",
-        "books": "Kitab & Tafsir",
+        "features": "Fitur",
+        "library": "Pustaka",
         "downloads": "Unduh",
-        "switchLang": "Ubah bahasa"
+        "language": "Bahasa"
     },
     "hero": {
-        "eyebrow": "Wursha QuranHolder — oleh Wursha Digital Apps",
-        "title": "Pendamping lengkap untuk Al-Qur’an",
-        "titleHighlight": "membaca, membaca lantang, mempelajari, dan menghafal.",
-        "subtitle": "15 mushaf otentik, 68 qari kelas dunia, 17 tafsir klasik dan modern, qiraat berdampingan, serta analisis sharaf dan i’rab per kata — sepenuhnya dapat digunakan luring setelah unduhan awal.",
-        "ctaPrimary": "Dapatkan aplikasinya",
-        "ctaSecondary": "Jelajahi fitur",
-        "screenshotAlt": "Tangkapan layar Wursha QuranHolder"
+        "title": "*Mushaf* yang Anda kenal, dengan semua yang menyertainya",
+        "subtitle": "Halaman Mushaf asli, 50+ kitab tafsir dan terjemahan, serta 200+ qari, dalam satu aplikasi. Gratis, tanpa iklan.",
+        "cta": "Unduh gratis",
+        "ctaSecondary": "Pilih Mushaf Anda",
+        "platforms": "Untuk iPhone, iPad, Android, Mac, dan Windows.",
+        "imageAlt": "Dua halaman Mushaf Madinah yang berhadapan di aplikasi"
     },
-    "stats": {
-        "editions": "5",
-        "editionsLabel": "Mushaf otentik",
-        "reciters": "68",
-        "recitersLabel": "Qari pilihan",
-        "books": "63",
-        "booksLabel": "Kitab, tafsir, terjemahan",
-        "features": "78+",
-        "featuresLabel": "Fitur untuk pengguna"
-    },
-    "audiences": {
-        "title": "Dirancang untuk empat tipe pembaca",
-        "subtitle": "Satu aplikasi yang mendalami setiap audiens — tanpa kompromi.",
-        "items": [
-            {
-                "title": "Pembaca harian",
-                "body": "Mushaf digital yang indah dan dapat sepenuhnya disesuaikan — warna, font, tata letak, dan gerakan sentuh halus untuk wirid harian."
+    "editions": {
+        "title": "Pilih Mushaf Anda",
+        "subtitle": "Setiap edisi memiliki pustaka tafsir, murottal, dan fitur yang sama. Pilih Mushaf dan riwayat yang Anda baca.",
+        "platformsAll": "iPhone, iPad, Android, Mac, Windows",
+        "platformsMobile": "iPhone, iPad, Android",
+        "list": {
+            "madina": {
+                "name": "Mushaf Madinah",
+                "riwaya": "Hafs dari Ashim",
+                "series": "Quran Holder",
+                "line": "Halaman Madinah yang sudah Anda kenal, dengan tanda farsy pada tempat-tempat perbedaan qiraat"
             },
-            {
-                "title": "Para hafiz",
-                "body": "Beberapa khataman, penyimpanan posisi otomatis, pengulangan ayat, jeda antar ayat yang dapat diatur, dan alat tinjau yang presisi."
+            "hafs": {
+                "name": "Mushaf Hafs",
+                "riwaya": "Hafs dari Ashim",
+                "series": "Khair Zad",
+                "line": "Bingkai halaman berornamen yang bisa ditampilkan, disembunyikan, dan diatur sesuai selera"
             },
-            {
-                "title": "Pelajar ilmu Al-Qur’an",
-                "body": "Farsy sepuluh qiraat, i’rab, sharaf, asbabun nuzul, tanda waqaf, dan lebih dari 22 referensi qiraat khusus."
+            "tajweed": {
+                "name": "Mushaf Tajwid",
+                "riwaya": "Hafs dari Ashim",
+                "series": "Quran Holder",
+                "line": "Setiap hukum tajwid ditandai dengan warna, dengan panduan arti setiap warna"
             },
-            {
-                "title": "Penutur non-Arab",
-                "body": "Lebih dari 14 terjemahan otoritatif, plus terjemahan Inggris yang dilantunkan oleh Sahih International untuk pemahaman lebih mendalam."
+            "warsh": {
+                "name": "Mushaf Warsy",
+                "riwaya": "Warsy dari Nafi",
+                "series": "Khair Zad",
+                "line": "Tempat-tempat perbedaan riwayat Warsy dengan Hafs ditandai dengan warna"
+            },
+            "qalon": {
+                "name": "Mushaf Qalun",
+                "riwaya": "Qalun dari Nafi",
+                "series": "Khair Zad",
+                "line": "Dilengkapi qari dengan riwayat Qalun"
+            },
+            "shamarli": {
+                "name": "Mushaf Syamarli",
+                "riwaya": "Hafs dari Ashim",
+                "series": "Quran Holder",
+                "line": "Mushaf Syamarli 522 halaman, dengan catatan qiraat di pinggir halaman"
             }
-        ]
+        }
     },
-    "features": {
-        "title": "Fitur tak terhitung dalam satu aplikasi",
-        "subtitle": "78+ fitur yang dirancang dengan saksama, tersebar di 11 kategori — untuk membaca, mendengar, mempelajari, dan menghafal.",
-        "categories": [
+    "story": {
+        "title": "Di dalam setiap edisi",
+        "subtitle": "Fitur yang sama hadir di keenam Mushaf.",
+        "screensNote": "Tangkapan layar menampilkan antarmuka aplikasi dalam bahasa Inggris; aplikasinya juga tersedia dalam bahasa Indonesia.",
+        "scenes": [
             {
-                "id": "reading",
-                "title": "Membaca & tampilan",
-                "count": 8,
-                "blurb": "Mushaf layar penuh dengan beberapa tata letak, tema khusus, tujuh font, dan palet siang/malam yang dapat diatur.",
-                "highlights": [
-                    "Mode potret dan lanskap",
-                    "Tema terang, malam, dan otomatis",
-                    "7 font (Amiri, Utsmani, Naskhi, Ruqʿah, Scheherazade…)",
-                    "Layar tetap menyala saat membaca"
+                "id": "meaning",
+                "title": "*Makna* setiap ayat",
+                "subtitle": "Tafsir, terjemahan, dan makna kata",
+                "items": [
+                    "Ketuk ayat untuk melihat tafsirnya, atau kata untuk makna dan i'rabnya",
+                    "Al-Mukhtashar, Al-Muyassar, Ibnu Katsir, As-Sa'di, Al-Qurthubi, dan lainnya",
+                    "Terjemahan dalam bahasa Indonesia, Inggris, Prancis, Jerman, Turki, Melayu, Urdu, dan lainnya"
                 ]
             },
             {
-                "id": "navigation",
-                "title": "Navigasi",
-                "count": 6,
-                "blurb": "Lompat ke surat, juz, hizb, atau halaman mana pun — berdasarkan nama, nomor, atau halaman.",
-                "highlights": [
-                    "114 surat dengan pencarian",
-                    "30 juz dan 120 hizb",
-                    "Lompat langsung ke halaman (1–604)",
-                    "Gulir otomatis yang dapat diatur"
+                "id": "tartil",
+                "title": "Dengarkan *200+ qari*",
+                "subtitle": "Surah lengkap dan daftar putar",
+                "items": [
+                    "Murottal surah lengkap di Tartil, perpustakaan murottal",
+                    "Daftar putar dan surah favorit",
+                    "Unduh surah untuk didengarkan secara offline",
+                    "Pemutar mini yang menemani Anda selama membaca"
+                ]
+            },
+            {
+                "id": "memorize",
+                "title": "Ulangi hingga *hafal*",
+                "subtitle": "Atur pengulangan, jeda, dan kecepatan",
+                "items": [
+                    "Murottal ayat per ayat dengan sorotan pada ayat yang sedang dibacakan",
+                    "Ulangi satu ayat atau satu bagian sebanyak yang Anda mau",
+                    "Jeda antar-pengulangan dan pengaturan kecepatan"
+                ],
+                "note": "Menu audio berbahasa Arab di semua bahasa antarmuka."
+            },
+            {
+                "id": "night",
+                "title": "Nyaman di mata *saat malam*",
+                "subtitle": "Mode malam dan warna halaman",
+                "items": [
+                    "Mode malam dan beberapa pilihan warna halaman",
+                    "Gulir otomatis dengan kecepatan pilihan Anda",
+                    "Dua halaman berdampingan saat perangkat diputar"
                 ]
             },
             {
                 "id": "tracks",
-                "title": "Khataman & progres",
-                "count": 3,
-                "blurb": "Buat banyak khataman (wirid harian, hafalan, qiyam, muraja’ah) dan lanjut otomatis.",
-                "highlights": [
-                    "Banyak khataman dengan warna khusus",
-                    "Simpan otomatis halaman terakhir per khataman",
-                    "Indikator progres visual"
+                "title": "Beberapa *khatam* sekaligus",
+                "subtitle": "Masing-masing dengan posisi dan qarinya",
+                "items": [
+                    "Setiap khatam memiliki posisi, penanda, catatan, dan qarinya sendiri",
+                    "Cari dengan atau tanpa harakat, atau berdasarkan akar kata",
+                    "Daftar isi surah, juz, dan hizb"
                 ]
             },
             {
-                "id": "bookmarks",
-                "title": "Penanda & catatan",
-                "count": 4,
-                "blurb": "Penanda halaman dan ayat, catatan pribadi per khataman, plus ekspor dan bagikan.",
-                "highlights": [
-                    "Penanda halaman dengan satu ketuk",
-                    "Penanda per ayat untuk studi mendalam",
-                    "Catatan pribadi per khataman",
-                    "Ekspor penanda dan catatan sebagai teks"
-                ]
+                "id": "athkar",
+                "title": "*Dzikir* harian Anda",
+                "subtitle": "Penghitung, tasbih, dan daftar sendiri",
+                "items": [
+                    "Penghitung, tasbih, dan audio",
+                    "Doa-doa dari Al-Qur'an dan Sunnah",
+                    "Tambahkan dzikir Anda sendiri"
+                ],
+                "note": "Teks dzikir dalam bahasa Arab."
             },
             {
-                "id": "audio",
-                "title": "Audio & tilawah",
-                "count": 10,
-                "blurb": "Dengarkan 68 qari, ulangi rentang mana pun, atur kecepatan, dan hentikan pada surat, juz, halaman, atau setelah durasi tertentu.",
-                "highlights": [
-                    "Ulangi ayat, surat, atau rentang khusus",
-                    "Jeda antar ayat yang dapat diatur",
-                    "Kecepatan putar (1×, 1,25×, 1,5×…)",
-                    "Sorotan otomatis dan gulir mengikuti",
-                    "Unduh tilawah untuk dengar luring",
-                    "Berhenti pada surat, halaman, hizb, juz, atau durasi"
-                ]
-            },
-            {
-                "id": "search",
-                "title": "Pencarian & rujukan",
-                "count": 7,
-                "blurb": "Pencarian teks penuh dengan empat mode: polos, dengan harakat, Utsmani, atau berbasis akar.",
-                "highlights": [
-                    "Pencarian pola (wildcard / regex)",
-                    "Pencocokan kata utuh",
-                    "Batasi pada surat saat ini",
-                    "Halaman detail ayat lengkap"
-                ]
-            },
-            {
-                "id": "sciences",
-                "title": "Ilmu Al-Qur’an",
-                "count": 10,
-                "blurb": "Sharaf dan i’rab tingkat kata, 17 tafsir, farsy qiraat berkode warna, dan asbabun nuzul.",
-                "highlights": [
-                    "Halaman kata (makna, sharaf, i’rab)",
-                    "Bacaan dari sepuluh qari",
-                    "Asbabun nuzul (Al-Wahidi dll.)",
-                    "Tanda waqaf dan ibtida’",
-                    "Aturan farsy berkode warna"
-                ]
-            },
-            {
-                "id": "customization",
-                "title": "Penyesuaian & pengaturan",
-                "count": 10,
-                "blurb": "Beralih antar mushaf, atur gerakan, kunci orientasi, dan gunakan papan ketik & tetikus di desktop.",
-                "highlights": [
-                    "Qari difilter sesuai riwayat",
-                    "Sakelar per gerakan",
-                    "Dukungan roda tetikus & tombol panah",
-                    "UI Arab dan Inggris"
-                ]
-            },
-            {
-                "id": "tools",
-                "title": "Alat & ekstra",
-                "count": 9,
-                "blurb": "Pilihan doa, impor/ekspor pengaturan, pembaruan data, berbagi, dan salin satu ketuk.",
-                "highlights": [
-                    "Doa dari Al-Qur’an dan Sunnah",
-                    "Impor/ekspor JSON pengaturan & penanda",
-                    "Bagikan ayat dan catatan",
-                    "Tur penyambutan interaktif"
-                ]
-            },
-            {
-                "id": "gestures",
-                "title": "Gerakan & interaksi",
-                "count": 5,
-                "blurb": "Geser untuk membalik, jepit untuk zum, tekan lama untuk catatan tepi, ketuk tengah untuk menyembunyikan UI.",
-                "highlights": [
-                    "Geser kiri/kanan antar halaman",
-                    "Jepit untuk memperbesar",
-                    "Tekan lama untuk catatan tepi",
-                    "Ketuk tengah memunculkan/menyembunyikan bilah"
-                ]
-            },
-            {
-                "id": "editions",
-                "title": "Fitur khusus tiap mushaf",
-                "count": 4,
-                "blurb": "Pewarnaan tajwid, koordinat kata, dan margin pembanding antar qiraat — per mushaf.",
-                "highlights": [
-                    "Mushaf Madinah (Utsmani bawaan)",
-                    "Mushaf Tajwid dengan aturan berwarna",
-                    "Mushaf Syamarli dengan margin lebar",
-                    "Dukungan Hafs, Warsy, Qalun, Syuʿbah…"
+                "id": "share",
+                "title": "Bagikan ayat *jadi gambar*",
+                "subtitle": "Indah dan siap diunggah",
+                "items": [
+                    "Bagikan sebagai gambar, atau sebagai teks beserta tafsirnya",
+                    "Disimpan ke Foto hanya jika Anda memilihnya"
                 ]
             }
         ]
     },
-    "editions": {
-        "title": "5 mushaf otentik",
-        "subtitle": "Dua koleksi utama: “Hamil al-Quran” untuk keluasan qiraat, dan “Khair Zad” untuk para penghafal. Masing-masing dilengkapi farsy, legenda warna, dan margin pembanding.",
-        "collections": [
+    "library": {
+        "title": "Pustaka",
+        "subtitle": "50+ kitab tafsir, ilmu Al-Qur'an, qiraat, dan terjemahan. Sebagian diunduh sekali, lalu tetap tersimpan di perangkat Anda.",
+        "more": "dan lainnya",
+        "groups": [
             {
-                "name": "Hamil al-Quran",
-                "description": "Koleksi luas dalam khat Utsmani yang mencakup qiraat dan riwayat utama.",
-                "items": [
-                    "Madinah",
-                    "Syamarli",
-                    "Tajwid"
-                ]
-            },
-            {
-                "name": "Khair Zad",
-                "description": "Seri yang berfokus pada penghafal dengan pendekatan pedagogis terstruktur.",
-                "items": [
-                    "Warsy",
-                    "Qalun"
-                ]
-            }
-        ],
-        "list": [
-            {
-                "code": "Madina",
-                "name": "Mushaf Madinah",
-                "note": "Khat Utsmani dengan koordinat kata. Dasar perbandingan.",
-                "isDefault": true
-            },
-            {
-                "code": "Shmrly",
-                "name": "Mushaf Syamarli",
-                "note": "Khat Syamarli dengan margin hamish lebar."
-            },
-            {
-                "code": "Tjwid",
-                "name": "Mushaf Tajwid",
-                "note": "Pewarnaan aturan tajwid per huruf (Dar Al-Ma’arifah)."
-            },
-            {
-                "code": "Warsh",
-                "name": "Mushaf Warsy",
-                "note": "Warsy dari Nafi‘ — jalur Al-Azraq."
-            },
-            {
-                "code": "Qalon",
-                "name": "Mushaf Qalun",
-                "note": "Qalun dari Nafi‘ — riwayat."
-            }
-        ],
-        "crossNote": "Sebagian besar mushaf mendukung legenda warna, margin pembanding antar qiraat, tanda waqaf, dan tampilan manhaj."
-    },
-    "reciters": {
-        "title": "68 qari lintas riwayat dan qiraat",
-        "subtitle": "Setiap qari dipasangkan dengan satu riwayat, edisi (Murattal, Mujawwad, Mu’allim, Siaran, Lengkap), dan CDN berkualitas tinggi. Anda juga bisa menambahkan URL qari kustom.",
-        "riwayatTitle": "Riwayat & qiraat yang dicakup",
-        "riwayat": [
-            {
-                "name": "Hafs dari ‘Asim",
-                "sub": "Paling umum"
-            },
-            {
-                "name": "Warsy dari Nafi‘"
-            },
-            {
-                "name": "Qalun dari Nafi‘"
-            },
-            {
-                "name": "Syuʿbah dari ‘Asim"
-            },
-            {
-                "name": "Ad-Duri dari Abu ‘Amr"
-            },
-            {
-                "name": "As-Susi dari Abu ‘Amr"
-            },
-            {
-                "name": "Al-Asbahani"
-            },
-            {
-                "name": "Riwayat Hamzah"
-            },
-            {
-                "name": "Al-Kobra & As-Soghra",
-                "sub": "Sepuluh qiraat"
-            },
-            {
-                "name": "Aspek Qalun & Warsy"
-            }
-        ],
-        "featuredTitle": "Qari pilihan",
-        "featured": [
-            {
-                "name": "Mahmud Khalil Al-Husari",
-                "riwaya": "Hafs dari ‘Asim",
-                "version": "Murattal / Mujawwad / Siaran / Mu’allim"
-            },
-            {
-                "name": "Muhammad Siddiq Al-Minshawi",
-                "riwaya": "Hafs dari ‘Asim",
-                "version": "Murattal / Mujawwad / Mu’allim"
-            },
-            {
-                "name": "Abdul Basit Abdus Samad",
-                "riwaya": "Hafs / Warsy",
-                "version": "Murattal / Mujawwad"
-            },
-            {
-                "name": "Mishari Rashid Al-Afasi",
-                "riwaya": "Hafs dari ‘Asim",
-                "version": "Murattal"
-            },
-            {
-                "name": "Yasser Al-Dossary",
-                "riwaya": "Hafs dari ‘Asim",
-                "version": "Murattal"
-            },
-            {
-                "name": "Sa’ud Asy-Syuraim",
-                "riwaya": "Hafs dari ‘Asim",
-                "version": "Murattal"
-            },
-            {
-                "name": "Ahmad Talba",
-                "riwaya": "Al-Kobra",
-                "version": "Lengkap"
-            },
-            {
-                "name": "Ibrahim Al-Maghribi",
-                "riwaya": "Al-Asbahani",
-                "version": "Lengkap"
-            }
-        ],
-        "downloadNote": "Unduh tilawah lengkap untuk dengar luring lengkap dengan progres, kecepatan, dan penggunaan penyimpanan."
-    },
-    "books": {
-        "title": "63 kitab dan rujukan",
-        "subtitle": "Panel ayat menyatukan tafsir, ilmu Al-Qur’an, qiraat, dan terjemahan dalam satu tempat.",
-        "categories": [
-            {
-                "key": "tafseer",
                 "title": "Tafsir",
-                "count": "17 kitab",
-                "samples": [
-                    "Ibnu Katsir",
-                    "Ath-Thabari",
-                    "Al-Qurthubi",
-                    "As-Sa’di",
-                    "Al-Baghawi",
-                    "Al-Muyassar",
-                    "Al-Mukhtashar",
-                    "At-Tahrir wat-Tanwir",
-                    "Jalalain",
-                    "Zad Al-Masir (Ibn al-Jawzi)",
-                    "Al-Muharrar Al-Wajiz (Ibnu ‘Athiyyah)",
-                    "An-Nasafi",
-                    "Nazm Ad-Durar (Al-Biqa’i)",
-                    "Adwa’ Al-Bayan (Asy-Syinqithi)"
-                ]
+                "items": ["Ibnu Katsir", "Ath-Thabari", "Al-Qurthubi", "As-Sa'di", "Al-Baghawi", "Al-Muyassar", "Al-Mukhtashar", "At-Tahrir wat-Tanwir"]
             },
             {
-                "key": "sciences",
-                "title": "Ilmu Al-Qur’an",
-                "count": "10 kitab",
-                "samples": [
-                    "Asbab An-Nuzul (Al-Wahidi)",
-                    "I’rab Al-Qur’an (Ad-Daa’as)",
-                    "Al-Jadwal dalam i’rab dan sharaf",
-                    "Ad-Durr Al-Mashun (As-Samin Al-Halabi)",
-                    "Al-Muyassar fi Gharib",
-                    "An-Nasyr fi al-Qira’at al-‘Asyr (Ibn Al-Jazari)",
-                    "Al-Waqf wa Al-Ibtida’",
-                    "Mutasyabihat Al-Alfaz"
-                ]
-            },
-            {
-                "key": "qiraat",
-                "title": "Qiraat",
-                "count": "22 kitab",
-                "samples": [
-                    "Riwayat Qalun dari Nafi‘",
-                    "Riwayat Warsy dari Nafi‘",
-                    "Qiraat Ibnu Katsir",
-                    "Qiraat Abi ‘Amr",
-                    "Qiraat Ibnu ‘Amir",
-                    "Riwayat Syuʿbah dari ‘Asim",
-                    "Qiraat Hamzah",
-                    "Qiraat Al-Kisa’i",
-                    "Qiraat Abi Ja’far",
-                    "Qiraat Ya’qub",
-                    "Qiraat Khalaf Al-‘Asyir",
-                    "Al-Asyr As-Soghra",
-                    "Tayseer Al-Asyr",
-                    "Syawahid Tayyibat An-Nasyr"
-                ]
-            },
-            {
-                "key": "translations",
-                "title": "Terjemahan",
-                "count": "14 bahasa",
-                "samples": [
-                    "Inggris — Hilali & Khan",
-                    "Saheeh International",
-                    "Pickthall",
-                    "Prancis",
-                    "Jerman (Abu Rida)",
-                    "Rusia",
-                    "Turki",
-                    "Indonesia",
-                    "Melayu",
-                    "Urdu",
-                    "Persia",
-                    "Belanda",
-                    "Azerbaijan",
-                    "Transliterasi fonetik"
-                ]
-            }
-        ]
-    },
-    "sciences": {
-        "title": "Studi mendalam kata dan ayat",
-        "subtitle": "Ketuk kata mana pun untuk membuka halamannya — lima tab menampilkan makna, sharaf, i’rab, qiraat, dan terjemahan.",
-        "items": [
-            {
-                "title": "Makna",
-                "body": "Kamus kosakata Al-Qur’an dengan definisi ringkas dan jelas untuk kata-kata jarang."
-            },
-            {
-                "title": "Sharaf",
-                "body": "Analisis sharaf terperinci: struktur kata, akar kata, dan turunannya."
-            },
-            {
-                "title": "I’rab",
-                "body": "Analisis nahwu yang presisi untuk ayat dan katanya dari sumber-sumber khusus."
+                "title": "Ilmu Al-Qur'an",
+                "items": ["Asbab An-Nuzul (Al-Wahidi)", "I'rab Al-Qur'an (Ad-Da'as)", "Al-Jadwal dalam i'rab dan sharaf", "Ad-Durr Al-Mashun", "An-Nasyr (Ibnul Jazari)", "Al-Waqf wal-Ibtida"]
             },
             {
                 "title": "Qiraat",
-                "body": "Bacaan beragam dari sepuluh qari dengan catatan farsy berkode warna."
+                "items": ["Qalun dari Nafi", "Warsy dari Nafi", "Ibnu Katsir", "Abu Amr", "Ibnu Amir", "Syu'bah dari Ashim", "Hamzah", "Al-Kisa'i"]
             },
             {
                 "title": "Terjemahan",
-                "body": "Lebih dari 14 terjemahan otoritatif dalam bahasa-bahasa utama dunia."
+                "items": ["Saheeh International", "Hilali & Khan", "Pickthall", "Prancis", "Jerman", "Turki", "Indonesia", "Urdu"]
             }
         ]
     },
-    "gestures": {
-        "title": "Kontrol sentuh yang alami dan fleksibel",
-        "subtitle": "Setiap gerakan dapat diaktifkan — dan banyak yang dapat dipetakan ulang.",
-        "items": [
-            {
-                "gesture": "Geser kiri/kanan",
-                "action": "Membalik halaman"
-            },
-            {
-                "gesture": "Geser di tepi",
-                "action": "Atur kecerahan layar"
-            },
-            {
-                "gesture": "Jepit",
-                "action": "Zum halaman"
-            },
-            {
-                "gesture": "Ketuk ayat",
-                "action": "Buka halaman ayat"
-            },
-            {
-                "gesture": "Tekan lama pada ayat",
-                "action": "Tampilkan catatan tepi (hamish)"
-            },
-            {
-                "gesture": "Ketuk kata",
-                "action": "Buka halaman kata"
-            },
-            {
-                "gesture": "Ketuk tengah",
-                "action": "Tampilkan/sembunyikan bilah"
-            },
-            {
-                "gesture": "Geser dari tengah",
-                "action": "Daftar surat / pencarian"
-            },
-            {
-                "gesture": "Roda tetikus & tombol panah",
-                "action": "Navigasi desktop dan web"
-            }
-        ]
+    "languages": {
+        "title": "Dalam bahasa Anda",
+        "subtitle": "Antarmuka aplikasi tersedia dalam 14 bahasa.",
+        "note": "Nama surah, judul kitab tafsir, dan teks dzikir tetap dalam bahasa Arab di semua bahasa."
     },
     "downloads": {
-        "title": "Dapatkan aplikasi",
-        "subtitle": "Tersedia di Android, iPhone/iPad, Windows, macOS, dan web — sepenuhnya luring setelah unduhan pertama.",
-        "eyebrow": "Versi terbaru",
-        "supportedOn": "Tersedia di",
-        "platformNames": {
-            "android": "Android",
+        "title": "Unduh",
+        "subtitle": "Gratis di semua platform, tanpa iklan.",
+        "version": "Versi",
+        "columns": {
+            "edition": "Mushaf",
             "ios": "iPhone & iPad",
-            "windows": "Windows",
-            "mac": "macOS",
-            "web": "Web"
+            "android": "Android",
+            "mac": "Mac",
+            "windows": "Windows"
         },
-        "platforms": {
-            "android": "Dapatkan di Google Play",
-            "ios": "Unduh di App Store",
-            "windows": "Unduh untuk Windows",
-            "mac": "Unduh untuk macOS"
+        "links": {
+            "ios": "App Store",
+            "android": "Google Play",
+            "mac": "Unduh .dmg",
+            "windows": "Unduh .exe"
         },
-        "storeLabels": {
-            "android": {
-                "small": "DAPATKAN DI",
-                "big": "Google Play"
-            },
-            "ios": {
-                "small": "Unduh di",
-                "big": "App Store"
-            },
-            "windows": {
-                "small": "Unduh untuk",
-                "big": "Windows"
-            },
-            "mac": {
-                "small": "Unduh untuk",
-                "big": "macOS"
-            }
-        },
-        "primaryCta": "Unduh",
-        "winNote": "Berjalan di Windows 10 dan ke atas",
-        "macNote": "Setelah diekstrak, klik kanan dan pilih “Buka”",
-        "webSoon": "Web — segera hadir"
-    },
-    "tech": {
-        "title": "Rekayasa kokoh, arsitektur modular",
-        "subtitle": "Dibangun di atas arsitektur berbasis layanan agar mushaf, qari, dan rujukan dapat ditambahkan dengan cepat.",
-        "bullets": [
-            "Sepenuhnya luring setelah unduhan awal",
-            "15 layanan indeks khusus per mushaf — tanpa kompromi antar qiraat",
-            "Tersedia di Android, iOS, dan web (PWA / desktop)",
-            "Tata letak Arab RTL kelas satu dengan dukungan Inggris penuh",
-            "Pembaruan data independen (teks Al-Qur’an, indeks pencarian, farsy, kata)"
-        ]
+        "notAvailable": "Tidak tersedia",
+        "winNote": "Windows 10 dan yang lebih baru.",
+        "macNote": "Mac: saat pertama kali membuka aplikasi, klik kanan aplikasinya lalu pilih Buka."
     },
     "footer": {
-        "about": "Wursha QuranHolder diterbitkan oleh Wursha Digital Apps.",
-        "creditsTitle": "Kredit & ucapan terima kasih",
+        "about": "Wursha Digital Apps menerbitkan aplikasi Mushaf Quran Holder dan Khair Zad.",
+        "creditsTitle": "Kredit",
         "credits": [
-            {
-                "label": "Penerbit",
-                "value": "Wursha Digital Apps"
-            },
-            {
-                "label": "Mushaf Khair Zad",
-                "value": "Syaikh Ali bin Abdul Mun‘im Saleh"
-            },
-            {
-                "label": "Mushaf Tajwid",
-                "value": "Dar Al-Ma’arifah (hak cipta dilindungi)"
-            },
-            {
-                "label": "Farsy & margin",
-                "value": "Eng. Muhammad Shalaby & tim spesialis"
-            },
-            {
-                "label": "Tafsir",
-                "value": "Al-Bahits Al-Qur’ani — Pusat Studi Tafsir Al-Qur’an"
-            }
+            { "label": "Mushaf Khair Zad", "value": "Syaikh Ali bin Abdul Mun'im Saleh" },
+            { "label": "Mushaf Tajwid", "value": "Dar Al-Ma'rifah (hak cipta dilindungi)" },
+            { "label": "Farsy dan catatan pinggir", "value": "Eng. Muhammad Shalaby dan tim spesialis" },
+            { "label": "Tafsir", "value": "Al-Bahits Al-Qur'ani, Pusat Tafsir untuk Studi Al-Qur'an" }
         ],
-        "sourcesTitle": "Sumber audio & data",
+        "sourcesTitle": "Sumber audio dan data",
         "sources": [
-            "mp3quran.net — pustaka audio Al-Qur’an",
+            "mp3quran.net",
             "everyayah.com",
             "Mushaf Elektronik Universitas King Saud",
-            "sound.quraat.info — audio qiraat",
-            "jamharat-uloom.org — makna kata, sharaf, dan nahwu",
-            "Al-Qur’an Al-Adheem — Wakaf Al-Rajhi — data waqaf"
+            "sound.quraat.info",
+            "jamharat-uloom.org (makna kata, sharaf, dan nahwu)",
+            "Al-Qur'an Al-Adheem, Wakaf Al-Rajhi (data waqaf)"
         ],
-        "rights": "© Wursha Digital Apps — hak cipta dilindungi."
-    },
-    "common": {
-        "placeholder": "Tempat gambar",
-        "screenshot": "Tangkapan layar",
-        "comingSoon": "Segera hadir"
-    },
-    "apps": {
-        "madina": {
-            "name": "QuranHolder: Mushaf Madinah",
-            "description": "Khat Utsmani — riwayat Hafs"
-        },
-        "shamarli": {
-            "name": "QuranHolder: Mushaf Syamarli",
-            "description": "Khat Syamarli dengan margin lebar"
-        },
-        "tajweed": {
-            "name": "QuranHolder: Mushaf Tajwid",
-            "description": "Riwayat Hafs dengan tajwid berwarna"
-        },
-        "warsh": {
-            "name": "Mushaf Warsy",
-            "description": "Warsy dari Nafi‘ — jalur Al-Azraq"
-        },
-        "qalon": {
-            "name": "Mushaf Qalun",
-            "description": "Qalun dari Nafi‘ — riwayat"
-        }
+        "rights": "© Wursha Digital Apps"
     }
 }

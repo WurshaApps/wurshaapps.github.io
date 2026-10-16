@@ -1,598 +1,215 @@
 {
     "$schema": "./schemas/content.schema.json",
     "meta": {
-        "title": "Wursha QuranHolder — Quranı Oxu, Tilavət Et, Öyrən və Əzbərlə",
-        "description": "15 səhih Müshəf nəşri, 68 qari, 63 mənbə kitab və tərcümə, yan-yana qiraətlər və hər söz üçün qrammatik təhlil — hamısı bir tətbiqdə."
+        "title": "Wursha — Təfsir və tilavətli Mushaf tətbiqləri",
+        "description": "Altı Mushaf (Mədinə, Həfs, Təcvidli, Vərş, Qalun, Şəmərli), 50+ təfsir və tərcümə kitabı, 200+ qari. Pulsuz və reklamsız; iPhone, iPad, Android, Mac və Windows üçün."
     },
+    "brand": "Wursha",
     "nav": {
+        "editions": "Mushaflar",
         "features": "Xüsusiyyətlər",
-        "editions": "Müshəflər",
-        "reciters": "Qarilər",
-        "books": "Kitablar və Təfsirlər",
+        "library": "Kitabxana",
         "downloads": "Yüklə",
-        "switchLang": "Dili dəyişdir"
+        "language": "Dil"
     },
     "hero": {
-        "eyebrow": "Wursha QuranHolder — Wursha Digital Apps tərəfindən",
-        "title": "Quran üçün tam yol yoldaşı",
-        "titleHighlight": "oxu, tilavət et, öyrən və əzbərlə.",
-        "subtitle": "15 səhih Müshəf nəşri, 68 dünya səviyyəli qari, 17 klassik və müasir təfsir, yan-yana qiraətlər və hər söz üzrə sərf və irab təhlili — ilk yüklədikdən sonra tam offline işləyir.",
-        "ctaPrimary": "Tətbiqi yüklə",
-        "ctaSecondary": "Xüsusiyyətləri kəşf et",
-        "screenshotAlt": "Wursha QuranHolder ekran görüntüsü"
+        "title": "Tanıdığınız *Mushaf*, ətrafındakı hər şeylə birlikdə",
+        "subtitle": "Orijinal Mushaf səhifələri, 50-dən çox təfsir və tərcümə kitabı və 200-dən çox qari bir tətbiqdə. Pulsuz və reklamsız.",
+        "cta": "Pulsuz yükləyin",
+        "ctaSecondary": "Mushafınızı seçin",
+        "platforms": "iPhone, iPad, Android, Mac və Windows üçün.",
+        "imageAlt": "Tətbiqdə Mədinə Mushafının qarşı-qarşıya iki səhifəsi"
     },
-    "stats": {
-        "editions": "5",
-        "editionsLabel": "Səhih Müshəf nəşri",
-        "reciters": "68",
-        "recitersLabel": "Seçilmiş qari",
-        "books": "63",
-        "booksLabel": "Kitab, təfsir, tərcümə",
-        "features": "78+",
-        "featuresLabel": "İstifadəçi xüsusiyyəti"
-    },
-    "audiences": {
-        "title": "Dörd növ oxucu üçün hazırlanıb",
-        "subtitle": "Hər auditoriyaya dərin yanaşan tək tətbiq — heç bir güzəştə getmədən.",
-        "items": [
-            {
-                "title": "Gündəlik oxucu",
-                "body": "Tam fərdiləşdirilə bilən gözəl rəqəmsal Müshəf — rənglər, şriftlər, məkan və gündəlik vird üçün incə sensor jestləri."
+    "editions": {
+        "title": "Mushafınızı seçin",
+        "subtitle": "Hər nəşrdə eyni təfsir kitabxanası, tilavətlər və alətlər var. Oxuduğunuz Mushafı və rəvayəti seçin.",
+        "platformsAll": "iPhone, iPad, Android, Mac, Windows",
+        "platformsMobile": "iPhone, iPad, Android",
+        "list": {
+            "madina": {
+                "name": "Mədinə Mushafı",
+                "riwaya": "Asimdən Həfs",
+                "series": "Quran Hafizi",
+                "line": "Tanış Mədinə səhifələri, qiraətlərin fərqləndiyi yerlərdə fərş işarələri ilə"
             },
-            {
-                "title": "Hafizələr",
-                "body": "Bir neçə xətm, mövqenin avtomatik yadda saxlanması, ayələrin təkrarı, ayələr arası tənzimlənən fasilə və dəqiq təkrar alətləri."
+            "hafs": {
+                "name": "Həfs Mushafı",
+                "riwaya": "Asimdən Həfs",
+                "series": "Khair Zad",
+                "line": "Göstərib gizlədə və fərdiləşdirə biləcəyiniz bəzəkli səhifə çərçivəsi"
             },
-            {
-                "title": "Quran elmləri tələbələri",
-                "body": "On qiraətin fərşi, irab, sərf, əsbabu’n-nüzul, vəqf işarələri və 22-dən çox ixtisaslaşdırılmış qiraət mənbəsi."
+            "tajweed": {
+                "name": "Təcvidli Mushaf",
+                "riwaya": "Asimdən Həfs",
+                "series": "Quran Hafizi",
+                "line": "Hər təcvid qaydası rənglə işarələnib, hər rəngin izahı ilə"
             },
-            {
-                "title": "Ərəbcə bilməyənlər",
-                "body": "14-dən çox etibarlı tərcümə, üstəlik daha dərin anlama üçün Sahih International tərəfindən səsləndirilən ingilis tərcüməsi."
+            "warsh": {
+                "name": "Vərş Mushafı",
+                "riwaya": "Nafidən Vərş",
+                "series": "Khair Zad",
+                "line": "Vərşin Həfsdən fərqləndiyi yerlər rənglə işarələnib"
+            },
+            "qalon": {
+                "name": "Qalun Mushafı",
+                "riwaya": "Nafidən Qalun",
+                "series": "Khair Zad",
+                "line": "Qalun rəvayəti ilə oxuyan qarilər daxildir"
+            },
+            "shamarli": {
+                "name": "Şəmərli Mushafı",
+                "riwaya": "Asimdən Həfs",
+                "series": "Quran Hafizi",
+                "line": "522 səhifəlik Şəmərli Mushafı, haşiyələrdə qiraət qeydləri ilə"
             }
-        ]
+        }
     },
-    "features": {
-        "title": "Bir tətbiqdə saysız xüsusiyyət",
-        "subtitle": "11 kateqoriya üzrə 78+ düşünülmüş xüsusiyyət — oxumaq, dinləmək, öyrənmək və əzbərləmək üçün.",
-        "categories": [
+    "story": {
+        "title": "Hər nəşrin içində",
+        "subtitle": "Altı Mushafın hamısında eyni alətlər var.",
+        "screensNote": "Ekran görüntüləri tətbiqin ingilis dilindəki interfeysini göstərir; tətbiq azərbaycan dilində də mövcuddur.",
+        "scenes": [
             {
-                "id": "reading",
-                "title": "Oxuma və göstəriş",
-                "count": 8,
-                "blurb": "Bir neçə tərtibatlı, fərdiləşdirilmiş mövzulu, yeddi şriftli, gündüz/gecə palitralı tam ekran Müshəf.",
-                "highlights": [
-                    "Şaquli və üfüqi tərtibat",
-                    "İşıqlı, gecə və avtomatik mövzular",
-                    "7 şrift (Amiri, Osmanlı, Nəsx, Ruq‘a, Şəhrazadə…)",
-                    "Oxu zamanı ekranı yandır"
+                "id": "meaning",
+                "title": "Hər ayənin *mənası*",
+                "subtitle": "Təfsir, tərcümə və söz mənaları",
+                "items": [
+                    "Təfsiri üçün ayəyə, mənası və qrammatik təhlili üçün sözə toxunun",
+                    "Əl-Muxtəsər, Əl-Müyəssər, İbn Kəsir, Sədi, Qurtubi və daha çoxu",
+                    "Mənaların azərbaycan, ingilis, fransız, alman, türk, indonez, malay, urdu və digər dillərə tərcümələri"
                 ]
             },
             {
-                "id": "navigation",
-                "title": "Naviqasiya",
-                "count": 6,
-                "blurb": "Hər hansı surəyə, cüzə, hizbə və ya səhifəyə — ad, nömrə və ya səhifə ilə keç.",
-                "highlights": [
-                    "Axtarışlı 114 surə",
-                    "30 cüz və 120 hizb",
-                    "İstənilən səhifəyə birbaşa keç (1–604)",
-                    "Tənzimlənən avtomatik sürüşmə"
+                "id": "tartil",
+                "title": "*200+ qarini* dinləyin",
+                "subtitle": "Tam surələr və pleylistlər",
+                "items": [
+                    "Tilavət kitabxanası Tərtildə tam surə tilavətləri",
+                    "Pleylistlər və sevimli surələr",
+                    "Surələri yükləyib internetsiz dinləyin",
+                    "Oxuyarkən sizinlə qalan mini pleyer"
+                ]
+            },
+            {
+                "id": "memorize",
+                "title": "*Əzbərləmək* üçün təkrarlayın",
+                "subtitle": "Təkrar, fasilə və sürəti tənzimləyin",
+                "items": [
+                    "Oxunan ayəni vurğulayan ayə-ayə tilavət",
+                    "Ayəni və ya bir hissəni istədiyiniz qədər təkrarlayın",
+                    "Təkrarlar arasında fasilə və sürətin tənzimlənməsi"
+                ],
+                "note": "Səs menyusu bütün interfeys dillərində ərəbcədir."
+            },
+            {
+                "id": "night",
+                "title": "*Gecə* də gözləri yormur",
+                "subtitle": "Gecə rejimi və səhifə rəngləri",
+                "items": [
+                    "Gecə rejimi və müxtəlif səhifə rəngləri",
+                    "Seçdiyiniz sürətlə avtomatik sürüşdürmə",
+                    "Cihazı çevirəndə yan-yana iki səhifə"
                 ]
             },
             {
                 "id": "tracks",
-                "title": "Xətmlər və irəliləyiş",
-                "count": 3,
-                "blurb": "Bir neçə xətm yarat (gündəlik vird, hifz, qiyam, məclis) və avtomatik davam et.",
-                "highlights": [
-                    "Fərdi rəngli bir neçə xətm",
-                    "Hər xətm üçün son səhifənin avtomatik saxlanması",
-                    "Vizual irəliləyiş göstəricisi"
+                "title": "Eyni anda bir neçə *xətm*",
+                "subtitle": "Hər biri öz yerini və qarisini saxlayır",
+                "items": [
+                    "Hər xətmin öz səhifəsi, əlfəcinləri, qeydləri və qarisi var",
+                    "Hərəkəli, hərəkəsiz və ya kökə görə axtarış",
+                    "Surə, cüz və hizb fihristləri"
                 ]
             },
             {
-                "id": "bookmarks",
-                "title": "Əlfəcinlər və qeydlər",
-                "count": 4,
-                "blurb": "Səhifə və ayə əlfəcinləri, hər xətmə bağlı şəxsi qeydlər, ixrac və paylaşım.",
-                "highlights": [
-                    "Bir toxunuşla səhifə əlfəcini",
-                    "Dərin tədqiq üçün ayə əlfəcinləri",
-                    "Hər xətmə bağlı şəxsi qeydlər",
-                    "Əlfəcin və qeydləri mətn olaraq ixrac"
-                ]
-            },
-            {
-                "id": "audio",
-                "title": "Səs və tilavət",
-                "count": 10,
-                "blurb": "68 qarini dinlə, istənilən diapazonu təkrarla, sürəti tənzimlə və surəyə, cüzə, səhifəyə və ya müddətə görə dayandır.",
-                "highlights": [
-                    "Ayə, surə və ya fərdi diapazonu təkrarla",
-                    "Ayələr arası tənzimlənən fasilə",
-                    "Çalma sürəti (1×, 1.25×, 1.5×…)",
-                    "Avtomatik vurğulama və ardıcıl sürüşmə",
-                    "Offline dinləmək üçün tilavətləri yüklə",
-                    "Surə, səhifə, hizb, cüz və ya müddətə görə dayan"
-                ]
-            },
-            {
-                "id": "search",
-                "title": "Axtarış və mənbələr",
-                "count": 7,
-                "blurb": "Dörd rejimli tam mətn axtarışı: sadə, hərəkəli, Osmanlı və ya kök əsaslı.",
-                "highlights": [
-                    "Şablon axtarışı (wildcard / regex)",
-                    "Tam söz uyğunluğu",
-                    "Yalnız cari surədə axtar",
-                    "Tam ayə təfərrüatı səhifəsi"
-                ]
-            },
-            {
-                "id": "sciences",
-                "title": "Quran elmləri",
-                "count": 10,
-                "blurb": "Söz səviyyəsində sərf və irab, 17 təfsir, rəng kodlu qiraət fərşi və əsbabu’n-nüzul.",
-                "highlights": [
-                    "Söz səhifəsi (məna, sərf, irab)",
-                    "On qaridən qiraətlər",
-                    "Əsbabu’n-nüzul (Vahidi və başqaları)",
-                    "Vəqf və ibtida işarələri",
-                    "Rəng kodlu fərş qaydaları"
-                ]
-            },
-            {
-                "id": "customization",
-                "title": "Fərdiləşdirmə və parametrlər",
-                "count": 10,
-                "blurb": "Müshəflər arasında keç, jestləri tənzimlə, oriyentasiyanı kilidlə və masaüstündə klaviatura və siçandan istifadə et.",
-                "highlights": [
-                    "Rəvayətə görə süzgəcdən keçirilmiş qarilər",
-                    "Hər jest üçün açma/söndürmə",
-                    "Siçan təkəri və ox düymələri dəstəyi",
-                    "Ərəb və ingilis dilində interfeys"
-                ]
-            },
-            {
-                "id": "tools",
-                "title": "Alətlər və əlavələr",
-                "count": 9,
-                "blurb": "Seçilmiş dualar, parametrlərin idxal/ixracı, məlumat yenilənməsi, paylaşım və bir toxunuşla kopyalama.",
-                "highlights": [
+                "id": "athkar",
+                "title": "Gündəlik *zikrləriniz*",
+                "subtitle": "Sayğac, təsbeh və öz siyahınız",
+                "items": [
+                    "Sayğac, təsbeh və səsli oxunuş",
                     "Quran və Sünnədən dualar",
-                    "Parametr və əlfəcinlər üçün JSON idxal/ixrac",
-                    "Ayələri və qeydləri paylaş",
-                    "İnteraktiv salamlama turu"
-                ]
+                    "Öz zikrlərinizi əlavə edin"
+                ],
+                "note": "Zikr mətnləri ərəbcədir."
             },
             {
-                "id": "gestures",
-                "title": "Jestlər və qarşılıqlı təsir",
-                "count": 5,
-                "blurb": "Səhifəni vərəqləmək üçün sürüşdür, böyütmək üçün sıx, kənar qeydlər üçün uzun bas, mərkəzə toxunaraq UI-ni gizlət.",
-                "highlights": [
-                    "Səhifələr arası sola/sağa sürüşdürmə",
-                    "Sıxıb böyütmə",
-                    "Kənar qeydlər üçün uzun basma",
-                    "Mərkəz toxunması paneli açır/bağlayır"
-                ]
-            },
-            {
-                "id": "editions",
-                "title": "Müshəfə xas xüsusiyyətlər",
-                "count": 4,
-                "blurb": "Tecvid rəngləməsi, söz koordinatları və qiraətlər arası müqayisəli kənarlar — müshəfə görə.",
-                "highlights": [
-                    "Mədinə Müshəfi (defolt Osmanlı)",
-                    "Rəng qaydalı Tecvid Müshəfi",
-                    "Geniş kənarlı Şəmərli Müshəfi",
-                    "Hafs, Vərş, Qalun, Şu’bə dəstəyi…"
+                "id": "share",
+                "title": "Ayəni *şəkil kimi* paylaşın",
+                "subtitle": "Gözəl və paylaşmağa hazır",
+                "items": [
+                    "Şəkil kimi və ya təfsiri ilə birlikdə mətn kimi paylaşın",
+                    "Şəkillərə yalnız siz seçəndə yadda saxlanılır"
                 ]
             }
         ]
     },
-    "editions": {
-        "title": "5 səhih Müshəf nəşri",
-        "subtitle": "İki əsas kolleksiya: qiraət genişliyi üçün “Hamil al-Quran” və hafizələr üçün “Khair Zad”. Hər biri fərş, rəng göstəricisi və müqayisəli kənarlarla gəlir.",
-        "collections": [
+    "library": {
+        "title": "Kitabxana",
+        "subtitle": "Təfsir, Quran elmləri, qiraət və tərcümə üzrə 50-dən çox kitab. Bəziləri bir dəfə yüklənir, sonra cihazınızda qalır.",
+        "more": "və daha çoxu",
+        "groups": [
             {
-                "name": "Hamil al-Quran",
-                "description": "Əsas qiraətləri və rəvayətləri əhatə edən, Osmanlı xəttilə hazırlanmış geniş kolleksiya.",
-                "items": [
-                    "Mədinə",
-                    "Şəmərli",
-                    "Tecvid"
-                ]
-            },
-            {
-                "name": "Khair Zad",
-                "description": "Strukturlaşdırılmış pedaqoji yanaşmalı, hafizələrə yönəlmiş seriya.",
-                "items": [
-                    "Vərş",
-                    "Qalun"
-                ]
-            }
-        ],
-        "list": [
-            {
-                "code": "Madina",
-                "name": "Mədinə Müshəfi",
-                "note": "Söz koordinatlı Osmanlı xətti. Müqayisənin əsası.",
-                "isDefault": true
-            },
-            {
-                "code": "Shmrly",
-                "name": "Şəmərli Müshəfi",
-                "note": "Geniş hamiş kənarlı Şəmərli xətti."
-            },
-            {
-                "code": "Tjwid",
-                "name": "Tecvid Müshəfi",
-                "note": "Hərf-hərf tecvid qaydalarının rənglənməsi (Dar Al-Ma’arifah)."
-            },
-            {
-                "code": "Warsh",
-                "name": "Vərş Müshəfi",
-                "note": "Vərş — Nafi‘dən, Əl-Əzraq yolu."
-            },
-            {
-                "code": "Qalon",
-                "name": "Qalun Müshəfi",
-                "note": "Qalun — Nafi‘dən rəvayət."
-            }
-        ],
-        "crossNote": "Müshəflərin əksəriyyəti rəng göstəricilərini, qiraətlər arası müqayisəli kənarları, vəqf işarələrini və mənhəc görünüşünü dəstəkləyir."
-    },
-    "reciters": {
-        "title": "Rəvayətlər və qiraətlər üzrə 68 qari",
-        "subtitle": "Hər qari müəyyən bir rəvayət, nəşr (Mürəttəl, Mücəvvəd, Müəllim, Radio, Tam) və yüksək keyfiyyətli CDN ilə uyğunlaşdırılır. Fərdi qari URL-i də əlavə edə bilərsiniz.",
-        "riwayatTitle": "Əhatə olunan rəvayətlər və qiraətlər",
-        "riwayat": [
-            {
-                "name": "Hafs — ‘Asımdan",
-                "sub": "Ən geniş yayılmış"
-            },
-            {
-                "name": "Vərş — Nafi‘dən"
-            },
-            {
-                "name": "Qalun — Nafi‘dən"
-            },
-            {
-                "name": "Şu’bə — ‘Asımdan"
-            },
-            {
-                "name": "Əd-Düri — Əbi ‘Amrdan"
-            },
-            {
-                "name": "Əs-Süsi — Əbi ‘Amrdan"
-            },
-            {
-                "name": "Əl-Əsbahani"
-            },
-            {
-                "name": "Həmzənin rəvayətləri"
-            },
-            {
-                "name": "Əl-Kübra və Əs-Suğra",
-                "sub": "On qiraət"
-            },
-            {
-                "name": "Qalun və Vərş aspektləri"
-            }
-        ],
-        "featuredTitle": "Seçilmiş qarilər",
-        "featured": [
-            {
-                "name": "Mahmud Xəlil Əl-Husari",
-                "riwaya": "Hafs — ‘Asımdan",
-                "version": "Mürəttəl / Mücəvvəd / Radio / Müəllim"
-            },
-            {
-                "name": "Məhəmməd Sıddıq Əl-Minşavi",
-                "riwaya": "Hafs — ‘Asımdan",
-                "version": "Mürəttəl / Mücəvvəd / Müəllim"
-            },
-            {
-                "name": "Əbdülbasit Əbdüssəməd",
-                "riwaya": "Hafs / Vərş",
-                "version": "Mürəttəl / Mücəvvəd"
-            },
-            {
-                "name": "Müşari Raşid Əl-Afasi",
-                "riwaya": "Hafs — ‘Asımdan",
-                "version": "Mürəttəl"
-            },
-            {
-                "name": "Yasir Əd-Dövsəri",
-                "riwaya": "Hafs — ‘Asımdan",
-                "version": "Mürəttəl"
-            },
-            {
-                "name": "Səud Əş-Şüreym",
-                "riwaya": "Hafs — ‘Asımdan",
-                "version": "Mürəttəl"
-            },
-            {
-                "name": "Əhməd Talba",
-                "riwaya": "Əl-Kübra",
-                "version": "Tam"
-            },
-            {
-                "name": "İbrahim Əl-Məğribi",
-                "riwaya": "Əl-Əsbahani",
-                "version": "Tam"
-            }
-        ],
-        "downloadNote": "Tam tilavətləri offline dinləmək üçün yüklə — irəliləyiş, sürət və yaddaş istifadəsi göstərilir."
-    },
-    "books": {
-        "title": "63 kitab və mənbə",
-        "subtitle": "Ayə paneli təfsirləri, Quran elmlərini, qiraətləri və tərcümələri bir yerdə birləşdirir.",
-        "categories": [
-            {
-                "key": "tafseer",
                 "title": "Təfsir",
-                "count": "17 əsər",
-                "samples": [
-                    "İbn Kəsir",
-                    "Ət-Təbəri",
-                    "Əl-Qurtubi",
-                    "Əs-Sa’di",
-                    "Əl-Bəğavi",
-                    "Əl-Müyəssər",
-                    "Əl-Müxtəsər",
-                    "Ət-Təhrir vət-Tənvir",
-                    "Cəlaleyn",
-                    "Zad Əl-Məsir (İbn əl-Cövzi)",
-                    "Əl-Müharrar Əl-Vəciz (İbn ‘Atiyyə)",
-                    "Ən-Nəsəfi",
-                    "Nəzm Əd-Dürər (Əl-Bika’i)",
-                    "Ədva’ Əl-Bəyan (Əş-Şinqiti)"
-                ]
+                "items": ["İbn Kəsir", "Təbəri", "Qurtubi", "Sədi", "Bəğəvi", "Əl-Müyəssər", "Əl-Muxtəsər", "Ət-Təhrir vət-Tənvir"]
             },
             {
-                "key": "sciences",
                 "title": "Quran elmləri",
-                "count": "10 əsər",
-                "samples": [
-                    "Əsbabu’n-Nüzul (Əl-Vahidi)",
-                    "İrabu’l-Quran (Əd-Də’as)",
-                    "Əl-Cədvəl irab və sərfdə",
-                    "Əd-Dürr Əl-Məsun (Əs-Səmin Əl-Hələbi)",
-                    "Əl-Müyəssər fi-l-Ğərib",
-                    "Ən-Nəşr fi-l-Qiraat əl-‘Aşr (İbn Əl-Cəzəri)",
-                    "Əl-Vəqf və Əl-İbtida’",
-                    "Müşəbihatu Əl-Əlfaz"
-                ]
-            },
-            {
-                "key": "qiraat",
-                "title": "Qiraətlər",
-                "count": "22 əsər",
-                "samples": [
-                    "Qalun rəvayəti — Nafi‘dən",
-                    "Vərş rəvayəti — Nafi‘dən",
-                    "İbn Kəsir qiraəti",
-                    "Əbu ‘Amr qiraəti",
-                    "İbn ‘Amir qiraəti",
-                    "Şu’bə rəvayəti — ‘Asımdan",
-                    "Həmzə qiraəti",
-                    "Kisai qiraəti",
-                    "Əbu Cə’fər qiraəti",
-                    "Yə’qub qiraəti",
-                    "Xələf əl-‘Aşir qiraəti",
-                    "Əl-‘Aşr Əs-Suğra",
-                    "Tayseer Əl-‘Aşr",
-                    "Şəvahid Tayyibətə’n-Nəşr"
-                ]
-            },
-            {
-                "key": "translations",
-                "title": "Tərcümələr",
-                "count": "14 dil",
-                "samples": [
-                    "İngilis — Hilali & Khan",
-                    "Saheeh International",
-                    "Pickthall",
-                    "Fransız",
-                    "Alman (Abu Rida)",
-                    "Rus",
-                    "Türk",
-                    "İndoneziya",
-                    "Malay",
-                    "Urdu",
-                    "Fars",
-                    "Holland",
-                    "Azərbaycan",
-                    "Fonetik transliterasiya"
-                ]
-            }
-        ]
-    },
-    "sciences": {
-        "title": "Söz və ayənin dərin tədqiqi",
-        "subtitle": "İstənilən sözə toxun və onun səhifəsini aç — beş tab məna, sərf, irab, qiraət və tərcümələri açır.",
-        "items": [
-            {
-                "title": "Məna",
-                "body": "Quran lüğəti — qeyri-adi sözlərə qısa və aydın təriflər."
-            },
-            {
-                "title": "Sərf",
-                "body": "Sözün quruluşu, kökü və törəmələrini açıqlayan ətraflı sərf təhlili."
-            },
-            {
-                "title": "İrab",
-                "body": "İxtisaslaşmış mənbələrdən ayə və sözün dəqiq qrammatik təhlili."
+                "items": ["Əsbabun-Nüzul (Vahidi)", "İrabul-Quran (Dəas)", "Əl-Cədvəl (irab və sərf)", "Əd-Dürr Əl-Məsun", "Ən-Nəşr (İbn Əl-Cəzəri)", "Əl-Vəqf vəl-İbtida"]
             },
             {
                 "title": "Qiraətlər",
-                "body": "On qaridən fərqli oxunuşlar və rəng kodlu fərş qeydləri."
+                "items": ["Nafidən Qalun", "Nafidən Vərş", "İbn Kəsir", "Əbu Amr", "İbn Amir", "Asimdən Şubə", "Həmzə", "Kisai"]
             },
             {
                 "title": "Tərcümələr",
-                "body": "Dünyanın əsas dillərində 14-dən çox etibarlı tərcümə."
+                "items": ["Saheeh International", "Hilali & Khan", "Pickthall", "Fransız", "Alman", "Türk", "İndonez", "Urdu"]
             }
         ]
     },
-    "gestures": {
-        "title": "Təbii və çevik sensor idarəetmə",
-        "subtitle": "Hər jest açılıb-bağlana bilər — bir çoxu yenidən təyin oluna bilər.",
-        "items": [
-            {
-                "gesture": "Sola/sağa sürüşdürmə",
-                "action": "Səhifəni vərəqləmə"
-            },
-            {
-                "gesture": "Kənarda yuxarı/aşağı sürüşdürmə",
-                "action": "Ekran parlaqlığı"
-            },
-            {
-                "gesture": "Sıxma",
-                "action": "Səhifəni böyütmə"
-            },
-            {
-                "gesture": "Ayəyə toxunma",
-                "action": "Ayə səhifəsini açma"
-            },
-            {
-                "gesture": "Ayəyə uzun basma",
-                "action": "Kənar qeydləri (haşiyə) göstərmə"
-            },
-            {
-                "gesture": "Sözə toxunma",
-                "action": "Söz səhifəsini açma"
-            },
-            {
-                "gesture": "Mərkəzə toxunma",
-                "action": "Panelləri gizlət/göstər"
-            },
-            {
-                "gesture": "Mərkəzdən sürüşdürmə",
-                "action": "Surə indeksi / axtarış"
-            },
-            {
-                "gesture": "Siçan təkəri və ox düymələri",
-                "action": "Masaüstü və veb naviqasiyası"
-            }
-        ]
+    "languages": {
+        "title": "Sizin dilinizdə",
+        "subtitle": "Tətbiq interfeysi 14 dildədir.",
+        "note": "Surə adları, təfsir kitablarının adları və zikr mətnləri bütün dillərdə ərəbcə qalır."
     },
     "downloads": {
-        "title": "Tətbiqi yüklə",
-        "subtitle": "Android, iPhone/iPad, Windows, macOS və veb üçün mövcuddur — ilk yüklədikdən sonra tam offline işləyir.",
-        "eyebrow": "Ən son versiya",
-        "supportedOn": "Əldə edilə bilən platformalar",
-        "platformNames": {
+        "title": "Yüklə",
+        "subtitle": "Bütün platformalarda pulsuz və reklamsızdır.",
+        "version": "Versiya",
+        "columns": {
+            "edition": "Mushaf",
+            "ios": "iPhone və iPad",
             "android": "Android",
-            "ios": "iPhone & iPad",
-            "windows": "Windows",
-            "mac": "macOS",
-            "web": "Veb"
+            "mac": "Mac",
+            "windows": "Windows"
         },
-        "platforms": {
-            "android": "Google Play-dən yüklə",
-            "ios": "App Store-dan yüklə",
-            "windows": "Windows üçün yüklə",
-            "mac": "macOS üçün yüklə"
+        "links": {
+            "ios": "App Store",
+            "android": "Google Play",
+            "mac": ".dmg yüklə",
+            "windows": ".exe yüklə"
         },
-        "storeLabels": {
-            "android": {
-                "small": "BURADAN ƏLDƏ ET",
-                "big": "Google Play"
-            },
-            "ios": {
-                "small": "Yüklə",
-                "big": "App Store"
-            },
-            "windows": {
-                "small": "Yüklə:",
-                "big": "Windows"
-            },
-            "mac": {
-                "small": "Yüklə:",
-                "big": "macOS"
-            }
-        },
-        "primaryCta": "Yüklə",
-        "winNote": "Windows 10 və daha yeni versiyalarda işləyir",
-        "macNote": "Açdıqdan sonra sağ klik edib “Aç”ı seçin",
-        "webSoon": "Veb — tezliklə"
-    },
-    "tech": {
-        "title": "Möhkəm mühəndislik, modullu memarlıq",
-        "subtitle": "Müshəflər, qarilər və mənbələrin tez əlavə olunmasına imkan verən xidmət əsaslı memarlıq üzərində qurulub.",
-        "bullets": [
-            "İlk yüklədikdən sonra tam offline işləyir",
-            "Hər müshəf üçün 15 ayrı indeks xidməti — qiraətlər arası güzəştsiz",
-            "Android, iOS və vebdə (PWA / masaüstü) əldə edilə bilər",
-            "Birinci dərəcəli ərəb RTL-i və tam ingilis dəstəyi",
-            "Müstəqil məlumat yenilənmələri (Quran mətni, axtarış indeksi, fərş, sözlər)"
-        ]
+        "notAvailable": "Mövcud deyil",
+        "winNote": "Windows 10 və daha yeni versiyalar.",
+        "macNote": "Mac: tətbiqi ilk dəfə açanda üzərinə sağ klik edib “Aç”ı seçin."
     },
     "footer": {
-        "about": "Wursha QuranHolder Wursha Digital Apps tərəfindən nəşr olunur.",
-        "creditsTitle": "Etiraflar və təşəkkürlər",
+        "about": "Wursha Digital Apps Quran Hafizi və Khair Zad Mushaf tətbiqlərini nəşr edir.",
+        "creditsTitle": "Təşəkkür",
         "credits": [
-            {
-                "label": "Naşir",
-                "value": "Wursha Digital Apps"
-            },
-            {
-                "label": "Khair Zad müshəfləri",
-                "value": "Şeyx Əli ibn Əbdülmün‘im Saleh"
-            },
-            {
-                "label": "Tecvid Müshəfi",
-                "value": "Dar Al-Ma’arifah (bütün hüquqlar qorunur)"
-            },
-            {
-                "label": "Fərş və kənarlar",
-                "value": "Müh. Məhəmməd Şələbi və ixtisas qrupu"
-            },
-            {
-                "label": "Təfsirlər",
-                "value": "Əl-Bahisü’l-Qur’ani — Quran Tədqiqat Mərkəzi"
-            }
+            { "label": "Khair Zad Mushafları", "value": "Şeyx Əli ibn Əbdülmünim Saleh" },
+            { "label": "Təcvidli Mushaf", "value": "Dar Əl-Mərifə (bütün hüquqlar qorunur)" },
+            { "label": "Fərş və haşiyələr", "value": "Müh. Məhəmməd Şələbi və ixtisaslı komanda" },
+            { "label": "Təfsirlər", "value": "Əl-Bahis Əl-Qurani, Təfsir Quran Tədqiqatları Mərkəzi" }
         ],
         "sourcesTitle": "Səs və məlumat mənbələri",
         "sources": [
-            "mp3quran.net — Quran səs kitabxanası",
+            "mp3quran.net",
             "everyayah.com",
-            "Kral Səud Universitetinin Elektron Müshəfi",
-            "sound.quraat.info — qiraət səsləri",
-            "jamharat-uloom.org — söz mənaları, sərf və qrammatika",
-            "Əl-Quran Əl-Adim — Ər-Racihi Vəqfi — vəqf məlumatları"
+            "Kral Səud Universitetinin Elektron Mushafı",
+            "sound.quraat.info",
+            "jamharat-uloom.org (söz mənaları, sərf və qrammatika)",
+            "Əl-Quran Əl-Azim, Ər-Racihi Vəqfi (vəqf məlumatları)"
         ],
-        "rights": "© Wursha Digital Apps — bütün hüquqlar qorunur."
-    },
-    "common": {
-        "placeholder": "Şəkil yer tutucusu",
-        "screenshot": "Ekran görüntüsü",
-        "comingSoon": "Tezliklə"
-    },
-    "apps": {
-        "madina": {
-            "name": "QuranHolder: Mədinə Müshəfi",
-            "description": "Osmanlı xətti — Hafs rəvayəti"
-        },
-        "shamarli": {
-            "name": "QuranHolder: Şəmərli Müshəfi",
-            "description": "Geniş kənarlı Şəmərli xətti"
-        },
-        "tajweed": {
-            "name": "QuranHolder: Tecvid Müshəfi",
-            "description": "Rəng kodlu tecvidlə Hafs rəvayəti"
-        },
-        "warsh": {
-            "name": "Vərş Müshəfi",
-            "description": "Vərş — Nafi‘dən, Əl-Əzraq yolu"
-        },
-        "qalon": {
-            "name": "Qalun Müshəfi",
-            "description": "Qalun — Nafi‘dən rəvayət"
-        }
+        "rights": "© Wursha Digital Apps"
     }
 }

@@ -66,10 +66,9 @@ async function main() {
 
     let highestVersion = null;
     for (const app of catalog.apps) {
-        if (typeof app.image !== 'string' || !app.image.endsWith('.png')) {
-            throw new Error(`App '${app.id}' is missing a .png image filename`);
-        }
-        const prefix = app.image.replace(/\.png$/, '');
+        // Editions without desktop builds (hafs) have no release prefix.
+        if (!app.release) continue;
+        const prefix = app.release;
         const { tag, version, mac, windows } = pickLatestForPrefix(releases, prefix);
 
         app.urls = app.urls ?? {};

@@ -2,21 +2,53 @@
 <html lang="ar" dir="rtl">
     <head>
         <meta charset="utf-8" />
-        <title>حامل القرآن — الورشة الرقمية للتطبيقات</title>
+        <title>ورشة — تطبيقات المصحف بالتفسير والتلاوة</title>
         <base href="/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-            name="description"
-            content="حامل القرآن — تطبيقٌ متكامل للقراءة والتلاوة والدراسة والحفظ. 15 مصحفاً معتمداً، 68 قارئاً، 63 كتاباً وتفسيراً وترجمة، يعمل بدون إنترنت." />
-        <meta name="theme-color" content="#0f766e" />
+        <meta name="description" content="" />
+        <meta name="theme-color" content="#063640" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="حامل القرآن — الورشة الرقمية" />
-        <meta
-            property="og:description"
-            content="15 مصحفاً، 68 قارئاً، 63 مرجعاً، فرش القراءات، وتحليل الكلمة — في تطبيقٍ واحد." />
-        <meta property="og:image" content="wursha-logo.png" />
+        <meta property="og:site_name" content="Wursha" />
+        <meta property="og:image" content="https://wursha.com/og.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="icon" type="image/x-icon" href="favicon.png" />
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <script>
+            // `/` sends visitors to their language page before anything paints: the saved choice from the
+            // language picker, else the first supported browser language, else Arabic. A simplified copy of
+            // I18nService.detect() / detectLangFromUserAgent() in src/app/i18n/ (no region fallback).
+            // Old single-page anchors (#books, #reciters…) land on the matching new section.
+            (function () {
+                if (location.pathname !== '/') return;
+                var langs = ['ar', 'en', 'az', 'bn', 'de', 'fa', 'fr', 'hi', 'id', 'ms', 'ps', 'tr', 'ur', 'uz'];
+                var alias = { in: 'id', prs: 'fa', pbt: 'ps', pbu: 'ps', zsm: 'ms' };
+                var lang = null;
+                try {
+                    lang = localStorage.getItem('wursha-lang');
+                } catch (e) {}
+                if (langs.indexOf(lang) < 0) {
+                    lang = 'ar';
+                    var tags = navigator.languages || [navigator.language || ''];
+                    for (var i = 0; i < tags.length; i++) {
+                        var sub = String(tags[i]).toLowerCase().split('-')[0];
+                        sub = alias[sub] || sub;
+                        if (langs.indexOf(sub) >= 0) {
+                            lang = sub;
+                            break;
+                        }
+                    }
+                }
+                var moved = { reciters: 'features', sciences: 'features', gestures: 'features', books: 'library', tech: 'downloads' };
+                var hash = location.hash.slice(1);
+                location.replace('/' + lang + '/' + (hash ? '#' + (moved[hash] || hash) : ''));
+            })();
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" />
     </head>
     <body>
         <app-root></app-root>

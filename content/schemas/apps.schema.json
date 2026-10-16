@@ -2,57 +2,82 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://wurshaapps.github.io/schemas/apps.schema.json",
     "title": "Apps catalog",
-    "description": "Language-agnostic catalog of downloadable Wursha apps. Pairs with per-locale `apps` map in ar.json/en.json by `id`.",
+    "description": "Language-agnostic catalog of the Mushaf apps, in display order. Pairs with `editions.list` in each content/<lang>.json by `id`.",
     "type": "object",
     "additionalProperties": false,
-    "required": ["version", "apps"],
+    "required": [
+        "version",
+        "apps"
+    ],
     "properties": {
-        "$schema": { "type": "string" },
+        "$schema": {
+            "type": "string"
+        },
         "version": {
             "type": "string",
-            "description": "Latest release version, used by the downloads section eyebrow.",
+            "description": "Latest desktop release version, shown in the download section.",
             "pattern": "^\\d+\\.\\d+\\.\\d+$"
         },
         "apps": {
             "type": "array",
             "minItems": 1,
-            "items": { "$ref": "#/$defs/app" }
+            "items": {
+                "$ref": "#/$defs/app"
+            }
         }
     },
     "$defs": {
         "app": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["id", "image", "nameColor", "urls"],
+            "required": [
+                "id",
+                "accent",
+                "urls"
+            ],
             "properties": {
                 "id": {
                     "type": "string",
-                    "pattern": "^[a-z][a-z0-9-]*$",
-                    "description": "Stable id (lowercase, kebab-case). Used as the key in per-locale `apps` map."
+                    "enum": [
+                        "madina",
+                        "hafs",
+                        "tajweed",
+                        "warsh",
+                        "qalon",
+                        "shamarli"
+                    ],
+                    "description": "Stable id. Key in each locale's `editions.list`; also the page image /public/editions/<id>.webp."
                 },
-                "image": {
+                "accent": {
                     "type": "string",
-                    "description": "Filename inside /public — referenced from <img src> at runtime.",
-                    "pattern": "\\.(png|jpg|jpeg|webp|svg)$"
+                    "pattern": "^#[0-9a-fA-F]{6}$",
+                    "description": "Edition colour (same as its store art): card panel behind the page image."
                 },
-                "nameColor": {
+                "release": {
                     "type": "string",
-                    "description": "Accent color used for the card glow, top bar, and version pill. CSS color string.",
-                    "pattern": "^#[0-9a-fA-F]{3,8}$|^rgb|^hsl"
-                },
-                "featured": {
-                    "type": "boolean",
-                    "description": "If true, the card spans 2 cols on the wide grid and gets a gold-tinted border."
+                    "description": "Tag prefix in WurshaApps/QuranHolder_Releases (`<release>-v<version>`). Omit for editions without desktop builds; scripts/update-links.mjs skips them."
                 },
                 "urls": {
                     "type": "object",
                     "additionalProperties": false,
-                    "description": "Store / direct-download URLs. Any platform may be omitted — the card hides that pill.",
+                    "description": "Store / direct-download URLs. A missing platform shows as \"Not available\" in the download table.",
                     "properties": {
-                        "android": { "type": "string", "format": "uri" },
-                        "ios": { "type": "string", "format": "uri" },
-                        "windows": { "type": "string", "format": "uri" },
-                        "mac": { "type": "string", "format": "uri" }
+                        "android": {
+                            "type": "string",
+                            "format": "uri"
+                        },
+                        "ios": {
+                            "type": "string",
+                            "format": "uri"
+                        },
+                        "windows": {
+                            "type": "string",
+                            "format": "uri"
+                        },
+                        "mac": {
+                            "type": "string",
+                            "format": "uri"
+                        }
                     }
                 }
             }

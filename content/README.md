@@ -1,69 +1,39 @@
 # Site content
 
-This directory is the **single source of truth** for the marketing site at `wurshaapps.github.io`.
-The Angular app under `src/` reads these files at build time — to update copy, edit JSON here.
+This directory is the **single source of truth** for wursha.com. The Angular app reads these files at
+build time and prerenders one page per language at `/<lang>/` — to change copy, edit JSON here.
 
 ## Files
 
-| File                            | What it holds                                                      | Edit when…                              |
-| ------------------------------- | ------------------------------------------------------------------ | --------------------------------------- |
-| `apps.json`                     | Catalog of downloadable apps (URLs, icon, accent color, version)  | New release; new app; URL change        |
-| `ar.json`                       | All Arabic copy + Arabic app names/descriptions                    | Any AR copy change                      |
-| `en.json`                       | All English copy + English app names/descriptions                  | Any EN copy change                      |
-| `schemas/apps.schema.json`      | JSON Schema for `apps.json`                                        | Adding a new app field                  |
-| `schemas/content.schema.json`   | JSON Schema for `ar.json` and `en.json`                            | Adding/removing a section or field      |
-| `CONTRACT.md`                   | Detailed spec — every section, every field, what it controls       | When the schema changes                 |
+| File                          | What it holds                                                       | Edit when…                         |
+| ----------------------------- | ------------------------------------------------------------------- | ---------------------------------- |
+| `apps.json`                   | The six editions in display order: accent colour, release prefix, store/download URLs, version | New release; URL change |
+| `<lang>.json` (14 files)      | All copy for one language; `en.json` is the master                  | Any copy change                    |
+| `schemas/apps.schema.json`    | JSON Schema for `apps.json`                                         | Adding an app field                |
+| `schemas/content.schema.json` | JSON Schema for every `<lang>.json`                                 | Adding/removing a field            |
+| `CONTRACT.md`                 | Every section and field, and what it controls                       | When the shape changes             |
 
 ## Editing flow
 
-1. Open `ar.json` (or `en.json`) — most edits land here. VSCode autocompletes against the schema thanks to the `$schema` field at the top.
-2. Save. If `ng serve` is running, the site reloads automatically.
-3. If you change the **shape** (add/remove a field), also update:
-   - `schemas/content.schema.json` (or `schemas/apps.schema.json`)
-   - The `Dict` interface in `src/app/i18n/translations.ts`
-   - Any component that reads the field
+1. Edit `en.json` and `ar.json` first, then the same keys in the other 12 files. Copy that also appears on
+   the store pages (edition names, scene captions) should follow the app repo's
+   `store/listings/<locale>/listing.json`, so the site and the store say the same thing.
+2. `npm run check-content` compares every file's keys with `en.json` (it also runs before `npm run build`).
+3. Shape change (a field added or removed): update `schemas/content.schema.json`, the `Dict` interface in
+   `src/app/i18n/translations.ts`, and the component that reads it.
 
-## What lives where
+## Rules for copy
 
-- **All copy, lists, labels** → per-locale JSON (`ar.json` / `en.json`)
-- **Structural / language-agnostic data** (URLs, hex colors, image paths, version) → `apps.json`
-- **Per-locale app names + descriptions** → `apps` map inside `ar.json` / `en.json`, keyed by app `id`
-- **Numeric counts** (e.g. features per category) → `count: <number>` in JSON
-- **Display counts with units** (e.g. "17 works") → `count: "17 works"` (string, since the unit is localized)
+See `specs/website-redesign.md` §5. In short: every number is counted and rounded down (50+ books,
+200+ reciters), "offline" only for what is on the device, no superlatives, say what stays in Arabic.
+`*…*` in a title marks the highlighted phrase.
 
-## Validation
+## Images
 
-The schema files are **referenced by `$schema` at the top of every JSON file**. Editors that speak JSON Schema (VSCode, IntelliJ, Sublime + LSP) will:
+`public/shots/{en,ar}/` and `public/editions/` are made by `npm run import-shots` from the store
+screenshots (see the script header). LTR pages use the English set, RTL pages the Arabic set.
 
-- Autocomplete property names
-- Flag unknown / misspelled fields
-- Warn on missing required fields
-- Validate enum values and patterns
+## Releases
 
-A second line of defence: TypeScript's `Dict` interface (`src/app/i18n/translations.ts`) is the same shape. If JSON drifts from the schema, `ng build` fails.
-
-## Adding a new app
-
-1. Add the entry to `apps.json` → `apps[]` with a new `id` (lowercase kebab-case).
-2. Add the same `id` to both `ar.json` → `apps` and `en.json` → `apps` with `name` (and optional `description`).
-3. Drop the icon image into `/public/<image-filename>`.
-4. Done — the downloads grid picks it up. No component code change needed.
-
-## Adding a new section
-
-This is a structural change. You'll edit:
-
-1. `schemas/content.schema.json` — add the new section and its shape
-2. `ar.json` and `en.json` — add the section content
-3. `src/app/i18n/translations.ts` — add the field to the `Dict` interface
-4. Build a new Angular component for the section (or add to an existing one)
-5. Wire it into `src/app/app.component.html`
-
-See `CONTRACT.md` for the full per-section spec.
-
-## Why this layout
-
-- **Two big JSON files (one per locale)** — small enough to grep, big enough that edits are linear; matches the way translators normally work
-- **Build-time imports** — no network fetch, no loading states; bundle ships with content
-- **Schema-driven editing** — `$schema` references give editors validation without any toolchain
-- **TS shape check on assembly** — `Dict` interface catches drift at `ng build` time
+`npm run update-links` fetches the newest Mac/Windows downloads from `WurshaApps/QuranHolder_Releases`
+into `apps.json` (editions without a `release` prefix, like hafs, are skipped).

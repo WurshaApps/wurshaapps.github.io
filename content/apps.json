@@ -4,9 +4,8 @@
     "apps": [
         {
             "id": "madina",
-            "image": "madina.png",
-            "nameColor": "#5eead4",
-            "featured": true,
+            "accent": "#0b5966",
+            "release": "madina",
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_madina",
                 "ios": "https://apps.apple.com/app/id1436371392",
@@ -15,20 +14,17 @@
             }
         },
         {
-            "id": "shamarli",
-            "image": "shmrly.png",
-            "nameColor": "#a78bfa",
+            "id": "hafs",
+            "accent": "#5c3b20",
             "urls": {
-                "android": "https://play.google.com/store/apps/details?id=apps.wursha.mosshfshmrly",
-                "ios": "https://apps.apple.com/app/id1434342823",
-                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/shmrly-v35.0.2/QuranHolder-shmrly-35.0.2-universal.dmg",
-                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/shmrly-v35.0.2/QuranHolder-shmrly-35.0.2.Setup.exe"
+                "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_hafs",
+                "ios": "https://apps.apple.com/app/id1548150589"
             }
         },
         {
             "id": "tajweed",
-            "image": "tjwid.png",
-            "nameColor": "#86efac",
+            "accent": "#1d5b3c",
+            "release": "tjwid",
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_tjwid",
                 "ios": "https://apps.apple.com/app/id1509386930",
@@ -38,8 +34,8 @@
         },
         {
             "id": "warsh",
-            "image": "warsh.png",
-            "nameColor": "#fbbf24",
+            "accent": "#5c3b20",
+            "release": "warsh",
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_warsh",
                 "ios": "https://apps.apple.com/app/id1436361790",
@@ -49,13 +45,24 @@
         },
         {
             "id": "qalon",
-            "image": "qalon.png",
-            "nameColor": "#fb923c",
+            "accent": "#5c3b20",
+            "release": "qalon",
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_qalon",
                 "ios": "https://apps.apple.com/app/id1437326658",
                 "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/qalon-v35.0.2/QuranHolder-qalon-35.0.2-universal.dmg",
                 "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/qalon-v35.0.2/QuranHolder-qalon-35.0.2.Setup.exe"
+            }
+        },
+        {
+            "id": "shamarli",
+            "accent": "#45307a",
+            "release": "shmrly",
+            "urls": {
+                "android": "https://play.google.com/store/apps/details?id=apps.wursha.mosshfshmrly",
+                "ios": "https://apps.apple.com/app/id1434342823",
+                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/shmrly-v35.0.2/QuranHolder-shmrly-35.0.2-universal.dmg",
+                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/shmrly-v35.0.2/QuranHolder-shmrly-35.0.2.Setup.exe"
             }
         }
     ]

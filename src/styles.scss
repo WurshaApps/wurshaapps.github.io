@@ -1,115 +1,197 @@
-@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Markazi+Text:wght@400..700&family=Inter:wght@400;500;600;700&display=swap");
-
+// Direction A — store-matched (specs/website-redesign.md §3). Tokens follow the App Store style A art.
 :root {
-    --c-ink: #14241f;
-    --c-ink-soft: #4b5852;
-    --c-primary: #0f766e;
-    --c-primary-deep: #064e3b;
-    --c-accent: #d97706;
-    --c-accent-soft: #fcd34d;
-    --c-surface: #fffaf0;
-    --c-surface-warm: #fdfaf3;
-    --c-surface-card: #ffffff;
-    --c-border: rgba(15, 118, 110, 0.12);
+    --teal: #094d59;
+    --deep: #063640;
+    --gold: #d9ae5f;
+    --gold-ink: #8c6420; // gold for text on light backgrounds (AA on white)
+    --ink: #0b2f36;
+    --ink-soft: #4a6168;
+    --mist: #eef4f4;
+    --rule: #d5e2e3;
+    --on-dark-soft: #bcd3d6;
+    --gutter: clamp(16px, 4vw, 48px);
+    --max: 1200px;
+    --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg fill='none' stroke='%23fff' stroke-opacity='.07' stroke-width='1.2'%3E%3Crect x='30' y='30' width='36' height='36'/%3E%3Crect x='30' y='30' width='36' height='36' transform='rotate(45 48 48)'/%3E%3C/g%3E%3C/svg%3E");
+    --dark-panel: var(--pattern), radial-gradient(120% 90% at 70% 40%, var(--teal), var(--deep));
+    --font: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --leading: 1.6;
+    --heading-leading: 1.15;
 }
 
-* {
+// Script-specific families; Google Fonts serves them by unicode-range, so a page only downloads its own.
+html[lang="ar"],
+html[lang="fa"],
+html[lang="ps"] {
+    --font: "IBM Plex Sans Arabic", "Noto Sans Arabic", system-ui, sans-serif;
+    --leading: 1.75;
+    --heading-leading: 1.35;
+}
+html[lang="ur"] {
+    --font: "Noto Nastaliq Urdu", "IBM Plex Sans Arabic", serif;
+    --leading: 2.1;
+    --heading-leading: 1.9;
+}
+html[lang="hi"] {
+    --font: "IBM Plex Sans", "Noto Sans Devanagari", sans-serif;
+    --leading: 1.75;
+    --heading-leading: 1.4;
+}
+html[lang="bn"] {
+    --font: "IBM Plex Sans", "Noto Sans Bengali", sans-serif;
+    --leading: 1.75;
+    --heading-leading: 1.4;
+}
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: 100%;
-    min-height: 100vh;
-    max-width: 100%;
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
 }
 
 body {
     margin: 0;
-    color: var(--c-ink);
-    background: var(--c-surface);
-    font-family: "El Messiri", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-    line-height: 1.6;
+    background: #fff;
+    color: var(--ink);
+    font-family: var(--font);
+    font-size: 17px;
+    line-height: var(--leading);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-html[lang="en"] body {
-    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: inherit;
-    color: #0c2d2c;
-}
-
-a {
-    color: var(--c-primary);
-}
-
-a:hover {
-    color: #115e59;
+html[dir="rtl"] body {
+    font-size: 18px;
 }
 
 img {
+    display: block;
     max-width: 100%;
     height: auto;
 }
 
-::selection {
-    background: rgba(15, 118, 110, 0.18);
-    color: var(--c-primary-deep);
+a {
+    color: inherit;
 }
 
-.font-elmessiri-4 {
-    font-family: "El Messiri", sans-serif;
-    font-weight: 400;
+:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+    border-radius: 4px;
 }
 
-.font-elmessiri-5 {
-    font-family: "El Messiri", sans-serif;
-    font-weight: 500;
-}
-
-.font-elmessiri-6 {
-    font-family: "El Messiri", sans-serif;
-    font-weight: 600;
-}
-
-.font-elmessiri-7 {
-    font-family: "El Messiri", sans-serif;
+h1,
+h2,
+h3 {
+    margin: 0;
     font-weight: 700;
+    line-height: var(--heading-leading);
+    text-wrap: balance;
 }
 
-.font-markazi-4 {
-    font-family: "Markazi Text", serif;
-    font-weight: 400;
+html[dir="ltr"] :is(h1, h2, h3) {
+    letter-spacing: -0.01em;
 }
 
-.font-markazi-5 {
-    font-family: "Markazi Text", serif;
-    font-weight: 500;
+h2 {
+    font-size: clamp(30px, 4vw, 44px);
 }
 
-.font-markazi-6 {
-    font-family: "Markazi Text", serif;
+h3 {
+    font-size: clamp(24px, 2.6vw, 32px);
+}
+
+p {
+    margin: 0;
+}
+
+[id] {
+    scroll-margin-top: 64px;
+}
+
+// Shared section pieces.
+.wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+}
+
+.section {
+    padding: clamp(64px, 9vw, 120px) 0;
+}
+
+.lede {
+    max-width: 60ch;
+    margin-top: 14px;
+    color: var(--ink-soft);
+    font-size: 1.1em;
+}
+
+.hl {
+    color: var(--gold-ink);
+}
+
+.dark .hl {
+    color: var(--gold);
+}
+
+.note {
+    margin-top: 18px;
+    padding-inline-start: 12px;
+    border-inline-start: 2px solid var(--rule);
+    color: var(--ink-soft);
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 13px 22px;
+    border: 1.5px solid transparent;
+    border-radius: 999px;
+    font-size: 16px;
     font-weight: 600;
+    text-decoration: none;
+    line-height: 1.3;
 }
 
-.font-markazi-7 {
-    font-family: "Markazi Text", serif;
-    font-weight: 700;
+.btn--primary {
+    background: var(--gold);
+    color: #2a1d05;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation: none !important;
-        transition-duration: 0.01ms !important;
-    }
-    html {
-        scroll-behavior: auto;
-    }
+.btn--primary:hover {
+    background: #e4bd75;
+}
+
+.btn--ghost {
+    border-color: currentColor;
+}
+
+.btn--ghost:hover {
+    background: rgb(255 255 255 / 0.08);
+}
+
+.skip-link {
+    position: absolute;
+    inset-inline-start: 12px;
+    top: -60px;
+    z-index: 100;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #fff;
+    color: var(--ink);
+}
+
+.skip-link:focus {
+    top: 12px;
 }

@@ -1,14 +1,17 @@
+import { LocationStrategy, TrailingSlashPathLocationStrategy, ViewportScroller } from '@angular/common';
 import { ApplicationConfig, inject, provideAppInitializer } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import { provideRouter, withInMemoryScrolling } from '@angular/router';
 
 import { routes } from './app.routes';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { I18nService } from './i18n/i18n.service';
 
 export const appConfig: ApplicationConfig = {
     providers: [
-        provideRouter(routes),
-        provideAnimationsAsync(),
-        provideAppInitializer(() => inject(I18nService).ensureLoaded()),
+        provideRouter(routes, withInMemoryScrolling({ anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' })),
+        // Language pages live at `/<lang>/` (GitHub Pages serves <lang>/index.html); keep the slash.
+        { provide: LocationStrategy, useClass: TrailingSlashPathLocationStrategy },
+        provideClientHydration(withEventReplay()),
+        // Anchor jumps land below the sticky header.
+        provideAppInitializer(() => inject(ViewportScroller).setOffset([0, 64])),
     ],
 };

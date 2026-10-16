@@ -1,121 +1,56 @@
 import type { Lang } from './locales';
 
+export type EditionId = 'madina' | 'hafs' | 'tajweed' | 'warsh' | 'qalon' | 'shamarli';
+export type SceneId = 'meaning' | 'tartil' | 'memorize' | 'night' | 'tracks' | 'athkar' | 'share';
+export type Platform = 'ios' | 'android' | 'mac' | 'windows';
+
 /**
  * Shape of one locale's content. Mirrors `content/schemas/content.schema.json`.
- * Source of truth for copy: `content/<code>.json` files.
- * If you change this, update the JSON Schema and every locale file together.
+ * Source of truth for copy: `content/<code>.json` files; `npm run check-content` compares every
+ * locale's keys with en.json. Text wrapped in `*…*` is highlighted (see `HlComponent`).
  */
 export interface Dict {
-    meta: {
-        title: string;
-        description: string;
-    };
-    nav: {
-        features: string;
-        editions: string;
-        reciters: string;
-        books: string;
-        downloads: string;
-        switchLang: string;
-    };
+    meta: { title: string; description: string };
+    brand: string;
+    nav: { editions: string; features: string; library: string; downloads: string; language: string };
     hero: {
-        eyebrow: string;
         title: string;
-        titleHighlight: string;
         subtitle: string;
-        ctaPrimary: string;
+        cta: string;
         ctaSecondary: string;
-        screenshotAlt: string;
-    };
-    stats: {
-        editions: string;
-        editionsLabel: string;
-        reciters: string;
-        recitersLabel: string;
-        books: string;
-        booksLabel: string;
-        features: string;
-        featuresLabel: string;
-    };
-    audiences: {
-        title: string;
-        subtitle: string;
-        items: { title: string; body: string }[];
-    };
-    features: {
-        title: string;
-        subtitle: string;
-        categories: {
-            id: string;
-            title: string;
-            count: number;
-            blurb: string;
-            highlights: string[];
-        }[];
+        platforms: string;
+        imageAlt: string;
     };
     editions: {
         title: string;
         subtitle: string;
-        collections: { name: string; description: string; items: string[] }[];
-        list: {
-            code: string;
-            name: string;
-            note: string;
-            isDefault?: boolean;
-        }[];
-        crossNote: string;
+        platformsAll: string;
+        platformsMobile: string;
+        list: Record<EditionId, { name: string; riwaya: string; series: string; line: string }>;
     };
-    reciters: {
+    story: {
         title: string;
         subtitle: string;
-        riwayatTitle: string;
-        riwayat: { name: string; sub?: string }[];
-        featuredTitle: string;
-        featured: { name: string; riwaya: string; version: string }[];
-        downloadNote: string;
+        /** Shown under the heading when the screenshots are in another language than the page; empty in en/ar. */
+        screensNote: string;
+        scenes: { id: SceneId; title: string; subtitle: string; items: string[]; note?: string }[];
     };
-    books: {
+    library: {
         title: string;
         subtitle: string;
-        categories: {
-            key: string;
-            title: string;
-            count: string;
-            samples: string[];
-        }[];
+        more: string;
+        groups: { title: string; items: string[] }[];
     };
-    sciences: {
-        title: string;
-        subtitle: string;
-        items: { title: string; body: string }[];
-    };
-    gestures: {
-        title: string;
-        subtitle: string;
-        items: { gesture: string; action: string }[];
-    };
+    languages: { title: string; subtitle: string; note: string };
     downloads: {
         title: string;
         subtitle: string;
-        eyebrow: string;
-        supportedOn: string;
-        platformNames: { android: string; ios: string; windows: string; mac: string; web: string };
-        platforms: { android: string; ios: string; windows: string; mac: string };
-        storeLabels: {
-            android: { small: string; big: string };
-            ios: { small: string; big: string };
-            windows: { small: string; big: string };
-            mac: { small: string; big: string };
-        };
-        primaryCta: string;
+        version: string;
+        columns: Record<Platform | 'edition', string>;
+        links: Record<Platform, string>;
+        notAvailable: string;
         winNote: string;
         macNote: string;
-        webSoon: string;
-    };
-    tech: {
-        title: string;
-        subtitle: string;
-        bullets: string[];
     };
     footer: {
         about: string;
@@ -125,12 +60,6 @@ export interface Dict {
         sources: string[];
         rights: string;
     };
-    common: {
-        placeholder: string;
-        screenshot: string;
-        comingSoon: string;
-    };
-    apps: Record<string, { name: string; description?: string }>;
 }
 
 /**

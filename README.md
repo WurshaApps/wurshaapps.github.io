@@ -1,27 +1,25 @@
-# Wdc
+# wursha.com
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
+Marketing site for the Wursha Mushaf apps (Quran Holder and Khair Zad editions). Angular 21, prerendered
+to static pages, deployed to GitHub Pages by `.github/workflows/node.js.yml` on every push to `main`.
 
-## Development server
+- One page per language: `/ar/`, `/en/`, … (14 languages, `src/app/i18n/locales.ts`), each with its own
+  `<html lang dir>`, title, description and `hreflang` links. `/` sends visitors to their saved or browser
+  language (inline script in `src/index.html`) and is itself the Arabic page for crawlers.
+- All copy lives in `content/` — see `content/README.md`. Design and copy rules: `specs/website-redesign.md`.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Commands
 
-## Code scaffolding
+| Command                 | Does                                                                     |
+| ----------------------- | ------------------------------------------------------------------------ |
+| `npm start`             | Dev server at http://localhost:4200 (server-renders the requested page)  |
+| `npm run build`         | Checks content, then builds and prerenders every page into `dist/wdc/browser` |
+| `npm run check-content` | Compares every `content/<lang>.json` with `en.json`                      |
+| `npm run update-links`  | Pulls the newest Mac/Windows download links into `content/apps.json`     |
+| `npm run import-shots`  | Rebuilds `public/shots/` and `public/editions/` from the store screenshots (needs ImageMagick) |
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To check the built site the way GitHub Pages serves it:
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+python3 -m http.server 4311 --directory dist/wdc/browser
+```
