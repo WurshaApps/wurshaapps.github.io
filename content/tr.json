@@ -253,7 +253,7 @@
             {
                 "title": "Hesap olmadan internet bağlantıları",
                 "paragraphs": [
-                    "Bazı özellikler internet kullanır. Tilavet dinlemek veya indirmek, kitap ve veritabanı indirmek, bunları barındıran sunuculara bağlanır; örneğin mp3quran.net ve everyayah.com. Masaüstü uygulamaları güncellemeleri Cloudflare'deki güncelleme sunucumuz ve GitHub üzerinden denetler. Her web sitesinde olduğu gibi bu sunucular IP adresinizi görür; uygulamalar onlara sizinle ilgili başka bir şey göndermez."
+                    "Bazı özellikler internet kullanır. Tilavet dinlemek veya indirmek, kitap ve veritabanı indirmek, bunları barındıran sunuculara bağlanır; örneğin mp3quran.net ve everyayah.com. Masaüstü uygulamaları güncellemeleri denetler. Her web sitesinde olduğu gibi bu sunucular IP adresinizi görür; uygulamalar onlara sizinle ilgili başka bir şey göndermez."
                 ],
                 "items": []
             },

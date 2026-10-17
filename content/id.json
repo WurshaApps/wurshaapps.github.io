@@ -253,7 +253,7 @@
             {
                 "title": "Koneksi internet tanpa akun",
                 "paragraphs": [
-                    "Beberapa fitur memakai internet. Memutar atau mengunduh murattal, buku, dan basis data terhubung ke server yang menyimpannya, seperti mp3quran.net dan everyayah.com. Aplikasi desktop memeriksa pembaruan melalui server pembaruan kami di Cloudflare dan melalui GitHub. Seperti situs web lain, server-server ini melihat alamat IP Anda; aplikasi tidak mengirimkan hal lain tentang Anda."
+                    "Beberapa fitur memakai internet. Memutar atau mengunduh murattal, buku, dan basis data terhubung ke server yang menyimpannya, seperti mp3quran.net dan everyayah.com. Aplikasi desktop memeriksa pembaruan. Seperti situs web lain, server-server ini melihat alamat IP Anda; aplikasi tidak mengirimkan hal lain tentang Anda."
                 ],
                 "items": []
             },

@@ -253,7 +253,7 @@
             {
                 "title": "Hesabsız internet bağlantıları",
                 "paragraphs": [
-                    "Bəzi funksiyalar internetdən istifadə edir. Tilavətləri dinləmək və ya yükləmək, kitab və verilənlər bazalarını yükləmək onları saxlayan serverlərə qoşulur, məsələn mp3quran.net və everyayah.com. Kompüter tətbiqləri yeniləmələri Cloudflare-dəki yeniləmə serverimiz və GitHub vasitəsilə yoxlayır. İstənilən veb-sayt kimi bu serverlər IP ünvanınızı görür; tətbiqlər onlara sizin haqqınızda başqa heç nə göndərmir."
+                    "Bəzi funksiyalar internetdən istifadə edir. Tilavətləri dinləmək və ya yükləmək, kitab və verilənlər bazalarını yükləmək onları saxlayan serverlərə qoşulur, məsələn mp3quran.net və everyayah.com. Kompüter tətbiqləri yeniləmələri yoxlayır. İstənilən veb-sayt kimi bu serverlər IP ünvanınızı görür; tətbiqlər onlara sizin haqqınızda başqa heç nə göndərmir."
                 ],
                 "items": []
             },

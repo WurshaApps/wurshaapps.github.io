@@ -253,7 +253,7 @@
             {
                 "title": "Connexions à Internet sans compte",
                 "paragraphs": [
-                    "Certaines fonctions utilisent Internet. Écouter ou télécharger des récitations, des livres et des bases de données se connecte aux serveurs qui les hébergent, comme mp3quran.net et everyayah.com. Les applications pour ordinateur recherchent les mises à jour via notre serveur de mises à jour sur Cloudflare et via GitHub. Comme tout site web, ces serveurs voient votre adresse IP ; les applications ne leur envoient rien d'autre sur vous."
+                    "Certaines fonctions utilisent Internet. Écouter ou télécharger des récitations, des livres et des bases de données se connecte aux serveurs qui les hébergent, comme mp3quran.net et everyayah.com. Les applications pour ordinateur recherchent les mises à jour. Comme tout site web, ces serveurs voient votre adresse IP ; les applications ne leur envoient rien d'autre sur vous."
                 ],
                 "items": []
             },

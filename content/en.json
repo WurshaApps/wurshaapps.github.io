@@ -253,7 +253,7 @@
             {
                 "title": "Internet connections without an account",
                 "paragraphs": [
-                    "Some features use the internet. Streaming or downloading recitations, books and databases connects to the servers that host them, such as mp3quran.net and everyayah.com. The desktop apps check for updates through our update server on Cloudflare and through GitHub. Like any website, these servers see your IP address; the apps send them nothing else about you."
+                    "Some features use the internet. Streaming or downloading recitations, books and databases connects to the servers that host them, such as mp3quran.net and everyayah.com. The desktop apps check for updates. Like any website, these servers see your IP address; the apps send them nothing else about you."
                 ],
                 "items": []
             },

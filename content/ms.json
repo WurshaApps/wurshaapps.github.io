@@ -253,7 +253,7 @@
             {
                 "title": "Sambungan internet tanpa akaun",
                 "paragraphs": [
-                    "Sesetengah ciri menggunakan internet. Memainkan atau memuat turun bacaan, buku dan pangkalan data akan menyambung ke pelayan yang menempatkannya, seperti mp3quran.net dan everyayah.com. Aplikasi desktop menyemak kemas kini melalui pelayan kemas kini kami di Cloudflare dan melalui GitHub. Seperti mana-mana laman web, pelayan ini melihat alamat IP anda; aplikasi tidak menghantar apa-apa lagi tentang anda."
+                    "Sesetengah ciri menggunakan internet. Memainkan atau memuat turun bacaan, buku dan pangkalan data akan menyambung ke pelayan yang menempatkannya, seperti mp3quran.net dan everyayah.com. Aplikasi desktop menyemak kemas kini. Seperti mana-mana laman web, pelayan ini melihat alamat IP anda; aplikasi tidak menghantar apa-apa lagi tentang anda."
                 ],
                 "items": []
             },

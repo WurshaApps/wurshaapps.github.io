@@ -253,7 +253,7 @@
             {
                 "title": "Internetverbindungen ohne Konto",
                 "paragraphs": [
-                    "Einige Funktionen nutzen das Internet. Das Abspielen oder Herunterladen von Rezitationen, Büchern und Datenbanken verbindet sich mit den Servern, die sie bereitstellen, etwa mp3quran.net und everyayah.com. Die Desktop-Apps suchen über unseren Update-Server bei Cloudflare und über GitHub nach Updates. Wie bei jeder Website sehen diese Server Ihre IP-Adresse; die Apps senden ihnen sonst nichts über Sie."
+                    "Einige Funktionen nutzen das Internet. Das Abspielen oder Herunterladen von Rezitationen, Büchern und Datenbanken verbindet sich mit den Servern, die sie bereitstellen, etwa mp3quran.net und everyayah.com. Die Desktop-Apps suchen nach Updates. Wie bei jeder Website sehen diese Server Ihre IP-Adresse; die Apps senden ihnen sonst nichts über Sie."
                 ],
                 "items": []
             },

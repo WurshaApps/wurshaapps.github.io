@@ -253,7 +253,7 @@
             {
                 "title": "Hisobsiz internet ulanishlari",
                 "paragraphs": [
-                    "Ba'zi imkoniyatlar internetdan foydalanadi. Tilovatlarni tinglash yoki yuklab olish, kitob va ma'lumotlar bazalarini yuklab olish ularni joylashtirgan serverlarga ulanadi, masalan mp3quran.net va everyayah.com. Kompyuter ilovalari yangilanishlarni Cloudflare'dagi yangilanish serverimiz va GitHub orqali tekshiradi. Har qanday veb-sayt kabi bu serverlar IP manzilingizni ko'radi; ilovalar ularga siz haqingizda boshqa hech narsa yubormaydi."
+                    "Ba'zi imkoniyatlar internetdan foydalanadi. Tilovatlarni tinglash yoki yuklab olish, kitob va ma'lumotlar bazalarini yuklab olish ularni joylashtirgan serverlarga ulanadi, masalan mp3quran.net va everyayah.com. Kompyuter ilovalari yangilanishlarni tekshiradi. Har qanday veb-sayt kabi bu serverlar IP manzilingizni ko'radi; ilovalar ularga siz haqingizda boshqa hech narsa yubormaydi."
                 ],
                 "items": []
             },
