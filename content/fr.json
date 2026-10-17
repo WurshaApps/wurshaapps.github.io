@@ -204,6 +204,100 @@
             "jamharat-uloom.org (sens des mots, sarf et grammaire)",
             "Al-Quran Al-Adheem, Fondation Al-Rajhi (données de waqf)"
         ],
-        "rights": "© Wursha Digital Apps"
+        "rights": "© Wursha Digital Apps",
+        "privacy": "Politique de confidentialité"
+    },
+    "privacy": {
+        "metaTitle": "Politique de confidentialité — Wursha",
+        "metaDescription": "Comment les applications du Mushaf Quran Holder et Khair Zad traitent vos données : sans publicité, sans pistage, avec un compte facultatif pour la synchronisation.",
+        "title": "Politique de confidentialité",
+        "updated": "Dernière mise à jour : 17 octobre 2026",
+        "intro": "Cette politique concerne les applications du Mushaf Quran Holder et Khair Zad de Wursha Digital Apps sur iPhone, iPad, Android, Mac et Windows, ainsi que ce site. En bref : les applications fonctionnent sans compte, n'affichent aucune publicité, ne contiennent ni outil d'analyse ni pistage, et nous ne vendons ni ne partageons vos données.",
+        "sections": [
+            {
+                "title": "Les données sur votre appareil",
+                "paragraphs": [
+                    "Vos réglages, vos khatmas (position de lecture, signets et notes), votre progression dans les adhkar, vos favoris et listes de lecture Tartil, et tout ce que vous téléchargez (récitations, livres et bases de données) restent uniquement sur votre appareil. Nous n'en recevons rien, sauf si vous utilisez le compte facultatif. Une exportation des réglages est un fichier que vous créez et conservez vous-même."
+                ],
+                "items": []
+            },
+            {
+                "title": "Le compte facultatif",
+                "paragraphs": [
+                    "Vous pouvez vous connecter avec Google ou avec Apple pour sauvegarder vos données et les synchroniser entre vos appareils. La connexion est facultative ; toutes les fonctions marchent sans elle.",
+                    "À la connexion, nous recevons un identifiant de compte, l'adresse e-mail que votre fournisseur partage (Apple peut fournir une adresse relais privée à la place) et votre nom si le fournisseur le partage. Tant que vous êtes connecté, chaque application de Mushaf synchronise ses propres données, séparées de celles des autres applications :"
+                ],
+                "items": [
+                    "Khatmas : nom, couleur, position de lecture, signets, notes, ainsi que la lecture et le récitateur choisis",
+                    "Adhkar : progression, favoris et adhkar que vous avez ajoutés",
+                    "Tartil : récitateurs et sourates favoris, listes de lecture et récitateur choisi",
+                    "Vos appareils : le type d'appareil (par exemple iPhone ou Android), l'application, la date de la dernière synchronisation et un identifiant d'appareil aléatoire"
+                ]
+            },
+            {
+                "title": "Où sont conservées les données du compte et qui peut les voir",
+                "paragraphs": [
+                    "Les données du compte sont stockées chez Google Firebase (Authentication et Cloud Firestore), dans la région Google Cloud de Dammam en Arabie saoudite, et sont chiffrées pendant leur transfert. Vous seul pouvez les lire via les applications. Nous ne les consultons que pour corriger un problème que vous signalez, ou si la loi l'exige.",
+                    "Nous les utilisons uniquement pour synchroniser et restaurer vos données. Nous ne les vendons pas, ne les partageons pas avec des annonceurs et ne nous en servons pas pour établir votre profil."
+                ],
+                "items": []
+            },
+            {
+                "title": "Conservation et suppression de vos données",
+                "paragraphs": [
+                    "Les données du compte sont conservées jusqu'à ce que vous les supprimiez. Les khatmas et listes de lecture que vous supprimez sont effacés de nos serveurs 90 jours après leur suppression.",
+                    "Vous pouvez supprimer votre compte et toutes ses données à tout moment : dans l'application (Compte, puis Supprimer le compte), sur https://wursha-cloud.firebaseapp.com/delete-account, ou en écrivant à wursha.apps@gmail.com (réponse sous 30 jours). La suppression est immédiate et concerne toutes les applications de Mushaf ; la copie sur votre appareil est conservée. Si vous vous êtes connecté avec Apple, l'accès de l'application à votre identifiant Apple est aussi révoqué."
+                ],
+                "items": []
+            },
+            {
+                "title": "Connexions à Internet sans compte",
+                "paragraphs": [
+                    "Certaines fonctions utilisent Internet. Écouter ou télécharger des récitations, des livres et des bases de données se connecte aux serveurs qui les hébergent, comme mp3quran.net et everyayah.com. Les applications pour ordinateur recherchent les mises à jour via notre serveur de mises à jour sur Cloudflare et via GitHub. Comme tout site web, ces serveurs voient votre adresse IP ; les applications ne leur envoient rien d'autre sur vous."
+                ],
+                "items": []
+            },
+            {
+                "title": "Autorisations",
+                "paragraphs": [
+                    "Les applications ne demandent ni votre position, ni vos contacts, ni l'appareil photo, ni le micro. Quand vous partagez un verset en image, vous pouvez enregistrer l'image dans votre photothèque ; les applications ne lisent jamais vos photos."
+                ],
+                "items": []
+            },
+            {
+                "title": "Services utilisés",
+                "paragraphs": [
+                    "Chacun traite les données selon sa propre politique de confidentialité :"
+                ],
+                "items": [
+                    "Google Firebase (compte et synchronisation) : https://firebase.google.com/support/privacy",
+                    "Connexion avec Google : https://policies.google.com/privacy",
+                    "Se connecter avec Apple : https://www.apple.com/legal/privacy/",
+                    "Cloudflare (mises à jour sur ordinateur) : https://www.cloudflare.com/privacypolicy/",
+                    "GitHub (téléchargements pour ordinateur et ce site) : https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                ]
+            },
+            {
+                "title": "Ce site",
+                "paragraphs": [
+                    "wursha.com est hébergé sur GitHub Pages. Il ne dépose aucun cookie et n'utilise aucun outil d'analyse. Il mémorise la langue choisie uniquement dans votre navigateur."
+                ],
+                "items": []
+            },
+            {
+                "title": "Enfants",
+                "paragraphs": [
+                    "Les applications conviennent à tous les âges et ne collectent rien auprès de quiconque ne se connecte pas. Le compte facultatif s'adresse aux personnes en âge d'avoir un compte Google ou Apple dans leur pays."
+                ],
+                "items": []
+            },
+            {
+                "title": "Modifications et contact",
+                "paragraphs": [
+                    "Si cette politique change, nous mettons à jour cette page et la date en haut. Pour toute question ou demande, écrivez à wursha.apps@gmail.com."
+                ],
+                "items": []
+            }
+        ]
     }
 }

@@ -59,6 +59,17 @@ export interface Dict {
         sourcesTitle: string;
         sources: string[];
         rights: string;
+        /** Footer link to the privacy policy page. */
+        privacy: string;
+    };
+    /** The privacy policy page, `/<lang>/privacy/`. URLs and emails in the text become links. */
+    privacy: {
+        metaTitle: string;
+        metaDescription: string;
+        title: string;
+        updated: string;
+        intro: string;
+        sections: { title: string; paragraphs: string[]; items: string[] }[];
     };
 }
 

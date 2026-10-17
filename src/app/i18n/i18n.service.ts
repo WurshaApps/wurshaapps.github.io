@@ -8,6 +8,10 @@ const STORAGE_KEY = 'wursha-lang';
 const FALLBACK: Lang = 'ar';
 export const SITE_URL = 'https://wursha.com';
 
+/** The site's pages; each exists once per language at `/<lang>/<path>`. */
+export type Page = 'home' | 'privacy';
+const PAGE_PATH: Record<Page, string> = { home: '', privacy: 'privacy/' };
+
 /** Each language is its own prerendered page at `/<lang>/`; the route decides the language. */
 @Injectable({ providedIn: 'root' })
 export class I18nService {
@@ -18,8 +22,12 @@ export class I18nService {
     private readonly cache = new Map<Lang, Dict>();
     private readonly _lang = signal<Lang>(FALLBACK);
     private readonly _dict = signal<Dict | null>(null);
+    private readonly _page = signal<Page>('home');
 
     readonly lang = this._lang.asReadonly();
+    readonly page = this._page.asReadonly();
+    /** Router link to this page in `lang`. */
+    readonly pageLink = (lang: Lang): string[] => (this._page() === 'privacy' ? ['/', lang, 'privacy'] : ['/', lang]);
     readonly dir = computed<Direction>(() => (RTL_LANGS.has(this._lang()) ? 'rtl' : 'ltr'));
     readonly locales = LOCALES;
     readonly currentLocale = computed(() => getLocale(this._lang()));
@@ -29,8 +37,8 @@ export class I18nService {
         return dict;
     });
 
-    /** Loads `lang`, then swaps text, direction and the document head together. Called by the route resolver. */
-    async use(lang: Lang): Promise<Dict> {
+    /** Loads `lang`, then swaps text, direction and the document head together. Called by the route resolvers. */
+    async use(lang: Lang, page: Page = 'home'): Promise<Dict> {
         let dict = this.cache.get(lang);
         if (!dict) {
             dict = await loadDict(lang);
@@ -38,7 +46,8 @@ export class I18nService {
         }
         this._dict.set(dict);
         this._lang.set(lang);
-        this.applyHead(lang, dict);
+        this._page.set(page);
+        this.applyHead(lang, dict, page);
         return dict;
     }
 
@@ -67,15 +76,18 @@ export class I18nService {
         return detectLangFromUserAgent() ?? FALLBACK;
     }
 
-    private applyHead(lang: Lang, dict: Dict) {
+    private applyHead(lang: Lang, dict: Dict, page: Page) {
         const html = this.document.documentElement;
         html.lang = lang;
         html.dir = RTL_LANGS.has(lang) ? 'rtl' : 'ltr';
-        this.title.setTitle(dict.meta.title);
-        this.meta.updateTag({ name: 'description', content: dict.meta.description });
-        this.meta.updateTag({ property: 'og:title', content: dict.meta.title });
-        this.meta.updateTag({ property: 'og:description', content: dict.meta.description });
-        this.meta.updateTag({ property: 'og:url', content: `${SITE_URL}/${lang}/` });
+        const title = page === 'privacy' ? dict.privacy.metaTitle : dict.meta.title;
+        const description = page === 'privacy' ? dict.privacy.metaDescription : dict.meta.description;
+        const path = PAGE_PATH[page];
+        this.title.setTitle(title);
+        this.meta.updateTag({ name: 'description', content: description });
+        this.meta.updateTag({ property: 'og:title', content: title });
+        this.meta.updateTag({ property: 'og:description', content: description });
+        this.meta.updateTag({ property: 'og:url', content: `${SITE_URL}/${lang}/${path}` });
         this.meta.updateTag({ property: 'og:locale', content: lang });
 
         const head = this.document.head;
@@ -85,8 +97,8 @@ export class I18nService {
             for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
             head.appendChild(el);
         };
-        link({ rel: 'canonical', href: `${SITE_URL}/${lang}/` });
-        for (const l of LOCALES) link({ rel: 'alternate', hreflang: l.code, href: `${SITE_URL}/${l.code}/` });
-        link({ rel: 'alternate', hreflang: 'x-default', href: `${SITE_URL}/` });
+        link({ rel: 'canonical', href: `${SITE_URL}/${lang}/${path}` });
+        for (const l of LOCALES) link({ rel: 'alternate', hreflang: l.code, href: `${SITE_URL}/${l.code}/${path}` });
+        link({ rel: 'alternate', hreflang: 'x-default', href: `${SITE_URL}/${path}` });
     }
 }

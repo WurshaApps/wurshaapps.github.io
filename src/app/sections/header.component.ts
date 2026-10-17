@@ -8,17 +8,18 @@ import { LangPickerComponent } from '../i18n/lang-picker.component';
     imports: [LangPickerComponent, RouterLink],
     template: `
         @let t = i18n.t();
+        @let home = i18n.page() === 'home' ? [] : ['/', i18n.lang()];
         <header>
             <div class="wrap bar">
-                <a class="logo" [routerLink]="[]" fragment="top">
+                <a class="logo" [routerLink]="home" fragment="top">
                     <img src="wursha-logo.png" alt="" width="30" height="30" />
                     {{ t.brand }}
                 </a>
                 <nav [attr.aria-label]="t.brand">
-                    <a [routerLink]="[]" fragment="editions">{{ t.nav.editions }}</a>
-                    <a [routerLink]="[]" fragment="features">{{ t.nav.features }}</a>
-                    <a [routerLink]="[]" fragment="library">{{ t.nav.library }}</a>
-                    <a [routerLink]="[]" fragment="downloads">{{ t.nav.downloads }}</a>
+                    <a [routerLink]="home" fragment="editions">{{ t.nav.editions }}</a>
+                    <a [routerLink]="home" fragment="features">{{ t.nav.features }}</a>
+                    <a [routerLink]="home" fragment="library">{{ t.nav.library }}</a>
+                    <a [routerLink]="home" fragment="downloads">{{ t.nav.downloads }}</a>
                 </nav>
                 <app-lang-picker />
             </div>

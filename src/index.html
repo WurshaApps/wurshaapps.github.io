@@ -20,7 +20,9 @@
             // I18nService.detect() / detectLangFromUserAgent() in src/app/i18n/ (no region fallback).
             // Old single-page anchors (#books, #reciters…) land on the matching new section.
             (function () {
-                if (location.pathname !== '/') return;
+                // `/privacy` (the address in the app stores) goes to the same page in the visitor's language.
+                var page = location.pathname.replace(/\/+$/, '') === '/privacy' ? 'privacy/' : '';
+                if (location.pathname !== '/' && !page) return;
                 var langs = ['ar', 'en', 'az', 'bn', 'de', 'fa', 'fr', 'hi', 'id', 'ms', 'ps', 'tr', 'ur', 'uz'];
                 var alias = { in: 'id', prs: 'fa', pbt: 'ps', pbu: 'ps', zsm: 'ms' };
                 var lang = null;
@@ -41,7 +43,7 @@
                 }
                 var moved = { reciters: 'features', sciences: 'features', gestures: 'features', books: 'library', tech: 'downloads' };
                 var hash = location.hash.slice(1);
-                location.replace('/' + lang + '/' + (hash ? '#' + (moved[hash] || hash) : ''));
+                location.replace('/' + lang + '/' + page + (hash ? '#' + (moved[hash] || hash) : ''));
             })();
         </script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />

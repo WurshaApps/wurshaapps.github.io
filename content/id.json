@@ -204,6 +204,100 @@
             "jamharat-uloom.org (makna kata, sharaf, dan nahwu)",
             "Al-Qur'an Al-Adheem, Wakaf Al-Rajhi (data waqaf)"
         ],
-        "rights": "© Wursha Digital Apps"
+        "rights": "© Wursha Digital Apps",
+        "privacy": "Kebijakan privasi"
+    },
+    "privacy": {
+        "metaTitle": "Kebijakan Privasi — Wursha",
+        "metaDescription": "Cara aplikasi Mushaf Quran Holder dan Khair Zad menangani data Anda: tanpa iklan, tanpa pelacakan, dan akun opsional untuk sinkronisasi.",
+        "title": "Kebijakan Privasi",
+        "updated": "Terakhir diperbarui: 17 Oktober 2026",
+        "intro": "Kebijakan ini berlaku untuk aplikasi Mushaf Quran Holder dan Khair Zad dari Wursha Digital Apps di iPhone, iPad, Android, Mac, dan Windows, serta situs web ini. Singkatnya: aplikasi berfungsi tanpa akun, tidak menampilkan iklan, tidak berisi alat analitik atau pelacakan, dan kami tidak menjual atau membagikan data Anda.",
+        "sections": [
+            {
+                "title": "Data di perangkat Anda",
+                "paragraphs": [
+                    "Pengaturan, khatam (posisi bacaan, penanda, dan catatan), kemajuan dzikir, favorit dan daftar putar Tartil, serta semua yang Anda unduh (murattal, buku, dan basis data) hanya disimpan di perangkat Anda. Kami tidak menerima apa pun darinya kecuali Anda memakai akun opsional. Ekspor pengaturan adalah berkas yang Anda buat dan simpan sendiri."
+                ],
+                "items": []
+            },
+            {
+                "title": "Akun opsional",
+                "paragraphs": [
+                    "Anda dapat masuk dengan Google atau Apple untuk mencadangkan data dan menyinkronkannya di antara perangkat Anda. Masuk bersifat opsional; semua fitur tetap berfungsi tanpanya.",
+                    "Saat Anda masuk, kami menerima ID akun, alamat email yang dibagikan penyedia Anda (Apple dapat memberikan alamat relai pribadi sebagai gantinya), dan nama Anda jika penyedia membagikannya. Selama Anda masuk, setiap aplikasi Mushaf menyinkronkan datanya sendiri, terpisah dari aplikasi lain:"
+                ],
+                "items": [
+                    "Khatam: nama, warna, posisi bacaan, penanda, catatan, serta qiraah dan qari yang dipilih",
+                    "Dzikir: kemajuan, favorit, dan dzikir yang Anda tambahkan",
+                    "Tartil: qari dan surah favorit, daftar putar, dan qari yang dipilih",
+                    "Perangkat Anda: jenis perangkat (misalnya iPhone atau Android), aplikasi yang dipakai, waktu sinkron terakhir, dan ID perangkat acak"
+                ]
+            },
+            {
+                "title": "Tempat data akun disimpan dan siapa yang dapat melihatnya",
+                "paragraphs": [
+                    "Data akun disimpan di Google Firebase (Authentication dan Cloud Firestore) di region Google Cloud Dammam, Arab Saudi, dan dienkripsi saat dikirim. Hanya Anda yang dapat membacanya melalui aplikasi. Kami hanya melihatnya untuk memperbaiki masalah yang Anda laporkan, atau jika diwajibkan hukum.",
+                    "Kami menggunakannya hanya untuk menyinkronkan dan memulihkan data Anda. Kami tidak menjualnya, tidak membagikannya kepada pengiklan, dan tidak memakainya untuk membuat profil tentang Anda."
+                ],
+                "items": []
+            },
+            {
+                "title": "Penyimpanan dan penghapusan data",
+                "paragraphs": [
+                    "Data akun disimpan sampai Anda menghapusnya. Khatam dan daftar putar yang Anda hapus dihilangkan dari server kami 90 hari setelah dihapus.",
+                    "Anda dapat menghapus akun beserta seluruh datanya kapan saja: di aplikasi (Akun, lalu Hapus akun), di https://wursha-cloud.firebaseapp.com/delete-account, atau dengan mengirim email ke wursha.apps@gmail.com (kami membalas dalam 30 hari). Penghapusan berlaku seketika dan mencakup semua aplikasi Mushaf; salinan di perangkat Anda tetap ada. Jika Anda masuk dengan Apple, akses aplikasi ke Apple ID Anda juga dicabut."
+                ],
+                "items": []
+            },
+            {
+                "title": "Koneksi internet tanpa akun",
+                "paragraphs": [
+                    "Beberapa fitur memakai internet. Memutar atau mengunduh murattal, buku, dan basis data terhubung ke server yang menyimpannya, seperti mp3quran.net dan everyayah.com. Aplikasi desktop memeriksa pembaruan melalui server pembaruan kami di Cloudflare dan melalui GitHub. Seperti situs web lain, server-server ini melihat alamat IP Anda; aplikasi tidak mengirimkan hal lain tentang Anda."
+                ],
+                "items": []
+            },
+            {
+                "title": "Izin",
+                "paragraphs": [
+                    "Aplikasi tidak meminta lokasi, kontak, kamera, atau mikrofon Anda. Saat Anda membagikan ayat sebagai gambar, Anda dapat menyimpannya ke galeri foto; aplikasi tidak pernah membaca foto Anda."
+                ],
+                "items": []
+            },
+            {
+                "title": "Layanan yang kami gunakan",
+                "paragraphs": [
+                    "Masing-masing menangani data sesuai kebijakan privasinya sendiri:"
+                ],
+                "items": [
+                    "Google Firebase (akun dan sinkronisasi): https://firebase.google.com/support/privacy",
+                    "Masuk dengan Google: https://policies.google.com/privacy",
+                    "Masuk dengan Apple: https://www.apple.com/legal/privacy/",
+                    "Cloudflare (pembaruan desktop): https://www.cloudflare.com/privacypolicy/",
+                    "GitHub (unduhan desktop dan situs web ini): https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                ]
+            },
+            {
+                "title": "Situs web ini",
+                "paragraphs": [
+                    "wursha.com di-hosting di GitHub Pages. Situs ini tidak memasang cookie dan tidak memakai analitik. Bahasa yang Anda pilih hanya diingat di browser Anda."
+                ],
+                "items": []
+            },
+            {
+                "title": "Anak-anak",
+                "paragraphs": [
+                    "Aplikasi cocok untuk semua usia dan tidak mengumpulkan apa pun dari siapa saja yang tidak masuk. Akun opsional ditujukan bagi orang yang cukup umur untuk memiliki akun Google atau Apple di negaranya."
+                ],
+                "items": []
+            },
+            {
+                "title": "Perubahan dan kontak",
+                "paragraphs": [
+                    "Jika kebijakan ini berubah, kami memperbarui halaman ini dan tanggal di bagian atas. Untuk pertanyaan atau permintaan, kirim email ke wursha.apps@gmail.com."
+                ],
+                "items": []
+            }
+        ]
     }
 }

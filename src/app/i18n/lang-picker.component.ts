@@ -30,7 +30,7 @@ import type { Lang } from './locales';
                 @for (loc of i18n.locales; track loc.code) {
                     <li>
                         <a
-                            [routerLink]="['/', loc.code]"
+                            [routerLink]="i18n.pageLink(loc.code)"
                             [attr.hreflang]="loc.code"
                             [attr.aria-current]="loc.code === i18n.lang() ? 'page' : null"
                             (click)="choose(loc.code)">

@@ -16,7 +16,8 @@
         "library",
         "languages",
         "downloads",
-        "footer"
+        "footer",
+        "privacy"
     ],
     "properties": {
         "$schema": {
@@ -564,7 +565,8 @@
                 "credits",
                 "sourcesTitle",
                 "sources",
-                "rights"
+                "rights",
+                "privacy"
             ],
             "properties": {
                 "about": {
@@ -612,9 +614,84 @@
                 "rights": {
                     "type": "string",
                     "minLength": 1
+                },
+                "privacy": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Footer link text to the privacy policy page"
                 }
             },
             "description": "About line, credits and data sources."
+        },
+        "privacy": {
+            "description": "The privacy policy page, /<lang>/privacy/. URLs and email addresses in the text are turned into links.",
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "metaTitle",
+                "metaDescription",
+                "title",
+                "updated",
+                "intro",
+                "sections"
+            ],
+            "properties": {
+                "metaTitle": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "metaDescription": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "title": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "updated": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "«Last updated: <date>», in the page language"
+                },
+                "intro": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "sections": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                            "title",
+                            "paragraphs",
+                            "items"
+                        ],
+                        "properties": {
+                            "title": {
+                                "type": "string",
+                                "minLength": 1
+                            },
+                            "paragraphs": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string",
+                                    "minLength": 1
+                                }
+                            },
+                            "items": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string",
+                                    "minLength": 1
+                                },
+                                "description": "Bulleted list after the paragraphs; empty for none"
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -204,6 +204,100 @@
             "jamharat-uloom.org (kelime anlamları, sarf ve nahiv)",
             "Kur'an-ı Azîm, er-Râcihî Vakfı (vakf ve ibtidâ verileri)"
         ],
-        "rights": "© Wursha Digital Apps"
+        "rights": "© Wursha Digital Apps",
+        "privacy": "Gizlilik politikası"
+    },
+    "privacy": {
+        "metaTitle": "Gizlilik Politikası — Wursha",
+        "metaDescription": "Kur'an Hafızı ve Khair Zad Mushaf uygulamaları verilerinizi nasıl işler: reklam yok, takip yok ve eşitleme için isteğe bağlı bir hesap.",
+        "title": "Gizlilik Politikası",
+        "updated": "Son güncelleme: 17 Ekim 2026",
+        "intro": "Bu politika, Wursha Digital Apps'in iPhone, iPad, Android, Mac ve Windows için Kur'an Hafızı ve Khair Zad Mushaf uygulamalarını ve bu web sitesini kapsar. Kısacası: uygulamalar hesap olmadan çalışır, reklam göstermez, analiz veya takip aracı içermez; verilerinizi satmayız ve paylaşmayız.",
+        "sections": [
+            {
+                "title": "Cihazınızdaki veriler",
+                "paragraphs": [
+                    "Ayarlarınız, hatimleriniz (okuma konumu, yer imleri ve notlar), zikir ilerlemeniz, Tartil favorileriniz ve çalma listeleriniz ile indirdiğiniz her şey (tilavetler, kitaplar ve veritabanları) yalnızca cihazınızda saklanır. İsteğe bağlı hesabı kullanmadığınız sürece bunların hiçbiri bize ulaşmaz. Ayar dışa aktarımı, sizin oluşturup sakladığınız bir dosyadır."
+                ],
+                "items": []
+            },
+            {
+                "title": "İsteğe bağlı hesap",
+                "paragraphs": [
+                    "Verilerinizi yedeklemek ve cihazlarınız arasında eşitlemek için Google veya Apple ile giriş yapabilirsiniz. Giriş yapmak isteğe bağlıdır; tüm özellikler onsuz da çalışır.",
+                    "Giriş yaptığınızda bir hesap kimliği, sağlayıcınızın paylaştığı e-posta adresi (Apple bunun yerine özel bir aktarma adresi verebilir) ve sağlayıcı paylaşırsa adınız bize ulaşır. Girişli olduğunuz sürece her Mushaf uygulaması kendi verilerini, diğer uygulamalardan ayrı olarak eşitler:"
+                ],
+                "items": [
+                    "Hatimler: ad, renk, okuma konumu, yer imleri, notlar ve seçilen kıraat ile kari",
+                    "Zikirler: ilerleme, favoriler ve eklediğiniz zikirler",
+                    "Tartil: favori kariler ve sureler, çalma listeleri ve seçili kari",
+                    "Cihazlarınız: cihaz türü (örneğin iPhone veya Android), hangi uygulama, son eşitleme zamanı ve rastgele bir cihaz kimliği"
+                ]
+            },
+            {
+                "title": "Hesap verileri nerede tutulur, kim görebilir",
+                "paragraphs": [
+                    "Hesap verileri Google Firebase'de (Authentication ve Cloud Firestore), Google Cloud'un Suudi Arabistan'daki Dammam bölgesinde saklanır ve aktarım sırasında şifrelenir. Uygulamalar üzerinden onları yalnızca siz okuyabilirsiniz. Biz yalnızca bildirdiğiniz bir sorunu çözmek için ya da yasa gerektirdiğinde bakarız.",
+                    "Onları yalnızca verilerinizi eşitlemek ve geri yüklemek için kullanırız. Satmayız, reklamverenlerle paylaşmayız ve sizin hakkınızda profil oluşturmak için kullanmayız."
+                ],
+                "items": []
+            },
+            {
+                "title": "Verilerinizin saklanması ve silinmesi",
+                "paragraphs": [
+                    "Hesap verileri siz silene kadar saklanır. Sildiğiniz hatimler ve çalma listeleri, silindikten 90 gün sonra sunucularımızdan kaldırılır.",
+                    "Hesabınızı ve tüm verilerini istediğiniz zaman silebilirsiniz: uygulamada (Hesap, ardından Hesabı sil), https://wursha-cloud.firebaseapp.com/delete-account adresinde ya da wursha.apps@gmail.com adresine e-posta göndererek (30 gün içinde yanıt veririz). Silme işlemi hemen gerçekleşir ve tüm Mushaf uygulamalarını kapsar; cihazınızdaki kopya kalır. Apple ile giriş yaptıysanız uygulamanın Apple Kimliğinize erişimi de iptal edilir."
+                ],
+                "items": []
+            },
+            {
+                "title": "Hesap olmadan internet bağlantıları",
+                "paragraphs": [
+                    "Bazı özellikler internet kullanır. Tilavet dinlemek veya indirmek, kitap ve veritabanı indirmek, bunları barındıran sunuculara bağlanır; örneğin mp3quran.net ve everyayah.com. Masaüstü uygulamaları güncellemeleri Cloudflare'deki güncelleme sunucumuz ve GitHub üzerinden denetler. Her web sitesinde olduğu gibi bu sunucular IP adresinizi görür; uygulamalar onlara sizinle ilgili başka bir şey göndermez."
+                ],
+                "items": []
+            },
+            {
+                "title": "İzinler",
+                "paragraphs": [
+                    "Uygulamalar konumunuzu, kişilerinizi, kameranızı veya mikrofonunuzu istemez. Bir ayeti görsel olarak paylaştığınızda resmi fotoğraf arşivinize kaydedebilirsiniz; uygulamalar fotoğraflarınızı asla okumaz."
+                ],
+                "items": []
+            },
+            {
+                "title": "Kullandığımız hizmetler",
+                "paragraphs": [
+                    "Her biri verileri kendi gizlilik politikasına göre işler:"
+                ],
+                "items": [
+                    "Google Firebase (hesap ve eşitleme): https://firebase.google.com/support/privacy",
+                    "Google ile oturum açma: https://policies.google.com/privacy",
+                    "Apple ile Giriş Yap: https://www.apple.com/legal/privacy/",
+                    "Cloudflare (masaüstü güncellemeleri): https://www.cloudflare.com/privacypolicy/",
+                    "GitHub (masaüstü indirmeleri ve bu web sitesi): https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                ]
+            },
+            {
+                "title": "Bu web sitesi",
+                "paragraphs": [
+                    "wursha.com, GitHub Pages üzerinde barındırılır. Çerez kullanmaz ve analiz aracı içermez. Seçtiğiniz dili yalnızca tarayıcınızda hatırlar."
+                ],
+                "items": []
+            },
+            {
+                "title": "Çocuklar",
+                "paragraphs": [
+                    "Uygulamalar her yaşa uygundur ve giriş yapmayan hiç kimseden veri toplamaz. İsteğe bağlı hesap, yaşadığı yerde Google veya Apple hesabı açabilecek yaştaki kişiler içindir."
+                ],
+                "items": []
+            },
+            {
+                "title": "Değişiklikler ve iletişim",
+                "paragraphs": [
+                    "Bu politika değişirse bu sayfayı ve en üstteki tarihi güncelleriz. Soru ve talepleriniz için wursha.apps@gmail.com adresine yazın."
+                ],
+                "items": []
+            }
+        ]
     }
 }

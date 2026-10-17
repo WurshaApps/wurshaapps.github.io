@@ -204,6 +204,100 @@
             "jamharat-uloom.org (soʻz maʼnolari, sarf va nahv)",
             "Al-Qurʼon Al-Azim, Ar-Rojihiy vaqfi (vaqf maʼlumotlari)"
         ],
-        "rights": "© Wursha Digital Apps"
+        "rights": "© Wursha Digital Apps",
+        "privacy": "Maxfiylik siyosati"
+    },
+    "privacy": {
+        "metaTitle": "Maxfiylik siyosati — Wursha",
+        "metaDescription": "Quran Holder va Khair Zad Mushaf ilovalari ma'lumotlaringiz bilan qanday ishlaydi: reklama yo'q, kuzatuv yo'q va sinxronlash uchun ixtiyoriy hisob.",
+        "title": "Maxfiylik siyosati",
+        "updated": "Oxirgi yangilanish: 2026-yil 17-oktabr",
+        "intro": "Ushbu siyosat Wursha Digital Apps'ning iPhone, iPad, Android, Mac va Windows uchun Quran Holder va Khair Zad Mushaf ilovalari hamda ushbu veb-saytga tegishli. Qisqasi: ilovalar hisobsiz ishlaydi, reklama ko'rsatmaydi, tahlil yoki kuzatuv vositalari yo'q, biz ma'lumotlaringizni sotmaymiz va hech kim bilan ulashmaymiz.",
+        "sections": [
+            {
+                "title": "Qurilmangizdagi ma'lumotlar",
+                "paragraphs": [
+                    "Sozlamalaringiz, xatmlaringiz (o'qish joyi, xatcho'plar va izohlar), zikr bo'yicha yutuqlaringiz, Tartil sevimlilari va pleylistlari hamda yuklab olgan barcha narsalar (tilovatlar, kitoblar va ma'lumotlar bazalari) faqat qurilmangizda saqlanadi. Ixtiyoriy hisobdan foydalanmasangiz, ularning hech biri bizga kelmaydi. Sozlamalar eksporti — o'zingiz yaratib saqlaydigan fayl."
+                ],
+                "items": []
+            },
+            {
+                "title": "Ixtiyoriy hisob",
+                "paragraphs": [
+                    "Ma'lumotlaringizni zaxiralash va qurilmalaringiz o'rtasida sinxronlash uchun Google yoki Apple orqali kirishingiz mumkin. Kirish ixtiyoriy; barcha imkoniyatlar usiz ham ishlaydi.",
+                    "Kirganingizda bizga hisob identifikatori, provayderingiz ulashgan elektron pochta manzili (Apple uning o'rniga shaxsiy relay manzil berishi mumkin) va provayder ulashsa, ismingiz keladi. Hisobga kirgan paytingizda har bir Mushaf ilovasi o'z ma'lumotlarini boshqa ilovalardan alohida sinxronlaydi:"
+                ],
+                "items": [
+                    "Xatmlar: nom, rang, o'qish joyi, xatcho'plar, izohlar, tanlangan qiroat va qori",
+                    "Zikrlar: yutuqlar, sevimlilar va siz qo'shgan zikrlar",
+                    "Tartil: sevimli qorilar va suralar, pleylistlar va tanlangan qori",
+                    "Qurilmalaringiz: qurilma turi (masalan, iPhone yoki Android), qaysi ilova, oxirgi sinxronlash vaqti va tasodifiy qurilma identifikatori"
+                ]
+            },
+            {
+                "title": "Hisob ma'lumotlari qayerda saqlanadi va kim ko'ra oladi",
+                "paragraphs": [
+                    "Hisob ma'lumotlari Google Firebase'da (Authentication va Cloud Firestore), Google Cloud'ning Saudiya Arabistonidagi Dammam mintaqasida saqlanadi va uzatish vaqtida shifrlanadi. Ilovalar orqali ularni faqat siz o'qiy olasiz. Biz ularga faqat siz xabar bergan muammoni tuzatish uchun yoki qonun talab qilganda qaraymiz.",
+                    "Biz ulardan faqat ma'lumotlaringizni sinxronlash va tiklash uchun foydalanamiz. Ularni sotmaymiz, reklama beruvchilarga bermaymiz va siz haqingizda profil tuzish uchun ishlatmaymiz."
+                ],
+                "items": []
+            },
+            {
+                "title": "Ma'lumotlarni saqlash va o'chirish",
+                "paragraphs": [
+                    "Hisob ma'lumotlari siz o'chirmaguningizcha saqlanadi. Siz o'chirgan xatmlar va pleylistlar o'chirilganidan 90 kun o'tib serverlarimizdan olib tashlanadi.",
+                    "Hisobingiz va uning barcha ma'lumotlarini istalgan vaqtda o'chirishingiz mumkin: ilovada (Hisob, so'ng Hisobni o'chirish), https://wursha-cloud.firebaseapp.com/delete-account sahifasida yoki wursha.apps@gmail.com manziliga xat yozib (30 kun ichida javob beramiz). O'chirish darhol amalga oshadi va barcha Mushaf ilovalarini qamraydi; qurilmangizdagi nusxa qoladi. Agar Apple orqali kirgan bo'lsangiz, ilovaning Apple ID'ingizga kirishi ham bekor qilinadi."
+                ],
+                "items": []
+            },
+            {
+                "title": "Hisobsiz internet ulanishlari",
+                "paragraphs": [
+                    "Ba'zi imkoniyatlar internetdan foydalanadi. Tilovatlarni tinglash yoki yuklab olish, kitob va ma'lumotlar bazalarini yuklab olish ularni joylashtirgan serverlarga ulanadi, masalan mp3quran.net va everyayah.com. Kompyuter ilovalari yangilanishlarni Cloudflare'dagi yangilanish serverimiz va GitHub orqali tekshiradi. Har qanday veb-sayt kabi bu serverlar IP manzilingizni ko'radi; ilovalar ularga siz haqingizda boshqa hech narsa yubormaydi."
+                ],
+                "items": []
+            },
+            {
+                "title": "Ruxsatlar",
+                "paragraphs": [
+                    "Ilovalar joylashuvingiz, kontaktlaringiz, kamera yoki mikrofonni so'ramaydi. Oyatni rasm sifatida ulashganingizda rasmni foto kutubxonangizga saqlashingiz mumkin; ilovalar hech qachon rasmlaringizni o'qimaydi."
+                ],
+                "items": []
+            },
+            {
+                "title": "Biz tayanadigan xizmatlar",
+                "paragraphs": [
+                    "Har biri ma'lumotlarni o'z maxfiylik siyosatiga ko'ra qayta ishlaydi:"
+                ],
+                "items": [
+                    "Google Firebase (hisob va sinxronlash): https://firebase.google.com/support/privacy",
+                    "Google orqali kirish: https://policies.google.com/privacy",
+                    "Apple orqali kirish: https://www.apple.com/legal/privacy/",
+                    "Cloudflare (kompyuter ilovasi yangilanishlari): https://www.cloudflare.com/privacypolicy/",
+                    "GitHub (kompyuter uchun yuklab olishlar va ushbu veb-sayt): https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                ]
+            },
+            {
+                "title": "Ushbu veb-sayt",
+                "paragraphs": [
+                    "wursha.com GitHub Pages'da joylashgan. U cookie-fayllar o'rnatmaydi va tahlil vositalaridan foydalanmaydi. Tanlagan tilingiz faqat brauzeringizda eslab qolinadi."
+                ],
+                "items": []
+            },
+            {
+                "title": "Bolalar",
+                "paragraphs": [
+                    "Ilovalar barcha yoshdagilar uchun mos va hisobga kirmagan hech kimdan hech narsa to'plamaydi. Ixtiyoriy hisob o'z mamlakati qoidalariga ko'ra Google yoki Apple hisobiga ega bo'la oladigan yoshdagi kishilar uchun mo'ljallangan."
+                ],
+                "items": []
+            },
+            {
+                "title": "O'zgarishlar va aloqa",
+                "paragraphs": [
+                    "Agar bu siyosat o'zgarsa, ushbu sahifani va yuqoridagi sanani yangilaymiz. Savol yoki so'rovlar uchun wursha.apps@gmail.com manziliga yozing."
+                ],
+                "items": []
+            }
+        ]
     }
 }

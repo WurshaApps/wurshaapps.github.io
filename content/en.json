@@ -204,6 +204,100 @@
             "jamharat-uloom.org (word meanings, sarf and grammar)",
             "Al-Quran Al-Adheem, Al-Rajhi Endowment (waqf data)"
         ],
-        "rights": "© Wursha Digital Apps"
+        "rights": "© Wursha Digital Apps",
+        "privacy": "Privacy policy"
+    },
+    "privacy": {
+        "metaTitle": "Privacy Policy — Wursha",
+        "metaDescription": "How the Quran Holder and Khair Zad Mushaf apps handle your data: no ads, no tracking, and an optional account for syncing.",
+        "title": "Privacy Policy",
+        "updated": "Last updated: 17 October 2026",
+        "intro": "This policy covers the Quran Holder and Khair Zad Mushaf apps by Wursha Digital Apps on iPhone, iPad, Android, Mac and Windows, and this website. In short: the apps work without an account, show no ads, contain no analytics or tracking, and we don't sell or share your data.",
+        "sections": [
+            {
+                "title": "Data on your device",
+                "paragraphs": [
+                    "Your settings, khatmas (reading position, bookmarks and notes), athkar progress, Tartil favorites and playlists, and anything you download (recitations, books and databases) are stored only on your device. We don't receive any of it unless you use the optional account. A settings export is a file you create and keep yourself."
+                ],
+                "items": []
+            },
+            {
+                "title": "The optional account",
+                "paragraphs": [
+                    "You can sign in with Google or with Apple to back up your data and sync it between your devices. Signing in is optional; every feature works without it.",
+                    "When you sign in, we receive an account ID, the email address your provider shares (Apple can give a private relay address instead), and your name if the provider shares it. While you are signed in, each Mushaf app syncs its own data, kept separate from the other apps:"
+                ],
+                "items": [
+                    "Khatmas: name, colour, reading position, bookmarks, notes, and the chosen reading and reciter",
+                    "Athkar: progress, favorites and the athkar you added",
+                    "Tartil: favorite reciters and surahs, playlists and the selected reciter",
+                    "Your devices: the type of device (for example iPhone or Android), which app, when it last synced, and a random device ID"
+                ]
+            },
+            {
+                "title": "Where account data is kept and who can see it",
+                "paragraphs": [
+                    "Account data is stored with Google Firebase (Authentication and Cloud Firestore) in Google Cloud's Dammam region in Saudi Arabia, and is encrypted in transit. Only you can read it through the apps. We look at it only to fix a problem you report, or when the law requires it.",
+                    "We use it only to sync and restore your data. We don't sell it, share it with advertisers, or use it to build a profile of you."
+                ],
+                "items": []
+            },
+            {
+                "title": "Keeping and deleting your data",
+                "paragraphs": [
+                    "Account data is kept until you delete it. Khatmas and playlists you delete are removed from our servers 90 days after you delete them.",
+                    "You can delete your account and all of its data at any time: in the app (Account, then Delete account), at https://wursha-cloud.firebaseapp.com/delete-account, or by emailing wursha.apps@gmail.com (we reply within 30 days). Deletion is immediate and covers every Mushaf app; the copy on your device stays. If you signed in with Apple, the app's access to your Apple ID is also revoked."
+                ],
+                "items": []
+            },
+            {
+                "title": "Internet connections without an account",
+                "paragraphs": [
+                    "Some features use the internet. Streaming or downloading recitations, books and databases connects to the servers that host them, such as mp3quran.net and everyayah.com. The desktop apps check for updates through our update server on Cloudflare and through GitHub. Like any website, these servers see your IP address; the apps send them nothing else about you."
+                ],
+                "items": []
+            },
+            {
+                "title": "Permissions",
+                "paragraphs": [
+                    "The apps don't ask for your location, contacts, camera or microphone. When you share a verse as an image you can save the picture to your photo library; the apps never read your photos."
+                ],
+                "items": []
+            },
+            {
+                "title": "Services we rely on",
+                "paragraphs": [
+                    "Each of these handles data under its own privacy policy:"
+                ],
+                "items": [
+                    "Google Firebase (account and sync): https://firebase.google.com/support/privacy",
+                    "Sign in with Google: https://policies.google.com/privacy",
+                    "Sign in with Apple: https://www.apple.com/legal/privacy/",
+                    "Cloudflare (desktop updates): https://www.cloudflare.com/privacypolicy/",
+                    "GitHub (desktop downloads and this website): https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                ]
+            },
+            {
+                "title": "This website",
+                "paragraphs": [
+                    "wursha.com is hosted on GitHub Pages. It sets no cookies and has no analytics. It remembers the language you choose in your browser only."
+                ],
+                "items": []
+            },
+            {
+                "title": "Children",
+                "paragraphs": [
+                    "The apps are suitable for all ages and collect nothing from anyone who doesn't sign in. The optional account is meant for people old enough to have a Google or Apple account where they live."
+                ],
+                "items": []
+            },
+            {
+                "title": "Changes and contact",
+                "paragraphs": [
+                    "If this policy changes, we update this page and the date at the top. For questions or requests, email wursha.apps@gmail.com."
+                ],
+                "items": []
+            }
+        ]
     }
 }

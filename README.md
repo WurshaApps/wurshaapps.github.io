@@ -6,6 +6,10 @@ to static pages, deployed to GitHub Pages by `.github/workflows/node.js.yml` on 
 - One page per language: `/ar/`, `/en/`, … (14 languages, `src/app/i18n/locales.ts`), each with its own
   `<html lang dir>`, title, description and `hreflang` links. `/` sends visitors to their saved or browser
   language (inline script in `src/index.html`) and is itself the Arabic page for crawlers.
+- The privacy policy is `/<lang>/privacy/` (`src/app/privacy/`), text in the `privacy` block of each
+  `content/<lang>.json`. `/privacy` — the address the app stores link to — sends visitors to their language
+  the same way `/` does, and is the Arabic page for crawlers. Keep it in step with what the apps do
+  (the app repo's `specs/accounts.md` §4/§8) and change `privacy.updated` with every edit.
 - All copy lives in `content/` — see `content/README.md`. Design and copy rules: `specs/website-redesign.md`.
 
 ## Commands

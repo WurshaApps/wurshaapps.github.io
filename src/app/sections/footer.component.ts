@@ -1,8 +1,10 @@
 import { Component, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { I18nService } from '../i18n/i18n.service';
 
 @Component({
     selector: 'app-footer',
+    imports: [RouterLink],
     template: `
         @let t = i18n.t().footer;
         <footer>
@@ -24,7 +26,10 @@ import { I18nService } from '../i18n/i18n.service';
                             <li>{{ s }}</li>
                         }
                     </ul>
-                    <p class="rights">{{ t.rights }}</p>
+                    <p class="rights">
+                        {{ t.rights }} ·
+                        <a [routerLink]="['/', i18n.lang(), 'privacy']">{{ t.privacy }}</a>
+                    </p>
                 </div>
             </div>
         </footer>

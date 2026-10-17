@@ -14,7 +14,8 @@ same shape as `en.json` (checked by `npm run check-content`).
 | `library`   | `library`                                   | Four book lists                                                   |
 | `languages` | `library` (languages section)               | Heading and the "stays in Arabic" note; names from `locales.ts`   |
 | `downloads` | `downloads`                                 | Table headings, link labels, notes                                |
-| `footer`    | `footer`                                    | About line, credits, sources, rights                              |
+| `footer`    | `footer`                                    | About line, credits, sources, rights, privacy link                |
+| `privacy`   | `privacy/privacy.component`, `I18nService`  | The privacy policy page `/<lang>/privacy/` and its `<title>`/description |
 
 ## Fields
 
@@ -31,7 +32,9 @@ library:   { title, subtitle, more, groups: [{ title, items: string[] }] }   // 
 languages: { title, subtitle, note }
 downloads: { title, subtitle, version, columns: { edition, ios, android, mac, windows },
              links: { ios, android, mac, windows }, notAvailable, winNote, macNote }
-footer:    { about, creditsTitle, credits: [{ label, value }], sourcesTitle, sources: string[], rights }
+footer:    { about, creditsTitle, credits: [{ label, value }], sourcesTitle, sources: string[], rights, privacy }
+privacy:   { metaTitle, metaDescription, title, updated, intro,
+             sections: [{ title, paragraphs: string[], items: string[] }] }   // same sections in every language
 ```
 
 Notes:
@@ -52,3 +55,6 @@ Notes:
 
 Order of `apps` is the display order. `accent` is the edition's store colour (card panel). `release` is
 the tag prefix in `WurshaApps/QuranHolder_Releases` used by `scripts/update-links.mjs`.
+- `privacy`: plain text; `https://…` URLs and email addresses become links on the page. Sections and their
+  `paragraphs`/`items` counts must match `en.json` (checked). Keep it true to what the apps do — the data
+  list follows the app repo's `specs/accounts.md` §4/§8 — and change `updated` with every edit.

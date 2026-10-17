@@ -204,6 +204,100 @@
             "jamharat-uloom.org (söz mənaları, sərf və qrammatika)",
             "Əl-Quran Əl-Azim, Ər-Racihi Vəqfi (vəqf məlumatları)"
         ],
-        "rights": "© Wursha Digital Apps"
+        "rights": "© Wursha Digital Apps",
+        "privacy": "Məxfilik siyasəti"
+    },
+    "privacy": {
+        "metaTitle": "Məxfilik siyasəti — Wursha",
+        "metaDescription": "Quran Hafizi və Khair Zad Mushaf tətbiqləri məlumatlarınızla necə davranır: reklam yoxdur, izləmə yoxdur, sinxronlaşdırma üçün isə istəyə bağlı hesab var.",
+        "title": "Məxfilik siyasəti",
+        "updated": "Son yenilənmə: 17 oktyabr 2026",
+        "intro": "Bu siyasət Wursha Digital Apps-in iPhone, iPad, Android, Mac və Windows üçün Quran Hafizi və Khair Zad Mushaf tətbiqlərini və bu veb-saytı əhatə edir. Qısaca: tətbiqlər hesabsız işləyir, reklam göstərmir, analitika və izləmə alətləri yoxdur, biz məlumatlarınızı satmırıq və paylaşmırıq.",
+        "sections": [
+            {
+                "title": "Cihazınızdakı məlumatlar",
+                "paragraphs": [
+                    "Ayarlarınız, xətmləriniz (oxuma yeri, əlfəcinlər və qeydlər), zikr irəliləyişiniz, Tartil seçilmişləri və pleylistləri, eləcə də yüklədiyiniz hər şey (tilavətlər, kitablar və verilənlər bazaları) yalnız cihazınızda saxlanılır. İstəyə bağlı hesabdan istifadə etməsəniz, bunların heç biri bizə gəlmir. Ayarların ixracı sizin özünüzün yaradıb saxladığınız fayldır."
+                ],
+                "items": []
+            },
+            {
+                "title": "İstəyə bağlı hesab",
+                "paragraphs": [
+                    "Məlumatlarınızın ehtiyat nüsxəsini saxlamaq və cihazlarınız arasında sinxronlaşdırmaq üçün Google və ya Apple ilə daxil ola bilərsiniz. Daxil olmaq istəyə bağlıdır; bütün funksiyalar onsuz da işləyir.",
+                    "Daxil olduqda bizə hesab identifikatoru, provayderinizin paylaşdığı e-poçt ünvanı (Apple onun əvəzinə şəxsi ötürmə ünvanı verə bilər) və provayder paylaşarsa adınız gəlir. Daxil olduğunuz müddətdə hər Mushaf tətbiqi öz məlumatlarını digər tətbiqlərdən ayrı sinxronlaşdırır:"
+                ],
+                "items": [
+                    "Xətmlər: ad, rəng, oxuma yeri, əlfəcinlər, qeydlər, seçilmiş qiraət və qari",
+                    "Zikrlər: irəliləyiş, seçilmişlər və əlavə etdiyiniz zikrlər",
+                    "Tartil: sevimli qarilər və surələr, pleylistlər və seçilmiş qari",
+                    "Cihazlarınız: cihazın növü (məsələn, iPhone və ya Android), hansı tətbiq, son sinxronlaşdırma vaxtı və təsadüfi cihaz identifikatoru"
+                ]
+            },
+            {
+                "title": "Hesab məlumatları harada saxlanılır və kim görə bilər",
+                "paragraphs": [
+                    "Hesab məlumatları Google Firebase-də (Authentication və Cloud Firestore), Google Cloud-un Səudiyyə Ərəbistanındakı Dammam regionunda saxlanılır və ötürülərkən şifrələnir. Tətbiqlər vasitəsilə onları yalnız siz oxuya bilərsiniz. Biz onlara yalnız bildirdiyiniz problemi həll etmək üçün və ya qanun tələb etdikdə baxırıq.",
+                    "Biz onlardan yalnız məlumatlarınızı sinxronlaşdırmaq və bərpa etmək üçün istifadə edirik. Onları satmırıq, reklamçılarla paylaşmırıq və haqqınızda profil yaratmaq üçün istifadə etmirik."
+                ],
+                "items": []
+            },
+            {
+                "title": "Məlumatların saxlanması və silinməsi",
+                "paragraphs": [
+                    "Hesab məlumatları siz silənə qədər saxlanılır. Sildiyiniz xətmlər və pleylistlər silindikdən 90 gün sonra serverlərimizdən çıxarılır.",
+                    "Hesabınızı və bütün məlumatlarını istənilən vaxt silə bilərsiniz: tətbiqdə (Hesab, sonra Hesabı sil), https://wursha-cloud.firebaseapp.com/delete-account ünvanında və ya wursha.apps@gmail.com ünvanına məktub yazaraq (30 gün ərzində cavab veririk). Silinmə dərhal baş verir və bütün Mushaf tətbiqlərini əhatə edir; cihazınızdakı nüsxə qalır. Apple ilə daxil olmusunuzsa, tətbiqin Apple ID-nizə girişi də ləğv edilir."
+                ],
+                "items": []
+            },
+            {
+                "title": "Hesabsız internet bağlantıları",
+                "paragraphs": [
+                    "Bəzi funksiyalar internetdən istifadə edir. Tilavətləri dinləmək və ya yükləmək, kitab və verilənlər bazalarını yükləmək onları saxlayan serverlərə qoşulur, məsələn mp3quran.net və everyayah.com. Kompüter tətbiqləri yeniləmələri Cloudflare-dəki yeniləmə serverimiz və GitHub vasitəsilə yoxlayır. İstənilən veb-sayt kimi bu serverlər IP ünvanınızı görür; tətbiqlər onlara sizin haqqınızda başqa heç nə göndərmir."
+                ],
+                "items": []
+            },
+            {
+                "title": "İcazələr",
+                "paragraphs": [
+                    "Tətbiqlər məkanınızı, kontaktlarınızı, kameranızı və ya mikrofonunuzu istəmir. Ayəni şəkil kimi paylaşanda şəkli foto kitabxananıza saxlaya bilərsiniz; tətbiqlər heç vaxt fotolarınızı oxumur."
+                ],
+                "items": []
+            },
+            {
+                "title": "İstifadə etdiyimiz xidmətlər",
+                "paragraphs": [
+                    "Hər biri məlumatları öz məxfilik siyasətinə uyğun emal edir:"
+                ],
+                "items": [
+                    "Google Firebase (hesab və sinxronlaşdırma): https://firebase.google.com/support/privacy",
+                    "Google ilə daxil olma: https://policies.google.com/privacy",
+                    "Apple ilə daxil olma: https://www.apple.com/legal/privacy/",
+                    "Cloudflare (kompüter tətbiqi yeniləmələri): https://www.cloudflare.com/privacypolicy/",
+                    "GitHub (kompüter yükləmələri və bu veb-sayt): https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                ]
+            },
+            {
+                "title": "Bu veb-sayt",
+                "paragraphs": [
+                    "wursha.com GitHub Pages-də yerləşir. O, kuki yerləşdirmir və analitikadan istifadə etmir. Seçdiyiniz dil yalnız brauzerinizdə yadda saxlanılır."
+                ],
+                "items": []
+            },
+            {
+                "title": "Uşaqlar",
+                "paragraphs": [
+                    "Tətbiqlər bütün yaşlar üçün uyğundur və daxil olmayan heç kimdən heç nə toplamır. İstəyə bağlı hesab öz ölkəsinin qaydalarına görə Google və ya Apple hesabı aça biləcək yaşda olan insanlar üçündür."
+                ],
+                "items": []
+            },
+            {
+                "title": "Dəyişikliklər və əlaqə",
+                "paragraphs": [
+                    "Bu siyasət dəyişərsə, bu səhifəni və yuxarıdakı tarixi yeniləyirik. Suallar və müraciətlər üçün wursha.apps@gmail.com ünvanına yazın."
+                ],
+                "items": []
+            }
+        ]
     }
 }
