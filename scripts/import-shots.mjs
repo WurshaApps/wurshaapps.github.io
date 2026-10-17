@@ -25,7 +25,7 @@ const SETS = {
     en: { dir: 'ltr', folder: 'en-US' },
 };
 // Store edition folder → apps.json id.
-const EDITIONS = { madina: 'madina', hafs: 'hafs', tjwid: 'tajweed', warsh: 'warsh', qalon: 'qalon', shmrly: 'shamarli' };
+const EDITIONS = { madina: 'madina', tjwid: 'tajweed', warsh: 'warsh', qalon: 'qalon', shmrly: 'shamarli' };
 const SCENES = ['meaning', 'tartil', 'memorize', 'night', 'tracks', 'athkar', 'share'];
 
 // iPhone 6.9" final (1290x2796): the device's size and position depend on the caption, so find the

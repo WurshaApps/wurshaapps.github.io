@@ -2,7 +2,7 @@
     "$schema": "./schemas/content.schema.json",
     "meta": {
         "title": "Wursha — Aplikasi Mushaf Al-Quran dengan tafsir dan bacaan qari",
-        "description": "Enam Mushaf (Madinah, Hafs, Tajwid, Warsh, Qalun, Shamarly), 50+ kitab tafsir dan terjemahan, 200+ qari. Percuma, tanpa iklan, untuk iPhone, iPad, Android, Mac, Windows."
+        "description": "Lima Mushaf (Madinah, Tajwid, Warsh, Qalun, Shamarly), 50+ kitab tafsir dan terjemahan, 200+ qari. Percuma, tanpa iklan, untuk iPhone, iPad, Android, Mac, Windows."
     },
     "brand": "Wursha",
     "nav": {
@@ -32,12 +32,6 @@
                 "series": "Quran Holder",
                 "line": "Halaman Madinah yang biasa anda baca, dengan tanda farsh di tempat-tempat perbezaan qiraat"
             },
-            "hafs": {
-                "name": "Mushaf Hafs",
-                "riwaya": "Hafs daripada Asim",
-                "series": "Khair Zad",
-                "line": "Bingkai halaman berhias yang boleh dipaparkan, disembunyikan dan disesuaikan"
-            },
             "tajweed": {
                 "name": "Mushaf Tajwid",
                 "riwaya": "Hafs daripada Asim",
@@ -66,7 +60,7 @@
     },
     "story": {
         "title": "Dalam setiap edisi",
-        "subtitle": "Alatan yang sama disertakan dengan keenam-enam Mushaf.",
+        "subtitle": "Alatan yang sama disertakan dengan kelima-lima Mushaf.",
         "screensNote": "Tangkapan skrin menunjukkan antara muka aplikasi dalam bahasa Inggeris; aplikasi ini juga tersedia dalam bahasa Melayu.",
         "scenes": [
             {

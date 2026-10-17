@@ -32,7 +32,9 @@ import { APPS, hasDesktop } from '../shared/catalog';
         </section>
     `,
     styles: `
-        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 48px 0 0; padding: 0; list-style: none; }
+        /* Flex, not grid, so a short last row (5 editions = 3 + 2) sits centred. */
+        .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 48px 0 0; padding: 0; list-style: none; }
+        li { flex: 0 1 calc((100% - 40px) / 3); }
         a { display: flex; flex-direction: column; height: 100%; padding-bottom: 22px; border-radius: 18px; background: var(--mist); overflow: hidden; text-decoration: none; }
         a:hover .panel img { transform: translateY(-4px); }
         .panel { display: flex; justify-content: center; height: 240px; margin-bottom: 18px; padding: 28px 28px 0; overflow: hidden; }
@@ -41,8 +43,8 @@ import { APPS, hasDesktop } from '../shared/catalog';
         .meta { padding: 0 22px; color: var(--ink-soft); font-size: 14px; }
         .line { padding: 10px 22px 0; font-size: 15.5px; }
         .avail { margin-top: auto; padding: 12px 22px 0; color: var(--ink-soft); font-size: 13px; }
-        @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+        @media (max-width: 900px) { li { flex-basis: calc((100% - 20px) / 2); } }
+        @media (max-width: 560px) { li { flex-basis: 100%; } }
         @media (prefers-reduced-motion: reduce) { .panel img { transition: none; } }
     `,
 })

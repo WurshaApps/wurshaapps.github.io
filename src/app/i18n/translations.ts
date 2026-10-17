@@ -1,6 +1,6 @@
 import type { Lang } from './locales';
 
-export type EditionId = 'madina' | 'hafs' | 'tajweed' | 'warsh' | 'qalon' | 'shamarli';
+export type EditionId = 'madina' | 'tajweed' | 'warsh' | 'qalon' | 'shamarli';
 export type SceneId = 'meaning' | 'tartil' | 'memorize' | 'night' | 'tracks' | 'athkar' | 'share';
 export type Platform = 'ios' | 'android' | 'mac' | 'windows';
 

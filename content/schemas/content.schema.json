@@ -152,7 +152,6 @@
                     "additionalProperties": false,
                     "required": [
                         "madina",
-                        "hafs",
                         "tajweed",
                         "warsh",
                         "qalon",
@@ -160,34 +159,6 @@
                     ],
                     "properties": {
                         "madina": {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "required": [
-                                "name",
-                                "riwaya",
-                                "series",
-                                "line"
-                            ],
-                            "properties": {
-                                "name": {
-                                    "type": "string",
-                                    "minLength": 1
-                                },
-                                "riwaya": {
-                                    "type": "string",
-                                    "minLength": 1
-                                },
-                                "series": {
-                                    "type": "string",
-                                    "minLength": 1
-                                },
-                                "line": {
-                                    "type": "string",
-                                    "minLength": 1
-                                }
-                            }
-                        },
-                        "hafs": {
                             "type": "object",
                             "additionalProperties": false,
                             "required": [

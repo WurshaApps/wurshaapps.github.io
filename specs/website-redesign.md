@@ -74,6 +74,7 @@ What we already have and should reuse:
 | W4 | Pricing line | **"Free, no ads"** may be said (no ads or IAP in code, all editions free) |
 | W5 | Hero line | en "The Mushaf you know, with everything around it" · ar «المصحف الذي تعرفه، ومعه كل ما تحتاجه» |
 | W6 | Screenshots | **No baked captions; captions are HTML in every language.** Two screenshot sets only (English UI for LTR pages, Arabic UI for RTL pages) to keep assets small (~1.5 MB); `story.screensNote` says which UI the screens show |
+| W7 | Hafs edition | **Removed from the site** (2026-10-17): five editions — Madina, Tajweed, Warsh, Qalun, Shamarly. The Hafs *riwaya* labels on Madina, Tajweed and Shamarly stay |
 
 ### 3.1 Principles
 

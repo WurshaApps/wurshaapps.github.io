@@ -2,7 +2,7 @@
     "$schema": "./schemas/content.schema.json",
     "meta": {
         "title": "Wursha — Təfsir və tilavətli Mushaf tətbiqləri",
-        "description": "Altı Mushaf (Mədinə, Həfs, Təcvidli, Vərş, Qalun, Şəmərli), 50+ təfsir və tərcümə kitabı, 200+ qari. Pulsuz və reklamsız; iPhone, iPad, Android, Mac və Windows üçün."
+        "description": "Beş Mushaf (Mədinə, Təcvidli, Vərş, Qalun, Şəmərli), 50+ təfsir və tərcümə kitabı, 200+ qari. Pulsuz və reklamsız; iPhone, iPad, Android, Mac və Windows üçün."
     },
     "brand": "Wursha",
     "nav": {
@@ -32,12 +32,6 @@
                 "series": "Quran Hafizi",
                 "line": "Tanış Mədinə səhifələri, qiraətlərin fərqləndiyi yerlərdə fərş işarələri ilə"
             },
-            "hafs": {
-                "name": "Həfs Mushafı",
-                "riwaya": "Asimdən Həfs",
-                "series": "Khair Zad",
-                "line": "Göstərib gizlədə və fərdiləşdirə biləcəyiniz bəzəkli səhifə çərçivəsi"
-            },
             "tajweed": {
                 "name": "Təcvidli Mushaf",
                 "riwaya": "Asimdən Həfs",
@@ -66,7 +60,7 @@
     },
     "story": {
         "title": "Hər nəşrin içində",
-        "subtitle": "Altı Mushafın hamısında eyni alətlər var.",
+        "subtitle": "Beş Mushafın hamısında eyni alətlər var.",
         "screensNote": "Ekran görüntüləri tətbiqin ingilis dilindəki interfeysini göstərir; tətbiq azərbaycan dilində də mövcuddur.",
         "scenes": [
             {

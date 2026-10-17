@@ -9,7 +9,7 @@ same shape as `en.json` (checked by `npm run check-content`).
 | `brand`     | `header`                                    | Logo text: "Wursha"; Arabic-script pages may use «ورشة»          |
 | `nav`       | `header`, `lang-picker`                     | Section links and the language-picker label                       |
 | `hero`      | `hero`                                      | Headline, subtitle, two buttons, platforms line, spread alt text  |
-| `editions`  | `editions`, `downloads`                     | Cards for the six editions; names reused in the download table    |
+| `editions`  | `editions`, `downloads`                     | Cards for the five editions; names reused in the download table    |
 | `story`     | `story`                                     | The seven feature scenes, same order as the App Store screenshots |
 | `library`   | `library`                                   | Four book lists                                                   |
 | `languages` | `library` (languages section)               | Heading and the "stays in Arabic" note; names from `locales.ts`   |
@@ -24,7 +24,7 @@ brand:     string
 nav:       { editions, features, library, downloads, language }
 hero:      { title, subtitle, cta, ctaSecondary, platforms, imageAlt }
 editions:  { title, subtitle, platformsAll, platformsMobile,
-             list: { [id in madina|hafs|tajweed|warsh|qalon|shamarli]: { name, riwaya, series, line } } }
+             list: { [id in madina|tajweed|warsh|qalon|shamarli]: { name, riwaya, series, line } } }
 story:     { title, subtitle, screensNote,
              scenes: [{ id: meaning|tartil|memorize|night|tracks|athkar|share, title, subtitle, items: string[], note? }] }
 library:   { title, subtitle, more, groups: [{ title, items: string[] }] }   // 4 groups

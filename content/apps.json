@@ -14,14 +14,6 @@
             }
         },
         {
-            "id": "hafs",
-            "accent": "#5c3b20",
-            "urls": {
-                "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_hafs",
-                "ios": "https://apps.apple.com/app/id1548150589"
-            }
-        },
-        {
             "id": "tajweed",
             "accent": "#1d5b3c",
             "release": "tjwid",

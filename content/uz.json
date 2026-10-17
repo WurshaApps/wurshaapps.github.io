@@ -2,7 +2,7 @@
     "$schema": "./schemas/content.schema.json",
     "meta": {
         "title": "Wursha — tafsir va tilovatli Qurʼon Mushafi ilovalari",
-        "description": "Oltita Mushaf (Madina, Hafs, Tajvid, Varsh, Qolun, Shamarli), 50+ tafsir va tarjima kitobi, 200+ qori. Bepul, reklamasiz: iPhone, iPad, Android, Mac va Windows uchun."
+        "description": "Beshta Mushaf (Madina, Tajvid, Varsh, Qolun, Shamarli), 50+ tafsir va tarjima kitobi, 200+ qori. Bepul, reklamasiz: iPhone, iPad, Android, Mac va Windows uchun."
     },
     "brand": "Wursha",
     "nav": {
@@ -32,12 +32,6 @@
                 "series": "Quran Holder",
                 "line": "Tanish Madina sahifalari, qiroatlar farqlanadigan joylarda farsh belgilari bilan"
             },
-            "hafs": {
-                "name": "Hafs Mushafi",
-                "riwaya": "Osimdan Hafs rivoyati",
-                "series": "Khair Zad",
-                "line": "Koʻrsatish, yashirish va sozlash mumkin boʻlgan naqshli sahifa ramkasi"
-            },
             "tajweed": {
                 "name": "Tajvid Mushafi",
                 "riwaya": "Osimdan Hafs rivoyati",
@@ -66,7 +60,7 @@
     },
     "story": {
         "title": "Har bir nashr ichida",
-        "subtitle": "Oltala Mushafda ham bir xil vositalar bor.",
+        "subtitle": "Beshala Mushafda ham bir xil vositalar bor.",
         "screensNote": "Skrinshotlarda ilovaning inglizcha interfeysi koʻrsatilgan; ilova oʻzbek tilida ham mavjud.",
         "scenes": [
             {

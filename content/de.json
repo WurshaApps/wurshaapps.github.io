@@ -2,7 +2,7 @@
     "$schema": "./schemas/content.schema.json",
     "meta": {
         "title": "Wursha — Mushaf-Apps mit Tafsir und Rezitation",
-        "description": "Sechs Mushafs (Medina, Hafs, Tajwid, Warsh, Qalun, Shamarly), 50+ Tafsir- und Übersetzungswerke, 200+ Rezitatoren. Kostenlos, ohne Werbung, für iOS, Android, Mac und Windows."
+        "description": "Fünf Mushafs (Medina, Tajwid, Warsh, Qalun, Shamarly), 50+ Tafsir- und Übersetzungswerke, 200+ Rezitatoren. Kostenlos, ohne Werbung, für iOS, Android, Mac und Windows."
     },
     "brand": "Wursha",
     "nav": {
@@ -32,12 +32,6 @@
                 "series": "Quran Holder",
                 "line": "Die vertrauten Medina-Seiten, mit Farsh-Markierungen, wo sich die Qira'at unterscheiden"
             },
-            "hafs": {
-                "name": "Hafs-Mushaf",
-                "riwaya": "Hafs nach Asim",
-                "series": "Khair Zad",
-                "line": "Ein verzierter Seitenrahmen, den du ein- und ausblenden und anpassen kannst"
-            },
             "tajweed": {
                 "name": "Tajwid-Mushaf",
                 "riwaya": "Hafs nach Asim",
@@ -66,7 +60,7 @@
     },
     "story": {
         "title": "In jeder Ausgabe",
-        "subtitle": "Alle sechs Mushafs haben dieselben Werkzeuge.",
+        "subtitle": "Alle fünf Mushafs haben dieselben Werkzeuge.",
         "screensNote": "Die Screenshots zeigen die englische Oberfläche der App; die App gibt es auch auf Deutsch.",
         "scenes": [
             {

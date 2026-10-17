@@ -36,4 +36,4 @@ screenshots (see the script header). LTR pages use the English set, RTL pages th
 ## Releases
 
 `npm run update-links` fetches the newest Mac/Windows downloads from `WurshaApps/QuranHolder_Releases`
-into `apps.json` (editions without a `release` prefix, like hafs, are skipped).
+into `apps.json` (editions without a `release` prefix are skipped).

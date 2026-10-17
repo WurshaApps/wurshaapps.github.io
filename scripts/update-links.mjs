@@ -66,7 +66,7 @@ async function main() {
 
     let highestVersion = null;
     for (const app of catalog.apps) {
-        // Editions without desktop builds (hafs) have no release prefix.
+        // Editions without desktop builds have no release prefix.
         if (!app.release) continue;
         const prefix = app.release;
         const { tag, version, mac, windows } = pickLatestForPrefix(releases, prefix);

@@ -40,7 +40,6 @@
                     "type": "string",
                     "enum": [
                         "madina",
-                        "hafs",
                         "tajweed",
                         "warsh",
                         "qalon",

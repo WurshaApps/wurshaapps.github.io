@@ -2,7 +2,7 @@
     "$schema": "./schemas/content.schema.json",
     "meta": {
         "title": "Wursha — Tefsir ve tilavetli Mushaf uygulamaları",
-        "description": "Altı Mushaf (Medine, Hafs, Tecvidli, Verş, Kalun, Şemerli), 50+ tefsir ve meal kitabı, 200+ kâri. Ücretsiz ve reklamsız; iPhone, iPad, Android, Mac ve Windows için."
+        "description": "Beş Mushaf (Medine, Tecvidli, Verş, Kalun, Şemerli), 50+ tefsir ve meal kitabı, 200+ kâri. Ücretsiz ve reklamsız; iPhone, iPad, Android, Mac ve Windows için."
     },
     "brand": "Wursha",
     "nav": {
@@ -32,12 +32,6 @@
                 "series": "Kur'an Hafızı",
                 "line": "Alışık olduğunuz Medine sayfaları; kıraatlerin ayrıldığı yerlerde ferş işaretleri"
             },
-            "hafs": {
-                "name": "Hafs Mushafı",
-                "riwaya": "Hafs an Âsım",
-                "series": "Khair Zad",
-                "line": "Gösterip gizleyebileceğiniz ve özelleştirebileceğiniz süslü sayfa çerçevesi"
-            },
             "tajweed": {
                 "name": "Tecvidli Mushaf",
                 "riwaya": "Hafs an Âsım",
@@ -66,7 +60,7 @@
     },
     "story": {
         "title": "Her Mushafın içinde",
-        "subtitle": "Altı Mushafın hepsinde aynı araçlar var.",
+        "subtitle": "Beş Mushafın hepsinde aynı araçlar var.",
         "screensNote": "Ekran görüntüleri uygulamanın İngilizce arayüzünü gösterir; uygulama Türkçe olarak da kullanılabilir.",
         "scenes": [
             {

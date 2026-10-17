@@ -2,7 +2,7 @@
     "$schema": "./schemas/content.schema.json",
     "meta": {
         "title": "Wursha — Quran Mushaf apps with tafsir and recitation",
-        "description": "Six Mushaf editions (Madina, Hafs, Tajweed, Warsh, Qalun, Shamarly) with 50+ tafsir and translation books and 200+ reciters. Free, with no ads, for iPhone, iPad, Android, Mac and Windows."
+        "description": "Five Mushaf editions (Madina, Tajweed, Warsh, Qalun, Shamarly) with 50+ tafsir and translation books and 200+ reciters. Free, with no ads, for iPhone, iPad, Android, Mac and Windows."
     },
     "brand": "Wursha",
     "nav": {
@@ -32,12 +32,6 @@
                 "series": "Quran Holder",
                 "line": "The familiar Madina pages, with farsh marks where the qira'at differ"
             },
-            "hafs": {
-                "name": "Hafs Mushaf",
-                "riwaya": "Hafs from Asim",
-                "series": "Khair Zad",
-                "line": "An ornate page frame you can show, hide and customize"
-            },
             "tajweed": {
                 "name": "Tajweed Mushaf",
                 "riwaya": "Hafs from Asim",
@@ -66,7 +60,7 @@
     },
     "story": {
         "title": "Inside every edition",
-        "subtitle": "The same tools come with all six Mushafs.",
+        "subtitle": "The same tools come with all five Mushafs.",
         "screensNote": "",
         "scenes": [
             {
