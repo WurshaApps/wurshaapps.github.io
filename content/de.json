@@ -235,9 +235,9 @@
                 ]
             },
             {
-                "title": "Wo Kontodaten liegen und wer sie sehen kann",
+                "title": "Wer Kontodaten sehen kann",
                 "paragraphs": [
-                    "Kontodaten werden bei Google Firebase (Authentication und Cloud Firestore) in der Google-Cloud-Region Dammam in Saudi-Arabien gespeichert und bei der Übertragung verschlüsselt. Nur Sie können sie über die Apps lesen. Wir sehen sie nur ein, um ein von Ihnen gemeldetes Problem zu beheben oder wenn das Gesetz es verlangt.",
+                    "Kontodaten werden auf unseren Cloud-Servern gespeichert und bei der Übertragung verschlüsselt. Nur Sie können sie über die Apps lesen. Wir sehen sie nur ein, um ein von Ihnen gemeldetes Problem zu beheben oder wenn das Gesetz es verlangt.",
                     "Wir verwenden sie nur, um Ihre Daten zu synchronisieren und wiederherzustellen. Wir verkaufen sie nicht, geben sie nicht an Werbetreibende weiter und erstellen daraus kein Profil von Ihnen."
                 ],
                 "items": []

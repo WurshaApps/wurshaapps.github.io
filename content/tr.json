@@ -235,9 +235,9 @@
                 ]
             },
             {
-                "title": "Hesap verileri nerede tutulur, kim görebilir",
+                "title": "Hesap verilerini kim görebilir",
                 "paragraphs": [
-                    "Hesap verileri Google Firebase'de (Authentication ve Cloud Firestore), Google Cloud'un Suudi Arabistan'daki Dammam bölgesinde saklanır ve aktarım sırasında şifrelenir. Uygulamalar üzerinden onları yalnızca siz okuyabilirsiniz. Biz yalnızca bildirdiğiniz bir sorunu çözmek için ya da yasa gerektirdiğinde bakarız.",
+                    "Hesap verileri bulut sunucularımızda saklanır ve aktarım sırasında şifrelenir. Uygulamalar üzerinden onları yalnızca siz okuyabilirsiniz. Biz yalnızca bildirdiğiniz bir sorunu çözmek için ya da yasa gerektirdiğinde bakarız.",
                     "Onları yalnızca verilerinizi eşitlemek ve geri yüklemek için kullanırız. Satmayız, reklamverenlerle paylaşmayız ve sizin hakkınızda profil oluşturmak için kullanmayız."
                 ],
                 "items": []

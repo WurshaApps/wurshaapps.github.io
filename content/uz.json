@@ -235,9 +235,9 @@
                 ]
             },
             {
-                "title": "Hisob ma'lumotlari qayerda saqlanadi va kim ko'ra oladi",
+                "title": "Hisob ma'lumotlarini kim ko'ra oladi",
                 "paragraphs": [
-                    "Hisob ma'lumotlari Google Firebase'da (Authentication va Cloud Firestore), Google Cloud'ning Saudiya Arabistonidagi Dammam mintaqasida saqlanadi va uzatish vaqtida shifrlanadi. Ilovalar orqali ularni faqat siz o'qiy olasiz. Biz ularga faqat siz xabar bergan muammoni tuzatish uchun yoki qonun talab qilganda qaraymiz.",
+                    "Hisob ma'lumotlari bulut serverlarimizda saqlanadi va uzatish vaqtida shifrlanadi. Ilovalar orqali ularni faqat siz o'qiy olasiz. Biz ularga faqat siz xabar bergan muammoni tuzatish uchun yoki qonun talab qilganda qaraymiz.",
                     "Biz ulardan faqat ma'lumotlaringizni sinxronlash va tiklash uchun foydalanamiz. Ularni sotmaymiz, reklama beruvchilarga bermaymiz va siz haqingizda profil tuzish uchun ishlatmaymiz."
                 ],
                 "items": []

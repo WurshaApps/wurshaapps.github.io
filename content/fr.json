@@ -235,9 +235,9 @@
                 ]
             },
             {
-                "title": "Où sont conservées les données du compte et qui peut les voir",
+                "title": "Qui peut voir les données du compte",
                 "paragraphs": [
-                    "Les données du compte sont stockées chez Google Firebase (Authentication et Cloud Firestore), dans la région Google Cloud de Dammam en Arabie saoudite, et sont chiffrées pendant leur transfert. Vous seul pouvez les lire via les applications. Nous ne les consultons que pour corriger un problème que vous signalez, ou si la loi l'exige.",
+                    "Les données du compte sont stockées sur nos serveurs cloud et sont chiffrées pendant leur transfert. Vous seul pouvez les lire via les applications. Nous ne les consultons que pour corriger un problème que vous signalez, ou si la loi l'exige.",
                     "Nous les utilisons uniquement pour synchroniser et restaurer vos données. Nous ne les vendons pas, ne les partageons pas avec des annonceurs et ne nous en servons pas pour établir votre profil."
                 ],
                 "items": []

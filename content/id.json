@@ -235,9 +235,9 @@
                 ]
             },
             {
-                "title": "Tempat data akun disimpan dan siapa yang dapat melihatnya",
+                "title": "Siapa yang dapat melihat data akun",
                 "paragraphs": [
-                    "Data akun disimpan di Google Firebase (Authentication dan Cloud Firestore) di region Google Cloud Dammam, Arab Saudi, dan dienkripsi saat dikirim. Hanya Anda yang dapat membacanya melalui aplikasi. Kami hanya melihatnya untuk memperbaiki masalah yang Anda laporkan, atau jika diwajibkan hukum.",
+                    "Data akun disimpan di server cloud kami dan dienkripsi saat dikirim. Hanya Anda yang dapat membacanya melalui aplikasi. Kami hanya melihatnya untuk memperbaiki masalah yang Anda laporkan, atau jika diwajibkan hukum.",
                     "Kami menggunakannya hanya untuk menyinkronkan dan memulihkan data Anda. Kami tidak menjualnya, tidak membagikannya kepada pengiklan, dan tidak memakainya untuk membuat profil tentang Anda."
                 ],
                 "items": []

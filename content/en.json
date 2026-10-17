@@ -235,9 +235,9 @@
                 ]
             },
             {
-                "title": "Where account data is kept and who can see it",
+                "title": "Who can see account data",
                 "paragraphs": [
-                    "Account data is stored with Google Firebase (Authentication and Cloud Firestore) in Google Cloud's Dammam region in Saudi Arabia, and is encrypted in transit. Only you can read it through the apps. We look at it only to fix a problem you report, or when the law requires it.",
+                    "Account data is stored on our cloud servers and is encrypted in transit. Only you can read it through the apps. We look at it only to fix a problem you report, or when the law requires it.",
                     "We use it only to sync and restore your data. We don't sell it, share it with advertisers, or use it to build a profile of you."
                 ],
                 "items": []

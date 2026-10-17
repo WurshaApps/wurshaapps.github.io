@@ -235,9 +235,9 @@
                 ]
             },
             {
-                "title": "Hesab məlumatları harada saxlanılır və kim görə bilər",
+                "title": "Hesab məlumatlarını kim görə bilər",
                 "paragraphs": [
-                    "Hesab məlumatları Google Firebase-də (Authentication və Cloud Firestore), Google Cloud-un Səudiyyə Ərəbistanındakı Dammam regionunda saxlanılır və ötürülərkən şifrələnir. Tətbiqlər vasitəsilə onları yalnız siz oxuya bilərsiniz. Biz onlara yalnız bildirdiyiniz problemi həll etmək üçün və ya qanun tələb etdikdə baxırıq.",
+                    "Hesab məlumatları bulud serverlərimizdə saxlanılır və ötürülərkən şifrələnir. Tətbiqlər vasitəsilə onları yalnız siz oxuya bilərsiniz. Biz onlara yalnız bildirdiyiniz problemi həll etmək üçün və ya qanun tələb etdikdə baxırıq.",
                     "Biz onlardan yalnız məlumatlarınızı sinxronlaşdırmaq və bərpa etmək üçün istifadə edirik. Onları satmırıq, reklamçılarla paylaşmırıq və haqqınızda profil yaratmaq üçün istifadə etmirik."
                 ],
                 "items": []
