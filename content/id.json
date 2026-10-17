@@ -265,26 +265,6 @@
                 "items": []
             },
             {
-                "title": "Layanan yang kami gunakan",
-                "paragraphs": [
-                    "Masing-masing menangani data sesuai kebijakan privasinya sendiri:"
-                ],
-                "items": [
-                    "Google Firebase (akun dan sinkronisasi): https://firebase.google.com/support/privacy",
-                    "Masuk dengan Google: https://policies.google.com/privacy",
-                    "Masuk dengan Apple: https://www.apple.com/legal/privacy/",
-                    "Cloudflare (pembaruan desktop): https://www.cloudflare.com/privacypolicy/",
-                    "GitHub (unduhan desktop dan situs web ini): https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
-                ]
-            },
-            {
-                "title": "Situs web ini",
-                "paragraphs": [
-                    "wursha.com di-hosting di GitHub Pages. Situs ini tidak memasang cookie dan tidak memakai analitik. Bahasa yang Anda pilih hanya diingat di browser Anda."
-                ],
-                "items": []
-            },
-            {
                 "title": "Anak-anak",
                 "paragraphs": [
                     "Aplikasi cocok untuk semua usia dan tidak mengumpulkan apa pun dari siapa saja yang tidak masuk. Akun opsional ditujukan bagi orang yang cukup umur untuk memiliki akun Google atau Apple di negaranya."

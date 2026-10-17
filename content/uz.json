@@ -265,26 +265,6 @@
                 "items": []
             },
             {
-                "title": "Biz tayanadigan xizmatlar",
-                "paragraphs": [
-                    "Har biri ma'lumotlarni o'z maxfiylik siyosatiga ko'ra qayta ishlaydi:"
-                ],
-                "items": [
-                    "Google Firebase (hisob va sinxronlash): https://firebase.google.com/support/privacy",
-                    "Google orqali kirish: https://policies.google.com/privacy",
-                    "Apple orqali kirish: https://www.apple.com/legal/privacy/",
-                    "Cloudflare (kompyuter ilovasi yangilanishlari): https://www.cloudflare.com/privacypolicy/",
-                    "GitHub (kompyuter uchun yuklab olishlar va ushbu veb-sayt): https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
-                ]
-            },
-            {
-                "title": "Ushbu veb-sayt",
-                "paragraphs": [
-                    "wursha.com GitHub Pages'da joylashgan. U cookie-fayllar o'rnatmaydi va tahlil vositalaridan foydalanmaydi. Tanlagan tilingiz faqat brauzeringizda eslab qolinadi."
-                ],
-                "items": []
-            },
-            {
                 "title": "Bolalar",
                 "paragraphs": [
                     "Ilovalar barcha yoshdagilar uchun mos va hisobga kirmagan hech kimdan hech narsa to'plamaydi. Ixtiyoriy hisob o'z mamlakati qoidalariga ko'ra Google yoki Apple hisobiga ega bo'la oladigan yoshdagi kishilar uchun mo'ljallangan."

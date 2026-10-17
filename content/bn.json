@@ -265,26 +265,6 @@
                 "items": []
             },
             {
-                "title": "যেসব সেবার উপর আমরা নির্ভর করি",
-                "paragraphs": [
-                    "প্রতিটি সেবা নিজস্ব গোপনীয়তা নীতি অনুযায়ী ডেটা সামলায়:"
-                ],
-                "items": [
-                    "Google Firebase (অ্যাকাউন্ট ও সিঙ্ক): https://firebase.google.com/support/privacy",
-                    "Google দিয়ে সাইন ইন: https://policies.google.com/privacy",
-                    "Apple দিয়ে সাইন ইন: https://www.apple.com/legal/privacy/",
-                    "Cloudflare (কম্পিউটার অ্যাপের আপডেট): https://www.cloudflare.com/privacypolicy/",
-                    "GitHub (কম্পিউটারের ডাউনলোড ও এই ওয়েবসাইট): https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
-                ]
-            },
-            {
-                "title": "এই ওয়েবসাইট",
-                "paragraphs": [
-                    "wursha.com GitHub Pages-এ হোস্ট করা। এটি কোনো কুকি রাখে না এবং কোনো অ্যানালিটিক্স ব্যবহার করে না। আপনার বেছে নেওয়া ভাষা শুধু আপনার ব্রাউজারে মনে রাখা হয়।"
-                ],
-                "items": []
-            },
-            {
                 "title": "শিশু",
                 "paragraphs": [
                     "অ্যাপগুলো সব বয়সের জন্য উপযোগী এবং সাইন ইন না করা কারো কাছ থেকে কিছু সংগ্রহ করে না। ঐচ্ছিক অ্যাকাউন্টটি তাদের জন্য, যারা নিজ দেশের নিয়মে Google বা Apple অ্যাকাউন্ট রাখার বয়সে পৌঁছেছেন।"

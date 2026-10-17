@@ -265,26 +265,6 @@
                 "items": []
             },
             {
-                "title": "जिन सेवाओं पर हम निर्भर हैं",
-                "paragraphs": [
-                    "हर सेवा अपनी गोपनीयता नीति के अनुसार डेटा संभालती है:"
-                ],
-                "items": [
-                    "Google Firebase (खाता और सिंक): https://firebase.google.com/support/privacy",
-                    "Google से साइन इन: https://policies.google.com/privacy",
-                    "Apple से साइन इन: https://www.apple.com/legal/privacy/",
-                    "Cloudflare (कंप्यूटर ऐप के अपडेट): https://www.cloudflare.com/privacypolicy/",
-                    "GitHub (कंप्यूटर डाउनलोड और यह वेबसाइट): https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
-                ]
-            },
-            {
-                "title": "यह वेबसाइट",
-                "paragraphs": [
-                    "wursha.com GitHub Pages पर होस्ट है। यह कोई कुकी नहीं रखती और कोई एनालिटिक्स इस्तेमाल नहीं करती। आपकी चुनी हुई भाषा सिर्फ़ आपके ब्राउज़र में याद रखी जाती है।"
-                ],
-                "items": []
-            },
-            {
                 "title": "बच्चे",
                 "paragraphs": [
                     "ऐप्स हर उम्र के लिए उपयुक्त हैं और साइन इन न करने वाले किसी से कुछ इकट्ठा नहीं करते। वैकल्पिक खाता उन लोगों के लिए है जो अपने देश के नियमों के अनुसार Google या Apple खाता रखने की उम्र के हैं।"
