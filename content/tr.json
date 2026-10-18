@@ -246,7 +246,7 @@
                 "title": "Verilerinizin saklanması ve silinmesi",
                 "paragraphs": [
                     "Hesap verileri siz silene kadar saklanır. Sildiğiniz hatimler ve çalma listeleri, silindikten 90 gün sonra sunucularımızdan kaldırılır.",
-                    "Hesabınızı ve tüm verilerini istediğiniz zaman silebilirsiniz: uygulamada (Hesap, ardından Hesabı sil), https://wursha-cloud.firebaseapp.com/delete-account adresinde ya da wursha.apps@gmail.com adresine e-posta göndererek (30 gün içinde yanıt veririz). Silme işlemi hemen gerçekleşir ve tüm Mushaf uygulamalarını kapsar; cihazınızdaki kopya kalır. Apple ile giriş yaptıysanız uygulamanın Apple Kimliğinize erişimi de iptal edilir."
+                    "Hesabınızı ve tüm verilerini istediğiniz zaman silebilirsiniz: uygulamada (Hesap, ardından Hesabı sil), https://wursha.com/delete-account adresinde ya da wursha.apps@gmail.com adresine e-posta göndererek (30 gün içinde yanıt veririz). Silme işlemi hemen gerçekleşir ve tüm Mushaf uygulamalarını kapsar; cihazınızdaki kopya kalır. Apple ile giriş yaptıysanız uygulamanın Apple Kimliğinize erişimi de iptal edilir."
                 ],
                 "items": []
             },

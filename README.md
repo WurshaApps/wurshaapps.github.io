@@ -10,6 +10,9 @@ to static pages, deployed to GitHub Pages by `.github/workflows/node.js.yml` on 
   `content/<lang>.json`. `/privacy` — the address the app stores link to — sends visitors to their language
   the same way `/` does, and is the Arabic page for crawlers. Keep it in step with what the apps do
   (the app repo's `specs/accounts.md` §4/§8) and change `privacy.updated` with every edit.
+- `/delete-account` (`public/delete-account/index.html`) forwards to the account-deletion page on the sign-in
+  domain (app repo, `firebase-cloud/hosting/`), keeping `?lang=` and `#`. It is the address in the privacy policy
+  and Google Play's "Delete account URL".
 - All copy lives in `content/` — see `content/README.md`. Design and copy rules: `specs/website-redesign.md`.
 
 ## Commands
