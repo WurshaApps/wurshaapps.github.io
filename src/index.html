@@ -54,5 +54,19 @@
     </head>
     <body>
         <app-root></app-root>
+        <script>
+            // Cookieless visit counter (Cloudflare Web Analytics): counts page, referring site, country and
+            // browser type, sets no cookies and stores nothing on the device. `token` is wursha.com's site token
+            // from Cloudflare (Web Analytics → wursha.com). Runs on the live site only.
+            (function () {
+                var token = '395a3ee2bfd64442a3cdf45eaafb53a1';
+                if (location.hostname !== 'wursha.com') return;
+                var s = document.createElement('script');
+                s.defer = true;
+                s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+                s.setAttribute('data-cf-beacon', JSON.stringify({ token: token }));
+                document.body.appendChild(s);
+            })();
+        </script>
     </body>
 </html>

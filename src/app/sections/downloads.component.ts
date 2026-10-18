@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { I18nService } from '../i18n/i18n.service';
-import { APPS, PLATFORMS, VERSION } from '../shared/catalog';
+import { APPS, PLATFORMS, VERSION, storeUrl } from '../shared/catalog';
 
 @Component({
     selector: 'app-downloads',
@@ -29,7 +29,7 @@ import { APPS, PLATFORMS, VERSION } from '../shared/catalog';
                                 </th>
                                 @for (p of platforms; track p) {
                                     <td [attr.data-label]="d.columns[p]">
-                                        @if (app.urls[p]; as url) {
+                                        @if (link(app, p, i18n.lang()); as url) {
                                             <a [href]="url" rel="noopener">{{ d.links[p] }}</a>
                                         } @else {
                                             <span class="na">{{ d.notAvailable }}</span>
@@ -73,4 +73,5 @@ export class DownloadsComponent {
     readonly apps = APPS;
     readonly platforms = PLATFORMS;
     readonly version = VERSION;
+    readonly link = storeUrl;
 }
