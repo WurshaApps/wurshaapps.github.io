@@ -10,6 +10,7 @@
         "features": "Fitur",
         "library": "Pustaka",
         "downloads": "Unduh",
+        "blog": "Blog",
         "language": "Bahasa"
     },
     "hero": {
@@ -290,5 +291,14 @@
                 "items": []
             }
         ]
+    },
+    "blog": {
+        "metaTitle": "Blog — Wursha",
+        "metaDescription": "Pengumuman setiap rilis aplikasi Mushaf Quran Holder dan Khair Zad: apa yang baru, apa yang lebih baik, dan apa yang diperbaiki di tiap versi.",
+        "title": "Blog",
+        "subtitle": "Pengumuman untuk setiap rilis baru aplikasi: apa yang baru, apa yang lebih baik, dan apa yang diperbaiki.",
+        "readMore": "Baca selengkapnya",
+        "all": "Semua tulisan",
+        "langNote": "Tulisan ini dalam bahasa Inggris."
     }
 }

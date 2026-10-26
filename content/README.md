@@ -9,7 +9,9 @@ build time and prerenders one page per language at `/<lang>/` — to change copy
 | ----------------------------- | ------------------------------------------------------------------- | ---------------------------------- |
 | `apps.json`                   | The six editions in display order: accent colour, release prefix, store/download URLs, version | New release; URL change |
 | `<lang>.json` (14 files)      | All copy for one language; `en.json` is the master                  | Any copy change                    |
+| `blog.json`                   | Blog posts (release announcements), newest first, in en and ar      | Every app release                  |
 | `schemas/apps.schema.json`    | JSON Schema for `apps.json`                                         | Adding an app field                |
+| `schemas/blog.schema.json`    | JSON Schema for `blog.json`                                         | Changing the post shape            |
 | `schemas/content.schema.json` | JSON Schema for every `<lang>.json`                                 | Adding/removing a field            |
 | `CONTRACT.md`                 | Every section and field, and what it controls                       | When the shape changes             |
 
@@ -37,3 +39,9 @@ screenshots (see the script header). LTR pages use the English set, RTL pages th
 
 `npm run update-links` fetches the newest Mac/Windows downloads from `WurshaApps/QuranHolder_Releases`
 into `apps.json` (editions without a `release` prefix are skipped).
+
+Announce each release on the blog: add a post at the top of `blog.json` with a new `slug` (`v35-1-2`, no
+dots), the `version`, the release `date` and `en` + `ar` text. The Arabic follows the app repo's
+`CHANGELOG.md`, the English its store What's New (`store/listings/en-US/listing.json`). A post may add
+other languages under `text`; languages without one show the English text and `blog.langNote`.
+`npm run check-content` checks the order, slugs and that no text is empty.

@@ -48,5 +48,30 @@ for (const file of readdirSync(dir).filter((f) => /^[a-z]{2}\.json$/.test(f))) {
         console.error(`${file}\n  ${errors.join('\n  ')}`);
     }
 }
+// blog.json: unique slugs, newest first, English and Arabic text for every post, no empty text.
+const LANGS = readdirSync(dir).filter((f) => /^[a-z]{2}\.json$/.test(f)).map((f) => f.slice(0, 2));
+const blog = JSON.parse(readFileSync(join(dir, 'blog.json'), 'utf8'));
+const errors = [];
+const slugs = new Set();
+blog.posts.forEach((post, i) => {
+    const at = `posts.${i} (${post.slug})`;
+    if (!/^[a-z0-9-]+$/.test(post.slug ?? '')) errors.push(`${at}: slug must be lowercase letters, digits and dashes`);
+    if (slugs.has(post.slug)) errors.push(`${at}: slug used twice`);
+    slugs.add(post.slug);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(post.date ?? '')) errors.push(`${at}: date must be YYYY-MM-DD`);
+    if (i > 0 && post.date > blog.posts[i - 1].date) errors.push(`${at}: newer than the post above it (newest first)`);
+    for (const lang of ['en', 'ar']) if (!post.text?.[lang]) errors.push(`${at}: no ${lang} text`);
+    for (const [lang, text] of Object.entries(post.text ?? {})) {
+        if (!LANGS.includes(lang)) errors.push(`${at}.text.${lang}: not a site language`);
+        const empty = [text.title, text.summary, ...(text.sections ?? []).flatMap((s) => [s.title, s.intro ?? 'x', ...s.items])]
+            .some((s) => typeof s !== 'string' || !s.trim());
+        if (empty || !text.sections?.length) errors.push(`${at}.text.${lang}: missing or empty text`);
+    }
+});
+if (errors.length) {
+    failed = true;
+    console.error(`blog.json\n  ${errors.join('\n  ')}`);
+}
+
 if (failed) process.exit(1);
-console.log('content: all locales match en.json');
+console.log('content: all locales match en.json, blog.json is complete');

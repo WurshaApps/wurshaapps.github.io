@@ -12,7 +12,7 @@ export type Platform = 'ios' | 'android' | 'mac' | 'windows';
 export interface Dict {
     meta: { title: string; description: string };
     brand: string;
-    nav: { editions: string; features: string; library: string; downloads: string; language: string };
+    nav: { editions: string; features: string; library: string; downloads: string; blog: string; language: string };
     hero: {
         title: string;
         subtitle: string;
@@ -72,6 +72,18 @@ export interface Dict {
         updated: string;
         intro: string;
         sections: { title: string; paragraphs: string[]; items: string[] }[];
+    };
+    /** The blog, `/<lang>/blog/` and `/<lang>/blog/<slug>/`. The posts themselves are in `content/blog.json`. */
+    blog: {
+        metaTitle: string;
+        metaDescription: string;
+        title: string;
+        subtitle: string;
+        readMore: string;
+        /** Link from a post back to the list. */
+        all: string;
+        /** Shown on a post that has no text in this language, above the English text. */
+        langNote: string;
     };
 }
 

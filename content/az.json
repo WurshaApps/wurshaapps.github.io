@@ -10,6 +10,7 @@
         "features": "Xüsusiyyətlər",
         "library": "Kitabxana",
         "downloads": "Yüklə",
+        "blog": "Bloq",
         "language": "Dil"
     },
     "hero": {
@@ -290,5 +291,14 @@
                 "items": []
             }
         ]
+    },
+    "blog": {
+        "metaTitle": "Bloq — Wursha",
+        "metaDescription": "Quran Hafizi və Khair Zad Mushaf tətbiqlərinin buraxılış elanları: hər versiyada nə yenidir, nə yaxşılaşıb və nə düzəldilib.",
+        "title": "Bloq",
+        "subtitle": "Tətbiqin hər yeni buraxılışı üçün elan: nə yenidir, nə yaxşılaşıb və nə düzəldilib.",
+        "readMore": "Ətraflı",
+        "all": "Bütün yazılar",
+        "langNote": "Bu yazı ingilis dilindədir."
     }
 }

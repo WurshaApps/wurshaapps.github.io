@@ -10,6 +10,7 @@
         "features": "Özellikler",
         "library": "Kütüphane",
         "downloads": "İndir",
+        "blog": "Blog",
         "language": "Dil"
     },
     "hero": {
@@ -290,5 +291,14 @@
                 "items": []
             }
         ]
+    },
+    "blog": {
+        "metaTitle": "Blog — Wursha",
+        "metaDescription": "Kur'an Hafızı ve Khair Zad Mushaf uygulamalarının sürüm duyuruları: her sürümde neler yeni, neler iyileşti ve neler düzeltildi.",
+        "title": "Blog",
+        "subtitle": "Uygulamanın her yeni sürümü için bir duyuru: neler yeni, neler iyileşti ve neler düzeltildi.",
+        "readMore": "Devamını oku",
+        "all": "Tüm yazılar",
+        "langNote": "Bu yazı İngilizcedir."
     }
 }

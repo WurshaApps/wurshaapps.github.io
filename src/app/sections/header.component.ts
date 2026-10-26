@@ -20,6 +20,9 @@ import { LangPickerComponent } from '../i18n/lang-picker.component';
                     <a [routerLink]="home" fragment="features">{{ t.nav.features }}</a>
                     <a [routerLink]="home" fragment="library">{{ t.nav.library }}</a>
                     <a [routerLink]="home" fragment="downloads">{{ t.nav.downloads }}</a>
+                    <a [routerLink]="['/', i18n.lang(), 'blog']" [attr.aria-current]="i18n.page() === 'blog' ? 'page' : i18n.page().startsWith('blog/') ? 'true' : null">
+                        {{ t.nav.blog }}
+                    </a>
                 </nav>
                 <app-lang-picker />
             </div>
@@ -32,8 +35,12 @@ import { LangPickerComponent } from '../i18n/lang-picker.component';
         .logo { display: flex; align-items: center; gap: 10px; font-size: 19px; font-weight: 700; text-decoration: none; }
         .logo img { width: 30px; height: 30px; border-radius: 8px; }
         nav { display: flex; gap: 22px; margin-inline-start: auto; font-size: 15px; }
-        nav a { text-decoration: none; opacity: 0.85; }
-        nav a:hover { opacity: 1; }
+        nav a { text-decoration: none; opacity: 0.85; white-space: nowrap; }
+        nav a:hover, nav a[aria-current] { opacity: 1; }
+        @media (max-width: 960px) {
+            .bar { gap: 16px; }
+            nav { gap: 14px; font-size: 14px; }
+        }
         @media (max-width: 760px) {
             nav { display: none; }
             app-lang-picker { margin-inline-start: auto; }

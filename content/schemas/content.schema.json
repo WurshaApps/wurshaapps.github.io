@@ -18,7 +18,8 @@
         "account",
         "downloads",
         "footer",
-        "privacy"
+        "privacy",
+        "blog"
     ],
     "properties": {
         "$schema": {
@@ -57,6 +58,7 @@
                 "features",
                 "library",
                 "downloads",
+                "blog",
                 "language"
             ],
             "properties": {
@@ -72,44 +74,14 @@
                     "type": "string",
                     "minLength": 1
                 },
-                "account": {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-                "title",
-                "subtitle",
-                "items",
-                "delete"
-            ],
-            "properties": {
-                "title": {
+                "downloads": {
                     "type": "string",
                     "minLength": 1
                 },
-                "subtitle": {
-                    "type": "string",
-                    "minLength": 1
-                },
-                "items": {
-                    "type": "array",
-                    "minItems": 4,
-                    "maxItems": 4,
-                    "items": {
-                        "type": "string",
-                        "minLength": 1
-                    }
-                },
-                "delete": {
+                "blog": {
                     "type": "string",
                     "minLength": 1,
-                    "description": "Link text to /delete-account"
-                }
-            },
-            "description": "Optional account section on the home page: sign-in providers, what syncs, what data the app receives and why, deletion. The privacy link reuses footer.privacy."
-        },
-        "downloads": {
-                    "type": "string",
-                    "minLength": 1
+                    "description": "Header link to /<lang>/blog/ (also in the footer)."
                 },
                 "language": {
                     "type": "string",
@@ -490,6 +462,41 @@
             },
             "description": "Language section; the 14 names come from src/app/i18n/locales.ts."
         },
+        "account": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "title",
+                "subtitle",
+                "items",
+                "delete"
+            ],
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "subtitle": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "items": {
+                    "type": "array",
+                    "minItems": 4,
+                    "maxItems": 4,
+                    "items": {
+                        "type": "string",
+                        "minLength": 1
+                    }
+                },
+                "delete": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Link text to /delete-account"
+                }
+            },
+            "description": "Optional account section on the home page: sign-in providers, what syncs, what data the app receives and why, deletion. The privacy link reuses footer.privacy."
+        },
         "downloads": {
             "type": "object",
             "additionalProperties": false,
@@ -728,6 +735,53 @@
                     }
                 }
             }
+        },
+        "blog": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "metaTitle",
+                "metaDescription",
+                "title",
+                "subtitle",
+                "readMore",
+                "all",
+                "langNote"
+            ],
+            "properties": {
+                "metaTitle": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "metaDescription": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "title": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "subtitle": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "readMore": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Link from a post in the list to the post"
+                },
+                "all": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Link from a post back to the list"
+                },
+                "langNote": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Shown on a post that has no text in this language, above the English text"
+                }
+            },
+            "description": "The blog, /<lang>/blog/ and /<lang>/blog/<slug>/: page head, list heading and link labels. Posts are in content/blog.json."
         }
     }
 }

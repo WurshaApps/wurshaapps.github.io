@@ -10,6 +10,7 @@
         "features": "Fonctionnalités",
         "library": "Bibliothèque",
         "downloads": "Télécharger",
+        "blog": "Blog",
         "language": "Langue"
     },
     "hero": {
@@ -290,5 +291,14 @@
                 "items": []
             }
         ]
+    },
+    "blog": {
+        "metaTitle": "Blog — Wursha",
+        "metaDescription": "Les annonces de chaque version des applications du Mushaf Quran Holder et Khair Zad : nouveautés, améliorations et corrections.",
+        "title": "Blog",
+        "subtitle": "Une annonce pour chaque nouvelle version de l'application : nouveautés, améliorations et corrections.",
+        "readMore": "Lire la suite",
+        "all": "Tous les articles",
+        "langNote": "Cet article est en anglais."
     }
 }

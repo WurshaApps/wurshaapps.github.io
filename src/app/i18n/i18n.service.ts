@@ -8,9 +8,15 @@ const STORAGE_KEY = 'wursha-lang';
 const FALLBACK: Lang = 'ar';
 export const SITE_URL = 'https://wursha.com';
 
-/** The site's pages; each exists once per language at `/<lang>/<path>`. */
-export type Page = 'home' | 'privacy';
-const PAGE_PATH: Record<Page, string> = { home: '', privacy: 'privacy/' };
+/** The site's pages; each exists once per language at `/<lang>/<page>/`. A blog post is `blog/<slug>`. */
+export type Page = 'home' | 'privacy' | 'blog' | `blog/${string}`;
+const pagePath = (page: Page) => (page === 'home' ? '' : `${page}/`);
+
+/** `<title>` and meta description of a page. */
+export interface HeadText {
+    title: string;
+    description: string;
+}
 
 /** Each language is its own prerendered page at `/<lang>/`; the route decides the language. */
 @Injectable({ providedIn: 'root' })
@@ -27,7 +33,7 @@ export class I18nService {
     readonly lang = this._lang.asReadonly();
     readonly page = this._page.asReadonly();
     /** Router link to this page in `lang`. */
-    readonly pageLink = (lang: Lang): string[] => (this._page() === 'privacy' ? ['/', lang, 'privacy'] : ['/', lang]);
+    readonly pageLink = (lang: Lang): string[] => (this._page() === 'home' ? ['/', lang] : ['/', lang, ...this._page().split('/')]);
     readonly dir = computed<Direction>(() => (RTL_LANGS.has(this._lang()) ? 'rtl' : 'ltr'));
     readonly locales = LOCALES;
     readonly currentLocale = computed(() => getLocale(this._lang()));
@@ -37,8 +43,11 @@ export class I18nService {
         return dict;
     });
 
-    /** Loads `lang`, then swaps text, direction and the document head together. Called by the route resolvers. */
-    async use(lang: Lang, page: Page = 'home'): Promise<Dict> {
+    /**
+     * Loads `lang`, then swaps text, direction and the document head together. Called by the route resolvers;
+     * `head` gives the title and description of a page whose text is not in the dictionary (a blog post).
+     */
+    async use(lang: Lang, page: Page = 'home', head?: (dict: Dict) => HeadText): Promise<Dict> {
         let dict = this.cache.get(lang);
         if (!dict) {
             dict = await loadDict(lang);
@@ -47,7 +56,7 @@ export class I18nService {
         this._dict.set(dict);
         this._lang.set(lang);
         this._page.set(page);
-        this.applyHead(lang, dict, page);
+        this.applyHead(lang, page, head?.(dict) ?? this.headText(dict, page));
         return dict;
     }
 
@@ -76,13 +85,17 @@ export class I18nService {
         return detectLangFromUserAgent() ?? FALLBACK;
     }
 
-    private applyHead(lang: Lang, dict: Dict, page: Page) {
+    private headText(dict: Dict, page: Page): HeadText {
+        if (page === 'privacy') return { title: dict.privacy.metaTitle, description: dict.privacy.metaDescription };
+        if (page === 'blog') return { title: dict.blog.metaTitle, description: dict.blog.metaDescription };
+        return dict.meta;
+    }
+
+    private applyHead(lang: Lang, page: Page, { title, description }: HeadText) {
         const html = this.document.documentElement;
         html.lang = lang;
         html.dir = RTL_LANGS.has(lang) ? 'rtl' : 'ltr';
-        const title = page === 'privacy' ? dict.privacy.metaTitle : dict.meta.title;
-        const description = page === 'privacy' ? dict.privacy.metaDescription : dict.meta.description;
-        const path = PAGE_PATH[page];
+        const path = pagePath(page);
         this.title.setTitle(title);
         this.meta.updateTag({ name: 'description', content: description });
         this.meta.updateTag({ property: 'og:title', content: title });
@@ -99,6 +112,8 @@ export class I18nService {
         };
         link({ rel: 'canonical', href: `${SITE_URL}/${lang}/${path}` });
         for (const l of LOCALES) link({ rel: 'alternate', hreflang: l.code, href: `${SITE_URL}/${l.code}/${path}` });
-        link({ rel: 'alternate', hreflang: 'x-default', href: `${SITE_URL}/${path}` });
+        // `/` and `/privacy` pick the visitor's language; the blog has no such page, so its default is Arabic like `/`.
+        const xDefault = page === 'home' || page === 'privacy' ? path : `ar/${path}`;
+        link({ rel: 'alternate', hreflang: 'x-default', href: `${SITE_URL}/${xDefault}` });
     }
 }

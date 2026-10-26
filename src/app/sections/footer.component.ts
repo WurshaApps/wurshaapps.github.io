@@ -28,7 +28,8 @@ import { I18nService } from '../i18n/i18n.service';
                     </ul>
                     <p class="rights">
                         {{ t.rights }} ·
-                        <a [routerLink]="['/', i18n.lang(), 'privacy']">{{ t.privacy }}</a>
+                        <a [routerLink]="['/', i18n.lang(), 'privacy']">{{ t.privacy }}</a> ·
+                        <a [routerLink]="['/', i18n.lang(), 'blog']">{{ i18n.t().nav.blog }}</a>
                     </p>
                 </div>
             </div>

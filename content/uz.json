@@ -10,6 +10,7 @@
         "features": "Imkoniyatlar",
         "library": "Kutubxona",
         "downloads": "Yuklab olish",
+        "blog": "Blog",
         "language": "Til"
     },
     "hero": {
@@ -290,5 +291,14 @@
                 "items": []
             }
         ]
+    },
+    "blog": {
+        "metaTitle": "Blog — Wursha",
+        "metaDescription": "Quran Holder va Khair Zad Mushaf ilovalarining har bir versiyasi haqida e'lonlar: nima yangi, nima yaxshilandi va nima tuzatildi.",
+        "title": "Blog",
+        "subtitle": "Ilovaning har bir yangi versiyasi haqida e'lon: nima yangi, nima yaxshilandi va nima tuzatildi.",
+        "readMore": "Batafsil",
+        "all": "Barcha yozuvlar",
+        "langNote": "Bu yozuv ingliz tilida."
     }
 }

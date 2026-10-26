@@ -1,0 +1,398 @@
+{
+    "$schema": "./schemas/blog.schema.json",
+    "posts": [
+        {
+            "slug": "v35-1-2",
+            "version": "35.1.2",
+            "date": "2026-10-25",
+            "text": {
+                "en": {
+                    "title": "Edge taps and swipes you choose to turn on",
+                    "summary": "Hiding the bars by tapping the page edges and swiping from the middle of the page are now settings you turn on, plus fixes for the clock bar on iOS and the system bars on Android.",
+                    "sections": [
+                        {
+                            "title": "Improvements",
+                            "items": [
+                                "“Hide the bars on tap” is now two separate settings: hide the bottom bar by tapping the right edge, and hide the top bar by tapping the left edge. Both are off by default",
+                                "“Swipe from the middle of the page to open search and the index” and “The page fills the screen” are now off by default for everyone; turn them on in Settings",
+                                "If you had hidden the page's top bar by tapping the left edge, it shows again, since that tap is now a setting you turn on",
+                                "Turning on “Show the book window button” now opens the window right away, and the notice when you close it points to the book button in the bottom bar",
+                                "The About page shows the full version number (for example 35.1.2), and it is added to feedback messages"
+                            ]
+                        },
+                        {
+                            "title": "Fixes",
+                            "items": [
+                                "iOS: fixed the “Show the clock bar” setting, which had no effect",
+                                "Android: the status and navigation bars take the page color and follow the app's night mode instead of the phone's",
+                                "Android: in landscape on phones with a camera cutout, the area beside the camera takes the page color instead of showing an empty bar"
+                            ]
+                        }
+                    ]
+                },
+                "ar": {
+                    "title": "النقر على الحواف والسحب خيارات تفعّلها بنفسك",
+                    "summary": "إخفاء الأشرطة بالنقر على حواف الصفحة والسحب من وسطها أصبحا خيارين تفعّلهما من الإعدادات، مع إصلاح شريط الساعة على iOS وأشرطة النظام على Android.",
+                    "sections": [
+                        {
+                            "title": "تحسينات",
+                            "items": [
+                                "فصل خيار «إخفاء الأشرطة عند النقر» إلى خيارين مستقلين: «إخفاء الشريط السفلي عند النقر على الحافة اليمنى» و«إخفاء الشريط العلوي عند النقر على الحافة اليسرى»، وكلاهما معطّل افتراضيًا",
+                                "«السحب من وسط الصفحة لفتح البحث والفهرس» و«الصفحة تملأ الشاشة» أصبحا معطّلين افتراضيًا لجميع المستخدمين، ويمكن تفعيلهما من الإعدادات",
+                                "إعادة إظهار الشريط العلوي للصفحة لمن أخفاه بالنقر على الحافة اليسرى، إذ أصبح هذا النقر خيارًا يُفعَّل من الإعدادات",
+                                "تفعيل «إظهار زر نافذة الكتاب» يفتح النافذة مباشرة، وتنبيه إغلاقها يشير إلى زر الكتاب في الشريط السفلي لإعادة فتحها",
+                                "صفحة «عن التطبيق» تعرض رقم الإصدار كاملًا (مثل 35.1.2)، ويُضاف إلى رسالة الملاحظات"
+                            ]
+                        },
+                        {
+                            "title": "إصلاحات",
+                            "items": [
+                                "iOS: إصلاح خيار «إظهار شريط الساعة» الذي لم يكن يعمل",
+                                "Android: شريط الحالة وشريط التنقل بلون الصفحة، ويتبعان الوضع الليلي للتطبيق بدل وضع الهاتف",
+                                "Android: في الوضع الأفقي على الهواتف ذات فتحة الكاميرا، المساحة بجانب الكاميرا بلون الصفحة بدل شريط فارغ"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "slug": "v35-1-0",
+            "version": "35.1.0",
+            "date": "2026-10-20",
+            "text": {
+                "en": {
+                    "title": "A clearer first start after updating",
+                    "summary": "A progress screen while the app sets up its data after an install or update, and the app now repairs that data on its own if the setup was interrupted.",
+                    "sections": [
+                        {
+                            "title": "Fixes",
+                            "items": [
+                                "The Tartil page follows the app's language in every language, and capital letters are correct in Turkish and Azerbaijani (İ instead of I)",
+                                "Fixed verse details showing without text, books or reciter, and the recitation panel without a surah or verse, when copying the databases on the first start after an update was interrupted (for example by closing the app during the copy, or by full storage). The app now finds the damaged database and copies it again on its own",
+                                "Android: removed the black or white bar at the top of the screen, under the status bar"
+                            ]
+                        },
+                        {
+                            "title": "Improvements",
+                            "items": [
+                                "A “Please wait” screen with a progress bar while the databases are set up on the first start after an install or update, asking you to keep the app open",
+                                "If the setup fails, the screen shows which databases failed and how much free space they need, with a button to try again"
+                            ]
+                        }
+                    ]
+                },
+                "ar": {
+                    "title": "بداية أوضح بعد التحديث",
+                    "summary": "شاشة تعرض التقدّم أثناء تجهيز البيانات بعد التثبيت أو التحديث، ويصلح التطبيق بياناته بنفسه إن انقطع التجهيز.",
+                    "sections": [
+                        {
+                            "title": "إصلاحات",
+                            "items": [
+                                "صفحة الترتيل تظهر بلغة التطبيق في جميع اللغات، وتصحيح الأحرف الكبيرة في التركية والأذرية (İ بدل I)",
+                                "إصلاح ظهور تفاصيل الآية دون نص أو كتب أو قارئ، ولوحة التلاوة دون سورة أو آية، عندما ينقطع نسخ قواعد البيانات عند أول تشغيل بعد التحديث (كإغلاق التطبيق أثناء النسخ أو امتلاء الذاكرة): يكتشف التطبيق الآن القاعدة التالفة ويعيد نسخها تلقائيًا",
+                                "Android: إزالة الشريط الأسود أو الأبيض الظاهر أعلى الشاشة تحت شريط الحالة"
+                            ]
+                        },
+                        {
+                            "title": "تحسينات",
+                            "items": [
+                                "شاشة «يرجى الانتظار» مع شريط تقدّم أثناء تجهيز قواعد البيانات عند أول تشغيل بعد التثبيت أو التحديث، مع طلب إبقاء التطبيق مفتوحًا",
+                                "إن تعذّر التجهيز تعرض الشاشة القواعد التي فشلت والمساحة الحرة التي تحتاجها، مع زر لإعادة المحاولة"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "slug": "v35-0-3",
+            "version": "35.0.3",
+            "date": "2026-10-16",
+            "text": {
+                "en": {
+                    "title": "Screen orientation fixes, and more of the app in your language",
+                    "summary": "The portrait/landscape lock works again on iPhone and iPad, and verse details, back buttons and the adhkar now follow the app's language.",
+                    "sections": [
+                        {
+                            "title": "Fixes",
+                            "items": [
+                                "Fixed the portrait/landscape lock on iPhone and iPad: choosing landscape in Settings did not turn the screen",
+                                "Desktop: the view always follows the window's shape (the orientation lock is hidden), and landscape shows two pages side by side",
+                                "iOS: a clearer reason for photo library access (only to save verse images when you share a verse as an image)",
+                                "Languages other than Arabic: the verse details title and its fixed sections (verse text, recitation, notes, English translation), the “nothing for this verse” text, the Add / Edit / Delete button on the khatmas page and the back buttons now follow the app's language",
+                                "Languages other than Arabic: fixed the dhikr screen showing empty, because the adhkar slides were pushed off the screen in left-to-right layouts"
+                            ]
+                        }
+                    ]
+                },
+                "ar": {
+                    "title": "إصلاح اتجاه الشاشة، والمزيد من التطبيق بلغتك",
+                    "summary": "عاد تثبيت الاتجاه الطولي والعرضي يعمل على iPhone وiPad، وأصبحت تفاصيل الآية وأزرار الرجوع والأذكار بلغة التطبيق.",
+                    "sections": [
+                        {
+                            "title": "إصلاحات",
+                            "items": [
+                                "إصلاح تثبيت اتجاه الشاشة (طولي/عرضي) على iPhone وiPad، إذ كان اختيار الوضع العرضي من الإعدادات لا يدير الشاشة",
+                                "سطح المكتب: يتبع العرض شكل النافذة دائمًا (أُخفي خيار تثبيت الاتجاه)، والوضع الأفقي يعرض صفحتين جنبًا إلى جنب",
+                                "iOS: توضيح سبب طلب الوصول إلى مكتبة الصور (حفظ صور الآيات عند المشاركة كصورة فقط)",
+                                "اللغات غير العربية: عنوان شاشة تفاصيل الآية وأقسامها الثابتة (نص الآية، التلاوة، الملاحظات، الترجمة الإنجليزية) وعبارة «لا يوجد لهذه الآية» وزر «إضافة / تعديل / حذف» في صفحة الختمات وأزرار الرجوع تظهر الآن بلغة التطبيق",
+                                "اللغات غير العربية: إصلاح شاشة الذكر التي كانت تظهر فارغة لأن شرائح الأذكار كانت تُزاح خارج الشاشة في الواجهات من اليسار إلى اليمين"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "slug": "v35",
+            "version": "35",
+            "date": "2026-10-14",
+            "text": {
+                "en": {
+                    "title": "Tartil, your own adhkar list, and book sections",
+                    "summary": "Tartil brings whole-surah recitations with playlists and downloads, you can build your own list of adhkar, and the verse screen sorts its books into sections.",
+                    "sections": [
+                        {
+                            "title": "New: Tartil, a library of recitations",
+                            "intro": "A new section in the side menu for listening to whole surahs:",
+                            "items": [
+                                "Choose a reciter and a Mushaf type, with search, filters and a list of favorite Mushafs",
+                                "Browse and search the surahs, with a list of favorite surahs",
+                                "Playlists: create, rename, delete and reorder",
+                                "Download surahs to listen offline, one at a time or all at once",
+                                "A mini player you can shrink and drag anywhere on the screen"
+                            ]
+                        },
+                        {
+                            "title": "New: your own adhkar list",
+                            "items": [
+                                "Make your own list of adhkar with a repeat count for each, then edit it or remove from it; it is saved with your settings",
+                                "A visual tasbih shows the current count inside the active bead",
+                                "Swipe up to count up and down to count down",
+                                "A setting to move on to the next dhikr when the count is reached",
+                                "A setting to make a long press count quickly or reset the counter"
+                            ]
+                        },
+                        {
+                            "title": "New: book sections on the verse screen",
+                            "intro": "Tabs for the sections of books and tafsir, with the number of books in each, and a “More books in other sections” card to reach them quickly.",
+                            "items": []
+                        },
+                        {
+                            "title": "New: remove notes",
+                            "intro": "Remove one note, or all the notes of a khatma at once after a confirmation.",
+                            "items": []
+                        },
+                        {
+                            "title": "Improvements",
+                            "items": [
+                                "Verse share image: the text includes the waqf marks in a new font, with a frame around the surah name and verse number",
+                                "Better drawing of the topic coloring of verses",
+                                "Faster search",
+                                "In two-page full-height mode, swiping up and down moves the page instead of opening search or the surah index, and both pages go back to the top when you turn the page",
+                                "The top bar shows and hides smoothly, with a notice explaining how to show it again",
+                                "A “Don't show again” option in notices",
+                                "Tapping the page number opens quick navigation in portrait, in every page-turn style",
+                                "Some defaults changed: the page fills the screen, and the book window button is hidden",
+                                "Corrected texts of the morning and evening adhkar",
+                                "Corrections in the qira'at and farsh data (including Warsh, Al-Bazzi, Al-Kisa'i, Khalaf, Ad-Duri, As-Susi and Al-Asbahani), the Tayyibah evidence lines, word meanings and grammar, At-Tafsir Al-Wasit, and the positions of the waqf marks in the Madina Mushaf"
+                            ]
+                        },
+                        {
+                            "title": "Fixes",
+                            "items": [
+                                "The current page is kept when you rotate the screen (it sometimes moved to another page)",
+                                "Fixed small text in two-page mode",
+                                "Fixed opening the adhkar pages"
+                            ]
+                        }
+                    ]
+                },
+                "ar": {
+                    "title": "الترتيل، وقائمة أذكارك، وأقسام الكتب",
+                    "summary": "الترتيل يجمع تلاوات السور كاملة مع قوائم تشغيل وتنزيل، ويمكنك إنشاء قائمة أذكارك الخاصة، وتُرتَّب الكتب في شاشة الآية في أقسام.",
+                    "sections": [
+                        {
+                            "title": "جديد: ترتيل، مكتبة التلاوات",
+                            "intro": "قسم جديد في القائمة الجانبية للاستماع إلى السور كاملةً:",
+                            "items": [
+                                "اختيار القارئ ونوع المصحف مع البحث والتصفية وقائمة المصاحف المفضلة",
+                                "تصفّح السور والبحث فيها مع قائمة السور المفضلة",
+                                "قوائم تشغيل: إنشاء، وإعادة تسمية، وحذف، وإعادة ترتيب",
+                                "تنزيل السور للاستماع دون اتصال، فرديًا أو تنزيل الكل",
+                                "مشغّل مصغّر يمكن تصغيره وسحبه إلى أي مكان في الشاشة"
+                            ]
+                        },
+                        {
+                            "title": "جديد: أذكاري، قائمة أذكار مخصصة",
+                            "items": [
+                                "أنشئ قائمتك الخاصة من الأذكار مع عدد التكرار لكل ذكر، وعدّلها أو احذف منها، وتُحفظ مع الإعدادات",
+                                "سبحة مرئية تُظهر العدد الحالي داخل الخرزة النشطة",
+                                "التمرير لأعلى لزيادة العدّاد ولأسفل لإنقاصه",
+                                "خيار لتفعيل أو إيقاف الانتقال التلقائي للذكر التالي عند بلوغ العدد",
+                                "خيار لجعل الضغط المطوّل عدًّا سريعًا أو تصفيرًا للعدّاد"
+                            ]
+                        },
+                        {
+                            "title": "جديد: أقسام الكتب في شاشة الآية",
+                            "intro": "تبويبات لأقسام الكتب والتفاسير مع عدد الكتب في كل قسم، وبطاقة «المزيد من الكتب في الأقسام الأخرى» لتسهيل الوصول إليها.",
+                            "items": []
+                        },
+                        {
+                            "title": "جديد: إزالة الملاحظات",
+                            "intro": "إزالة ملاحظة واحدة، أو إزالة جميع ملاحظات الختمة دفعة واحدة مع رسالة تأكيد.",
+                            "items": []
+                        },
+                        {
+                            "title": "تحسينات",
+                            "items": [
+                                "صورة مشاركة الآية: نص يتضمن علامات الوقف بخط جديد، وإطار لاسم السورة ورقم الآية",
+                                "تحسين رسم التلوين الموضوعي للآيات",
+                                "تحسين سرعة البحث",
+                                "في وضع الصفحتين بالطول الكامل: السحب لأعلى ولأسفل يحرّك الصفحة بدل فتح البحث أو فهرس السور، وتعود الصفحتان لأعلى عند التقليب",
+                                "إظهار وإخفاء الشريط العلوي بحركة سلسة، مع تنبيه يوضّح كيفية إظهاره مرة أخرى",
+                                "خيار «لا تظهر مجددًا» في رسائل التنبيه",
+                                "الضغط على رقم الصفحة يفتح نافذة التنقل السريع في الوضع الرأسي بكل أنماط التقليب",
+                                "تعديل بعض الإعدادات الافتراضية: الصفحة تملأ الشاشة، وإخفاء زر نافذة الكتاب",
+                                "تصحيح نصوص أذكار الصباح والمساء",
+                                "تصحيحات في بيانات القراءات والفرش (ومنها ورش والبزي والكسائي وخلف والدوري والسوسي والأصبهاني)، وشواهد الطيبة، ومعاني الكلمات والإعراب، والتفسير الوسيط، ومواضع علامات الوقف في مصحف المدينة"
+                            ]
+                        },
+                        {
+                            "title": "إصلاحات",
+                            "items": [
+                                "الحفاظ على الصفحة الحالية عند تدوير الشاشة (كانت تنتقل أحيانًا إلى صفحة أخرى)",
+                                "إصلاح صغر الخط في وضع الصفحتين",
+                                "إصلاح فتح صفحات الأذكار"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "slug": "v34",
+            "version": "34",
+            "date": "2026-06-06",
+            "text": {
+                "en": {
+                    "title": "Adhkar, verse images, and notes on single words",
+                    "summary": "A Hisn al-Muslim reader with a dhikr counter and audio, verses you can share as images, and bookmarks and notes on single words.",
+                    "sections": [
+                        {
+                            "title": "New: adhkar",
+                            "intro": "A complete Hisn al-Muslim reader with an interactive dhikr counter:",
+                            "items": [
+                                "Browse 133 categories of adhkar",
+                                "Count by tapping, moving on when the count is reached",
+                                "Audio for single adhkar and for whole categories, with a mini player and streaming",
+                                "Settings of its own"
+                            ]
+                        },
+                        {
+                            "title": "New: share verses as images",
+                            "intro": "Share any verse, or a group of verses, as a formatted image, with design and layout improvements.",
+                            "items": []
+                        },
+                        {
+                            "title": "New: bookmarks and notes on words",
+                            "intro": "Add bookmarks and notes to single words, not only to verses. Marked words and verses are now highlighted on the page so you can find them.",
+                            "items": []
+                        },
+                        {
+                            "title": "New: coloring verses and words",
+                            "items": [
+                                "Color verses by topic",
+                                "Highlight a word when you tap it",
+                                "Choose the highlight color of the surah name"
+                            ]
+                        },
+                        {
+                            "title": "New: change the language",
+                            "intro": "Change the app's language from a menu inside the app. The word page is translated, and the German translation is corrected.",
+                            "items": []
+                        },
+                        {
+                            "title": "Improvements",
+                            "items": [
+                                "Smoother automatic vertical scrolling, which now also works in landscape",
+                                "Better “from verse to verse” range selection",
+                                "Search results filter as you type",
+                                "A “None” option in the list of differences from the Hafs riwaya",
+                                "General performance improvements"
+                            ]
+                        },
+                        {
+                            "title": "Fixes",
+                            "items": [
+                                "The automatic theme (following the system) now updates correctly when you return to the app",
+                                "Fixed the page sometimes freezing on a long press",
+                                "Fixed encoding of special characters in the search text",
+                                "Removed the recitation of Sheikh Muhammad Siddiq Al-Minshawi (Mujawwad)"
+                            ]
+                        }
+                    ]
+                },
+                "ar": {
+                    "title": "الأذكار، ومشاركة الآيات كصور، والملاحظات على الكلمات",
+                    "summary": "قارئ حصن المسلم مع عدّاد للأذكار وتشغيل صوتي، ومشاركة الآيات كصور، وإشارات وملاحظات على الكلمات المفردة.",
+                    "sections": [
+                        {
+                            "title": "جديد: قسم الأذكار",
+                            "intro": "قارئ حصن المسلم كامل مع عدّاد تفاعلي للأذكار:",
+                            "items": [
+                                "تصفّح 133 فئة من الأذكار",
+                                "العدّ باللمس مع الانتقال التلقائي عند بلوغ العدد المطلوب",
+                                "تشغيل صوتي للأذكار المفردة وللفئات كاملةً، مع مشغّل مصغّر وبثٍّ مباشر",
+                                "إعدادات خاصة بالأذكار"
+                            ]
+                        },
+                        {
+                            "title": "جديد: مشاركة الآيات كصور",
+                            "intro": "شارك أي آية (أو مجموعة آيات) على شكل صورة منسّقة، مع تحسينات في التصميم والتنسيق.",
+                            "items": []
+                        },
+                        {
+                            "title": "جديد: إشارات وملاحظات على مستوى الكلمة",
+                            "intro": "أضف إشارات مرجعية وملاحظات على الكلمات المفردة وليس الآيات فقط. وتُميَّز الآن الكلمات والآيات الموسومة على الصفحة لتسهيل العثور عليها.",
+                            "items": []
+                        },
+                        {
+                            "title": "جديد: تلوين الآيات والكلمات",
+                            "items": [
+                                "تلوين الآيات حسب الموضوع",
+                                "تظليل الكلمة عند الضغط عليها",
+                                "إمكانية اختيار لون تظليل اسم السورة"
+                            ]
+                        },
+                        {
+                            "title": "جديد: تبديل اللغة",
+                            "intro": "غيّر لغة التطبيق من قائمة داخل التطبيق، مع ترجمة صفحة الكلمة وتصحيح الترجمة الألمانية.",
+                            "items": []
+                        },
+                        {
+                            "title": "تحسينات",
+                            "items": [
+                                "تمرير رأسي تلقائي أكثر سلاسة، ويعمل الآن في الوضع الأفقي",
+                                "تحسين اختيار النطاق «من آية إلى آية»",
+                                "تصفية فورية لنتائج البحث أثناء الكتابة",
+                                "إضافة خيار «بدون» إلى قائمة الاختلاف عن رواية حفص",
+                                "تحسينات في الأداء بشكل عام"
+                            ]
+                        },
+                        {
+                            "title": "إصلاحات",
+                            "items": [
+                                "تحديث السمة التلقائية (سمة النظام) بشكل صحيح بعد استئناف التطبيق",
+                                "إصلاح تعليق الصفحة أحيانًا عند الضغط المطوّل",
+                                "إصلاح ترميز نص البحث للأحرف الخاصة",
+                                "حذف تلاوة الشيخ محمد صديق المنشاوي (المجوّد)"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
