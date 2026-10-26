@@ -223,7 +223,7 @@
         "metaTitle": "Gizlilik Politikası — Wursha",
         "metaDescription": "Kur'an Hafızı ve Khair Zad Mushaf uygulamaları verilerinizi nasıl işler: reklam yok, takip yok ve eşitleme için isteğe bağlı bir hesap.",
         "title": "Gizlilik Politikası",
-        "updated": "Son güncelleme: 18 Ekim 2026",
+        "updated": "Son güncelleme: 26 Ekim 2026",
         "intro": "Bu politika, Wursha Digital Apps'in iPhone, iPad, Android, Mac ve Windows için Kur'an Hafızı ve Khair Zad Mushaf uygulamalarını kapsar. Kısacası: uygulamalar hesap olmadan çalışır, reklam göstermez, analiz veya takip aracı içermez; verilerinizi satmayız ve paylaşmayız.",
         "sections": [
             {
@@ -258,7 +258,7 @@
                 "title": "Verilerinizin saklanması ve silinmesi",
                 "paragraphs": [
                     "Hesap verileri siz silene kadar saklanır. Sildiğiniz hatimler ve çalma listeleri, silindikten 90 gün sonra sunucularımızdan kaldırılır.",
-                    "Hesabınızı ve tüm verilerini istediğiniz zaman silebilirsiniz: uygulamada (Hesap, ardından Hesabı sil), https://wursha.com/delete-account adresinde ya da wursha.apps@gmail.com adresine e-posta göndererek (30 gün içinde yanıt veririz). Silme işlemi hemen gerçekleşir ve tüm Mushaf uygulamalarını kapsar; cihazınızdaki kopya kalır. Apple ile giriş yaptıysanız uygulamanın Apple Kimliğinize erişimi de iptal edilir."
+                    "Hesabınızı ve tüm verilerini istediğiniz zaman silebilirsiniz: uygulamada (Hesap, ardından Hesabı sil), https://wursha.com/delete-account adresinde ya da wursha.apps@gmail.com adresine e-posta göndererek (30 gün içinde yanıt veririz). Silme işlemi hemen gerçekleşir ve tüm Mushaf uygulamalarını kapsar; cihazınızdaki kopya kalır. Apple ile giriş yaptıysanız uygulamanın Apple Kimliğinize erişimi de iptal edilir. Yalnızca bir arızayı gidermek için kullanılan acil durum kurtarma kopyasında silinen veriler en fazla 7 gün kalır, ardından otomatik olarak silinir."
                 ],
                 "items": []
             },
