@@ -165,6 +165,17 @@
         "subtitle": "Antara muka aplikasi tersedia dalam 14 bahasa.",
         "note": "Nama surah, tajuk kitab tafsir dan teks zikir kekal dalam bahasa Arab dalam semua bahasa."
     },
+    "account": {
+        "title": "Segerakkan dengan akaun pilihan",
+        "subtitle": "Log masuk ke Wursha dengan Google atau Apple untuk menyandarkan khatam, zikir dan senarai main Tartil anda, dan sambung pada peranti anda yang lain. Log masuk adalah pilihan; semua ciri berfungsi tanpanya.",
+        "items": [
+            "Log masuk dengan Google pada iPhone, iPad dan Android, atau dengan Apple pada iPhone dan iPad.",
+            "Yang disegerakkan: khatam (kedudukan bacaan, penanda dan nota), kemajuan zikir dan zikir yang anda tambah, serta kegemaran, senarai main dan qari pilihan dalam Tartil. Setiap aplikasi Mushaf menyimpan datanya sendiri.",
+            "Google atau Apple berkongsi ID akaun, alamat e-mel dan nama anda dengan kami. Kami menggunakannya hanya untuk log masuk anda dan menyegerakkan data anda. Kami tidak menjual atau berkongsinya, dan aplikasi tiada iklan atau penjejakan.",
+            "Padam akaun anda dan semua datanya pada bila-bila masa: dalam aplikasi (Akaun, kemudian Padam akaun) atau di halaman pemadaman akaun kami."
+        ],
+        "delete": "Padam akaun anda"
+    },
     "downloads": {
         "title": "Muat turun",
         "subtitle": "Percuma di semua platform, tanpa iklan.",

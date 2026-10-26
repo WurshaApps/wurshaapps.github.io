@@ -165,6 +165,17 @@
         "subtitle": "Tətbiq interfeysi 14 dildədir.",
         "note": "Surə adları, təfsir kitablarının adları və zikr mətnləri bütün dillərdə ərəbcə qalır."
     },
+    "account": {
+        "title": "İstəyə bağlı hesabla sinxronlaşdırın",
+        "subtitle": "Xətmlərinizin, zikrlərinizin və Tartil pleylistlərinizin ehtiyat nüsxəsini saxlamaq və digər cihazlarınızda qaldığınız yerdən davam etmək üçün Google və ya Apple ilə Wursha-ya daxil olun. Daxil olmaq istəyə bağlıdır; bütün funksiyalar onsuz da işləyir.",
+        "items": [
+            "iPhone, iPad və Android-də Google ilə, iPhone və iPad-də isə Apple ilə daxil olun.",
+            "Sinxronlaşdırılanlar: xətmlər (oxuma yeri, əlfəcinlər və qeydlər), zikr irəliləyişi və əlavə etdiyiniz zikrlər, həmçinin Tartil-də seçilmişlər, pleylistlər və seçilmiş qari. Hər Mushaf tətbiqi öz məlumatlarını ayrı saxlayır.",
+            "Google və ya Apple hesab identifikatorunuzu, e-poçt ünvanınızı və adınızı bizimlə paylaşır. Onlardan yalnız sizi daxil etmək və məlumatlarınızı sinxronlaşdırmaq üçün istifadə edirik. Onları satmırıq və paylaşmırıq, tətbiqlərdə reklam və izləmə yoxdur.",
+            "Hesabınızı və bütün məlumatlarını istənilən vaxt silin: tətbiqdə (Hesab, sonra Hesabı sil) və ya hesab silmə səhifəmizdə."
+        ],
+        "delete": "Hesabınızı silin"
+    },
     "downloads": {
         "title": "Yüklə",
         "subtitle": "Bütün platformalarda pulsuz və reklamsızdır.",

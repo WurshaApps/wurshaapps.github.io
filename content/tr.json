@@ -165,6 +165,17 @@
         "subtitle": "Uygulama arayüzü 14 dilde sunulur.",
         "note": "Sure adları, tefsir kitaplarının adları ve zikir metinleri her dilde Arapça kalır."
     },
+    "account": {
+        "title": "İsteğe bağlı hesapla eşitleyin",
+        "subtitle": "Hatimlerinizi, zikirlerinizi ve Tartil çalma listelerinizi yedeklemek ve diğer cihazlarınızda kaldığınız yerden devam etmek için Wursha'ya Google veya Apple ile giriş yapın. Giriş yapmak isteğe bağlıdır; tüm özellikler onsuz da çalışır.",
+        "items": [
+            "iPhone, iPad ve Android'de Google ile, iPhone ve iPad'de Apple ile giriş yapın.",
+            "Eşitlenenler: hatimler (okuma konumu, yer imleri ve notlar), zikir ilerlemesi ve eklediğiniz zikirler, Tartil favorileri, çalma listeleri ve seçili kari. Her Mushaf uygulaması kendi verilerini ayrı tutar.",
+            "Google veya Apple hesap kimliğinizi, e-posta adresinizi ve adınızı bizimle paylaşır. Bunları yalnızca giriş yapmanız ve verilerinizi eşitlemek için kullanırız. Satmayız, paylaşmayız; uygulamalarda reklam ve izleme yoktur.",
+            "Hesabınızı ve tüm verilerini istediğiniz zaman silin: uygulamada (Hesap, ardından Hesabı sil) veya hesap silme sayfamızda."
+        ],
+        "delete": "Hesabınızı silin"
+    },
     "downloads": {
         "title": "İndir",
         "subtitle": "Tüm platformlarda ücretsiz ve reklamsız.",

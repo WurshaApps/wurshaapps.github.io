@@ -165,6 +165,17 @@
         "subtitle": "L'interface de l'application est disponible en 14 langues.",
         "note": "Les noms des sourates, les titres des livres de tafsir et les textes des adhkar restent en arabe dans toutes les langues."
     },
+    "account": {
+        "title": "Synchronisez avec un compte facultatif",
+        "subtitle": "Connectez-vous à Wursha avec Google ou Apple pour sauvegarder vos khatmas, vos adhkar et vos listes Tartil, et reprendre sur vos autres appareils. La connexion est facultative ; toutes les fonctions marchent sans elle.",
+        "items": [
+            "Connexion avec Google sur iPhone, iPad et Android, ou avec Apple sur iPhone et iPad.",
+            "Sont synchronisés : les khatmas (position de lecture, signets et notes), la progression des adhkar et les adhkar que vous avez ajoutés, ainsi que les favoris, les listes de lecture et le récitateur choisi dans Tartil. Chaque application de Mushaf garde ses propres données.",
+            "Google ou Apple nous transmet votre identifiant de compte, votre adresse e-mail et votre nom. Nous les utilisons uniquement pour vous connecter et synchroniser vos données. Nous ne les vendons pas et ne les partageons pas, et les applications n'ont ni publicité ni suivi.",
+            "Supprimez votre compte et toutes ses données à tout moment : dans l'application (Compte, puis Supprimer le compte) ou sur notre page de suppression de compte."
+        ],
+        "delete": "Supprimer votre compte"
+    },
     "downloads": {
         "title": "Télécharger",
         "subtitle": "Gratuit sur toutes les plateformes, sans publicité.",

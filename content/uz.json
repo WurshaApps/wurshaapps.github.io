@@ -165,6 +165,17 @@
         "subtitle": "Ilova interfeysi 14 tilda.",
         "note": "Sura nomlari, tafsir kitoblarining nomlari va zikr matnlari barcha tillarda arabcha qoladi."
     },
+    "account": {
+        "title": "Ixtiyoriy hisob bilan sinxronlang",
+        "subtitle": "Xatmlaringiz, zikrlaringiz va Tartil pleylistlaringizni zaxiralash hamda boshqa qurilmalaringizda to'xtagan joyingizdan davom etish uchun Wursha'ga Google yoki Apple orqali kiring. Kirish ixtiyoriy; barcha imkoniyatlar usiz ham ishlaydi.",
+        "items": [
+            "iPhone, iPad va Android'da Google orqali, iPhone va iPad'da esa Apple orqali kiring.",
+            "Sinxronlanadi: xatmlar (o'qish joyi, xatcho'plar va izohlar), zikrlar yutug'i va siz qo'shgan zikrlar, shuningdek Tartil'dagi sevimlilar, pleylistlar va tanlangan qori. Har bir Mushaf ilovasi o'z ma'lumotlarini alohida saqlaydi.",
+            "Google yoki Apple bizga hisob identifikatoringiz, elektron pochta manzilingiz va ismingizni beradi. Biz ulardan faqat sizni tizimga kiritish va ma'lumotlaringizni sinxronlash uchun foydalanamiz. Ularni sotmaymiz va hech kimga bermaymiz, ilovalarda reklama va kuzatuv yo'q.",
+            "Hisobingiz va uning barcha ma'lumotlarini istalgan vaqtda o'chiring: ilovada (Hisob, so'ng Hisobni o'chirish) yoki hisobni o'chirish sahifamizda."
+        ],
+        "delete": "Hisobingizni o'chiring"
+    },
     "downloads": {
         "title": "Yuklab olish",
         "subtitle": "Barcha platformalarda bepul, reklamasiz.",

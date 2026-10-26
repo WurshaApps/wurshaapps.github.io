@@ -13,6 +13,7 @@ same shape as `en.json` (checked by `npm run check-content`).
 | `story`     | `story`                                     | The seven feature scenes, same order as the App Store screenshots |
 | `library`   | `library`                                   | Four book lists                                                   |
 | `languages` | `library` (languages section)               | Heading and the "stays in Arabic" note; names from `locales.ts`   |
+| `account`   | `account`                                   | Optional account: sign-in, what syncs, data received, deletion link |
 | `downloads` | `downloads`                                 | Table headings, link labels, notes                                |
 | `footer`    | `footer`                                    | About line, credits, sources, rights, privacy link                |
 | `privacy`   | `privacy/privacy.component`, `I18nService`  | The privacy policy page `/<lang>/privacy/` and its `<title>`/description |
@@ -30,6 +31,7 @@ story:     { title, subtitle, screensNote,
              scenes: [{ id: meaning|tartil|memorize|night|tracks|athkar|share, title, subtitle, items: string[], note? }] }
 library:   { title, subtitle, more, groups: [{ title, items: string[] }] }   // 4 groups
 languages: { title, subtitle, note }
+account:   { title, subtitle, items: string[], delete }   // 4 items; the privacy link reuses footer.privacy
 downloads: { title, subtitle, version, columns: { edition, ios, android, mac, windows },
              links: { ios, android, mac, windows }, notAvailable, winNote, macNote }
 footer:    { about, creditsTitle, credits: [{ label, value }], sourcesTitle, sources: string[], rights, privacy }
@@ -55,6 +57,9 @@ Notes:
 
 Order of `apps` is the display order. `accent` is the edition's store colour (card panel). `release` is
 the tag prefix in `WurshaApps/QuranHolder_Releases` used by `scripts/update-links.mjs`.
+- `account`: Google's OAuth brand verification checks that the home page says why the apps ask for
+  Google data and links the privacy policy; this section does both. Keep it true to the app repo's
+  `specs/accounts.md` (providers per platform, what syncs) and to the `privacy` text.
 - `privacy`: plain text; `https://…` URLs and email addresses become links on the page. Sections and their
   `paragraphs`/`items` counts must match `en.json` (checked). Keep it true to what the apps do — the data
   list follows the app repo's `specs/accounts.md` §4/§8 — and change `updated` with every edit.

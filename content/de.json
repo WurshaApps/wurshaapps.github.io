@@ -165,6 +165,17 @@
         "subtitle": "Die App-Oberfläche gibt es in 14 Sprachen.",
         "note": "Surennamen, Titel der Tafsir-Werke und Adhkar-Texte bleiben in jeder Sprache auf Arabisch."
     },
+    "account": {
+        "title": "Synchronisieren mit einem optionalen Konto",
+        "subtitle": "Melden Sie sich bei Wursha mit Google oder Apple an, um Ihre Khatmas, Adhkar und Tartil-Playlists zu sichern und auf Ihren anderen Geräten weiterzumachen. Die Anmeldung ist freiwillig; alle Funktionen gehen auch ohne sie.",
+        "items": [
+            "Anmeldung mit Google auf iPhone, iPad und Android oder mit Apple auf iPhone und iPad.",
+            "Synchronisiert werden Khatmas (Leseposition, Lesezeichen und Notizen), der Adhkar-Fortschritt und die von Ihnen hinzugefügten Adhkar sowie Tartil-Favoriten, Playlists und der gewählte Rezitator. Jede Mushaf-App behält ihre eigenen Daten.",
+            "Google oder Apple gibt uns Ihre Konto-ID, E-Mail-Adresse und Ihren Namen weiter. Wir verwenden sie nur, um Sie anzumelden und Ihre Daten zu synchronisieren. Wir verkaufen sie nicht und geben sie nicht weiter, und die Apps enthalten weder Werbung noch Tracking.",
+            "Löschen Sie Ihr Konto mit allen Daten jederzeit: in der App (Konto, dann Konto löschen) oder auf unserer Seite zum Löschen des Kontos."
+        ],
+        "delete": "Konto löschen"
+    },
     "downloads": {
         "title": "Herunterladen",
         "subtitle": "Kostenlos auf allen Plattformen, ohne Werbung.",

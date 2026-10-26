@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { I18nService } from '../i18n/i18n.service';
+import { AccountComponent } from '../sections/account.component';
 import { DownloadsComponent } from '../sections/downloads.component';
 import { EditionsComponent } from '../sections/editions.component';
 import { FooterComponent } from '../sections/footer.component';
@@ -19,6 +20,7 @@ import { StoryComponent } from '../sections/story.component';
         EditionsComponent,
         StoryComponent,
         LibraryComponent,
+        AccountComponent,
         DownloadsComponent,
         FooterComponent,
     ],
@@ -30,6 +32,7 @@ import { StoryComponent } from '../sections/story.component';
             <app-editions />
             <app-story />
             <app-library />
+            <app-account />
             <app-downloads />
         </main>
         <app-footer />
