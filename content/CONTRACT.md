@@ -8,7 +8,7 @@ same shape as `en.json` (checked by `npm run check-content`).
 | `meta`      | `I18nService` (document head)               | `<title>`, meta description, Open Graph title/description         |
 | `brand`     | `header`                                    | Logo text: "Wursha"; Arabic-script pages may use «ورشة»          |
 | `nav`       | `header`, `lang-picker`                     | Section links and the language-picker label                       |
-| `hero`      | `hero`                                      | Headline, subtitle, two buttons, platforms line, spread alt text  |
+| `hero`      | `hero`                                      | Headline, subtitle, two buttons, platforms line, spread alt text, release announcement |
 | `editions`  | `editions`, `downloads`                     | Cards for the five editions; names reused in the download table    |
 | `story`     | `story`                                     | The seven feature scenes, same order as the App Store screenshots |
 | `library`   | `library`                                   | Four book lists                                                   |
@@ -25,7 +25,7 @@ same shape as `en.json` (checked by `npm run check-content`).
 meta:      { title, description }
 brand:     string
 nav:       { editions, features, library, downloads, blog, language }
-hero:      { title, subtitle, cta, ctaSecondary, platforms, imageAlt }
+hero:      { title, subtitle, cta, ctaSecondary, platforms, imageAlt, news: { label, text } }
 editions:  { title, subtitle, platformsAll, platformsMobile,
              list: { [id in madina|tajweed|warsh|qalon|shamarli]: { name, riwaya, series, line } } }
 story:     { title, subtitle, screensNote,

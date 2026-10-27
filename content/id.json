@@ -19,7 +19,11 @@
         "cta": "Unduh gratis",
         "ctaSecondary": "Pilih Mushaf Anda",
         "platforms": "Untuk iPhone, iPad, Android, Mac, dan Windows.",
-        "imageAlt": "Dua halaman Mushaf Madinah yang berhadapan di aplikasi"
+        "imageAlt": "Dua halaman Mushaf Madinah yang berhadapan di aplikasi",
+        "news": {
+            "label": "Baru",
+            "text": "Versi 36: sinkronkan khatam di antara perangkat Anda, dan tilawah tetap berjalan saat layar terkunci"
+        }
     },
     "editions": {
         "title": "Pilih Mushaf Anda",

@@ -19,7 +19,11 @@
         "cta": "Pulsuz yükləyin",
         "ctaSecondary": "Mushafınızı seçin",
         "platforms": "iPhone, iPad, Android, Mac və Windows üçün.",
-        "imageAlt": "Tətbiqdə Mədinə Mushafının qarşı-qarşıya iki səhifəsi"
+        "imageAlt": "Tətbiqdə Mədinə Mushafının qarşı-qarşıya iki səhifəsi",
+        "news": {
+            "label": "Yeni",
+            "text": "Versiya 36: xətmlərinizi cihazlarınız arasında sinxronlaşdırın, ekran kilidlənəndə də qiraət davam edir"
+        }
     },
     "editions": {
         "title": "Mushafınızı seçin",

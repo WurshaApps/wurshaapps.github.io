@@ -19,7 +19,11 @@
         "cta": "Muat turun percuma",
         "ctaSecondary": "Pilih Mushaf anda",
         "platforms": "Untuk iPhone, iPad, Android, Mac dan Windows.",
-        "imageAlt": "Dua halaman bersebelahan Mushaf Madinah dalam aplikasi"
+        "imageAlt": "Dua halaman bersebelahan Mushaf Madinah dalam aplikasi",
+        "news": {
+            "label": "Baharu",
+            "text": "Versi 36: segerakkan khatam antara peranti anda, dan bacaan terus dimainkan walaupun skrin dikunci"
+        }
     },
     "editions": {
         "title": "Pilih Mushaf anda",

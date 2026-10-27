@@ -47,3 +47,5 @@ other languages under `text`; languages without one show the English text and `b
 A post's text and each of its sections may have an `image` (`{ src, alt }`, a 4:5 1080x1350 picture under
 `public/blog/<slug>/`, shown under the summary or after the section); give it `alt` text in each language.
 `npm run check-content` checks the order, slugs, that no text is empty and that every image exists.
+For a release worth announcing on the home page, also change `hero.news.text` in all 14 files: the line
+above the headline links to the newest post.

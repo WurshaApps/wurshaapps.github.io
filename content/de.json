@@ -19,7 +19,11 @@
         "cta": "Kostenlos herunterladen",
         "ctaSecondary": "Wähle deinen Mushaf",
         "platforms": "Für iPhone, iPad, Android, Mac und Windows.",
-        "imageAlt": "Zwei gegenüberliegende Seiten des Medina-Mushafs in der App"
+        "imageAlt": "Zwei gegenüberliegende Seiten des Medina-Mushafs in der App",
+        "news": {
+            "label": "Neu",
+            "text": "Version 36: Khatmas zwischen Ihren Geräten synchronisieren, und die Rezitation läuft auch bei gesperrtem Bildschirm weiter"
+        }
     },
     "editions": {
         "title": "Wähle deinen Mushaf",

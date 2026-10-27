@@ -99,7 +99,8 @@
                 "cta",
                 "ctaSecondary",
                 "platforms",
-                "imageAlt"
+                "imageAlt",
+                "news"
             ],
             "properties": {
                 "title": {
@@ -125,6 +126,27 @@
                 "imageAlt": {
                     "type": "string",
                     "minLength": 1
+                },
+                "news": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                        "label",
+                        "text"
+                    ],
+                    "description": "Announcement above the headline, linking to the newest blog post. Update `text` when a release gets its post.",
+                    "properties": {
+                        "label": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "Badge, e.g. New"
+                        },
+                        "text": {
+                            "type": "string",
+                            "minLength": 1,
+                            "description": "One line on the release"
+                        }
+                    }
                 }
             },
             "description": "First screen. `title` marks the gold phrase with *…*."

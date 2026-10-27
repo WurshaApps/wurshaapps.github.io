@@ -19,7 +19,11 @@
         "cta": "Download free",
         "ctaSecondary": "Choose your Mushaf",
         "platforms": "For iPhone, iPad, Android, Mac and Windows.",
-        "imageAlt": "Two facing pages of the Madina Mushaf in the app"
+        "imageAlt": "Two facing pages of the Madina Mushaf in the app",
+        "news": {
+            "label": "New",
+            "text": "Version 36: sync your khatmas across devices, and keep listening with the screen locked"
+        }
     },
     "editions": {
         "title": "Choose your Mushaf",

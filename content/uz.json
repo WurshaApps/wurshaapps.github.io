@@ -19,7 +19,11 @@
         "cta": "Bepul yuklab olish",
         "ctaSecondary": "Mushafingizni tanlang",
         "platforms": "iPhone, iPad, Android, Mac va Windows uchun.",
-        "imageAlt": "Ilovada Madina Mushafining yonma-yon ikki sahifasi"
+        "imageAlt": "Ilovada Madina Mushafining yonma-yon ikki sahifasi",
+        "news": {
+            "label": "Yangi",
+            "text": "Versiya 36: xatmlaringizni qurilmalaringiz o'rtasida sinxronlang, ekran qulflanganda ham tilovat davom etadi"
+        }
     },
     "editions": {
         "title": "Mushafingizni tanlang",

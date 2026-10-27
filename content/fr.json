@@ -19,7 +19,11 @@
         "cta": "Télécharger gratuitement",
         "ctaSecondary": "Choisir votre Mushaf",
         "platforms": "Pour iPhone, iPad, Android, Mac et Windows.",
-        "imageAlt": "Deux pages en regard du Mushaf de Médine dans l'application"
+        "imageAlt": "Deux pages en regard du Mushaf de Médine dans l'application",
+        "news": {
+            "label": "Nouveau",
+            "text": "Version 36 : synchronisez vos khatmas entre vos appareils, et la récitation continue même écran verrouillé"
+        }
     },
     "editions": {
         "title": "Choisissez votre Mushaf",

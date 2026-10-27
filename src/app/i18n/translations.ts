@@ -20,6 +20,8 @@ export interface Dict {
         ctaSecondary: string;
         platforms: string;
         imageAlt: string;
+        /** Announcement above the headline, linking to the newest blog post. */
+        news: { label: string; text: string };
     };
     editions: {
         title: string;

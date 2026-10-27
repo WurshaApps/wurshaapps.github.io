@@ -19,7 +19,11 @@
         "cta": "Ücretsiz indirin",
         "ctaSecondary": "Mushafınızı seçin",
         "platforms": "iPhone, iPad, Android, Mac ve Windows için.",
-        "imageAlt": "Uygulamada Medine Mushafının karşılıklı iki sayfası"
+        "imageAlt": "Uygulamada Medine Mushafının karşılıklı iki sayfası",
+        "news": {
+            "label": "Yeni",
+            "text": "Sürüm 36: hatimlerinizi cihazlarınız arasında eşitleyin; ekran kilitliyken de tilavet devam eder"
+        }
     },
     "editions": {
         "title": "Mushafınızı seçin",
