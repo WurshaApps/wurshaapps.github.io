@@ -5,7 +5,15 @@ import type { Lang } from '../i18n/locales';
 export interface PostText {
     title: string;
     summary: string;
-    sections: { title: string; intro?: string; items: string[] }[];
+    /** Shown under the summary. */
+    image?: PostImage;
+    sections: { title: string; intro?: string; items: string[]; image?: PostImage }[];
+}
+
+/** A 4:5 picture (1080x1350) under `public/`, e.g. `blog/v36/01-account-sync.webp`. */
+export interface PostImage {
+    src: string;
+    alt: string;
 }
 
 export interface Post {

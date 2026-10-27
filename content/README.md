@@ -44,4 +44,6 @@ Announce each release on the blog: add a post at the top of `blog.json` with a n
 dots), the `version`, the release `date` and `en` + `ar` text. The Arabic follows the app repo's
 `CHANGELOG.md`, the English its store What's New (`store/listings/en-US/listing.json`). A post may add
 other languages under `text`; languages without one show the English text and `blog.langNote`.
-`npm run check-content` checks the order, slugs and that no text is empty.
+A post's text and each of its sections may have an `image` (`{ src, alt }`, a 4:5 1080x1350 picture under
+`public/blog/<slug>/`, shown under the summary or after the section); give it `alt` text in each language.
+`npm run check-content` checks the order, slugs, that no text is empty and that every image exists.

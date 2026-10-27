@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Checks every content/<lang>.json against content/en.json: same keys, same scenes in the same order,
 // non-empty strings, balanced *highlight* marks. Runs before `ng build` (package.json "prebuild").
-import { readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -48,7 +48,7 @@ for (const file of readdirSync(dir).filter((f) => /^[a-z]{2}\.json$/.test(f))) {
         console.error(`${file}\n  ${errors.join('\n  ')}`);
     }
 }
-// blog.json: unique slugs, newest first, English and Arabic text for every post, no empty text.
+// blog.json: unique slugs, newest first, English and Arabic text for every post, no empty text, images in public/.
 const LANGS = readdirSync(dir).filter((f) => /^[a-z]{2}\.json$/.test(f)).map((f) => f.slice(0, 2));
 const blog = JSON.parse(readFileSync(join(dir, 'blog.json'), 'utf8'));
 const errors = [];
@@ -66,6 +66,10 @@ blog.posts.forEach((post, i) => {
         const empty = [text.title, text.summary, ...(text.sections ?? []).flatMap((s) => [s.title, s.intro ?? 'x', ...s.items])]
             .some((s) => typeof s !== 'string' || !s.trim());
         if (empty || !text.sections?.length) errors.push(`${at}.text.${lang}: missing or empty text`);
+        for (const image of [text.image, ...(text.sections ?? []).map((s) => s.image)].filter(Boolean)) {
+            if (!image.alt?.trim()) errors.push(`${at}.text.${lang}: image ${image.src} has no alt text`);
+            if (!existsSync(join(dir, '..', 'public', image.src ?? ''))) errors.push(`${at}.text.${lang}: no public/${image.src}`);
+        }
     }
 });
 if (errors.length) {

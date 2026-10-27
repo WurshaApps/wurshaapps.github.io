@@ -35,6 +35,9 @@ import { findPost, formatDate, postText } from './posts';
             <article [attr.lang]="p.fallback ? p.lang : null" [attr.dir]="p.fallback ? 'ltr' : null">
                 <h1>{{ p.text.title }}</h1>
                 <p class="summary">{{ p.text.summary }}</p>
+                @if (p.text.image; as image) {
+                    <img class="shot" [src]="image.src" [alt]="image.alt" width="1080" height="1350" />
+                }
                 @for (section of p.text.sections; track $index) {
                     <section>
                         <h2>{{ section.title }}</h2>
@@ -47,6 +50,9 @@ import { findPost, formatDate, postText } from './posts';
                                     <li>{{ item }}</li>
                                 }
                             </ul>
+                        }
+                        @if (section.image; as image) {
+                            <img class="shot" [src]="image.src" [alt]="image.alt" width="1080" height="1350" loading="lazy" />
                         }
                     </section>
                 }
@@ -70,6 +76,7 @@ import { findPost, formatDate, postText } from './posts';
         h2 { margin-bottom: 12px; font-size: 22px; }
         section p { margin: 0 0 12px; }
         ul { display: grid; gap: 8px; margin: 0 0 12px; padding-inline-start: 22px; }
+        .shot { display: block; width: min(100%, 420px); height: auto; margin: 20px auto 0; border-radius: 20px; box-shadow: 0 12px 32px rgb(7 60 70 / 0.18); }
         .cta { margin-top: 48px; }
     `,
 })

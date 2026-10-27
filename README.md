@@ -12,7 +12,8 @@ to static pages, deployed to GitHub Pages by `.github/workflows/node.js.yml` on 
   (the app repo's `specs/accounts.md` §4/§8) and change `privacy.updated` with every edit.
 - The blog is `/<lang>/blog/` (`src/app/blog/`): one announcement per app release, linked from the header and
   footer. Posts are in `content/blog.json`, in English and Arabic (from the app repo's `CHANGELOG.md` and the
-  store's What's New); other languages show the English text with a note. Add a post at the top for every release.
+  store's What's New); other languages show the English text with a note. Add a post at the top for every release. Posts may
+  show images (`public/blog/<slug>/`), e.g. the release's promo cards.
 - `/delete-account` (`public/delete-account/index.html`) forwards to the account-deletion page on the sign-in
   domain (app repo, `firebase-cloud/hosting/`), keeping `?lang=` and `#`. It is the address in the privacy policy
   and Google Play's "Delete account URL".
