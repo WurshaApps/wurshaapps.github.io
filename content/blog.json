@@ -7,95 +7,70 @@
             "date": "2026-10-27",
             "text": {
                 "en": {
-                    "title": "An account to sync your khatmas, and recitation that keeps playing when the screen is locked",
-                    "summary": "An optional account saves your khatmas, adhkar and Tartil lists and syncs them between your devices, recitation keeps playing when the screen is locked, and adhkar, Tartil, khatmas, search, share-as-image and the two-page view are improved.",
+                    "title": "Your khatmas on all your devices, and recitation that doesn't stop",
+                    "summary": "An optional account saves your khatmas and syncs them between your devices, recitation keeps playing when the screen is locked, and adhkar, Tartil, khatmas and search are better.",
                     "image": {
                         "src": "blog/v36/00-cover.webp",
                         "alt": "Quran Holder version 36: the “app updated” window over a page of the Madina Mushaf (Arabic interface)"
                     },
                     "sections": [
                         {
-                            "title": "New: an optional account that syncs your devices",
-                            "items": [
-                                "Sign in with Google on every device, and with Apple on iPhone and iPad",
-                                "Your khatmas (reading position, bookmarks and notes), adhkar (progress, favourites and your own list) and Tartil (favourites, playlists and chosen reciter) are saved and synced between your devices; each Mushaf keeps its own data",
-                                "Continue reading: when you have read further on another device, the app offers to go to that page; it never changes the page without asking",
-                                "The Account page shows the sync status, your devices and when each was last used, and links your Google and Apple sign-ins",
-                                "The Khatmas page shows “Last read: page … on …” when your last reading was on another device",
-                                "Everything works without an account, and you can delete the account and all its data at any time, in the app or at wursha.com/delete-account"
-                            ],
+                            "title": "☁️ Your khatmas on all your devices",
+                            "intro": "Sign in with Google or Apple to save your khatmas, adhkar and Tartil lists, and continue reading where you left off on any device. The account is optional; the app works fully without it.",
+                            "items": [],
                             "image": {
                                 "src": "blog/v36/01-account-sync.webp",
                                 "alt": "The Account page: “Save your khatmas in your account” with Continue with Google and Continue with Apple buttons (Arabic interface)"
                             }
                         },
                         {
-                            "title": "New: recitation keeps playing when the screen is locked",
-                            "intro": "Recitation, Tartil and adhkar audio keep playing when you lock the screen or leave the app, instead of stopping after a few verses (Android) or as soon as the screen locks (iOS).",
-                            "items": [
-                                "Android 13 and later: the playback notification now shows, as the app asks for the notification permission",
-                                "The basmala between surahs follows the next surah: al-Baqarah (after al-Fatihah) and Yunus (after at-Tawbah) started without it, and at-Tawbah (after al-Anfal) started with it"
-                            ],
+                            "title": "🔒 Recitation keeps playing when the screen is locked",
+                            "intro": "Start a recitation or your adhkar and lock the phone: it keeps playing without a break.",
+                            "items": [],
                             "image": {
                                 "src": "blog/v36/02-lock-screen-recitation.webp",
                                 "alt": "A page of al-Baqarah with the verse being recited highlighted, and a badge saying recitation continues while the screen is locked (Arabic interface)"
                             }
                         },
                         {
-                            "title": "Adhkar: the virtue of each dhikr",
-                            "items": [
-                                "Under each dhikr: its virtue and narrators, condensed from Hisn al-Muslim",
-                                "Morning and evening adhkar follow Hisn al-Muslim's order, and those said only in the morning or only in the evening are in their own section",
-                                "The repeat count of some adhkar now matches the number stated in their text",
-                                "A crescent icon for Adhkar in the menu"
-                            ],
+                            "title": "📿 The virtue of each dhikr",
+                            "intro": "Under each dhikr, its virtue from Hisn al-Muslim, with the adhkar in the book's order.",
+                            "items": [],
                             "image": {
                                 "src": "blog/v36/03-athkar-virtue.webp",
                                 "alt": "A dhikr with its virtue and source underneath, and the prayer beads and counter at 3 of 7 (Arabic interface)"
                             }
                         },
                         {
-                            "title": "Tartil: playback continues into the next surahs",
-                            "items": [
-                                "Playing one surah continues into the reciter's next surahs, up to the last one",
-                                "A Play all button for your favourite surahs",
-                                "A download button for each surah beside the favourite button, showing its download state, and Delete all on the reciter card",
-                                "A star for favourite reciters",
-                                "A message when you are offline and the surah is not downloaded",
-                                "Mini player: the previous and next icons point the right way, and the ±10 labels display correctly"
-                            ],
+                            "title": "🎧 Tartil that keeps going",
+                            "intro": "Pick a surah and playback moves on to the next surahs by itself, or play all your favourite surahs with one tap.",
+                            "items": [],
                             "image": {
                                 "src": "blog/v36/04-tartil-next-suras.webp",
                                 "alt": "The Tartil screen: favourite surahs with a Play all button, and the mini player playing al-Kahf (Arabic interface)"
                             }
                         },
                         {
-                            "title": "Khatmas: reorder by dragging",
-                            "items": [
-                                "Drag khatmas into the order you want in edit mode",
-                                "Any khatma can be deleted while there is more than one (the first one could not be)",
-                                "Deleting a khatma no longer changes the current one"
-                            ],
+                            "title": "📖 Order your khatmas your way",
+                            "intro": "Drag a khatma to where you want it.",
+                            "items": [],
                             "image": {
                                 "src": "blog/v36/05-khatma-reorder.webp",
                                 "alt": "The Khatmas page in edit mode while a khatma is dragged to the top of the list (Arabic interface)"
                             }
                         },
                         {
-                            "title": "Search screen",
-                            "items": [
-                                "A Search button beside the search field closes the keyboard and starts the search; the clear button moved to the start of the field",
-                                "Results update more smoothly as you type",
-                                "Search results and the dua list no longer jump while scrolling"
-                            ],
+                            "title": "🔎 Easier search",
+                            "intro": "A new Search button, and faster, clearer results.",
+                            "items": [],
                             "image": {
                                 "src": "blog/v36/06-search.webp",
                                 "alt": "Search results in Uthmani script, with the new Search button beside the field (Arabic interface)"
                             }
                         },
                         {
-                            "title": "Share a verse as an image",
-                            "intro": "Mushaf marks (such as iqlab, the round zero and the pause marks) no longer show as boxes or in the wrong place.",
+                            "title": "🖼️ Nicer verse images",
+                            "intro": "Shared images show the Mushaf text accurately and beautifully.",
                             "items": [],
                             "image": {
                                 "src": "blog/v36/07-share-image.webp",
@@ -103,125 +78,86 @@
                             }
                         },
                         {
-                            "title": "Two-page view",
-                            "items": [
-                                "A new setting moves to the top of the next page in the tall two-page landscape view (on by default)",
-                                "Tall two-page landscape view: turning the page no longer stops halfway or shows part of the neighbouring page"
-                            ],
+                            "title": "📖 A smoother two-page view",
+                            "intro": "Turn your phone to read two pages side by side, with smoother page turns.",
+                            "items": [],
                             "image": {
                                 "src": "blog/v36/08-two-pages.webp",
                                 "alt": "A phone in landscape showing the first two pages of the Mushaf side by side"
                             }
                         },
                         {
-                            "title": "Other improvements",
-                            "items": [
-                                "“Hide the bottom bar by tapping the right edge” and “Hide the top bar by tapping the left edge” are now on by default for everyone, and “Turn pages by tapping” is off by default since it can't be used with them",
-                                "The What's New list shows in the app's language and lists only the versions you haven't seen",
-                                "The dua page's title card scrolls with the list instead of staying fixed at the top",
-                                "The About page links to wursha.com"
-                            ]
-                        },
-                        {
-                            "title": "Fixes",
-                            "items": [
-                                "Android 15 and later: removed the gap under the reading page's bottom bar",
-                                "iOS: shaking the device no longer shows “Undo Typing”",
-                                "iOS: the order of the publisher card's headings on the About page"
-                            ]
+                            "title": "✨ And more",
+                            "intro": "Improvements and fixes throughout the app for a better reading and listening experience.",
+                            "items": []
                         }
                     ]
                 },
                 "ar": {
-                    "title": "حساب لمزامنة ختماتك، وتلاوة تستمر مع قفل الشاشة",
-                    "summary": "حساب اختياري يحفظ ختماتك وأذكارك وقوائم الترتيل ويزامنها بين أجهزتك، والتلاوة تستمر عند قفل الشاشة، مع تحسينات في الأذكار والترتيل والختمات والبحث ومشاركة الصورة وعرض الصفحتين.",
+                    "title": "ختماتك معك على كل أجهزتك، والتلاوة لا تتوقف",
+                    "summary": "حساب اختياري يحفظ ختماتك ويزامنها بين أجهزتك، وتلاوة تستمر مع قفل الشاشة، وتحسينات في الأذكار والترتيل والختمات والبحث.",
                     "image": {
                         "src": "blog/v36/00-cover.webp",
                         "alt": "الإصدار 36 من حامل القرآن: نافذة «تم تحديث البرنامج» فوق صفحة من مصحف المدينة"
                     },
                     "sections": [
                         {
-                            "title": "جديد: حساب اختياري ومزامنة بين الأجهزة",
-                            "items": [
-                                "تسجيل الدخول بحساب Google على جميع الأجهزة، وبحساب Apple على iPhone وiPad",
-                                "حفظ نسخة من الختمات (موضع القراءة والعلامات والملاحظات) والأذكار (التقدّم والمفضلة وأذكاري) والترتيل (المفضلة وقوائم التشغيل والقارئ المختار) ومزامنتها بين أجهزتك، ولكل مصحف بياناته الخاصة",
-                                "«متابعة القراءة»: عند الوصول إلى صفحة أبعد على جهاز آخر يعرض التطبيق الانتقال إليها، ولا تتغير الصفحة دون إذنك",
-                                "صفحة الحساب: حالة المزامنة، وأجهزتك وآخر استخدام لكل منها، وربط حسابَي Google وApple",
-                                "في صفحة الختمات: «آخر قراءة: ص … على …» عندما تكون آخر قراءة على جهاز آخر",
-                                "كل الميزات تعمل دون حساب، ويمكن حذف الحساب وكل بياناته في أي وقت من التطبيق أو من wursha.com/delete-account"
-                            ],
+                            "title": "☁️ ختماتك معك على كل أجهزتك",
+                            "intro": "سجّل الدخول بحساب Google أو Apple، فتُحفظ ختماتك وأذكارك وقوائم التلاوة، وتتابع القراءة من حيث توقفت على أي جهاز. الحساب اختياري، والتطبيق يعمل كاملًا بدونه.",
+                            "items": [],
                             "image": {
                                 "src": "blog/v36/01-account-sync.webp",
                                 "alt": "صفحة الحساب: «احفظ ختماتك في حسابك» مع زرَّي المتابعة باستخدام Google وApple"
                             }
                         },
                         {
-                            "title": "جديد: التلاوة تستمر عند قفل الشاشة",
-                            "intro": "التلاوة والترتيل والأذكار تستمر عند قفل الشاشة أو الخروج من التطبيق، ولا تتوقف بعد آيات قليلة (Android) أو فور القفل (iOS).",
-                            "items": [
-                                "Android 13 وما بعده: إشعار التشغيل يظهر الآن، إذ يطلب التطبيق إذن الإشعارات",
-                                "البسملة عند انتقال التلاوة إلى السورة التالية تتبع السورة التالية: كانت البقرة (بعد الفاتحة) ويونس (بعد التوبة) تبدآن دون بسملة، والتوبة (بعد الأنفال) تبدأ بها"
-                            ],
+                            "title": "🔒 التلاوة تستمر عند قفل الشاشة",
+                            "intro": "شغّل التلاوة أو الأذكار واقفل الهاتف، فتستمر دون انقطاع.",
+                            "items": [],
                             "image": {
                                 "src": "blog/v36/02-lock-screen-recitation.webp",
                                 "alt": "صفحة من سورة البقرة والآية المتلوّة مظللة، مع شارة «الشاشة مقفلة؟ التلاوة مستمرة»"
                             }
                         },
                         {
-                            "title": "الأذكار: فضل كل ذكر",
-                            "items": [
-                                "تحت كل ذكر فضله ورواته، مختصرًا من حصن المسلم",
-                                "أذكار الصباح والمساء بترتيب حصن المسلم، وما يُقال في الصباح فقط أو في المساء فقط في قسمه",
-                                "عدد التكرار في بعض الأذكار يطابق الآن العدد المذكور في نصها",
-                                "أيقونة هلال لقسم الأذكار في القائمة"
-                            ],
+                            "title": "📿 فضل كل ذكر",
+                            "intro": "تحت كل ذكر فضله من حصن المسلم، والأذكار مرتبة كما في الكتاب.",
+                            "items": [],
                             "image": {
                                 "src": "blog/v36/03-athkar-virtue.webp",
                                 "alt": "ذكر «حسبي الله لا إله إلا هو» وتحته فضله وتخريجه، مع السبحة والعدّاد عند 3 من 7"
                             }
                         },
                         {
-                            "title": "الترتيل: التشغيل يستمر إلى السور التالية",
-                            "items": [
-                                "تشغيل سورة واحدة يستمر إلى سور القارئ التالية حتى آخر سورة",
-                                "زر «تشغيل الكل» في السور المفضلة",
-                                "زر تنزيل لكل سورة بجانب زر المفضلة يبيّن حالة التنزيل، وزر «حذف الكل» في بطاقة القارئ",
-                                "نجمة للقرّاء المفضلين",
-                                "رسالة عند انقطاع الإنترنت إذا لم تكن السورة منزّلة",
-                                "المشغّل المصغّر: أيقونتا السابق والتالي في الاتجاه الصحيح، وأرقام ±10 تُعرض بشكل صحيح"
-                            ],
+                            "title": "🎧 الترتيل بلا توقف",
+                            "intro": "اختر سورة فتنتقل التلاوة إلى السور التالية تلقائيًا، وشغّل سورك المفضلة كلها بلمسة واحدة.",
+                            "items": [],
                             "image": {
                                 "src": "blog/v36/04-tartil-next-suras.webp",
                                 "alt": "شاشة الترتيل: السور المفضلة مع زر «تشغيل الكل»، والمشغّل المصغّر يشغّل سورة الكهف"
                             }
                         },
                         {
-                            "title": "الختمات: ترتيب بالسحب",
-                            "items": [
-                                "ترتيب الختمات بالسحب في وضع التعديل",
-                                "يمكن حذف أي ختمة ما دامت هناك أكثر من ختمة (كانت الختمة الأولى لا تُحذف)",
-                                "حذف ختمة لم يعد يغيّر الختمة الحالية"
-                            ],
+                            "title": "📖 رتّب ختماتك كما تحب",
+                            "intro": "اسحب الختمة إلى المكان الذي تريده.",
+                            "items": [],
                             "image": {
                                 "src": "blog/v36/05-khatma-reorder.webp",
                                 "alt": "صفحة الختمات في وضع التعديل أثناء سحب «ختمة الطريق» إلى أعلى القائمة"
                             }
                         },
                         {
-                            "title": "شاشة البحث",
-                            "items": [
-                                "زر «بحث» بجانب حقل البحث يغلق لوحة المفاتيح ويبدأ البحث، وزر المسح انتقل إلى بداية الحقل",
-                                "نتائج البحث تتحدّث بسلاسة أكبر أثناء الكتابة",
-                                "نتائج البحث وقائمة الأدعية لم تعد تقفز أثناء التمرير"
-                            ],
+                            "title": "🔎 بحث أسهل",
+                            "intro": "زر «بحث» جديد، ونتائج أسرع وأوضح.",
+                            "items": [],
                             "image": {
                                 "src": "blog/v36/06-search.webp",
                                 "alt": "نتائج البحث عن «الصابرين» بالرسم العثماني، مع زر «بحث» بجانب الحقل"
                             }
                         },
                         {
-                            "title": "مشاركة الآية كصورة",
-                            "intro": "علامات المصحف (كالإقلاب والصفر المستدير وعلامات الوقف) لم تعد تظهر مربعات أو في غير موضعها.",
+                            "title": "🖼️ مشاركة الآيات بصورة أجمل",
+                            "intro": "صورة المشاركة تُظهر نص المصحف بدقة وجمال.",
                             "items": [],
                             "image": {
                                 "src": "blog/v36/07-share-image.webp",
@@ -229,32 +165,18 @@
                             }
                         },
                         {
-                            "title": "عرض الصفحتين",
-                            "items": [
-                                "خيار جديد «انتقال إلى أعلى الصفحة التالية في صفحتين طول في الإتجاه الأفقي» (مفعّل افتراضيًا)",
-                                "صفحتان طول في الوضع الأفقي: التقليب لم يعد يتوقف في منتصف الصفحة أو يُظهر جزءًا من الصفحة المجاورة"
-                            ],
+                            "title": "📖 عرض الصفحتين أكثر سلاسة",
+                            "intro": "أدِر الهاتف لتقرأ صفحتين متجاورتين، مع تقليب أنعم بين الصفحات.",
+                            "items": [],
                             "image": {
                                 "src": "blog/v36/08-two-pages.webp",
                                 "alt": "الهاتف في الوضع الأفقي يعرض صفحتَي الفاتحة وأول البقرة متجاورتين"
                             }
                         },
                         {
-                            "title": "تحسينات أخرى",
-                            "items": [
-                                "«إخفاء الشريط السفلي عند النقر على الحافة اليمنى» و«إخفاء الشريط العلوي عند النقر على الحافة اليسرى» مفعّلان افتراضيًا لجميع المستخدمين، و«تقليب الصفحات عند النقر» معطّل افتراضيًا لأنه لا يجتمع معهما",
-                                "قائمة «الجديد في هذا الإصدار» تظهر بلغة التطبيق، ولا تعرض إلا الإصدارات التي لم تطّلع عليها",
-                                "بطاقة عنوان صفحة الأدعية تتحرك مع القائمة بدل أن تبقى ثابتة أعلى الشاشة",
-                                "صفحة «عن التطبيق»: رابط إلى موقع wursha.com"
-                            ]
-                        },
-                        {
-                            "title": "إصلاحات",
-                            "items": [
-                                "Android 15 وما بعده: إزالة الفراغ تحت الشريط السفلي لصفحة القراءة",
-                                "iOS: هزّ الجهاز لم يعد يُظهر رسالة «تراجع عن الكتابة»",
-                                "iOS: ترتيب عناوين بطاقة الناشر في صفحة «عن التطبيق»"
-                            ]
+                            "title": "✨ وتحسينات أخرى",
+                            "intro": "تحسينات وإصلاحات في أنحاء التطبيق لتجربة قراءة واستماع أفضل.",
+                            "items": []
                         }
                     ]
                 }
