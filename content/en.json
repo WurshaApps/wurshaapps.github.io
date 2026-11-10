@@ -15,7 +15,7 @@
     },
     "hero": {
         "title": "The *Mushaf* you know, with everything around it",
-        "subtitle": "Original Mushaf pages, 50+ books of tafsir and translation, and 200+ reciters, in one app. Free, with no ads.",
+        "subtitle": "25+ Mushafs to choose from for each khatma, 50+ books of tafsir and translation, and 200+ reciters, in one app. Free, with no ads.",
         "cta": "Download free",
         "ctaSecondary": "Choose your Mushaf",
         "platforms": "For iPhone, iPad, Android, Mac and Windows.",
@@ -27,14 +27,14 @@
     },
     "editions": {
         "title": "Choose your Mushaf",
-        "subtitle": "Every edition has the same tafsir library, recitations and tools. Choose the Mushaf and the riwaya you read from.",
+        "subtitle": "Every edition has the same tafsir library, recitations and tools. Pick your riwaya, then a Mushaf for each khatma.",
         "platformsAll": "iPhone, iPad, Android, Mac, Windows",
         "platformsMobile": "iPhone, iPad, Android",
         "list": {
             "madina": {
-                "name": "Madina Mushaf",
-                "riwaya": "Hafs from Asim",
-                "series": "Quran Holder",
+                "name": "Quran Holder",
+                "riwaya": "Madina Mushaf",
+                "series": "New name and logo",
                 "line": "The familiar Madina pages, and 25+ more Mushafs to choose from for each khatma"
             },
             "tajweed": {
@@ -46,13 +46,13 @@
             "warsh": {
                 "name": "Warsh Mushaf",
                 "riwaya": "Warsh from Nafi",
-                "series": "Khair Zad",
+                "series": "Quran Holder",
                 "line": "Three Warsh Mushafs, one with the places where Warsh differs from Hafs in color"
             },
             "qalon": {
                 "name": "Qalun & Libya Mushaf",
                 "riwaya": "Qalun from Nafi",
-                "series": "Khair Zad",
+                "series": "Quran Holder",
                 "line": "The Qalun Mushaf in color and the Libya Mushaf, with Qalun reciters"
             },
             "shamarli": {
@@ -113,9 +113,9 @@
             {
                 "id": "tracks",
                 "title": "Several *khatmas* at once",
-                "subtitle": "Each keeps its place and reciter",
+                "subtitle": "Each with its own Mushaf, place and reciter",
                 "items": [
-                    "Each khatma has its own page, bookmarks, notes and reciter",
+                    "Each khatma has its own Mushaf, page, bookmarks, notes and reciter",
                     "Search with or without diacritics, or by root",
                     "Surah, juz and hizb indexes"
                 ]

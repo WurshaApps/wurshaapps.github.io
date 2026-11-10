@@ -37,7 +37,7 @@
         },
         {
             "id": "qalon",
-            "accent": "#5c3b20",
+            "accent": "#6b2a3b",
             "release": "qalon",
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_qalon",

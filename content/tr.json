@@ -15,7 +15,7 @@
     },
     "hero": {
         "title": "Bildiğiniz *Mushaf*, etrafındaki her şeyle birlikte",
-        "subtitle": "Orijinal Mushaf sayfaları, 50'den fazla tefsir ve meal kitabı ve 200'ü aşkın kâri tek bir uygulamada. Ücretsiz ve reklamsız.",
+        "subtitle": "Her hatim için seçebileceğiniz 25'ten fazla Mushaf, 50'den fazla tefsir ve meal kitabı ve 200'ü aşkın kâri tek bir uygulamada. Ücretsiz ve reklamsız.",
         "cta": "Ücretsiz indirin",
         "ctaSecondary": "Mushafınızı seçin",
         "platforms": "iPhone, iPad, Android, Mac ve Windows için.",
@@ -27,14 +27,14 @@
     },
     "editions": {
         "title": "Mushafınızı seçin",
-        "subtitle": "Her Mushafta aynı tefsir kütüphanesi, tilavetler ve araçlar bulunur. Okuduğunuz Mushafı ve rivayeti seçin.",
+        "subtitle": "Her Mushafta aynı tefsir kütüphanesi, tilavetler ve araçlar bulunur. Rivayetinizi, sonra her hatim için bir Mushaf seçin.",
         "platformsAll": "iPhone, iPad, Android, Mac, Windows",
         "platformsMobile": "iPhone, iPad, Android",
         "list": {
             "madina": {
-                "name": "Medine Mushafı",
-                "riwaya": "Hafs an Âsım",
-                "series": "Kur'an Hafızı",
+                "name": "Kur'an Hafızı",
+                "riwaya": "Medine Mushafı",
+                "series": "Yeni ad ve logo",
                 "line": "Alışık olduğunuz Medine sayfaları ve her hatim için seçebileceğiniz 25'ten fazla Mushaf"
             },
             "tajweed": {
@@ -46,13 +46,13 @@
             "warsh": {
                 "name": "Verş Mushafı",
                 "riwaya": "Verş an Nâfi",
-                "series": "Khair Zad",
+                "series": "Kur'an Hafızı",
                 "line": "Üç Verş Mushafı; biri Verş'in Hafs'tan ayrıldığı yerleri renkle gösterir"
             },
             "qalon": {
                 "name": "Kalun ve Libya Mushafı",
                 "riwaya": "Kalun an Nâfi",
-                "series": "Khair Zad",
+                "series": "Kur'an Hafızı",
                 "line": "Renkli Kalun Mushafı ve Libya Mushafı, Kalun rivayetiyle okuyan kârilerle"
             },
             "shamarli": {
@@ -113,9 +113,9 @@
             {
                 "id": "tracks",
                 "title": "Aynı anda birden çok *hatim*",
-                "subtitle": "Her biri yerini ve kârisini korur",
+                "subtitle": "Her birinin kendi Mushafı, yeri ve kârisi",
                 "items": [
-                    "Her hatmin kendi yeri, yer imleri, notları ve kârisi",
+                    "Her hatmin kendi Mushafı, yeri, yer imleri, notları ve kârisi",
                     "Harekeli, harekesiz veya kök ile arama",
                     "Sure, cüz ve hizip fihristleri"
                 ]

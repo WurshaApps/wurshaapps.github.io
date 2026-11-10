@@ -15,7 +15,7 @@
     },
     "hero": {
         "title": "*Mushaf* yang Anda kenal, dengan semua yang menyertainya",
-        "subtitle": "Halaman Mushaf asli, 50+ kitab tafsir dan terjemahan, serta 200+ qari, dalam satu aplikasi. Gratis, tanpa iklan.",
+        "subtitle": "25+ mushaf untuk dipilih bagi setiap khatam, 50+ kitab tafsir dan terjemahan, serta 200+ qari, dalam satu aplikasi. Gratis, tanpa iklan.",
         "cta": "Unduh gratis",
         "ctaSecondary": "Pilih Mushaf Anda",
         "platforms": "Untuk iPhone, iPad, Android, Mac, dan Windows.",
@@ -27,14 +27,14 @@
     },
     "editions": {
         "title": "Pilih Mushaf Anda",
-        "subtitle": "Setiap edisi memiliki pustaka tafsir, murottal, dan fitur yang sama. Pilih Mushaf dan riwayat yang Anda baca.",
+        "subtitle": "Setiap edisi memiliki pustaka tafsir, murottal, dan fitur yang sama. Pilih riwayat Anda, lalu mushaf untuk setiap khatam.",
         "platformsAll": "iPhone, iPad, Android, Mac, Windows",
         "platformsMobile": "iPhone, iPad, Android",
         "list": {
             "madina": {
-                "name": "Mushaf Madinah",
-                "riwaya": "Hafs dari Ashim",
-                "series": "Quran Holder",
+                "name": "Quran Holder",
+                "riwaya": "Mushaf Madinah",
+                "series": "Nama dan logo baru",
                 "line": "Halaman Madinah yang sudah Anda kenal, dan lebih dari 25 mushaf lain untuk dipilih bagi setiap khatam"
             },
             "tajweed": {
@@ -46,13 +46,13 @@
             "warsh": {
                 "name": "Mushaf Warsy",
                 "riwaya": "Warsy dari Nafi",
-                "series": "Khair Zad",
+                "series": "Quran Holder",
                 "line": "Tiga mushaf riwayat Warsy, salah satunya menandai perbedaan Warsy dengan Hafs dengan warna"
             },
             "qalon": {
                 "name": "Mushaf Qalun dan Libya",
                 "riwaya": "Qalun dari Nafi",
-                "series": "Khair Zad",
+                "series": "Quran Holder",
                 "line": "Mushaf Qalun berwarna dan Mushaf Libya, dilengkapi qari dengan riwayat Qalun"
             },
             "shamarli": {
@@ -113,9 +113,9 @@
             {
                 "id": "tracks",
                 "title": "Beberapa *khatam* sekaligus",
-                "subtitle": "Masing-masing dengan posisi dan qarinya",
+                "subtitle": "Masing-masing dengan mushaf, posisi, dan qarinya",
                 "items": [
-                    "Setiap khatam memiliki posisi, penanda, catatan, dan qarinya sendiri",
+                    "Setiap khatam memiliki mushaf, posisi, penanda, catatan, dan qarinya sendiri",
                     "Cari dengan atau tanpa harakat, atau berdasarkan akar kata",
                     "Daftar isi surah, juz, dan hizb"
                 ]

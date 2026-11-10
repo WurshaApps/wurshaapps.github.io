@@ -15,7 +15,7 @@
     },
     "hero": {
         "title": "Siz bilgan *Mushaf*, yonida esa kerakli barcha narsa",
-        "subtitle": "Asl Mushaf sahifalari, 50+ tafsir va tarjima kitobi hamda 200+ qori, bitta ilovada. Bepul, reklamasiz.",
+        "subtitle": "Har bir xatm uchun tanlash mumkin bo'lgan 25+ Mushaf, 50+ tafsir va tarjima kitobi hamda 200+ qori, bitta ilovada. Bepul, reklamasiz.",
         "cta": "Bepul yuklab olish",
         "ctaSecondary": "Mushafingizni tanlang",
         "platforms": "iPhone, iPad, Android, Mac va Windows uchun.",
@@ -27,14 +27,14 @@
     },
     "editions": {
         "title": "Mushafingizni tanlang",
-        "subtitle": "Har bir nashrda bir xil tafsir kutubxonasi, tilovatlar va vositalar bor. Oʻzingiz oʻqiydigan Mushaf va rivoyatni tanlang.",
+        "subtitle": "Har bir nashrda bir xil tafsir kutubxonasi, tilovatlar va vositalar bor. Rivoyatingizni, so'ng har bir xatm uchun Mushafni tanlang.",
         "platformsAll": "iPhone, iPad, Android, Mac, Windows",
         "platformsMobile": "iPhone, iPad, Android",
         "list": {
             "madina": {
-                "name": "Madina Mushafi",
-                "riwaya": "Osimdan Hafs rivoyati",
-                "series": "Quran Holder",
+                "name": "Quran Holder",
+                "riwaya": "Madina Mushafi",
+                "series": "Yangi nom va logotip",
                 "line": "Tanish Madina sahifalari va har bir xatm uchun tanlash mumkin bo'lgan 25 dan ortiq boshqa Mushaf"
             },
             "tajweed": {
@@ -46,13 +46,13 @@
             "warsh": {
                 "name": "Varsh Mushafi",
                 "riwaya": "Nofedan Varsh rivoyati",
-                "series": "Khair Zad",
+                "series": "Quran Holder",
                 "line": "Varsh rivoyatidagi uchta Mushaf, ulardan birida Varshning Hafsdan farqlari rang bilan belgilangan"
             },
             "qalon": {
                 "name": "Qolun va Liviya Mushafi",
                 "riwaya": "Nofedan Qolun rivoyati",
-                "series": "Khair Zad",
+                "series": "Quran Holder",
                 "line": "Rangli Qolun Mushafi va Liviya Mushafi, Qolun rivoyatidagi qorilar bilan"
             },
             "shamarli": {
@@ -113,9 +113,9 @@
             {
                 "id": "tracks",
                 "title": "Bir vaqtda bir nechta *xatm*",
-                "subtitle": "Har biri oʻz joyi va qorisini saqlaydi",
+                "subtitle": "Har birining oʻz Mushafi, joyi va qorisi",
                 "items": [
-                    "Har bir xatmning oʻz sahifasi, xatchoʻplari, qaydlari va qorisi bor",
+                    "Har bir xatmning oʻz Mushafi, sahifasi, xatchoʻplari, qaydlari va qorisi bor",
                     "Harakatli yoki harakatsiz, yoki oʻzak boʻyicha qidirish",
                     "Sura, juz va hizb koʻrsatkichlari"
                 ]

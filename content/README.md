@@ -34,6 +34,8 @@ See `specs/website-redesign.md` §5. In short: every number is counted and round
 
 `public/shots/{en,ar}/` and `public/editions/` are made by `npm run import-shots` from the store
 screenshots (see the script header). LTR pages use the English set, RTL pages the Arabic set.
+The edition cards' app icons, `public/editions/<id>-icon.webp`, are WebP copies of the app repo's
+`editions/<edition>/assets/icon.png`; copy them again when an app's icon changes.
 
 ## Releases
 

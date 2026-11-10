@@ -20,7 +20,10 @@ import { APPS, hasDesktop } from '../shared/catalog';
                                 <div class="panel" [style.background-color]="app.accent">
                                     <img [src]="'editions/' + app.id + '.webp'" alt="" width="360" height="573" loading="lazy" />
                                 </div>
-                                <h3>{{ e.name }}</h3>
+                                <div class="head">
+                                    <img class="icon" [src]="'editions/' + app.id + '-icon.webp'" alt="" width="48" height="48" loading="lazy" />
+                                    <h3>{{ e.name }}</h3>
+                                </div>
                                 <p class="meta">{{ e.riwaya }}<span aria-hidden="true"> · </span>{{ e.series }}</p>
                                 <p class="line">{{ e.line }}</p>
                                 <p class="avail">{{ hasDesktop(app) ? t.platformsAll : t.platformsMobile }}</p>
@@ -39,7 +42,10 @@ import { APPS, hasDesktop } from '../shared/catalog';
         a:hover .panel img { transform: translateY(-4px); }
         .panel { display: flex; justify-content: center; height: 240px; margin-bottom: 18px; padding: 28px 28px 0; overflow: hidden; }
         .panel img { width: 62%; border-radius: 3px 3px 0 0; box-shadow: 0 10px 30px rgb(0 0 0 / 0.3); transition: transform 0.2s; }
-        h3 { padding: 0 22px; font-size: 21px; }
+        .head { display: flex; align-items: center; gap: 12px; padding: 0 22px; }
+        .icon { flex: none; width: 48px; height: 48px; border-radius: 11px; box-shadow: 0 2px 8px rgb(0 0 0 / 0.18); }
+        h3 { font-size: 21px; }
+        .meta { margin-top: 6px; }
         .meta { padding: 0 22px; color: var(--ink-soft); font-size: 14px; }
         .line { padding: 10px 22px 0; font-size: 15.5px; }
         .avail { margin-top: auto; padding: 12px 22px 0; color: var(--ink-soft); font-size: 13px; }

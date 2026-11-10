@@ -15,7 +15,7 @@
     },
     "hero": {
         "title": "Der *Mushaf*, den du kennst, mit allem, was dazugehört",
-        "subtitle": "Originale Mushaf-Seiten, über 50 Tafsir- und Übersetzungswerke und über 200 Rezitatoren in einer App. Kostenlos und ohne Werbung.",
+        "subtitle": "Über 25 Mushafs zur Wahl für jede Khatma, über 50 Tafsir- und Übersetzungswerke und über 200 Rezitatoren in einer App. Kostenlos und ohne Werbung.",
         "cta": "Kostenlos herunterladen",
         "ctaSecondary": "Wähle deinen Mushaf",
         "platforms": "Für iPhone, iPad, Android, Mac und Windows.",
@@ -27,14 +27,14 @@
     },
     "editions": {
         "title": "Wähle deinen Mushaf",
-        "subtitle": "Jede Ausgabe hat dieselbe Tafsir-Bibliothek, dieselben Rezitationen und Werkzeuge. Wähle den Mushaf und die Riwaya, nach der du liest.",
+        "subtitle": "Jede Ausgabe hat dieselbe Tafsir-Bibliothek, dieselben Rezitationen und Werkzeuge. Wähle deine Riwaya und dann einen Mushaf für jede Khatma.",
         "platformsAll": "iPhone, iPad, Android, Mac, Windows",
         "platformsMobile": "iPhone, iPad, Android",
         "list": {
             "madina": {
-                "name": "Medina-Mushaf",
-                "riwaya": "Hafs nach Asim",
-                "series": "Quran Holder",
+                "name": "Quran Holder",
+                "riwaya": "Medina-Mushaf",
+                "series": "Neuer Name, neues Logo",
                 "line": "Die vertrauten Medina-Seiten, dazu über 25 weitere Mushafs zur Wahl für jede Khatma"
             },
             "tajweed": {
@@ -46,13 +46,13 @@
             "warsh": {
                 "name": "Warsh-Mushaf",
                 "riwaya": "Warsh nach Nafi",
-                "series": "Khair Zad",
+                "series": "Quran Holder",
                 "line": "Drei Warsh-Mushafs, einer davon mit den Stellen, an denen Warsh von Hafs abweicht, farbig markiert"
             },
             "qalon": {
                 "name": "Qalun- und Libyen-Mushaf",
                 "riwaya": "Qalun nach Nafi",
-                "series": "Khair Zad",
+                "series": "Quran Holder",
                 "line": "Der farbige Qalun-Mushaf und der Libyen-Mushaf, mit Rezitatoren der Überlieferung Qalun"
             },
             "shamarli": {
@@ -113,9 +113,9 @@
             {
                 "id": "tracks",
                 "title": "Mehrere *Khatmas* zugleich",
-                "subtitle": "Jede mit eigener Stelle und Rezitator",
+                "subtitle": "Jede mit eigenem Mushaf, eigener Stelle und Rezitator",
                 "items": [
-                    "Jede Khatma hat eigene Stelle, Lesezeichen, Notizen und Rezitator",
+                    "Jede Khatma hat eigenen Mushaf, eigene Stelle, Lesezeichen, Notizen und Rezitator",
                     "Suche mit oder ohne Vokalzeichen oder nach Wurzel",
                     "Verzeichnisse der Suren, Juz und Hizb"
                 ]

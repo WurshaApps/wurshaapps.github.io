@@ -15,7 +15,7 @@
     },
     "hero": {
         "title": "Tanıdığınız *Mushaf*, ətrafındakı hər şeylə birlikdə",
-        "subtitle": "Orijinal Mushaf səhifələri, 50-dən çox təfsir və tərcümə kitabı və 200-dən çox qari bir tətbiqdə. Pulsuz və reklamsız.",
+        "subtitle": "Hər xətm üçün seçə biləcəyiniz 25-dən çox Mushaf, 50-dən çox təfsir və tərcümə kitabı və 200-dən çox qari bir tətbiqdə. Pulsuz və reklamsız.",
         "cta": "Pulsuz yükləyin",
         "ctaSecondary": "Mushafınızı seçin",
         "platforms": "iPhone, iPad, Android, Mac və Windows üçün.",
@@ -27,14 +27,14 @@
     },
     "editions": {
         "title": "Mushafınızı seçin",
-        "subtitle": "Hər nəşrdə eyni təfsir kitabxanası, tilavətlər və alətlər var. Oxuduğunuz Mushafı və rəvayəti seçin.",
+        "subtitle": "Hər nəşrdə eyni təfsir kitabxanası, tilavətlər və alətlər var. Rəvayətinizi, sonra hər xətm üçün bir Mushaf seçin.",
         "platformsAll": "iPhone, iPad, Android, Mac, Windows",
         "platformsMobile": "iPhone, iPad, Android",
         "list": {
             "madina": {
-                "name": "Mədinə Mushafı",
-                "riwaya": "Asimdən Həfs",
-                "series": "Quran Hafizi",
+                "name": "Quran Hafizi",
+                "riwaya": "Mədinə Mushafı",
+                "series": "Yeni ad və loqo",
                 "line": "Tanış Mədinə səhifələri və hər xətm üçün seçə biləcəyiniz 25-dən çox başqa Mushaf"
             },
             "tajweed": {
@@ -46,13 +46,13 @@
             "warsh": {
                 "name": "Vərş Mushafı",
                 "riwaya": "Nafidən Vərş",
-                "series": "Khair Zad",
+                "series": "Quran Hafizi",
                 "line": "Vərş rəvayətində üç Mushaf, onlardan birində Vərşin Həfsdən fərqləndiyi yerlər rənglə işarələnib"
             },
             "qalon": {
                 "name": "Qalun və Liviya Müshəfi",
                 "riwaya": "Nafidən Qalun",
-                "series": "Khair Zad",
+                "series": "Quran Hafizi",
                 "line": "Rəngli Qalun Mushafı və Liviya Mushafı, Qalun rəvayəti ilə oxuyan qarilərlə"
             },
             "shamarli": {
@@ -113,9 +113,9 @@
             {
                 "id": "tracks",
                 "title": "Eyni anda bir neçə *xətm*",
-                "subtitle": "Hər biri öz yerini və qarisini saxlayır",
+                "subtitle": "Hər birinin öz Mushafı, yeri və qarisi",
                 "items": [
-                    "Hər xətmin öz səhifəsi, əlfəcinləri, qeydləri və qarisi var",
+                    "Hər xətmin öz Mushafı, səhifəsi, əlfəcinləri, qeydləri və qarisi var",
                     "Hərəkəli, hərəkəsiz və ya kökə görə axtarış",
                     "Surə, cüz və hizb fihristləri"
                 ]
