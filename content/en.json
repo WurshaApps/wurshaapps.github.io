@@ -173,9 +173,6 @@
     "account": {
         "title": "Sync with an optional account",
         "subtitle": "Sign in to Wursha with Google or Apple to back up your khatmas, adhkar and Tartil playlists, and carry on from your other devices. Signing in is optional; every feature works without it.",
-        "items": [
-            "Sign in with Google on iPhone, iPad and Android, or with Apple on iPhone and iPad."
-        ],
         "delete": "Delete your account"
     },
     "downloads": {
@@ -196,8 +193,7 @@
             "windows": "Download .exe"
         },
         "notAvailable": "Not available",
-        "winNote": "Windows 10 and later.",
-        "macNote": "Mac: the first time you open the app, right-click it and choose Open."
+        "winNote": "Windows 10 and later."
     },
     "footer": {
         "about": "Wursha Digital Apps publishes the Quran Holder and Khair Zad Mushaf apps.",

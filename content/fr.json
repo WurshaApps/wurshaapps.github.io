@@ -173,9 +173,6 @@
     "account": {
         "title": "Synchronisez avec un compte facultatif",
         "subtitle": "Connectez-vous à Wursha avec Google ou Apple pour sauvegarder vos khatmas, vos adhkar et vos listes Tartil, et reprendre sur vos autres appareils. La connexion est facultative ; toutes les fonctions marchent sans elle.",
-        "items": [
-            "Connexion avec Google sur iPhone, iPad et Android, ou avec Apple sur iPhone et iPad."
-        ],
         "delete": "Supprimer votre compte"
     },
     "downloads": {
@@ -196,8 +193,7 @@
             "windows": "Télécharger le .exe"
         },
         "notAvailable": "Non disponible",
-        "winNote": "Windows 10 et versions ultérieures.",
-        "macNote": "Mac : à la première ouverture, faites un clic droit sur l'application et choisissez « Ouvrir »."
+        "winNote": "Windows 10 et versions ultérieures."
     },
     "footer": {
         "about": "Wursha Digital Apps publie les applications du Mushaf Quran Holder et Khair Zad.",

@@ -490,7 +490,6 @@
             "required": [
                 "title",
                 "subtitle",
-                "items",
                 "delete"
             ],
             "properties": {
@@ -502,22 +501,13 @@
                     "type": "string",
                     "minLength": 1
                 },
-                "items": {
-                    "type": "array",
-                    "minItems": 4,
-                    "maxItems": 4,
-                    "items": {
-                        "type": "string",
-                        "minLength": 1
-                    }
-                },
                 "delete": {
                     "type": "string",
                     "minLength": 1,
                     "description": "Link text to /delete-account"
                 }
             },
-            "description": "Optional account section on the home page: sign-in providers, what syncs, what data the app receives and why, deletion. The privacy link reuses footer.privacy."
+            "description": "Optional account section on the home page: why to sign in, with the privacy and delete-account links. The privacy link reuses footer.privacy."
         },
         "downloads": {
             "type": "object",
@@ -529,8 +519,7 @@
                 "columns",
                 "links",
                 "notAvailable",
-                "winNote",
-                "macNote"
+                "winNote"
             ],
             "properties": {
                 "title": {
@@ -611,10 +600,6 @@
                     "minLength": 1
                 },
                 "winNote": {
-                    "type": "string",
-                    "minLength": 1
-                },
-                "macNote": {
                     "type": "string",
                     "minLength": 1
                 }

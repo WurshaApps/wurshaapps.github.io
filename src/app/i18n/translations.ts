@@ -45,7 +45,7 @@ export interface Dict {
     };
     languages: { title: string; subtitle: string; note: string };
     /** The optional account: what sign-in is for (Google's OAuth brand verification reads it). The privacy link reuses `footer.privacy`. */
-    account: { title: string; subtitle: string; items: string[]; delete: string };
+    account: { title: string; subtitle: string; delete: string };
     downloads: {
         title: string;
         subtitle: string;
@@ -54,7 +54,6 @@ export interface Dict {
         links: Record<Platform, string>;
         notAvailable: string;
         winNote: string;
-        macNote: string;
     };
     footer: {
         about: string;

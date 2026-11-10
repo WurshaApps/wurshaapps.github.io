@@ -42,7 +42,6 @@ import { APPS, PLATFORMS, VERSION, storeUrl } from '../shared/catalog';
                 </table>
                 <p class="notes">
                     <span>{{ d.winNote }}</span>
-                    <span>{{ d.macNote }}</span>
                 </p>
             </div>
         </section>

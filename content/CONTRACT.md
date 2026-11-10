@@ -13,7 +13,7 @@ same shape as `en.json` (checked by `npm run check-content`).
 | `story`     | `story`                                     | The seven feature scenes, same order as the App Store screenshots |
 | `library`   | `library`                                   | Four book lists                                                   |
 | `languages` | `library` (languages section)               | Heading and the "stays in Arabic" note; names from `locales.ts`   |
-| `account`   | `account`                                   | Optional account: sign-in, what syncs, data received, deletion link |
+| `account`   | `account`                                   | Optional account: why to sign in, privacy and deletion links |
 | `downloads` | `downloads`                                 | Table headings, link labels, notes                                |
 | `footer`    | `footer`                                    | About line, credits, sources, rights, privacy link                |
 | `privacy`   | `privacy/privacy.component`, `I18nService`  | The privacy policy page `/<lang>/privacy/` and its `<title>`/description |
@@ -32,9 +32,9 @@ story:     { title, subtitle, screensNote,
              scenes: [{ id: meaning|tartil|memorize|night|tracks|athkar|share, title, subtitle, items: string[], note? }] }
 library:   { title, subtitle, more, groups: [{ title, items: string[] }] }   // 4 groups
 languages: { title, subtitle, note }
-account:   { title, subtitle, items: string[], delete }   // 4 items; the privacy link reuses footer.privacy
+account:   { title, subtitle, delete }   // the privacy link reuses footer.privacy
 downloads: { title, subtitle, version, columns: { edition, ios, android, mac, windows },
-             links: { ios, android, mac, windows }, notAvailable, winNote, macNote }
+             links: { ios, android, mac, windows }, notAvailable, winNote }
 footer:    { about, creditsTitle, credits: [{ label, value }], sourcesTitle, sources: string[], rights, privacy }
 privacy:   { metaTitle, metaDescription, title, updated, intro,
              sections: [{ title, paragraphs: string[], items: string[] }] }   // same sections in every language

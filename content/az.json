@@ -173,9 +173,6 @@
     "account": {
         "title": "İstəyə bağlı hesabla sinxronlaşdırın",
         "subtitle": "Xətmlərinizin, zikrlərinizin və Tartil pleylistlərinizin ehtiyat nüsxəsini saxlamaq və digər cihazlarınızda qaldığınız yerdən davam etmək üçün Google və ya Apple ilə Wursha-ya daxil olun. Daxil olmaq istəyə bağlıdır; bütün funksiyalar onsuz da işləyir.",
-        "items": [
-            "iPhone, iPad və Android-də Google ilə, iPhone və iPad-də isə Apple ilə daxil olun."
-        ],
         "delete": "Hesabınızı silin"
     },
     "downloads": {
@@ -196,8 +193,7 @@
             "windows": ".exe yüklə"
         },
         "notAvailable": "Mövcud deyil",
-        "winNote": "Windows 10 və daha yeni versiyalar.",
-        "macNote": "Mac: tətbiqi ilk dəfə açanda üzərinə sağ klik edib “Aç”ı seçin."
+        "winNote": "Windows 10 və daha yeni versiyalar."
     },
     "footer": {
         "about": "Wursha Digital Apps Quran Hafizi və Khair Zad Mushaf tətbiqlərini nəşr edir.",

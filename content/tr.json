@@ -173,9 +173,6 @@
     "account": {
         "title": "İsteğe bağlı hesapla eşitleyin",
         "subtitle": "Hatimlerinizi, zikirlerinizi ve Tartil çalma listelerinizi yedeklemek ve diğer cihazlarınızda kaldığınız yerden devam etmek için Wursha'ya Google veya Apple ile giriş yapın. Giriş yapmak isteğe bağlıdır; tüm özellikler onsuz da çalışır.",
-        "items": [
-            "iPhone, iPad ve Android'de Google ile, iPhone ve iPad'de Apple ile giriş yapın."
-        ],
         "delete": "Hesabınızı silin"
     },
     "downloads": {
@@ -196,8 +193,7 @@
             "windows": ".exe indir"
         },
         "notAvailable": "Mevcut değil",
-        "winNote": "Windows 10 ve üzeri.",
-        "macNote": "Mac: Uygulamayı ilk kez açarken sağ tıklayın ve “Aç”ı seçin."
+        "winNote": "Windows 10 ve üzeri."
     },
     "footer": {
         "about": "Wursha Digital Apps, Kur'an Hafızı ve Khair Zad Mushaf uygulamalarını yayımlar.",

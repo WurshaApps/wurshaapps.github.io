@@ -173,9 +173,6 @@
     "account": {
         "title": "Ixtiyoriy hisob bilan sinxronlang",
         "subtitle": "Xatmlaringiz, zikrlaringiz va Tartil pleylistlaringizni zaxiralash hamda boshqa qurilmalaringizda to'xtagan joyingizdan davom etish uchun Wursha'ga Google yoki Apple orqali kiring. Kirish ixtiyoriy; barcha imkoniyatlar usiz ham ishlaydi.",
-        "items": [
-            "iPhone, iPad va Android'da Google orqali, iPhone va iPad'da esa Apple orqali kiring."
-        ],
         "delete": "Hisobingizni o'chiring"
     },
     "downloads": {
@@ -196,8 +193,7 @@
             "windows": ".exe yuklab olish"
         },
         "notAvailable": "Mavjud emas",
-        "winNote": "Windows 10 va undan keyingi versiyalar.",
-        "macNote": "Mac: ilovani birinchi marta ochayotganda ustiga oʻng tugma bilan bosing va Open ni tanlang."
+        "winNote": "Windows 10 va undan keyingi versiyalar."
     },
     "footer": {
         "about": "Wursha Digital Apps Quran Holder va Khair Zad Mushaf ilovalarini nashr etadi.",

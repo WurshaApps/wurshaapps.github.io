@@ -173,9 +173,6 @@
     "account": {
         "title": "Sinkronkan dengan akun opsional",
         "subtitle": "Masuk ke Wursha dengan Google atau Apple untuk mencadangkan khatam, dzikir, dan daftar putar Tartil Anda, lalu lanjutkan di perangkat lain. Masuk bersifat opsional; semua fitur tetap berfungsi tanpanya.",
-        "items": [
-            "Masuk dengan Google di iPhone, iPad, dan Android, atau dengan Apple di iPhone dan iPad."
-        ],
         "delete": "Hapus akun Anda"
     },
     "downloads": {
@@ -196,8 +193,7 @@
             "windows": "Unduh .exe"
         },
         "notAvailable": "Tidak tersedia",
-        "winNote": "Windows 10 dan yang lebih baru.",
-        "macNote": "Mac: saat pertama kali membuka aplikasi, klik kanan aplikasinya lalu pilih Buka."
+        "winNote": "Windows 10 dan yang lebih baru."
     },
     "footer": {
         "about": "Wursha Digital Apps menerbitkan aplikasi Mushaf Quran Holder dan Khair Zad.",

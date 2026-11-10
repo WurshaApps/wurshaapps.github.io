@@ -173,9 +173,6 @@
     "account": {
         "title": "Segerakkan dengan akaun pilihan",
         "subtitle": "Log masuk ke Wursha dengan Google atau Apple untuk menyandarkan khatam, zikir dan senarai main Tartil anda, dan sambung pada peranti anda yang lain. Log masuk adalah pilihan; semua ciri berfungsi tanpanya.",
-        "items": [
-            "Log masuk dengan Google pada iPhone, iPad dan Android, atau dengan Apple pada iPhone dan iPad."
-        ],
         "delete": "Padam akaun anda"
     },
     "downloads": {
@@ -196,8 +193,7 @@
             "windows": "Muat turun .exe"
         },
         "notAvailable": "Tidak tersedia",
-        "winNote": "Windows 10 dan ke atas.",
-        "macNote": "Mac: kali pertama anda membuka aplikasi, klik kanan padanya dan pilih Buka."
+        "winNote": "Windows 10 dan ke atas."
     },
     "footer": {
         "about": "Wursha Digital Apps menerbitkan aplikasi Mushaf Quran Holder dan Khair Zad.",
