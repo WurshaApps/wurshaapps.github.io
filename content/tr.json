@@ -22,7 +22,7 @@
         "imageAlt": "Uygulamada Medine Mushafının karşılıklı iki sayfası",
         "news": {
             "label": "Yeni",
-            "text": "Sürüm 36: hatimlerinizi cihazlarınız arasında eşitleyin; ekran kilitliyken de tilavet devam eder"
+            "text": "Sürüm 37: her hatim için bir Mushaf seçin; başka Mushaflar ve kitaplar indirin"
         }
     },
     "editions": {
@@ -35,31 +35,31 @@
                 "name": "Medine Mushafı",
                 "riwaya": "Hafs an Âsım",
                 "series": "Kur'an Hafızı",
-                "line": "Alışık olduğunuz Medine sayfaları; kıraatlerin ayrıldığı yerlerde ferş işaretleri"
+                "line": "Alışık olduğunuz Medine sayfaları ve her hatim için seçebileceğiniz 25'ten fazla Mushaf"
             },
             "tajweed": {
                 "name": "Tecvidli Mushaf",
                 "riwaya": "Hafs an Âsım",
                 "series": "Kur'an Hafızı",
-                "line": "Her tecvid kuralı renkle işaretli, her rengin açıklamasıyla"
+                "line": "Her tecvid kuralı renkle işaretli, Hafs ve Verş rivayetinde, her rengin açıklamasıyla"
             },
             "warsh": {
                 "name": "Verş Mushafı",
                 "riwaya": "Verş an Nâfi",
                 "series": "Khair Zad",
-                "line": "Verş'in Hafs'tan ayrıldığı yerler renkle işaretli"
+                "line": "Üç Verş Mushafı; biri Verş'in Hafs'tan ayrıldığı yerleri renkle gösterir"
             },
             "qalon": {
-                "name": "Kalun Mushafı",
+                "name": "Kalun ve Libya Mushafı",
                 "riwaya": "Kalun an Nâfi",
                 "series": "Khair Zad",
-                "line": "Kalun rivayetiyle okuyan kâriler dahil"
+                "line": "Renkli Kalun Mushafı ve Libya Mushafı, Kalun rivayetiyle okuyan kârilerle"
             },
             "shamarli": {
                 "name": "Şemerli Mushafı",
                 "riwaya": "Hafs an Âsım",
                 "series": "Kur'an Hafızı",
-                "line": "522 sayfalık Şemerli Mushafı, kenarlarda kıraat notlarıyla"
+                "line": "Şemerli düzeninde yedi Mushaf; kenarlarda kıraat notları olan asıl Şemerli de aralarında"
             }
         }
     },

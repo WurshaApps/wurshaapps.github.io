@@ -2,6 +2,169 @@
     "$schema": "./schemas/blog.schema.json",
     "posts": [
         {
+            "slug": "v37",
+            "version": "37.0.0",
+            "date": "2026-11-10",
+            "text": {
+                "en": {
+                    "title": "Choose the Mushaf for each khatma",
+                    "summary": "Pick a Mushaf layout for each khatma and download more from inside the app: 25+ Mushafs in the Madina app, two in Qalun & Libya, seven in the Shamarly layout, Tajweed in Warsh, three Warsh Mushafs. Plus a Books page, a new Book window and more reciters.",
+                    "image": {
+                        "src": "blog/v37/00-cover.webp",
+                        "alt": "Quran Holder version 37: five phones showing the Tajweed, Nastaliq, Madina, Shamarly and Warsh Mushafs, with “25+ Mushafs in several riwayas, downloaded inside the app” (Arabic)"
+                    },
+                    "sections": [
+                        {
+                            "title": "📖 A Mushaf for each khatma",
+                            "intro": "Each khatma now has its own Mushaf. Read one khatma in the Madina Mushaf and another in a different Mushaf, each with its own place and bookmarks. More Mushafs download from the new Mushafs page.",
+                            "items": [
+                                "Madina Mushaf app: 25+ Mushafs in several riwayas, including the old Madina layout",
+                                "Every app offers the Mushafs of its own riwaya and layout"
+                            ]
+                        },
+                        {
+                            "title": "📗 New: the Qalun & Libya Mushaf",
+                            "intro": "Two Mushafs in the Qalun narration from Nafi, in one app.",
+                            "items": [
+                                "The Khair Zad Qalun Mushaf, with the places where Qalun differs from Hafs in color, in the Madina page order",
+                                "The Libya Mushaf (al-Jamahiriya Mushaf), downloaded inside the app"
+                            ],
+                            "image": {
+                                "src": "blog/v37/01-qalon.webp",
+                                "alt": "The Qalun & Libya Mushaf: the Qalun Mushaf in color beside the Libya Mushaf, with Qalun reciters, tafsir, dark mode and daily adhkar (Arabic)"
+                            }
+                        },
+                        {
+                            "title": "📘 Shamarly: seven Mushafs in its layout",
+                            "intro": "All on the 521 Shamarly pages you know, so every verse stays in its place on the page.",
+                            "items": [
+                                "Shamarly Mushaf (high quality): from its 8th printing, with qira'at notes in the margins",
+                                "The Madina Mushaf matching the Shamarly print, from the King Fahd Complex, in 521 pages that match the Shamarly pages",
+                                "The Ten Qira'at Mushaf: the farsh places of the ten qira'at in color on the Shamarly pages",
+                                "Qalun from Nafi and Shu'ba from Asim in the Shamarly layout",
+                                "Shamarly with the places where Qalun differs in color"
+                            ],
+                            "image": {
+                                "src": "blog/v37/02-shmrly.webp",
+                                "alt": "The Shamarly Mushaf app: five of the seven Mushafs in the Shamarly layout, and the new Books page, Mushaf per khatma and mini player (Arabic)"
+                            }
+                        },
+                        {
+                            "title": "🎨 Tajweed: now in Warsh too",
+                            "intro": "The Tajweed Mushaf app has two Mushafs colored with the tajweed rules: Hafs from Asim, and new, Warsh from Nafi, both published by Dar Al-Maarifah.",
+                            "items": [],
+                            "image": {
+                                "src": "blog/v37/03-tjwid.webp",
+                                "alt": "The Tajweed Mushaf app: the Hafs and Warsh Tajweed Mushafs side by side (Arabic)"
+                            }
+                        },
+                        {
+                            "title": "🕌 Warsh: three Mushafs",
+                            "intro": "Three Mushafs in the Warsh narration from Nafi, with athman (eighth) marks in the page margin of every one.",
+                            "items": [
+                                "The Khair Zad Warsh Mushaf, with the places where Warsh differs from Hafs in color",
+                                "The King Fahd Complex Warsh Mushaf, Uthman Taha's script, 604 pages, downloaded inside the app",
+                                "The Warsh Tajweed Mushaf from Dar Al-Maarifah"
+                            ],
+                            "image": {
+                                "src": "blog/v37/04-warsh.webp",
+                                "alt": "The Warsh Mushaf app: the Warsh Tajweed, Khair Zad Warsh and King Fahd Complex Warsh Mushafs (Arabic)"
+                            }
+                        },
+                        {
+                            "title": "✨ And in every app",
+                            "items": [
+                                "📚 A new Books page to download, update and delete tafsirs and books",
+                                "🪟 A redesigned Book window that follows where you are reading",
+                                "🎧 More verse reciters, and redesigned reciters pages for recitation and Tartil",
+                                "▶️ A floating mini player for recitation and Tartil",
+                                "👋 A new Welcome screen and a daily “Did you know?” tip",
+                                "☁️ New books, reciters and athkar arrive without an app update"
+                            ]
+                        }
+                    ]
+                },
+                "ar": {
+                    "title": "اختر المصحف لكل ختمة",
+                    "summary": "اختر شكل المصحف لكل ختمة ونزّل مصاحف أخرى من داخل التطبيق: أكثر من 25 مصحفاً في حامل القرآن، ومصحفان في قالون وليبيا، وسبعة بتخطيط الشمرلي، والتجويد برواية ورش، وثلاثة مصاحف برواية ورش. ومعها صفحة الكتب ونافذة كتاب جديدة وقرّاء أكثر.",
+                    "image": {
+                        "src": "blog/v37/00-cover.webp",
+                        "alt": "الإصدار 37 من حامل القرآن: خمسة هواتف تعرض مصاحف التجويد والنستعليق والمدينة والشمرلي وورش، مع «أكثر من 25 مصحفاً بروايات متعددة، تُنزَّل من داخل التطبيق»"
+                    },
+                    "sections": [
+                        {
+                            "title": "📖 مصحف لكل ختمة",
+                            "intro": "صار لكل ختمة مصحفها: اقرأ ختمة بمصحف المدينة وأخرى بمصحف آخر، ولكل ختمة موضعها وعلاماتها. ونزّل مصاحف أخرى من صفحة المصاحف الجديدة.",
+                            "items": [
+                                "حامل القرآن (مصحف المدينة): أكثر من 25 مصحفاً بمختلف الروايات، منها مصحف المدينة القديم",
+                                "في كل تطبيق مصاحف روايته وطبعته"
+                            ]
+                        },
+                        {
+                            "title": "📗 جديد: مصحف قالون وليبيا",
+                            "intro": "مصحفان برواية قالون عن نافع في تطبيق واحد.",
+                            "items": [
+                                "مصحف قالون من «خير زاد»، تظهر فيه مواضع الخلاف عن رواية حفص بالألوان، على ترتيب مصحف المدينة",
+                                "مصحف ليبيا (مصحف الجماهيرية)، تنزّله من داخل التطبيق"
+                            ],
+                            "image": {
+                                "src": "blog/v37/01-qalon.webp",
+                                "alt": "مصحف قالون وليبيا: مصحف قالون الملوّن بجانب مصحف ليبيا، مع تلاوات برواية قالون والتفسير والوضع الليلي والأذكار اليومية"
+                            }
+                        },
+                        {
+                            "title": "📘 الشمرلي: سبعة مصاحف بتخطيطه",
+                            "intro": "كلها بصفحات الشمرلي الـ 521 التي تعرفها، فتبقى الآية في موضعها من الصفحة.",
+                            "items": [
+                                "مصحف الشمرلي (جودة عالية): من الطبعة الثامنة مع هوامش القراءات",
+                                "مصحف المدينة الموافق لطبعة الشمرلي: من إصدارات مجمع الملك فهد، في 521 صفحة توافق صفحات الشمرلي",
+                                "مصحف تلوين العشر: مواضع فرش القراءات العشر ملوّنة على صفحات الشمرلي",
+                                "قالون عن نافع وشعبة عن عاصم بتخطيط الشمرلي",
+                                "الشمرلي بتلوين اختلافات قالون"
+                            ],
+                            "image": {
+                                "src": "blog/v37/02-shmrly.webp",
+                                "alt": "تطبيق مصحف الشمرلي: خمسة من المصاحف السبعة بتخطيط الشمرلي، مع صفحة الكتب ومصحف لكل ختمة والمشغّل العائم"
+                            }
+                        },
+                        {
+                            "title": "🎨 التجويد: برواية ورش أيضاً",
+                            "intro": "في تطبيق مصحف التجويد مصحفان ملوّنان بأحكام التجويد: برواية حفص عن عاصم، والجديد برواية ورش عن نافع، كلاهما من إصدار دار المعرفة.",
+                            "items": [],
+                            "image": {
+                                "src": "blog/v37/03-tjwid.webp",
+                                "alt": "تطبيق مصحف التجويد: مصحف التجويد برواية حفص وبرواية ورش جنباً إلى جنب"
+                            }
+                        },
+                        {
+                            "title": "🕌 ورش: ثلاثة مصاحف",
+                            "intro": "ثلاثة مصاحف برواية ورش عن نافع، مع علامات الأثمان في هامش الصفحة لكل المصاحف.",
+                            "items": [
+                                "مصحف ورش من «خير زاد»، تظهر فيه مواضع خلاف ورش عن حفص بالألوان",
+                                "مصحف ورش من مجمع الملك فهد، بخط عثمان طه، في 604 صفحات، يُنزَّل من داخل التطبيق",
+                                "مصحف التجويد برواية ورش من إصدار دار المعرفة"
+                            ],
+                            "image": {
+                                "src": "blog/v37/04-warsh.webp",
+                                "alt": "تطبيق مصحف ورش: مصحف التجويد برواية ورش ومصحف ورش من خير زاد ومصحف ورش من مجمع الملك فهد"
+                            }
+                        },
+                        {
+                            "title": "✨ وفي كل التطبيقات",
+                            "items": [
+                                "📚 صفحة جديدة لتنزيل التفاسير والكتب وتحديثها وحذفها",
+                                "🪟 نافذة الكتاب بتصميم جديد تتابع موضع قراءتك",
+                                "🎧 قرّاء أكثر للتلاوة، وصفحات القرّاء بتصميم جديد في التلاوة والترتيل",
+                                "▶️ مشغّل صغير عائم للتلاوة والترتيل",
+                                "👋 صفحة ترحيب جديدة ونصيحة يومية «هل تعلم؟»",
+                                "☁️ الكتب والقرّاء والأذكار الجديدة تصل دون تحديث التطبيق"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
             "slug": "v36",
             "version": "36.0.1",
             "date": "2026-10-27",

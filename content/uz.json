@@ -22,7 +22,7 @@
         "imageAlt": "Ilovada Madina Mushafining yonma-yon ikki sahifasi",
         "news": {
             "label": "Yangi",
-            "text": "Versiya 36: xatmlaringizni qurilmalaringiz o'rtasida sinxronlang, ekran qulflanganda ham tilovat davom etadi"
+            "text": "Versiya 37: har bir xatm uchun Mushaf tanlang, yana Mushaflar va kitoblar yuklab oling"
         }
     },
     "editions": {
@@ -35,31 +35,31 @@
                 "name": "Madina Mushafi",
                 "riwaya": "Osimdan Hafs rivoyati",
                 "series": "Quran Holder",
-                "line": "Tanish Madina sahifalari, qiroatlar farqlanadigan joylarda farsh belgilari bilan"
+                "line": "Tanish Madina sahifalari va har bir xatm uchun tanlash mumkin bo'lgan 25 dan ortiq boshqa Mushaf"
             },
             "tajweed": {
                 "name": "Tajvid Mushafi",
                 "riwaya": "Osimdan Hafs rivoyati",
                 "series": "Quran Holder",
-                "line": "Har bir tajvid qoidasi rang bilan belgilangan, har bir rangning izohi bor"
+                "line": "Har bir tajvid qoidasi rang bilan belgilangan, Hafs va Varsh rivoyatida, har bir rangning izohi bilan"
             },
             "warsh": {
                 "name": "Varsh Mushafi",
                 "riwaya": "Nofedan Varsh rivoyati",
                 "series": "Khair Zad",
-                "line": "Varsh Hafsdan farq qiladigan joylar rang bilan belgilangan"
+                "line": "Varsh rivoyatidagi uchta Mushaf, ulardan birida Varshning Hafsdan farqlari rang bilan belgilangan"
             },
             "qalon": {
-                "name": "Qolun Mushafi",
+                "name": "Qolun va Liviya Mushafi",
                 "riwaya": "Nofedan Qolun rivoyati",
                 "series": "Khair Zad",
-                "line": "Qolun rivoyatidagi qorilar bilan"
+                "line": "Rangli Qolun Mushafi va Liviya Mushafi, Qolun rivoyatidagi qorilar bilan"
             },
             "shamarli": {
                 "name": "Shamarli Mushafi",
                 "riwaya": "Osimdan Hafs rivoyati",
                 "series": "Quran Holder",
-                "line": "522 sahifali Shamarli Mushafi, hoshiyalarida qiroat izohlari bilan"
+                "line": "Shamarli tartibidagi yettita Mushaf, jumladan hoshiyalarida qiroat izohlari bor asl Shamarli Mushafi"
             }
         }
     },

@@ -22,7 +22,7 @@
         "imageAlt": "Two facing pages of the Madina Mushaf in the app",
         "news": {
             "label": "New",
-            "text": "Version 36: sync your khatmas across devices, and keep listening with the screen locked"
+            "text": "Version 37: choose a Mushaf for each khatma, and download more Mushafs and books"
         }
     },
     "editions": {
@@ -35,31 +35,31 @@
                 "name": "Madina Mushaf",
                 "riwaya": "Hafs from Asim",
                 "series": "Quran Holder",
-                "line": "The familiar Madina pages, with farsh marks where the qira'at differ"
+                "line": "The familiar Madina pages, and 25+ more Mushafs to choose from for each khatma"
             },
             "tajweed": {
                 "name": "Tajweed Mushaf",
                 "riwaya": "Hafs from Asim",
                 "series": "Quran Holder",
-                "line": "Every tajweed rule marked in color, with a legend for each color"
+                "line": "Every tajweed rule in color, in Hafs and in Warsh, with a legend for each color"
             },
             "warsh": {
                 "name": "Warsh Mushaf",
                 "riwaya": "Warsh from Nafi",
                 "series": "Khair Zad",
-                "line": "The places where Warsh differs from Hafs, marked in color"
+                "line": "Three Warsh Mushafs, one with the places where Warsh differs from Hafs in color"
             },
             "qalon": {
-                "name": "Qalun Mushaf",
+                "name": "Qalun & Libya Mushaf",
                 "riwaya": "Qalun from Nafi",
                 "series": "Khair Zad",
-                "line": "With reciters of the Qalun narration built in"
+                "line": "The Qalun Mushaf in color and the Libya Mushaf, with Qalun reciters"
             },
             "shamarli": {
                 "name": "Shamarly Mushaf",
                 "riwaya": "Hafs from Asim",
                 "series": "Quran Holder",
-                "line": "The 522-page Shamarly Mushaf, with qira'at notes in the margins"
+                "line": "Seven Mushafs in the Shamarly layout, including the original with qira'at notes in the margins"
             }
         }
     },

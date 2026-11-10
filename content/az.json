@@ -22,7 +22,7 @@
         "imageAlt": "Tətbiqdə Mədinə Mushafının qarşı-qarşıya iki səhifəsi",
         "news": {
             "label": "Yeni",
-            "text": "Versiya 36: xətmlərinizi cihazlarınız arasında sinxronlaşdırın, ekran kilidlənəndə də qiraət davam edir"
+            "text": "Versiya 37: hər xətm üçün bir Mushaf seçin, daha çox Mushaf və kitab yükləyin"
         }
     },
     "editions": {
@@ -35,31 +35,31 @@
                 "name": "Mədinə Mushafı",
                 "riwaya": "Asimdən Həfs",
                 "series": "Quran Hafizi",
-                "line": "Tanış Mədinə səhifələri, qiraətlərin fərqləndiyi yerlərdə fərş işarələri ilə"
+                "line": "Tanış Mədinə səhifələri və hər xətm üçün seçə biləcəyiniz 25-dən çox başqa Mushaf"
             },
             "tajweed": {
                 "name": "Təcvidli Mushaf",
                 "riwaya": "Asimdən Həfs",
                 "series": "Quran Hafizi",
-                "line": "Hər təcvid qaydası rənglə işarələnib, hər rəngin izahı ilə"
+                "line": "Hər təcvid qaydası rənglə işarələnib, Həfs və Vərş rəvayətində, hər rəngin izahı ilə"
             },
             "warsh": {
                 "name": "Vərş Mushafı",
                 "riwaya": "Nafidən Vərş",
                 "series": "Khair Zad",
-                "line": "Vərşin Həfsdən fərqləndiyi yerlər rənglə işarələnib"
+                "line": "Vərş rəvayətində üç Mushaf, onlardan birində Vərşin Həfsdən fərqləndiyi yerlər rənglə işarələnib"
             },
             "qalon": {
-                "name": "Qalun Mushafı",
+                "name": "Qalun və Liviya Müshəfi",
                 "riwaya": "Nafidən Qalun",
                 "series": "Khair Zad",
-                "line": "Qalun rəvayəti ilə oxuyan qarilər daxildir"
+                "line": "Rəngli Qalun Mushafı və Liviya Mushafı, Qalun rəvayəti ilə oxuyan qarilərlə"
             },
             "shamarli": {
                 "name": "Şəmərli Mushafı",
                 "riwaya": "Asimdən Həfs",
                 "series": "Quran Hafizi",
-                "line": "522 səhifəlik Şəmərli Mushafı, haşiyələrdə qiraət qeydləri ilə"
+                "line": "Şəmərli düzümündə yeddi Mushaf, haşiyələrində qiraət qeydləri olan əsl Şəmərli Mushafı da daxil olmaqla"
             }
         }
     },

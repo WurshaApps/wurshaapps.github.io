@@ -22,7 +22,7 @@
         "imageAlt": "Deux pages en regard du Mushaf de Médine dans l'application",
         "news": {
             "label": "Nouveau",
-            "text": "Version 36 : synchronisez vos khatmas entre vos appareils, et la récitation continue même écran verrouillé"
+            "text": "Version 37 : choisissez un Mushaf pour chaque khatma, et téléchargez d'autres Mushafs et livres"
         }
     },
     "editions": {
@@ -35,31 +35,31 @@
                 "name": "Mushaf de Médine",
                 "riwaya": "Hafs selon Asim",
                 "series": "Quran Holder",
-                "line": "Les pages familières de Médine, avec les marques du farsh là où les qira'at divergent"
+                "line": "Les pages familières de Médine, et plus de 25 autres Mushafs à choisir pour chaque khatma"
             },
             "tajweed": {
                 "name": "Mushaf Tajwid",
                 "riwaya": "Hafs selon Asim",
                 "series": "Quran Holder",
-                "line": "Chaque règle de tajwid signalée en couleur, avec une légende pour chaque couleur"
+                "line": "Chaque règle de tajwid en couleur, en Hafs et en Warsh, avec une légende pour chaque couleur"
             },
             "warsh": {
                 "name": "Mushaf Warsh",
                 "riwaya": "Warsh selon Nafi",
                 "series": "Khair Zad",
-                "line": "Les passages où Warsh diffère de Hafs, signalés en couleur"
+                "line": "Trois Mushafs Warsh, dont un qui signale en couleur les passages où Warsh diffère de Hafs"
             },
             "qalon": {
-                "name": "Mushaf Qalun",
+                "name": "Mushaf Qalun et Libye",
                 "riwaya": "Qalun selon Nafi",
                 "series": "Khair Zad",
-                "line": "Avec des récitants de la riwaya de Qalun intégrés"
+                "line": "Le Mushaf Qalun en couleur et le Mushaf de Libye, avec des récitants de la riwaya de Qalun"
             },
             "shamarli": {
                 "name": "Mushaf Shamarly",
                 "riwaya": "Hafs selon Asim",
                 "series": "Quran Holder",
-                "line": "Le Mushaf Shamarly de 522 pages, avec des notes de qira'at dans les marges"
+                "line": "Sept Mushafs à la mise en page Shamarly, dont l'original avec des notes de qira'at dans les marges"
             }
         }
     },

@@ -22,7 +22,7 @@
         "imageAlt": "Dua halaman Mushaf Madinah yang berhadapan di aplikasi",
         "news": {
             "label": "Baru",
-            "text": "Versi 36: sinkronkan khatam di antara perangkat Anda, dan tilawah tetap berjalan saat layar terkunci"
+            "text": "Versi 37: pilih mushaf untuk setiap khatam, dan unduh mushaf serta buku lainnya"
         }
     },
     "editions": {
@@ -35,31 +35,31 @@
                 "name": "Mushaf Madinah",
                 "riwaya": "Hafs dari Ashim",
                 "series": "Quran Holder",
-                "line": "Halaman Madinah yang sudah Anda kenal, dengan tanda farsy pada tempat-tempat perbedaan qiraat"
+                "line": "Halaman Madinah yang sudah Anda kenal, dan lebih dari 25 mushaf lain untuk dipilih bagi setiap khatam"
             },
             "tajweed": {
                 "name": "Mushaf Tajwid",
                 "riwaya": "Hafs dari Ashim",
                 "series": "Quran Holder",
-                "line": "Setiap hukum tajwid ditandai dengan warna, dengan panduan arti setiap warna"
+                "line": "Setiap hukum tajwid ditandai dengan warna, dalam riwayat Hafs dan Warsy, dengan panduan arti setiap warna"
             },
             "warsh": {
                 "name": "Mushaf Warsy",
                 "riwaya": "Warsy dari Nafi",
                 "series": "Khair Zad",
-                "line": "Tempat-tempat perbedaan riwayat Warsy dengan Hafs ditandai dengan warna"
+                "line": "Tiga mushaf riwayat Warsy, salah satunya menandai perbedaan Warsy dengan Hafs dengan warna"
             },
             "qalon": {
-                "name": "Mushaf Qalun",
+                "name": "Mushaf Qalun dan Libya",
                 "riwaya": "Qalun dari Nafi",
                 "series": "Khair Zad",
-                "line": "Dilengkapi qari dengan riwayat Qalun"
+                "line": "Mushaf Qalun berwarna dan Mushaf Libya, dilengkapi qari dengan riwayat Qalun"
             },
             "shamarli": {
                 "name": "Mushaf Syamarli",
                 "riwaya": "Hafs dari Ashim",
                 "series": "Quran Holder",
-                "line": "Mushaf Syamarli 522 halaman, dengan catatan qiraat di pinggir halaman"
+                "line": "Tujuh mushaf dengan tata letak Syamarli, termasuk aslinya dengan catatan qiraat di pinggir halaman"
             }
         }
     },
