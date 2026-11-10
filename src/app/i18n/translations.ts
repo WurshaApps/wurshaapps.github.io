@@ -57,10 +57,6 @@ export interface Dict {
     };
     footer: {
         about: string;
-        creditsTitle: string;
-        credits: { label: string; value: string }[];
-        sourcesTitle: string;
-        sources: string[];
         rights: string;
         /** Footer link to the privacy policy page. */
         privacy: string;

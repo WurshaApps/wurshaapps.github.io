@@ -129,7 +129,7 @@ One long page, 7 sections instead of 11, plus optional edition pages.
 | 4 | **The story** (7 scenes, store order) | Meaning & tafsir · Tartil · Memorize · Night reading · Khatmas · Adhkar · Share as image. Each: caption title/subtitle + 2–3 bullets from the description block + one device shot, alternating sides | `captions.*`, description blocks | features, reciters, sciences, gestures |
 | 5 | **The library** | Tafsir / Quran sciences / qira'at / translations as four short, honest lists ("Ibn Kathir, At-Tabari, Al-Qurtubi… and more") | existing `books` section, trimmed | books |
 | 6 | **Download** | Edition × platform matrix (desktop) / edition accordion (mobile); store badges; Windows/Mac notes; version from `apps.json` | `apps.json`, `downloads` | downloads |
-| 7 | **Footer** | About, **credits & sources** (kept: they build trust), privacy policy, contact, language list | `footer` | tech, footer |
+| 7 | **Footer** | About line, rights, privacy policy and blog links (no credits or sources list) | `footer` | tech, footer |
 
 Dropped: stats strip, audiences cards, 11-category feature grid, gestures table, "Solid engineering".
 Their best lines move into the story bullets.
@@ -153,7 +153,7 @@ there. Cheap once the page is data-driven.
   Arabic in every UI language) — a line in the language section, not hidden.
 - **"Free"** only if true for every edition and platform, and say plainly if there are ads or purchases
   (open: see §9).
-- **Credit** the Mushaf publishers, data and audio sources in the footer, as today.
+- **Credits:** the site has no credits or sources list; the Mushaf publishers are credited in the apps (layout `credits` in the catalog).
 
 ### 5.2 Draft copy (en, ar) — tone sample
 

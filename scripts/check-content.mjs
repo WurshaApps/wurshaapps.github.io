@@ -7,8 +7,8 @@ import { fileURLToPath } from 'node:url';
 
 const dir = join(dirname(fileURLToPath(import.meta.url)), '..', 'content');
 const master = JSON.parse(readFileSync(join(dir, 'en.json'), 'utf8'));
-// Lists whose length may differ by language (book names, credits…). Everything else must match en.
-const FREE_LENGTH = /^(library\.groups\.\d+\.items|footer\.(credits|sources)|story\.scenes\.\d+\.items)$/;
+// Lists whose length may differ by language (book names, scene bullets…). Everything else must match en.
+const FREE_LENGTH = /^(library\.groups\.\d+\.items|story\.scenes\.\d+\.items)$/;
 const MAY_BE_EMPTY = new Set(['story.screensNote']);
 // Optional per language: a scene note (e.g. "the audio menu is in Arabic" is pointless in Arabic).
 const OPTIONAL = new Set(['note']);

@@ -197,22 +197,6 @@
     },
     "footer": {
         "about": "Wursha Digital Apps Quran Holder va Khair Zad Mushaf ilovalarini nashr etadi.",
-        "creditsTitle": "Minnatdorchilik",
-        "credits": [
-            { "label": "Khair Zad mushaflari", "value": "Shayx Ali ibn Abdulmunʼim Solih" },
-            { "label": "Tajvid Mushafi", "value": "Dar Al-Maʼrifah (barcha huquqlar himoyalangan)" },
-            { "label": "Farsh va hoshiyalar", "value": "Muhandis Muhammad Shalabi va mutaxassislar guruhi" },
-            { "label": "Tafsirlar", "value": "Al-Bahis Al-Qurʼoniy, Qurʼoniy tadqiqotlar uchun Tafsir markazi" }
-        ],
-        "sourcesTitle": "Audio va maʼlumot manbalari",
-        "sources": [
-            "mp3quran.net",
-            "everyayah.com",
-            "King Saud universiteti elektron Mushafi",
-            "sound.quraat.info",
-            "jamharat-uloom.org (soʻz maʼnolari, sarf va nahv)",
-            "Al-Qurʼon Al-Azim, Ar-Rojihiy vaqfi (vaqf maʼlumotlari)"
-        ],
         "rights": "© Wursha Digital Apps",
         "privacy": "Maxfiylik siyosati"
     },

@@ -197,22 +197,6 @@
     },
     "footer": {
         "about": "Wursha Digital Apps Quran Hafizi və Khair Zad Mushaf tətbiqlərini nəşr edir.",
-        "creditsTitle": "Təşəkkür",
-        "credits": [
-            { "label": "Khair Zad Mushafları", "value": "Şeyx Əli ibn Əbdülmünim Saleh" },
-            { "label": "Təcvidli Mushaf", "value": "Dar Əl-Mərifə (bütün hüquqlar qorunur)" },
-            { "label": "Fərş və haşiyələr", "value": "Müh. Məhəmməd Şələbi və ixtisaslı komanda" },
-            { "label": "Təfsirlər", "value": "Əl-Bahis Əl-Qurani, Təfsir Quran Tədqiqatları Mərkəzi" }
-        ],
-        "sourcesTitle": "Səs və məlumat mənbələri",
-        "sources": [
-            "mp3quran.net",
-            "everyayah.com",
-            "Kral Səud Universitetinin Elektron Mushafı",
-            "sound.quraat.info",
-            "jamharat-uloom.org (söz mənaları, sərf və qrammatika)",
-            "Əl-Quran Əl-Azim, Ər-Racihi Vəqfi (vəqf məlumatları)"
-        ],
         "rights": "© Wursha Digital Apps",
         "privacy": "Məxfilik siyasəti"
     },

@@ -197,22 +197,6 @@
     },
     "footer": {
         "about": "Wursha Digital Apps, Kur'an Hafızı ve Khair Zad Mushaf uygulamalarını yayımlar.",
-        "creditsTitle": "Teşekkürler",
-        "credits": [
-            { "label": "Khair Zad Mushafları", "value": "Şeyh Ali b. Abdülmün'im Salih" },
-            { "label": "Tecvidli Mushaf", "value": "Dârü'l-Ma'rife (tüm hakları saklıdır)" },
-            { "label": "Ferş ve kenar notları", "value": "Müh. Muhammed Şelebî ve uzman bir ekip" },
-            { "label": "Tefsirler", "value": "El-Bâhisü'l-Kur'ânî, Tefsir Kur'an Araştırmaları Merkezi" }
-        ],
-        "sourcesTitle": "Ses ve veri kaynakları",
-        "sources": [
-            "mp3quran.net",
-            "everyayah.com",
-            "Kral Suud Üniversitesi Elektronik Mushafı",
-            "sound.quraat.info",
-            "jamharat-uloom.org (kelime anlamları, sarf ve nahiv)",
-            "Kur'an-ı Azîm, er-Râcihî Vakfı (vakf ve ibtidâ verileri)"
-        ],
         "rights": "© Wursha Digital Apps",
         "privacy": "Gizlilik politikası"
     },

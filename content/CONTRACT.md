@@ -15,7 +15,7 @@ same shape as `en.json` (checked by `npm run check-content`).
 | `languages` | `library` (languages section)               | Heading and the "stays in Arabic" note; names from `locales.ts`   |
 | `account`   | `account`                                   | Optional account: why to sign in, privacy and deletion links |
 | `downloads` | `downloads`                                 | Table headings, link labels, notes                                |
-| `footer`    | `footer`                                    | About line, credits, sources, rights, privacy link                |
+| `footer`    | `footer`                                    | About line, rights, privacy and blog links                        |
 | `privacy`   | `privacy/privacy.component`, `I18nService`  | The privacy policy page `/<lang>/privacy/` and its `<title>`/description |
 | `blog`      | `blog/blog.component`, `blog/post.component`, `I18nService` | The blog `/<lang>/blog/`: head, heading, link labels; posts are in `blog.json` |
 
@@ -35,7 +35,7 @@ languages: { title, subtitle, note }
 account:   { title, subtitle, delete }   // the privacy link reuses footer.privacy
 downloads: { title, subtitle, version, columns: { edition, ios, android, mac, windows },
              links: { ios, android, mac, windows }, notAvailable, winNote }
-footer:    { about, creditsTitle, credits: [{ label, value }], sourcesTitle, sources: string[], rights, privacy }
+footer:    { about, rights, privacy }
 privacy:   { metaTitle, metaDescription, title, updated, intro,
              sections: [{ title, paragraphs: string[], items: string[] }] }   // same sections in every language
 blog:      { metaTitle, metaDescription, title, subtitle, readMore, all, langNote }

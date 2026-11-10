@@ -197,22 +197,6 @@
     },
     "footer": {
         "about": "Wursha Digital Apps menerbitkan aplikasi Mushaf Quran Holder dan Khair Zad.",
-        "creditsTitle": "Penghargaan",
-        "credits": [
-            { "label": "Mushaf Khair Zad", "value": "Syeikh Ali bin Abdul Mun'im Saleh" },
-            { "label": "Mushaf Tajwid", "value": "Dar Al-Ma'rifah (hak cipta terpelihara)" },
-            { "label": "Farsh dan nota tepi", "value": "Eng. Muhammad Shalaby dan pasukan pakar" },
-            { "label": "Tafsir", "value": "Al-Bahith Al-Qurani, Pusat Tafsir untuk Kajian Al-Quran" }
-        ],
-        "sourcesTitle": "Sumber audio dan data",
-        "sources": [
-            "mp3quran.net",
-            "everyayah.com",
-            "Mushaf Elektronik Universiti King Saud",
-            "sound.quraat.info",
-            "jamharat-uloom.org (makna perkataan, sarf dan nahu)",
-            "Al-Quran Al-Adheem, Wakaf Al-Rajhi (data waqaf)"
-        ],
         "rights": "© Wursha Digital Apps",
         "privacy": "Dasar privasi"
     },
