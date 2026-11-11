@@ -33,6 +33,7 @@
             "required": [
                 "id",
                 "accent",
+                "promoAlt",
                 "urls"
             ],
             "properties": {
@@ -51,6 +52,13 @@
                     "type": "string",
                     "pattern": "^#[0-9a-fA-F]{6}$",
                     "description": "Edition colour (same as its store art): card panel behind the page image."
+                },
+                "promoAlt": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["en", "ar"],
+                    "description": "Alt text of the edition's promo card, public/editions/<id>-promo.webp (Arabic on RTL pages, English on the rest; the card's own text is Arabic).",
+                    "properties": { "en": { "type": "string" }, "ar": { "type": "string" } }
                 },
                 "release": {
                     "type": "string",

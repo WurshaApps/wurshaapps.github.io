@@ -9,7 +9,6 @@
         "editions": "Mushaf",
         "features": "Fitur",
         "library": "Pustaka",
-        "downloads": "Unduh",
         "blog": "Blog",
         "language": "Bahasa"
     },
@@ -27,39 +26,31 @@
     },
     "editions": {
         "title": "Pilih Mushaf Anda",
-        "subtitle": "Setiap edisi memiliki pustaka tafsir, murottal, dan fitur yang sama. Pilih riwayat Anda, lalu mushaf untuk setiap khatam.",
-        "platformsAll": "iPhone, iPad, Android, Mac, Windows",
-        "platformsMobile": "iPhone, iPad, Android",
+        "subtitle": "Quran Holder adalah aplikasi utama: semua mushaf, semua riwayat, dan seluruh pustaka di satu tempat. Edisi khusus terbatas pada satu mushaf atau riwayat, dengan pustaka, murottal, dan fitur yang sama.",
+        "mainLabel": "Aplikasi utama",
+        "specialTitle": "Edisi khusus",
+        "specialSubtitle": "Aplikasi yang lebih kecil untuk satu mushaf atau riwayat. Masing-masing terbuka pada mushafnya sendiri dan hanya mengunduh mushaf yang tercantum di kartunya. Semuanya juga ada di Quran Holder.",
+        "layoutsTitle": "Mushaf di aplikasi ini",
         "list": {
             "madina": {
                 "name": "Quran Holder",
-                "riwaya": "Mushaf Madinah",
-                "series": "Nama dan logo baru",
-                "line": "Halaman Madinah yang sudah Anda kenal, dan lebih dari 25 mushaf lain untuk dipilih bagi setiap khatam"
+                "line": "Halaman Madinah yang sudah Anda kenal, dan semua mushaf dari edisi khusus di bawah: lebih dari 25 mushaf riwayat Hafs, Warsy, Qalun, dan lainnya untuk dipilih bagi setiap khatam"
             },
             "tajweed": {
                 "name": "Mushaf Tajwid",
-                "riwaya": "Hafs dari Ashim",
-                "series": "Quran Holder",
                 "line": "Setiap hukum tajwid ditandai dengan warna, dalam riwayat Hafs dan Warsy, dengan panduan arti setiap warna"
             },
             "warsh": {
                 "name": "Mushaf Warsy",
-                "riwaya": "Warsy dari Nafi",
-                "series": "Quran Holder",
                 "line": "Tiga mushaf riwayat Warsy, salah satunya menandai perbedaan Warsy dengan Hafs dengan warna"
             },
             "qalon": {
                 "name": "Mushaf Qalun dan Libya",
-                "riwaya": "Qalun dari Nafi",
-                "series": "Quran Holder",
                 "line": "Mushaf Qalun berwarna dan Mushaf Libya, dilengkapi qari dengan riwayat Qalun"
             },
             "shamarli": {
                 "name": "Mushaf Syamarli",
-                "riwaya": "Hafs dari Ashim",
-                "series": "Quran Holder",
-                "line": "Tujuh mushaf dengan tata letak Syamarli, termasuk aslinya dengan catatan qiraat di pinggir halaman"
+                "line": "Delapan mushaf dengan tata letak Syamarli, termasuk aslinya dengan catatan qiraat di pinggir halaman"
             }
         }
     },
@@ -167,8 +158,7 @@
     },
     "languages": {
         "title": "Dalam bahasa Anda",
-        "subtitle": "Antarmuka aplikasi tersedia dalam 14 bahasa.",
-        "note": "Nama surah, judul kitab tafsir, dan teks dzikir tetap dalam bahasa Arab di semua bahasa."
+        "subtitle": "Antarmuka aplikasi tersedia dalam 14 bahasa."
     },
     "account": {
         "title": "Sinkronkan dengan akun opsional",
@@ -176,13 +166,8 @@
         "delete": "Hapus akun Anda"
     },
     "downloads": {
-        "title": "Unduh",
-        "subtitle": "Gratis di semua platform, tanpa iklan.",
         "version": "Versi",
         "columns": {
-            "edition": "Mushaf",
-            "ios": "iPhone & iPad",
-            "android": "Android",
             "mac": "Mac",
             "windows": "Windows"
         },
@@ -192,7 +177,6 @@
             "mac": "Unduh .dmg",
             "windows": "Unduh .exe"
         },
-        "notAvailable": "Tidak tersedia",
         "winNote": "Windows 10 dan yang lebih baru."
     },
     "footer": {

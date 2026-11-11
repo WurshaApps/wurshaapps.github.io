@@ -41,7 +41,7 @@
                         }
                     }
                 }
-                var moved = { reciters: 'features', sciences: 'features', gestures: 'features', books: 'library', tech: 'downloads' };
+                var moved = { reciters: 'features', sciences: 'features', gestures: 'features', books: 'library', tech: 'editions', downloads: 'editions' };
                 var hash = location.hash.slice(1);
                 location.replace('/' + lang + '/' + page + (hash ? '#' + (moved[hash] || hash) : ''));
             })();

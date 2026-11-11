@@ -9,7 +9,6 @@
         "editions": "Ausgaben",
         "features": "Funktionen",
         "library": "Bibliothek",
-        "downloads": "Herunterladen",
         "blog": "Blog",
         "language": "Sprache"
     },
@@ -27,39 +26,31 @@
     },
     "editions": {
         "title": "Wähle deinen Mushaf",
-        "subtitle": "Jede Ausgabe hat dieselbe Tafsir-Bibliothek, dieselben Rezitationen und Werkzeuge. Wähle deine Riwaya und dann einen Mushaf für jede Khatma.",
-        "platformsAll": "iPhone, iPad, Android, Mac, Windows",
-        "platformsMobile": "iPhone, iPad, Android",
+        "subtitle": "Quran Holder ist die Haupt-App: alle Mushafs, alle Riwayat und die ganze Bibliothek an einem Ort. Die Spezialausgaben beschränken sich auf einen Mushaf oder eine Riwaya, mit derselben Bibliothek, denselben Rezitationen und Werkzeugen.",
+        "mainLabel": "Haupt-App",
+        "specialTitle": "Spezialausgaben",
+        "specialSubtitle": "Kleinere Apps rund um einen Mushaf oder eine Riwaya. Jede öffnet ihren eigenen Mushaf und lädt nur die auf ihrer Karte genannten herunter. Alle sind auch in Quran Holder enthalten.",
+        "layoutsTitle": "Mushafs in dieser App",
         "list": {
             "madina": {
                 "name": "Quran Holder",
-                "riwaya": "Medina-Mushaf",
-                "series": "Neuer Name, neues Logo",
-                "line": "Die vertrauten Medina-Seiten, dazu über 25 weitere Mushafs zur Wahl für jede Khatma"
+                "line": "Die vertrauten Medina-Seiten und alle Mushafs der Spezialausgaben unten: über 25 Mushafs in Hafs, Warsh, Qalun und weiteren Riwayat zur Wahl für jede Khatma"
             },
             "tajweed": {
                 "name": "Tajwid-Mushaf",
-                "riwaya": "Hafs nach Asim",
-                "series": "Quran Holder",
                 "line": "Jede Tajwid-Regel farbig markiert, in Hafs und in Warsh, mit einer Legende zu jeder Farbe"
             },
             "warsh": {
                 "name": "Warsh-Mushaf",
-                "riwaya": "Warsh nach Nafi",
-                "series": "Quran Holder",
                 "line": "Drei Warsh-Mushafs, einer davon mit den Stellen, an denen Warsh von Hafs abweicht, farbig markiert"
             },
             "qalon": {
                 "name": "Qalun- und Libyen-Mushaf",
-                "riwaya": "Qalun nach Nafi",
-                "series": "Quran Holder",
                 "line": "Der farbige Qalun-Mushaf und der Libyen-Mushaf, mit Rezitatoren der Überlieferung Qalun"
             },
             "shamarli": {
                 "name": "Shamarly-Mushaf",
-                "riwaya": "Hafs nach Asim",
-                "series": "Quran Holder",
-                "line": "Sieben Mushafs im Shamarly-Layout, darunter das Original mit Qira'at-Hinweisen am Seitenrand"
+                "line": "Acht Mushafs im Shamarly-Layout, darunter das Original mit Qira'at-Hinweisen am Seitenrand"
             }
         }
     },
@@ -167,8 +158,7 @@
     },
     "languages": {
         "title": "In deiner Sprache",
-        "subtitle": "Die App-Oberfläche gibt es in 14 Sprachen.",
-        "note": "Surennamen, Titel der Tafsir-Werke und Adhkar-Texte bleiben in jeder Sprache auf Arabisch."
+        "subtitle": "Die App-Oberfläche gibt es in 14 Sprachen."
     },
     "account": {
         "title": "Synchronisieren mit einem optionalen Konto",
@@ -176,13 +166,8 @@
         "delete": "Konto löschen"
     },
     "downloads": {
-        "title": "Herunterladen",
-        "subtitle": "Kostenlos auf allen Plattformen, ohne Werbung.",
         "version": "Version",
         "columns": {
-            "edition": "Ausgabe",
-            "ios": "iPhone & iPad",
-            "android": "Android",
             "mac": "Mac",
             "windows": "Windows"
         },
@@ -192,7 +177,6 @@
             "mac": ".dmg herunterladen",
             "windows": ".exe herunterladen"
         },
-        "notAvailable": "Nicht verfügbar",
         "winNote": "Ab Windows 10."
     },
     "footer": {

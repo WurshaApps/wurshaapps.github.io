@@ -9,7 +9,6 @@
         "editions": "Éditions",
         "features": "Fonctionnalités",
         "library": "Bibliothèque",
-        "downloads": "Télécharger",
         "blog": "Blog",
         "language": "Langue"
     },
@@ -27,39 +26,31 @@
     },
     "editions": {
         "title": "Choisissez votre Mushaf",
-        "subtitle": "Chaque édition propose la même bibliothèque de tafsir, les mêmes récitations et les mêmes outils. Choisissez votre riwaya, puis un Mushaf pour chaque khatma.",
-        "platformsAll": "iPhone, iPad, Android, Mac, Windows",
-        "platformsMobile": "iPhone, iPad, Android",
+        "subtitle": "Quran Holder est l'application principale : tous les Mushafs, toutes les riwayat et toute la bibliothèque au même endroit. Les éditions spécialisées se limitent à un Mushaf ou à une riwaya, avec la même bibliothèque, les mêmes récitations et les mêmes outils.",
+        "mainLabel": "Application principale",
+        "specialTitle": "Éditions spécialisées",
+        "specialSubtitle": "Des applications plus légères, centrées sur un Mushaf ou une riwaya. Chacune s'ouvre sur son propre Mushaf et ne télécharge que ceux indiqués sur sa carte. Tous se trouvent aussi dans Quran Holder.",
+        "layoutsTitle": "Mushafs de cette application",
         "list": {
             "madina": {
                 "name": "Quran Holder",
-                "riwaya": "Mushaf de Médine",
-                "series": "Nouveau nom et nouveau logo",
-                "line": "Les pages familières de Médine, et plus de 25 autres Mushafs à choisir pour chaque khatma"
+                "line": "Les pages familières de Médine, et tous les Mushafs des éditions spécialisées ci-dessous : plus de 25 Mushafs en Hafs, Warsh, Qalun et d'autres riwayat à choisir pour chaque khatma"
             },
             "tajweed": {
                 "name": "Mushaf Tajwid",
-                "riwaya": "Hafs selon Asim",
-                "series": "Quran Holder",
                 "line": "Chaque règle de tajwid en couleur, en Hafs et en Warsh, avec une légende pour chaque couleur"
             },
             "warsh": {
                 "name": "Mushaf Warsh",
-                "riwaya": "Warsh selon Nafi",
-                "series": "Quran Holder",
                 "line": "Trois Mushafs Warsh, dont un qui signale en couleur les passages où Warsh diffère de Hafs"
             },
             "qalon": {
                 "name": "Mushaf Qalun et Libye",
-                "riwaya": "Qalun selon Nafi",
-                "series": "Quran Holder",
                 "line": "Le Mushaf Qalun en couleur et le Mushaf de Libye, avec des récitants de la riwaya de Qalun"
             },
             "shamarli": {
                 "name": "Mushaf Shamarly",
-                "riwaya": "Hafs selon Asim",
-                "series": "Quran Holder",
-                "line": "Sept Mushafs à la mise en page Shamarly, dont l'original avec des notes de qira'at dans les marges"
+                "line": "Huit Mushafs à la mise en page Shamarly, dont l'original avec des notes de qira'at dans les marges"
             }
         }
     },
@@ -167,8 +158,7 @@
     },
     "languages": {
         "title": "Dans votre langue",
-        "subtitle": "L'interface de l'application est disponible en 14 langues.",
-        "note": "Les noms des sourates, les titres des livres de tafsir et les textes des adhkar restent en arabe dans toutes les langues."
+        "subtitle": "L'interface de l'application est disponible en 14 langues."
     },
     "account": {
         "title": "Synchronisez avec un compte facultatif",
@@ -176,13 +166,8 @@
         "delete": "Supprimer votre compte"
     },
     "downloads": {
-        "title": "Télécharger",
-        "subtitle": "Gratuit sur toutes les plateformes, sans publicité.",
         "version": "Version",
         "columns": {
-            "edition": "Édition",
-            "ios": "iPhone et iPad",
-            "android": "Android",
             "mac": "Mac",
             "windows": "Windows"
         },
@@ -192,7 +177,6 @@
             "mac": "Télécharger le .dmg",
             "windows": "Télécharger le .exe"
         },
-        "notAvailable": "Non disponible",
         "winNote": "Windows 10 et versions ultérieures."
     },
     "footer": {

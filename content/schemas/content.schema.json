@@ -57,7 +57,6 @@
                 "editions",
                 "features",
                 "library",
-                "downloads",
                 "blog",
                 "language"
             ],
@@ -71,10 +70,6 @@
                     "minLength": 1
                 },
                 "library": {
-                    "type": "string",
-                    "minLength": 1
-                },
-                "downloads": {
                     "type": "string",
                     "minLength": 1
                 },
@@ -157,8 +152,10 @@
             "required": [
                 "title",
                 "subtitle",
-                "platformsAll",
-                "platformsMobile",
+                "mainLabel",
+                "specialTitle",
+                "specialSubtitle",
+                "layoutsTitle",
                 "list"
             ],
             "properties": {
@@ -170,11 +167,19 @@
                     "type": "string",
                     "minLength": 1
                 },
-                "platformsAll": {
+                "mainLabel": {
                     "type": "string",
                     "minLength": 1
                 },
-                "platformsMobile": {
+                "specialTitle": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "specialSubtitle": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "layoutsTitle": {
                     "type": "string",
                     "minLength": 1
                 },
@@ -194,20 +199,10 @@
                             "additionalProperties": false,
                             "required": [
                                 "name",
-                                "riwaya",
-                                "series",
                                 "line"
                             ],
                             "properties": {
                                 "name": {
-                                    "type": "string",
-                                    "minLength": 1
-                                },
-                                "riwaya": {
-                                    "type": "string",
-                                    "minLength": 1
-                                },
-                                "series": {
                                     "type": "string",
                                     "minLength": 1
                                 },
@@ -222,20 +217,10 @@
                             "additionalProperties": false,
                             "required": [
                                 "name",
-                                "riwaya",
-                                "series",
                                 "line"
                             ],
                             "properties": {
                                 "name": {
-                                    "type": "string",
-                                    "minLength": 1
-                                },
-                                "riwaya": {
-                                    "type": "string",
-                                    "minLength": 1
-                                },
-                                "series": {
                                     "type": "string",
                                     "minLength": 1
                                 },
@@ -250,20 +235,10 @@
                             "additionalProperties": false,
                             "required": [
                                 "name",
-                                "riwaya",
-                                "series",
                                 "line"
                             ],
                             "properties": {
                                 "name": {
-                                    "type": "string",
-                                    "minLength": 1
-                                },
-                                "riwaya": {
-                                    "type": "string",
-                                    "minLength": 1
-                                },
-                                "series": {
                                     "type": "string",
                                     "minLength": 1
                                 },
@@ -278,20 +253,10 @@
                             "additionalProperties": false,
                             "required": [
                                 "name",
-                                "riwaya",
-                                "series",
                                 "line"
                             ],
                             "properties": {
                                 "name": {
-                                    "type": "string",
-                                    "minLength": 1
-                                },
-                                "riwaya": {
-                                    "type": "string",
-                                    "minLength": 1
-                                },
-                                "series": {
                                     "type": "string",
                                     "minLength": 1
                                 },
@@ -306,20 +271,10 @@
                             "additionalProperties": false,
                             "required": [
                                 "name",
-                                "riwaya",
-                                "series",
                                 "line"
                             ],
                             "properties": {
                                 "name": {
-                                    "type": "string",
-                                    "minLength": 1
-                                },
-                                "riwaya": {
-                                    "type": "string",
-                                    "minLength": 1
-                                },
-                                "series": {
                                     "type": "string",
                                     "minLength": 1
                                 },
@@ -465,8 +420,7 @@
             "additionalProperties": false,
             "required": [
                 "title",
-                "subtitle",
-                "note"
+                "subtitle"
             ],
             "properties": {
                 "title": {
@@ -474,10 +428,6 @@
                     "minLength": 1
                 },
                 "subtitle": {
-                    "type": "string",
-                    "minLength": 1
-                },
-                "note": {
                     "type": "string",
                     "minLength": 1
                 }
@@ -513,23 +463,12 @@
             "type": "object",
             "additionalProperties": false,
             "required": [
-                "title",
-                "subtitle",
                 "version",
                 "columns",
                 "links",
-                "notAvailable",
                 "winNote"
             ],
             "properties": {
-                "title": {
-                    "type": "string",
-                    "minLength": 1
-                },
-                "subtitle": {
-                    "type": "string",
-                    "minLength": 1
-                },
                 "version": {
                     "type": "string",
                     "minLength": 1
@@ -538,25 +477,10 @@
                     "type": "object",
                     "additionalProperties": false,
                     "required": [
-                        "edition",
-                        "ios",
-                        "android",
                         "mac",
                         "windows"
                     ],
                     "properties": {
-                        "edition": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "ios": {
-                            "type": "string",
-                            "minLength": 1
-                        },
-                        "android": {
-                            "type": "string",
-                            "minLength": 1
-                        },
                         "mac": {
                             "type": "string",
                             "minLength": 1
@@ -595,16 +519,12 @@
                         }
                     }
                 },
-                "notAvailable": {
-                    "type": "string",
-                    "minLength": 1
-                },
                 "winNote": {
                     "type": "string",
                     "minLength": 1
                 }
             },
-            "description": "Edition × platform table; links come from apps.json."
+            "description": "Download labels: store badge alt text (links.ios/android), the Mac/Windows buttons on each edition row (links.mac/windows over columns.mac/windows, winNote as the Windows tooltip), and the blog's version label."
         },
         "footer": {
             "type": "object",

@@ -75,6 +75,12 @@ What we already have and should reuse:
 | W5 | Hero line | en "The Mushaf you know, with everything around it" · ar «المصحف الذي تعرفه، ومعه كل ما تحتاجه» |
 | W6 | Screenshots | **No baked captions; captions are HTML in every language.** Two screenshot sets only (English UI for LTR pages, Arabic UI for RTL pages) to keep assets small (~1.5 MB); `story.screensNote` says which UI the screens show |
 | W7 | Hafs edition | **Removed from the site** (2026-10-17): five editions — Madina, Tajweed, Warsh, Qalun, Shamarly. The Hafs *riwaya* labels on Madina, Tajweed and Shamarly stay |
+| W8 | Main app | **Madina (Quran Holder) leads** (2026-11-11): it offers every Mushaf, so it gets one wide card marked «Main app»; Tajweed, Warsh, Qalun and Shamarly follow under «Specialized editions», each card listing its Mushafs from `content/layouts.json` (`npm run update-layouts`) |
+| W9 | Hero | **The app name is the headline** (2026-11-11): centred hero with the Quran Holder icon and name as `<h1>`, `hero.title` as the tagline, then the subtitle, buttons and platforms; the two-page spread rises from the section's bottom edge and fades out |
+| W10 | Store links | **Official store badges** (2026-11-11): App Store and Google Play links in the hero (main app) and the download table are the stores' localized badges, not text buttons; Mac and Windows keep text links |
+| W11 | Edition rows | **Release promo cards** (2026-11-11): each edition is a row with its promo card from the latest release (the v37 post's images, `public/editions/<id>-promo.webp`), its store badges, and for the specialized editions its Mushafs; the cropped page thumbnails are gone |
+| W12 | No download section (2026-11-11) | Each edition row carries all its downloads: the App Store and Google Play badges plus Mac and Windows buttons drawn to match them. The download table and the header's Download link are gone; `#downloads` is an empty anchor at the editions for old links |
+| W13 | Edition rows, no tag line (2026-11-12) | The riwaya · series line under each edition's name is removed (and its `riwaya` / `series` fields); the name and its one-line description stay. This replaces W7's "Hafs riwaya labels stay" |
 
 ### 3.1 Principles
 

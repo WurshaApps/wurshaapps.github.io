@@ -9,7 +9,6 @@
         "editions": "Editions",
         "features": "Features",
         "library": "Library",
-        "downloads": "Download",
         "blog": "Blog",
         "language": "Language"
     },
@@ -27,39 +26,31 @@
     },
     "editions": {
         "title": "Choose your Mushaf",
-        "subtitle": "Every edition has the same tafsir library, recitations and tools. Pick your riwaya, then a Mushaf for each khatma.",
-        "platformsAll": "iPhone, iPad, Android, Mac, Windows",
-        "platformsMobile": "iPhone, iPad, Android",
+        "subtitle": "Quran Holder is the main app: every Mushaf, every riwaya and the whole library in one place. The specialized editions keep to one Mushaf or riwaya, with the same library, recitations and tools.",
+        "mainLabel": "Main app",
+        "specialTitle": "Specialized editions",
+        "specialSubtitle": "Smaller apps built around one Mushaf or riwaya. Each opens on its own Mushaf and downloads only the ones listed on its card. All of them are also in Quran Holder.",
+        "layoutsTitle": "Mushafs in this app",
         "list": {
             "madina": {
                 "name": "Quran Holder",
-                "riwaya": "Madina Mushaf",
-                "series": "New name and logo",
-                "line": "The familiar Madina pages, and 25+ more Mushafs to choose from for each khatma"
+                "line": "The familiar Madina pages, and every Mushaf of the specialized editions below: 25+ Mushafs in Hafs, Warsh, Qalun and other riwayat to choose from for each khatma"
             },
             "tajweed": {
                 "name": "Tajweed Mushaf",
-                "riwaya": "Hafs from Asim",
-                "series": "Quran Holder",
                 "line": "Every tajweed rule in color, in Hafs and in Warsh, with a legend for each color"
             },
             "warsh": {
                 "name": "Warsh Mushaf",
-                "riwaya": "Warsh from Nafi",
-                "series": "Quran Holder",
                 "line": "Three Warsh Mushafs, one with the places where Warsh differs from Hafs in color"
             },
             "qalon": {
                 "name": "Qalun & Libya Mushaf",
-                "riwaya": "Qalun from Nafi",
-                "series": "Quran Holder",
                 "line": "The Qalun Mushaf in color and the Libya Mushaf, with Qalun reciters"
             },
             "shamarli": {
                 "name": "Shamarly Mushaf",
-                "riwaya": "Hafs from Asim",
-                "series": "Quran Holder",
-                "line": "Seven Mushafs in the Shamarly layout, including the original with qira'at notes in the margins"
+                "line": "Eight Mushafs in the Shamarly layout, including the original with qira'at notes in the margins"
             }
         }
     },
@@ -167,8 +158,7 @@
     },
     "languages": {
         "title": "In your language",
-        "subtitle": "The app interface comes in 14 languages.",
-        "note": "Surah names, tafsir book titles and adhkar texts stay in Arabic in every language."
+        "subtitle": "The app interface comes in 14 languages."
     },
     "account": {
         "title": "Sync with an optional account",
@@ -176,13 +166,8 @@
         "delete": "Delete your account"
     },
     "downloads": {
-        "title": "Download",
-        "subtitle": "Free on every platform, with no ads.",
         "version": "Version",
         "columns": {
-            "edition": "Edition",
-            "ios": "iPhone & iPad",
-            "android": "Android",
             "mac": "Mac",
             "windows": "Windows"
         },
@@ -192,7 +177,6 @@
             "mac": "Download .dmg",
             "windows": "Download .exe"
         },
-        "notAvailable": "Not available",
         "winNote": "Windows 10 and later."
     },
     "footer": {

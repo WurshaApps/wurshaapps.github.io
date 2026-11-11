@@ -22,7 +22,7 @@ to static pages, deployed to GitHub Pages by `.github/workflows/node.js.yml` on 
   Android to Google Play, iPhone/iPad/Mac to the App Store (both tagged `share-<slug>`) and anything else to `/`.
   Shipped apps carry these addresses: never rename or remove one.
 - Visitor numbers, with no cookies or IDs:
-  App Store and Play links in the download table carry a `wursha.com-<lang>` campaign tag (`storeUrl()` in
+  App Store and Play badges (hero and each edition row) carry a `wursha.com-<lang>` campaign tag (`storeUrl()` in
   `src/app/shared/catalog.ts`), read in App Store Connect (App Analytics → Campaigns) and Play Console
   (acquisition by UTM). Desktop downloads are GitHub's own counts (`npm run download-counts`). Page visits go
   to a cookieless Cloudflare Web Analytics counter, switched on by the `token` in `src/index.html`'s last script.
@@ -36,9 +36,10 @@ to static pages, deployed to GitHub Pages by `.github/workflows/node.js.yml` on 
 | `npm run build`         | Checks content, then builds and prerenders every page into `dist/wdc/browser` |
 | `npm run check-content` | Compares every `content/<lang>.json` with `en.json`                      |
 | `npm run update-links`  | Pulls the newest Mac/Windows download links into `content/apps.json`     |
+| `npm run update-layouts` | Pulls each edition's Mushafs from the apps' layout catalog into `content/layouts.json` |
 | `npm run download-counts` | Mac/Windows downloads per edition from GitHub (`-- --versions` per release) |
 | `npm run short-links`   | Rewrites the app short-link pages in `public/<slug>/`                    |
-| `npm run import-shots`  | Rebuilds `public/shots/` and `public/editions/` from the store screenshots (needs ImageMagick) |
+| `npm run import-shots`  | Rebuilds `public/shots/` from the store screenshots (needs ImageMagick) |
 
 To check the built site the way GitHub Pages serves it:
 

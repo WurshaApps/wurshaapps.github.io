@@ -9,7 +9,6 @@
         "editions": "Mushaflar",
         "features": "Özellikler",
         "library": "Kütüphane",
-        "downloads": "İndir",
         "blog": "Blog",
         "language": "Dil"
     },
@@ -27,39 +26,31 @@
     },
     "editions": {
         "title": "Mushafınızı seçin",
-        "subtitle": "Her Mushafta aynı tefsir kütüphanesi, tilavetler ve araçlar bulunur. Rivayetinizi, sonra her hatim için bir Mushaf seçin.",
-        "platformsAll": "iPhone, iPad, Android, Mac, Windows",
-        "platformsMobile": "iPhone, iPad, Android",
+        "subtitle": "Kur'an Hafızı ana uygulamadır: tüm Mushaflar, tüm rivayetler ve kütüphanenin tamamı tek yerde. Özel sürümler tek bir Mushaf veya rivayetle sınırlıdır; kütüphane, tilavetler ve araçlar aynıdır.",
+        "mainLabel": "Ana uygulama",
+        "specialTitle": "Özel sürümler",
+        "specialSubtitle": "Tek bir Mushaf veya rivayet etrafında kurulmuş daha küçük uygulamalar. Her biri kendi Mushafıyla açılır ve yalnızca kartında listelenen Mushafları indirir. Hepsi Kur'an Hafızı'nda da var.",
+        "layoutsTitle": "Bu uygulamadaki Mushaflar",
         "list": {
             "madina": {
                 "name": "Kur'an Hafızı",
-                "riwaya": "Medine Mushafı",
-                "series": "Yeni ad ve logo",
-                "line": "Alışık olduğunuz Medine sayfaları ve her hatim için seçebileceğiniz 25'ten fazla Mushaf"
+                "line": "Alışık olduğunuz Medine sayfaları ve aşağıdaki özel sürümlerin tüm Mushafları: her hatim için seçebileceğiniz Hafs, Verş, Kalun ve diğer rivayetlerde 25'ten fazla Mushaf"
             },
             "tajweed": {
                 "name": "Tecvidli Mushaf",
-                "riwaya": "Hafs an Âsım",
-                "series": "Kur'an Hafızı",
                 "line": "Her tecvid kuralı renkle işaretli, Hafs ve Verş rivayetinde, her rengin açıklamasıyla"
             },
             "warsh": {
                 "name": "Verş Mushafı",
-                "riwaya": "Verş an Nâfi",
-                "series": "Kur'an Hafızı",
                 "line": "Üç Verş Mushafı; biri Verş'in Hafs'tan ayrıldığı yerleri renkle gösterir"
             },
             "qalon": {
                 "name": "Kalun ve Libya Mushafı",
-                "riwaya": "Kalun an Nâfi",
-                "series": "Kur'an Hafızı",
                 "line": "Renkli Kalun Mushafı ve Libya Mushafı, Kalun rivayetiyle okuyan kârilerle"
             },
             "shamarli": {
                 "name": "Şemerli Mushafı",
-                "riwaya": "Hafs an Âsım",
-                "series": "Kur'an Hafızı",
-                "line": "Şemerli düzeninde yedi Mushaf; kenarlarda kıraat notları olan asıl Şemerli de aralarında"
+                "line": "Şemerli düzeninde sekiz Mushaf; kenarlarda kıraat notları olan asıl Şemerli de aralarında"
             }
         }
     },
@@ -167,8 +158,7 @@
     },
     "languages": {
         "title": "Sizin dilinizde",
-        "subtitle": "Uygulama arayüzü 14 dilde sunulur.",
-        "note": "Sure adları, tefsir kitaplarının adları ve zikir metinleri her dilde Arapça kalır."
+        "subtitle": "Uygulama arayüzü 14 dilde sunulur."
     },
     "account": {
         "title": "İsteğe bağlı hesapla eşitleyin",
@@ -176,13 +166,8 @@
         "delete": "Hesabınızı silin"
     },
     "downloads": {
-        "title": "İndir",
-        "subtitle": "Tüm platformlarda ücretsiz ve reklamsız.",
         "version": "Sürüm",
         "columns": {
-            "edition": "Mushaf",
-            "ios": "iPhone ve iPad",
-            "android": "Android",
             "mac": "Mac",
             "windows": "Windows"
         },
@@ -192,7 +177,6 @@
             "mac": ".dmg indir",
             "windows": ".exe indir"
         },
-        "notAvailable": "Mevcut değil",
         "winNote": "Windows 10 ve üzeri."
     },
     "footer": {

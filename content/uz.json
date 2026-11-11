@@ -9,7 +9,6 @@
         "editions": "Mushaflar",
         "features": "Imkoniyatlar",
         "library": "Kutubxona",
-        "downloads": "Yuklab olish",
         "blog": "Blog",
         "language": "Til"
     },
@@ -27,39 +26,31 @@
     },
     "editions": {
         "title": "Mushafingizni tanlang",
-        "subtitle": "Har bir nashrda bir xil tafsir kutubxonasi, tilovatlar va vositalar bor. Rivoyatingizni, so'ng har bir xatm uchun Mushafni tanlang.",
-        "platformsAll": "iPhone, iPad, Android, Mac, Windows",
-        "platformsMobile": "iPhone, iPad, Android",
+        "subtitle": "Quran Holder asosiy ilova: barcha Mushaflar, barcha rivoyatlar va butun kutubxona bir joyda. Maxsus nashrlar bitta Mushaf yoki rivoyat bilan cheklangan, kutubxona, tilovatlar va vositalar esa bir xil.",
+        "mainLabel": "Asosiy ilova",
+        "specialTitle": "Maxsus nashrlar",
+        "specialSubtitle": "Bitta Mushaf yoki rivoyat atrofida qurilgan kichikroq ilovalar. Har biri o'z Mushafi bilan ochiladi va faqat kartasida ko'rsatilgan Mushaflarni yuklab oladi. Ularning hammasi Quran Holderda ham bor.",
+        "layoutsTitle": "Ushbu ilovadagi Mushaflar",
         "list": {
             "madina": {
                 "name": "Quran Holder",
-                "riwaya": "Madina Mushafi",
-                "series": "Yangi nom va logotip",
-                "line": "Tanish Madina sahifalari va har bir xatm uchun tanlash mumkin bo'lgan 25 dan ortiq boshqa Mushaf"
+                "line": "Tanish Madina sahifalari va quyidagi maxsus nashrlarning barcha Mushaflari: har bir xatm uchun tanlash mumkin bo'lgan Hafs, Varsh, Qolun va boshqa rivoyatlardagi 25 dan ortiq Mushaf"
             },
             "tajweed": {
                 "name": "Tajvid Mushafi",
-                "riwaya": "Osimdan Hafs rivoyati",
-                "series": "Quran Holder",
                 "line": "Har bir tajvid qoidasi rang bilan belgilangan, Hafs va Varsh rivoyatida, har bir rangning izohi bilan"
             },
             "warsh": {
                 "name": "Varsh Mushafi",
-                "riwaya": "Nofedan Varsh rivoyati",
-                "series": "Quran Holder",
                 "line": "Varsh rivoyatidagi uchta Mushaf, ulardan birida Varshning Hafsdan farqlari rang bilan belgilangan"
             },
             "qalon": {
                 "name": "Qolun va Liviya Mushafi",
-                "riwaya": "Nofedan Qolun rivoyati",
-                "series": "Quran Holder",
                 "line": "Rangli Qolun Mushafi va Liviya Mushafi, Qolun rivoyatidagi qorilar bilan"
             },
             "shamarli": {
                 "name": "Shamarli Mushafi",
-                "riwaya": "Osimdan Hafs rivoyati",
-                "series": "Quran Holder",
-                "line": "Shamarli tartibidagi yettita Mushaf, jumladan hoshiyalarida qiroat izohlari bor asl Shamarli Mushafi"
+                "line": "Shamarli tartibidagi sakkizta Mushaf, jumladan hoshiyalarida qiroat izohlari bor asl Shamarli Mushafi"
             }
         }
     },
@@ -167,8 +158,7 @@
     },
     "languages": {
         "title": "Oʻz tilingizda",
-        "subtitle": "Ilova interfeysi 14 tilda.",
-        "note": "Sura nomlari, tafsir kitoblarining nomlari va zikr matnlari barcha tillarda arabcha qoladi."
+        "subtitle": "Ilova interfeysi 14 tilda."
     },
     "account": {
         "title": "Ixtiyoriy hisob bilan sinxronlang",
@@ -176,13 +166,8 @@
         "delete": "Hisobingizni o'chiring"
     },
     "downloads": {
-        "title": "Yuklab olish",
-        "subtitle": "Barcha platformalarda bepul, reklamasiz.",
         "version": "Versiya",
         "columns": {
-            "edition": "Nashr",
-            "ios": "iPhone va iPad",
-            "android": "Android",
             "mac": "Mac",
             "windows": "Windows"
         },
@@ -192,7 +177,6 @@
             "mac": ".dmg yuklab olish",
             "windows": ".exe yuklab olish"
         },
-        "notAvailable": "Mavjud emas",
         "winNote": "Windows 10 va undan keyingi versiyalar."
     },
     "footer": {

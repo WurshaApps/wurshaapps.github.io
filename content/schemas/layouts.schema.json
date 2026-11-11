@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://wurshaapps.github.io/schemas/layouts.schema.json",
+    "title": "Mushafs per edition",
+    "description": "Written by scripts/update-layouts.mjs from https://data.wursha.com/catalog.json; don't edit by hand.",
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["updatedAt", "editions", "layouts"],
+    "properties": {
+        "$schema": { "type": "string" },
+        "updatedAt": { "type": "string", "description": "The catalog's updatedAt when this file was written." },
+        "editions": {
+            "type": "object",
+            "description": "Layout keys per apps.json id: the bundled layout first, then the ones the edition downloads.",
+            "additionalProperties": false,
+            "required": ["madina", "tajweed", "warsh", "qalon", "shamarli"],
+            "patternProperties": {
+                "^(madina|tajweed|warsh|qalon|shamarli)$": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+            }
+        },
+        "layouts": {
+            "type": "object",
+            "description": "Name of every layout listed under `editions`: Arabic for RTL pages, English for the rest.",
+            "additionalProperties": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["ar", "en"],
+                "properties": { "ar": { "type": "string" }, "en": { "type": "string" } }
+            }
+        }
+    }
+}

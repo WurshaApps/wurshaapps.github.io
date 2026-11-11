@@ -9,7 +9,6 @@
         "editions": "Mushaflar",
         "features": "Xüsusiyyətlər",
         "library": "Kitabxana",
-        "downloads": "Yüklə",
         "blog": "Bloq",
         "language": "Dil"
     },
@@ -27,39 +26,31 @@
     },
     "editions": {
         "title": "Mushafınızı seçin",
-        "subtitle": "Hər nəşrdə eyni təfsir kitabxanası, tilavətlər və alətlər var. Rəvayətinizi, sonra hər xətm üçün bir Mushaf seçin.",
-        "platformsAll": "iPhone, iPad, Android, Mac, Windows",
-        "platformsMobile": "iPhone, iPad, Android",
+        "subtitle": "Quran Hafizi əsas tətbiqdir: bütün Mushaflar, bütün rəvayətlər və bütün kitabxana bir yerdə. İxtisaslaşmış nəşrlər bir Mushaf və ya rəvayətlə məhdudlaşır, kitabxana, tilavətlər və alətlər isə eynidir.",
+        "mainLabel": "Əsas tətbiq",
+        "specialTitle": "İxtisaslaşmış nəşrlər",
+        "specialSubtitle": "Bir Mushaf və ya rəvayət üzərində qurulmuş kiçik tətbiqlər. Hər biri öz Mushafı ilə açılır və yalnız kartında göstərilən Mushafları endirir. Hamısı Quran Hafizində də var.",
+        "layoutsTitle": "Bu tətbiqdəki Mushaflar",
         "list": {
             "madina": {
                 "name": "Quran Hafizi",
-                "riwaya": "Mədinə Mushafı",
-                "series": "Yeni ad və loqo",
-                "line": "Tanış Mədinə səhifələri və hər xətm üçün seçə biləcəyiniz 25-dən çox başqa Mushaf"
+                "line": "Tanış Mədinə səhifələri və aşağıdakı ixtisaslaşmış nəşrlərin bütün Mushafları: hər xətm üçün seçə biləcəyiniz Həfs, Vərş, Qalun və başqa rəvayətlərdə 25-dən çox Mushaf"
             },
             "tajweed": {
                 "name": "Təcvidli Mushaf",
-                "riwaya": "Asimdən Həfs",
-                "series": "Quran Hafizi",
                 "line": "Hər təcvid qaydası rənglə işarələnib, Həfs və Vərş rəvayətində, hər rəngin izahı ilə"
             },
             "warsh": {
                 "name": "Vərş Mushafı",
-                "riwaya": "Nafidən Vərş",
-                "series": "Quran Hafizi",
                 "line": "Vərş rəvayətində üç Mushaf, onlardan birində Vərşin Həfsdən fərqləndiyi yerlər rənglə işarələnib"
             },
             "qalon": {
                 "name": "Qalun və Liviya Müshəfi",
-                "riwaya": "Nafidən Qalun",
-                "series": "Quran Hafizi",
                 "line": "Rəngli Qalun Mushafı və Liviya Mushafı, Qalun rəvayəti ilə oxuyan qarilərlə"
             },
             "shamarli": {
                 "name": "Şəmərli Mushafı",
-                "riwaya": "Asimdən Həfs",
-                "series": "Quran Hafizi",
-                "line": "Şəmərli düzümündə yeddi Mushaf, haşiyələrində qiraət qeydləri olan əsl Şəmərli Mushafı da daxil olmaqla"
+                "line": "Şəmərli düzümündə səkkiz Mushaf, haşiyələrində qiraət qeydləri olan əsl Şəmərli Mushafı da daxil olmaqla"
             }
         }
     },
@@ -167,8 +158,7 @@
     },
     "languages": {
         "title": "Sizin dilinizdə",
-        "subtitle": "Tətbiq interfeysi 14 dildədir.",
-        "note": "Surə adları, təfsir kitablarının adları və zikr mətnləri bütün dillərdə ərəbcə qalır."
+        "subtitle": "Tətbiq interfeysi 14 dildədir."
     },
     "account": {
         "title": "İstəyə bağlı hesabla sinxronlaşdırın",
@@ -176,13 +166,8 @@
         "delete": "Hesabınızı silin"
     },
     "downloads": {
-        "title": "Yüklə",
-        "subtitle": "Bütün platformalarda pulsuz və reklamsızdır.",
         "version": "Versiya",
         "columns": {
-            "edition": "Mushaf",
-            "ios": "iPhone və iPad",
-            "android": "Android",
             "mac": "Mac",
             "windows": "Windows"
         },
@@ -192,7 +177,6 @@
             "mac": ".dmg yüklə",
             "windows": ".exe yüklə"
         },
-        "notAvailable": "Mövcud deyil",
         "winNote": "Windows 10 və daha yeni versiyalar."
     },
     "footer": {

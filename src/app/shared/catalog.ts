@@ -1,20 +1,32 @@
 import catalog from '@content/apps.json';
+import layouts from '@content/layouts.json';
 import type { Direction } from '../i18n/locales';
 import type { EditionId, Platform, SceneId } from '../i18n/translations';
 
 export interface App {
     id: EditionId;
     accent: string;
+    /** Alt text of `public/editions/<id>-promo.webp` (its text is Arabic): `ar` on RTL pages, `en` on the rest. */
+    promoAlt: { en: string; ar: string };
     release?: string;
     urls: Partial<Record<Platform, string>>;
 }
 
 /** Editions in display order, from `content/apps.json`. */
 export const APPS = catalog.apps as App[];
-export const VERSION = catalog.version;
-export const PLATFORMS: Platform[] = ['ios', 'android', 'mac', 'windows'];
 
-export const hasDesktop = (app: App) => Boolean(app.urls.mac || app.urls.windows);
+/**
+ * The Mushafs each edition offers, bundled one first (`content/layouts.json`, written by
+ * `npm run update-layouts` from the apps' layout catalog). The catalog names layouts in Arabic and English
+ * only: RTL pages show the Arabic names, the others the English ones.
+ */
+export function layoutNames(dir: Direction): Record<EditionId, string[]> {
+    const lang = dir === 'rtl' ? 'ar' : 'en';
+    const names = layouts.layouts as Record<string, { ar: string; en: string }>;
+    return Object.fromEntries(
+        Object.entries(layouts.editions).map(([id, keys]) => [id, keys.map((k) => names[k][lang])]),
+    ) as Record<EditionId, string[]>;
+}
 
 /**
  * App Store Connect provider token (the `pt` value in a link from App Analytics' campaign link generator),
@@ -40,6 +52,19 @@ export function storeUrl(app: App, platform: Platform, lang: string): string | u
         return `${url}&referrer=${encodeURIComponent(referrer)}`;
     }
     return url;
+}
+
+/**
+ * The stores' official download badges, in the page language where the store has one
+ * (`public/badges/`, see content/README.md "Store badges"); the others show the English badge.
+ */
+const APP_STORE_BADGES = new Set(['ar', 'bn', 'de', 'en', 'fr', 'id', 'ms', 'tr', 'ur']);
+const GOOGLE_PLAY_BADGES = new Set(['ar', 'az', 'bn', 'de', 'en', 'fa', 'fr', 'hi', 'id', 'ms', 'tr', 'ur', 'uz']);
+
+export function badge(platform: 'ios' | 'android', lang: string): string {
+    return platform === 'ios'
+        ? `badges/app-store/${APP_STORE_BADGES.has(lang) ? lang : 'en'}.svg`
+        : `badges/google-play/${GOOGLE_PLAY_BADGES.has(lang) ? lang : 'en'}.png`;
 }
 
 /**

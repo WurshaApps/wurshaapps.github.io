@@ -9,8 +9,10 @@ build time and prerenders one page per language at `/<lang>/` — to change copy
 | ----------------------------- | ------------------------------------------------------------------- | ---------------------------------- |
 | `apps.json`                   | The six editions in display order: accent colour, release prefix, store/download URLs, version | New release; URL change |
 | `<lang>.json` (14 files)      | All copy for one language; `en.json` is the master                  | Any copy change                    |
+| `layouts.json`                | The Mushafs each edition offers, with their names; written by `npm run update-layouts` | A layout is published or a catalog rule changes |
 | `blog.json`                   | Blog posts (release announcements), newest first, in en and ar      | Every app release                  |
 | `schemas/apps.schema.json`    | JSON Schema for `apps.json`                                         | Adding an app field                |
+| `schemas/layouts.schema.json` | JSON Schema for `layouts.json`                                      | Changing its shape                 |
 | `schemas/blog.schema.json`    | JSON Schema for `blog.json`                                         | Changing the post shape            |
 | `schemas/content.schema.json` | JSON Schema for every `<lang>.json`                                 | Adding/removing a field            |
 | `CONTRACT.md`                 | Every section and field, and what it controls                       | When the shape changes             |
@@ -32,10 +34,28 @@ See `specs/website-redesign.md` §5. In short: every number is counted and round
 
 ## Images
 
-`public/shots/{en,ar}/` and `public/editions/` are made by `npm run import-shots` from the store
-screenshots (see the script header). LTR pages use the English set, RTL pages the Arabic set.
-The edition cards' app icons, `public/editions/<id>-icon.webp`, are WebP copies of the app repo's
-`editions/<edition>/assets/icon.png`; copy them again when an app's icon changes.
+`public/shots/{en,ar}/` is made by `npm run import-shots` from the store screenshots (see the script header).
+LTR pages use the English set, RTL pages the Arabic set.
+
+`public/editions/` holds each edition's:
+- `<id>-icon.webp`: a WebP copy of the app repo's `editions/<edition>/assets/icon.png`; copy it again when an
+  app's icon changes.
+- `<id>-promo.webp` (1080x1350) and `<id>-promo-640.webp`: the edition's promo card from the latest release
+  (the blog post's images, `public/blog/<slug>/`), shown on its editions row. Its alt text is `promoAlt` in
+  `apps.json`. Replace them with the next release's cards: copy the 1080 file and make the 640 one with
+  `magick <card> -resize 640x -quality 82 <id>-promo-640.webp`.
+
+## Store badges
+
+App Store and Google Play links (hero and each edition row) are the stores' official badges, shown as given:
+`public/badges/app-store/<lang>.svg` (Apple's black badge, from Apple's marketing tools
+`toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/<locale>`) and
+`public/badges/google-play/<lang>.png` (Google's `…/badges/static/images/badges/<lang>_badge_web_generic.png`,
+trimmed of its transparent margin with `magick -trim +repage` so both badges line up at the same height).
+Apple has no badge for az, fa, hi, ps and uz, Google none for ps: those pages show the English badge. The
+lists of languages that have their own badge are in `badge()` in `src/app/shared/catalog.ts`; update them when
+you add a file. `downloads.links.ios` / `.android` are the badges' alt text. The Mac and Windows buttons
+are drawn in CSS to match the badges (`.desktop` in `src/app/sections/editions.component.ts`).
 
 ## Releases
 

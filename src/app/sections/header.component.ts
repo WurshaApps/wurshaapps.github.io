@@ -19,7 +19,6 @@ import { LangPickerComponent } from '../i18n/lang-picker.component';
                     <a [routerLink]="home" fragment="editions">{{ t.nav.editions }}</a>
                     <a [routerLink]="home" fragment="features">{{ t.nav.features }}</a>
                     <a [routerLink]="home" fragment="library">{{ t.nav.library }}</a>
-                    <a [routerLink]="home" fragment="downloads">{{ t.nav.downloads }}</a>
                     <a [routerLink]="['/', i18n.lang(), 'blog']" [attr.aria-current]="i18n.page() === 'blog' ? 'page' : i18n.page().startsWith('blog/') ? 'true' : null">
                         {{ t.nav.blog }}
                     </a>

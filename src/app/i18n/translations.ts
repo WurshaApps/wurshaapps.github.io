@@ -12,7 +12,7 @@ export type Platform = 'ios' | 'android' | 'mac' | 'windows';
 export interface Dict {
     meta: { title: string; description: string };
     brand: string;
-    nav: { editions: string; features: string; library: string; downloads: string; blog: string; language: string };
+    nav: { editions: string; features: string; library: string; blog: string; language: string };
     hero: {
         title: string;
         subtitle: string;
@@ -26,9 +26,14 @@ export interface Dict {
     editions: {
         title: string;
         subtitle: string;
-        platformsAll: string;
-        platformsMobile: string;
-        list: Record<EditionId, { name: string; riwaya: string; series: string; line: string }>;
+        /** Badge on the main app's card (madina). */
+        mainLabel: string;
+        /** Heading and lede over the other editions' cards. */
+        specialTitle: string;
+        specialSubtitle: string;
+        /** Heading of the Mushaf list on each specialized edition's card (names from content/layouts.json). */
+        layoutsTitle: string;
+        list: Record<EditionId, { name: string; line: string }>;
     };
     story: {
         title: string;
@@ -43,16 +48,15 @@ export interface Dict {
         more: string;
         groups: { title: string; items: string[] }[];
     };
-    languages: { title: string; subtitle: string; note: string };
+    languages: { title: string; subtitle: string };
     /** The optional account: what sign-in is for (Google's OAuth brand verification reads it). The privacy link reuses `footer.privacy`. */
     account: { title: string; subtitle: string; delete: string };
+    /** Download labels: store badge alt text, the Mac/Windows buttons, the blog's "Version" label. */
     downloads: {
-        title: string;
-        subtitle: string;
         version: string;
-        columns: Record<Platform | 'edition', string>;
+        columns: Record<'mac' | 'windows', string>;
         links: Record<Platform, string>;
-        notAvailable: string;
+        /** Tooltip of the Windows button. */
         winNote: string;
     };
     footer: {

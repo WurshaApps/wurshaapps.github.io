@@ -5,6 +5,10 @@
         {
             "id": "madina",
             "accent": "#0b5966",
+            "promoAlt": {
+                "en": "Quran Holder version 37: five phones showing the Tajweed, Nastaliq, Madina, Shamarly and Warsh Mushafs, with “25+ Mushafs in several riwayas, downloaded inside the app” (Arabic)",
+                "ar": "الإصدار 37 من حامل القرآن: خمسة هواتف تعرض مصاحف التجويد والنستعليق والمدينة والشمرلي وورش، مع «أكثر من 25 مصحفاً بروايات متعددة، تُنزَّل من داخل التطبيق»"
+            },
             "release": "madina",
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_madina",
@@ -16,6 +20,10 @@
         {
             "id": "tajweed",
             "accent": "#1d5b3c",
+            "promoAlt": {
+                "en": "The Tajweed Mushaf app: the Hafs and Warsh Tajweed Mushafs side by side (Arabic)",
+                "ar": "تطبيق مصحف التجويد: مصحف التجويد برواية حفص وبرواية ورش جنباً إلى جنب"
+            },
             "release": "tjwid",
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_tjwid",
@@ -27,6 +35,10 @@
         {
             "id": "warsh",
             "accent": "#5c3b20",
+            "promoAlt": {
+                "en": "The Warsh Mushaf app: the Warsh Tajweed, Khair Zad Warsh and King Fahd Complex Warsh Mushafs (Arabic)",
+                "ar": "تطبيق مصحف ورش: مصحف التجويد برواية ورش ومصحف ورش من خير زاد ومصحف ورش من مجمع الملك فهد"
+            },
             "release": "warsh",
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_warsh",
@@ -38,6 +50,10 @@
         {
             "id": "qalon",
             "accent": "#6b2a3b",
+            "promoAlt": {
+                "en": "The Qalun & Libya Mushaf: the Qalun Mushaf in color beside the Libya Mushaf, with Qalun reciters, tafsir, dark mode and daily adhkar (Arabic)",
+                "ar": "مصحف قالون وليبيا: مصحف قالون الملوّن بجانب مصحف ليبيا، مع تلاوات برواية قالون والتفسير والوضع الليلي والأذكار اليومية"
+            },
             "release": "qalon",
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_qalon",
@@ -49,6 +65,10 @@
         {
             "id": "shamarli",
             "accent": "#45307a",
+            "promoAlt": {
+                "en": "The Shamarly Mushaf app: five of the seven Mushafs in the Shamarly layout, and the new Books page, Mushaf per khatma and mini player (Arabic)",
+                "ar": "تطبيق مصحف الشمرلي: خمسة من المصاحف السبعة بتخطيط الشمرلي، مع صفحة الكتب ومصحف لكل ختمة والمشغّل العائم"
+            },
             "release": "shmrly",
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.mosshfshmrly",

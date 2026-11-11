@@ -1,0 +1,177 @@
+{
+    "$schema": "./schemas/layouts.schema.json",
+    "updatedAt": "2026-11-11T20:30:16.034Z",
+    "editions": {
+        "madina": [
+            "madina",
+            "kfdouri",
+            "kfkhass",
+            "kfmumtaz",
+            "kfnastaleeq",
+            "kfqalon",
+            "kfshoba",
+            "kfsousi",
+            "kfstd",
+            "kfstd3",
+            "kfwarsh",
+            "kzasbhani",
+            "kzhafs",
+            "kzqalon",
+            "kzshoba",
+            "kzthkwan",
+            "kzwarsh",
+            "libya",
+            "oldmadina",
+            "shmrly",
+            "shmrly10",
+            "shmrly8",
+            "shmrlyq",
+            "shmrlyqalon",
+            "shmrlyshoba",
+            "shmrlytjwid",
+            "tjwid",
+            "tjwidwarsh"
+        ],
+        "tajweed": [
+            "tjwid",
+            "shmrlytjwid",
+            "tjwidwarsh"
+        ],
+        "warsh": [
+            "kzwarsh",
+            "kfwarsh",
+            "tjwidwarsh"
+        ],
+        "qalon": [
+            "kzqalon",
+            "kfqalon",
+            "libya",
+            "shmrlyq",
+            "shmrlyqalon"
+        ],
+        "shamarli": [
+            "shmrly",
+            "kfstd3",
+            "shmrly10",
+            "shmrly8",
+            "shmrlyq",
+            "shmrlyqalon",
+            "shmrlyshoba",
+            "shmrlytjwid"
+        ]
+    },
+    "layouts": {
+        "kfdouri": {
+            "ar": "مصحف الدوري (مجمع الملك فهد)",
+            "en": "Al-Duri Mushaf (King Fahd Complex)"
+        },
+        "kfkhass": {
+            "ar": "المصحف الخاص (مجمع الملك فهد)",
+            "en": "Special Mushaf (King Fahd Complex)"
+        },
+        "kfmumtaz": {
+            "ar": "المصحف الممتاز (مجمع الملك فهد)",
+            "en": "Mumtaz Mushaf (King Fahd Complex)"
+        },
+        "kfnastaleeq": {
+            "ar": "مصحف نستعليق (مجمع الملك فهد)",
+            "en": "Nastaliq Mushaf (King Fahd Complex)"
+        },
+        "kfqalon": {
+            "ar": "مصحف قالون (مجمع الملك فهد)",
+            "en": "Qalon Mushaf (King Fahd Complex)"
+        },
+        "kfshoba": {
+            "ar": "مصحف شعبة (مجمع الملك فهد)",
+            "en": "Shu'ba Mushaf (King Fahd Complex)"
+        },
+        "kfsousi": {
+            "ar": "مصحف السوسي (مجمع الملك فهد)",
+            "en": "Al-Susi Mushaf (King Fahd Complex)"
+        },
+        "kfstd": {
+            "ar": "المصحف العادي (مجمع الملك فهد)",
+            "en": "Standard Mushaf (King Fahd Complex)"
+        },
+        "kfstd3": {
+            "ar": "مصحف المدينة الموافق لطبعة الشمرلي",
+            "en": "Madina Mushaf matching the Shamarly print"
+        },
+        "kfwarsh": {
+            "ar": "مصحف ورش (مجمع الملك فهد)",
+            "en": "Warsh Mushaf (King Fahd Complex)"
+        },
+        "kzasbhani": {
+            "ar": "مصحف الأصبهاني",
+            "en": "Al-Asbahani Mushaf"
+        },
+        "kzhafs": {
+            "ar": "مصحف حفص (خير زاد)",
+            "en": "Hafs Mushaf (Khair Zad)"
+        },
+        "kzqalon": {
+            "ar": "مصحف قالون",
+            "en": "Qalon Mushaf"
+        },
+        "kzshoba": {
+            "ar": "مصحف شعبة",
+            "en": "Shu'ba Mushaf"
+        },
+        "kzthkwan": {
+            "ar": "مصحف ابن ذكوان",
+            "en": "Ibn Dhakwan Mushaf"
+        },
+        "kzwarsh": {
+            "ar": "مصحف ورش",
+            "en": "Warsh Mushaf"
+        },
+        "libya": {
+            "ar": "مصحف قالون (ليبيا)",
+            "en": "Qalon Mushaf (Libya)"
+        },
+        "madina": {
+            "ar": "مصحف المدينة النبوية (الإصدار الحديث)",
+            "en": "Madina Mushaf (current layout)"
+        },
+        "oldmadina": {
+            "ar": "مصحف المدينة النبوية (الإصدار القديم)",
+            "en": "Madina Mushaf (old layout)"
+        },
+        "shmrly": {
+            "ar": "مصحف الشمرلي",
+            "en": "Shamarly Mushaf"
+        },
+        "shmrly10": {
+            "ar": "مصحف تلوين العشر (الشمرلي)",
+            "en": "Shamarly 10 Qiraat Mushaf"
+        },
+        "shmrly8": {
+            "ar": "مصحف الشمرلي (جودة عالية)",
+            "en": "Shamarly Mushaf (high quality)"
+        },
+        "shmrlyq": {
+            "ar": "مصحف الشمرلي بتلوين اختلافات قالون",
+            "en": "Shamarly Mushaf with Qalon differences in color"
+        },
+        "shmrlyqalon": {
+            "ar": "مصحف قالون عن نافع (الشمرلي)",
+            "en": "Shamarly Qalon Mushaf"
+        },
+        "shmrlyshoba": {
+            "ar": "مصحف شعبة عن عاصم (تخطيط الشمرلي)",
+            "en": "Shamarly Shoba Mushaf"
+        },
+        "shmrlytjwid": {
+            "ar": "مصحف الشمرلي بالتجويد",
+            "en": "Shamarly Tajweed"
+        },
+        "tjwid": {
+            "ar": "مصحف التجويد",
+            "en": "Tajweed Mushaf"
+        },
+        "tjwidwarsh": {
+            "ar": "مصحف التجويد برواية ورش",
+            "en": "Tajweed Mushaf (Warsh)"
+        }
+    }
+}

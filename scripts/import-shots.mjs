@@ -4,7 +4,6 @@
 //   public/shots/<set>/spread.webp     the Mushaf two-page spread from the product-page header (+ spread-800.webp)
 // Two sets keep the site light: `en` (English UI) serves LTR languages, `ar` (Arabic UI) serves RTL ones;
 // captions are page text in every language (see src/app/shared/catalog.ts).
-//   public/editions/<id>.webp          one Mushaf page per edition
 // Usage: node scripts/import-shots.mjs [--appstore <dir>]
 // Needs ImageMagick 7 (`magick`) on PATH. Re-run after every store-screenshot refresh.
 import { execFileSync } from 'node:child_process';
@@ -24,8 +23,6 @@ const SETS = {
     ar: { dir: 'rtl', folder: 'ar-SA' },
     en: { dir: 'ltr', folder: 'en-US' },
 };
-// Store edition folder → apps.json id.
-const EDITIONS = { madina: 'madina', tjwid: 'tajweed', warsh: 'warsh', qalon: 'qalon', shmrly: 'shamarli' };
 const SCENES = ['meaning', 'tartil', 'memorize', 'night', 'tracks', 'athkar', 'share'];
 
 // iPhone 6.9" final (1290x2796): the device's size and position depend on the caption, so find the
@@ -81,16 +78,6 @@ for (const [set, { dir, folder }] of Object.entries(SETS)) {
     cropSpread(header, dir, join(outDir, 'spread.webp'), [['', 1400], ['-800', 800]]);
     count += 2;
     console.log(`${set}: ${folder}`);
-}
-
-const edDir = join(root, 'public/editions');
-mkdirSync(edDir, { recursive: true });
-for (const [folder, id] of Object.entries(EDITIONS)) {
-    const spread = join(tmp, `${id}.webp`);
-    cropSpread(join(APPSTORE, 'creative', folder, 'ar-SA', 'header.png'), 'rtl', spread, [['', 1400]]);
-    // The right-hand page of the spread.
-    magick(spread, '-gravity', 'east', '-crop', '50%x100%+0+0', '+repage', '-resize', '360x', '-quality', '82', join(edDir, `${id}.webp`));
-    count++;
 }
 
 rmSync(tmp, { recursive: true, force: true });

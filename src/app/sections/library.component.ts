@@ -45,7 +45,6 @@ import { I18nService } from '../i18n/i18n.service';
                         </li>
                     }
                 </ul>
-                <p class="note">{{ t.languages.note }}</p>
             </div>
         </section>
     `,

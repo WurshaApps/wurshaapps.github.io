@@ -58,7 +58,7 @@ import { findPost, formatDate, postText } from './posts';
                 }
             </article>
             <p class="cta">
-                <a class="btn btn--primary" [routerLink]="['/', i18n.lang()]" fragment="downloads">{{ t.hero.cta }}</a>
+                <a class="btn btn--primary" [routerLink]="['/', i18n.lang()]" fragment="editions">{{ t.hero.cta }}</a>
             </p>
         </main>
         <app-footer />
