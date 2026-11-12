@@ -177,7 +177,8 @@
             "mac": ".dmg yuklab olish",
             "windows": ".exe yuklab olish"
         },
-        "winNote": "Windows 10 va undan keyingi versiyalar."
+        "winNote": "Windows 10 va undan keyingi versiyalar.",
+        "desktopNote": "Mac yoki Windowsdami? {app} ni yuklab oling: bu ilovaning barcha Mushaflari va imkoniyatlari unda bor."
     },
     "footer": {
         "about": "Wursha Digital Apps Quran Holder va Khair Zad Mushaf ilovalarini nashr etadi.",

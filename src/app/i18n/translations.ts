@@ -58,6 +58,8 @@ export interface Dict {
         links: Record<Platform, string>;
         /** Tooltip of the Windows button. */
         winNote: string;
+        /** Under each specialized edition's badges: Mac/Windows users get the main app. `{app}` is its linked name. */
+        desktopNote: string;
     };
     footer: {
         about: string;

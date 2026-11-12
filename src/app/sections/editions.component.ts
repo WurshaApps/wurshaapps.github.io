@@ -5,8 +5,9 @@ import { APPS, badge, layoutNames, storeUrl } from '../shared/catalog';
 /**
  * The main app (madina, first in apps.json, which offers every Mushaf) on a dark row, then the specialized
  * editions, one row each. Every row shows the edition's promo card (`public/editions/<id>-promo.webp`, the
- * release's store art) and its App Store, Google Play, Mac and Windows downloads; the specialized editions
- * also list the Mushafs they offer (content/layouts.json). There is no separate download section.
+ * release's store art) and its App Store and Google Play badges; only the main app adds Mac and Windows
+ * downloads (the others have no desktop URLs in apps.json, and a note sends Mac and Windows users to the main
+ * app's row, `#main-app`). The specialized editions also list the Mushafs they offer (content/layouts.json). There is no separate download section.
  */
 @Component({
     selector: 'app-editions',
@@ -26,7 +27,7 @@ import { APPS, badge, layoutNames, storeUrl } from '../shared/catalog';
                         <h3 class="special-title">{{ t.specialTitle }}</h3>
                         <p class="lede">{{ t.specialSubtitle }}</p>
                     }
-                    <article class="card" [class.main]="isMain" [class.dark]="isMain">
+                    <article class="card" [class.main]="isMain" [class.dark]="isMain" [attr.id]="isMain ? 'main-app' : null">
                         @let e = t.list[app.id];
                         <img
                             class="promo"
@@ -78,6 +79,11 @@ import { APPS, badge, layoutNames, storeUrl } from '../shared/catalog';
                                     </a>
                                 }
                             </div>
+                            @if (!isMain) {
+                                <!-- Only the main app has desktop builds: point Mac and Windows users to it. -->
+                                @let note = d.desktopNote.split('{app}');
+                                <p class="desktop-note">{{ note[0] }}<a href="#main-app">{{ t.list.madina.name }}</a>{{ note[1] }}</p>
+                            }
                         </div>
                     </article>
                 }
@@ -104,6 +110,8 @@ import { APPS, badge, layoutNames, storeUrl } from '../shared/catalog';
         .stores .desktop { display: flex; align-items: center; gap: 8px; height: 40px; padding-inline: 10px 14px; border: 1px solid #a6a6a6; border-radius: 8px; background: #000; color: #fff; text-decoration: none; }
         .desktop svg { flex: none; width: 22px; height: 22px; fill: currentColor; }
         .desktop span { display: flex; flex-direction: column; font-size: 17px; font-weight: 600; line-height: 1.05; white-space: nowrap; }
+        .desktop-note { max-width: 54ch; margin-top: 12px; color: var(--ink-soft); font-size: 14px; }
+        .desktop-note a { color: var(--teal); font-weight: 600; }
         .desktop small { font-size: 10px; font-weight: 400; letter-spacing: 0.02em; }
 
         /* Main app: bigger, on the hero's dark panel. */

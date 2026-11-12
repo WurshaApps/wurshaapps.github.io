@@ -177,7 +177,8 @@
             "mac": ".dmg herunterladen",
             "windows": ".exe herunterladen"
         },
-        "winNote": "Ab Windows 10."
+        "winNote": "Ab Windows 10.",
+        "desktopNote": "Auf Mac oder Windows? Laden Sie {app}: Es enthält alle Mushafs und Funktionen dieser App."
     },
     "footer": {
         "about": "Wursha Digital Apps gibt die Mushaf-Apps Quran Holder und Khair Zad heraus.",

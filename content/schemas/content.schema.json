@@ -466,7 +466,8 @@
                 "version",
                 "columns",
                 "links",
-                "winNote"
+                "winNote",
+                "desktopNote"
             ],
             "properties": {
                 "version": {
@@ -522,9 +523,14 @@
                 "winNote": {
                     "type": "string",
                     "minLength": 1
+                },
+                "desktopNote": {
+                    "type": "string",
+                    "pattern": "\\{app\\}",
+                    "description": "Under the store badges of each specialized edition: Mac and Windows users get the main app. `{app}` becomes the main app's name (editions.list.madina.name), linked to its row."
                 }
             },
-            "description": "Download labels: store badge alt text (links.ios/android), the Mac/Windows buttons on each edition row (links.mac/windows over columns.mac/windows, winNote as the Windows tooltip), and the blog's version label."
+            "description": "Download labels: store badge alt text (links.ios/android), the Mac/Windows buttons on each edition row (links.mac/windows over columns.mac/windows, winNote as the Windows tooltip), desktopNote under the specialized editions' badges, and the blog's version label."
         },
         "footer": {
             "type": "object",

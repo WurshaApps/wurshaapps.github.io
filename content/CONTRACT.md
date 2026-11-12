@@ -33,7 +33,7 @@ story:     { title, subtitle, screensNote,
 library:   { title, subtitle, more, groups: [{ title, items: string[] }] }   // 4 groups
 languages: { title, subtitle }
 account:   { title, subtitle, delete }   // the privacy link reuses footer.privacy
-downloads: { version, columns: { mac, windows }, links: { ios, android, mac, windows }, winNote }
+downloads: { version, columns: { mac, windows }, links: { ios, android, mac, windows }, winNote, desktopNote }
 footer:    { about, rights, privacy }
 privacy:   { metaTitle, metaDescription, title, updated, intro,
              sections: [{ title, paragraphs: string[], items: string[] }] }   // same sections in every language
@@ -48,7 +48,9 @@ Notes:
   posts' download button, which opens the editions.
 - `downloads.links.ios` / `.android`: alt text of the store badges (content/README.md "Store badges").
 - `downloads.links.mac` / `.windows` over `downloads.columns.mac` / `.windows`: the two lines of the Mac and Windows
-  buttons; `winNote` is the Windows button's tooltip. `downloads.version` labels the blog posts' version.
+  buttons; `winNote` is the Windows button's tooltip.
+- `downloads.desktopNote`: under each specialized edition's badges, pointing Mac and Windows users to the main app;
+  must contain `{app}`, which becomes the main app's name linked to its row. `downloads.version` labels the blog posts' version.
 - `hero.title` and every `story.scenes[].title`: `*…*` marks the highlighted phrase (gold).
 - `story.scenes` must keep the seven ids in this order; each id picks `public/shots/<set>/<id>.webp`.
   `memorize` only exists in the Arabic set (its audio menu is Arabic in every UI language), so non-Arabic

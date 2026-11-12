@@ -177,7 +177,8 @@
             "mac": ".dmg ডাউনলোড করুন",
             "windows": ".exe ডাউনলোড করুন"
         },
-        "winNote": "Windows 10 ও পরবর্তী সংস্করণ।"
+        "winNote": "Windows 10 ও পরবর্তী সংস্করণ।",
+        "desktopNote": "Mac বা Windows-এ? {app} ডাউনলোড করুন: এই অ্যাপের সব মুসহাফ ও সুবিধা তাতে আছে।"
     },
     "footer": {
         "about": "Wursha Digital Apps কুরআন হোল্ডার ও খাইর যাদ মুসহাফ অ্যাপ প্রকাশ করে।",

@@ -177,7 +177,8 @@
             "mac": ".dmg indir",
             "windows": ".exe indir"
         },
-        "winNote": "Windows 10 ve üzeri."
+        "winNote": "Windows 10 ve üzeri.",
+        "desktopNote": "Mac veya Windows'ta mı? {app} uygulamasını indirin: bu uygulamanın tüm Mushafları ve özellikleri onda var."
     },
     "footer": {
         "about": "Wursha Digital Apps, Kur'an Hafızı ve Khair Zad Mushaf uygulamalarını yayımlar.",
