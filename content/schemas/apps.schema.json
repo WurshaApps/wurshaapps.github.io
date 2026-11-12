@@ -62,7 +62,7 @@
                 },
                 "release": {
                     "type": "string",
-                    "description": "Tag prefix in WurshaApps/QuranHolder_Releases (`<release>-v<version>`). Omit for editions without desktop builds; scripts/update-links.mjs skips them."
+                    "description": "Tag prefix in WurshaApps/QuranHolder_Releases (`<release>-v<version>`). Also read by scripts/download-counts.mjs. scripts/update-links.mjs refreshes only the desktop links an app already has: only the main app (madina) offers Mac and Windows downloads."
                 },
                 "urls": {
                     "type": "object",

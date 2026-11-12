@@ -66,14 +66,14 @@ async function main() {
 
     let highestVersion = null;
     for (const app of catalog.apps) {
-        // Editions without desktop builds have no release prefix.
-        if (!app.release) continue;
+        // Only the main app offers Mac and Windows downloads: an edition without a desktop link keeps none,
+        // even if its release prefix still has old builds (kept for download-counts).
+        if (!app.release || !(app.urls?.mac || app.urls?.windows)) continue;
         const prefix = app.release;
         const { tag, version, mac, windows } = pickLatestForPrefix(releases, prefix);
 
-        app.urls = app.urls ?? {};
-        app.urls.mac = mac;
-        app.urls.windows = windows;
+        if (app.urls.mac) app.urls.mac = mac;
+        if (app.urls.windows) app.urls.windows = windows;
 
         if (!highestVersion || compareSemver(version, highestVersion) > 0) {
             highestVersion = version;

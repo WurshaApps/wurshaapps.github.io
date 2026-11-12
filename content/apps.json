@@ -27,9 +27,7 @@
             "release": "tjwid",
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_tjwid",
-                "ios": "https://apps.apple.com/app/id1509386930",
-                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/tjwid-v35.0.2/QuranHolder-tjwid-35.0.2-universal.dmg",
-                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/tjwid-v35.0.2/QuranHolder-tjwid-35.0.2.Setup.exe"
+                "ios": "https://apps.apple.com/app/id1509386930"
             }
         },
         {
@@ -42,9 +40,7 @@
             "release": "warsh",
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_warsh",
-                "ios": "https://apps.apple.com/app/id1436361790",
-                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/warsh-v35.0.2/QuranHolder-warsh-35.0.2-universal.dmg",
-                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/warsh-v35.0.2/QuranHolder-warsh-35.0.2.Setup.exe"
+                "ios": "https://apps.apple.com/app/id1436361790"
             }
         },
         {
@@ -57,9 +53,7 @@
             "release": "qalon",
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.quran_qalon",
-                "ios": "https://apps.apple.com/app/id1437326658",
-                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/qalon-v35.0.2/QuranHolder-qalon-35.0.2-universal.dmg",
-                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/qalon-v35.0.2/QuranHolder-qalon-35.0.2.Setup.exe"
+                "ios": "https://apps.apple.com/app/id1437326658"
             }
         },
         {
@@ -72,9 +66,7 @@
             "release": "shmrly",
             "urls": {
                 "android": "https://play.google.com/store/apps/details?id=apps.wursha.mosshfshmrly",
-                "ios": "https://apps.apple.com/app/id1434342823",
-                "mac": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/shmrly-v35.0.2/QuranHolder-shmrly-35.0.2-universal.dmg",
-                "windows": "https://github.com/WurshaApps/QuranHolder_Releases/releases/download/shmrly-v35.0.2/QuranHolder-shmrly-35.0.2.Setup.exe"
+                "ios": "https://apps.apple.com/app/id1434342823"
             }
         }
     ]
