@@ -5,6 +5,9 @@ import { dirname, join } from 'node:path';
 
 const REPO = 'WurshaApps/QuranHolder_Releases';
 const TARGET = 'content/apps.json';
+// The data host redirects /dl/<release>/<file> to the release file on GitHub and logs each request, so
+// installer downloads are counted per day and country (wursha-data `npm run stats:downloads`).
+const DOWNLOAD_URL = 'https://data.wursha.com/dl';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -28,7 +31,7 @@ function pickLatestForPrefix(releases, prefix) {
     const latestWith = (ext) => {
         for (const r of published) {
             const asset = r.assets.find((a) => a.name.endsWith(ext));
-            if (asset) return { tag: r.tag_name, url: asset.browser_download_url };
+            if (asset) return { tag: r.tag_name, url: `${DOWNLOAD_URL}/${r.tag_name}/${encodeURIComponent(asset.name)}` };
         }
         throw new Error(`No ${ext} asset in any '${prefix}' release`);
     };
