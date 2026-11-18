@@ -14,7 +14,7 @@
     },
     "hero": {
         "title": "The *Mushaf* you know, with everything around it",
-        "subtitle": "25+ Mushafs to choose from for each khatma, 50+ books of tafsir and translation, and 200+ reciters, in one app. Free, with no ads.",
+        "subtitle": "25+ Mushafs to choose from for each khatma, 50+ books of tafsir and translation, 200+ reciters, live Quran radio and TV, and a memorization test, in one app. Free, with no ads.",
         "cta": "Download free",
         "ctaSecondary": "Choose your Mushaf",
         "platforms": "For iPhone, iPad, Android, Mac and Windows.",
@@ -59,6 +59,37 @@
         "subtitle": "The same tools come with all five Mushafs.",
         "screensNote": "",
         "scenes": [
+            {
+                "id": "radio",
+                "title": "Quran radio, *live*",
+                "subtitle": "80+ stations: recitation, tafsir and translations",
+                "items": [
+                    "Official Quran radio stations from Egypt, Saudi Arabia, the UAE and more",
+                    "Stations for tafsir and Quran sciences, translations of the meanings, qira'at and adhkar",
+                    "Search by station or country, and keep your favorites at the top"
+                ]
+            },
+            {
+                "id": "tv",
+                "title": "The *Two Holy Mosques*, live",
+                "subtitle": "Quran TV channels, in the quality you choose",
+                "items": [
+                    "The Quran channel from Makkah and the Sunnah channel from Madinah",
+                    "Scholarly channels such as Iqraa and Huda",
+                    "Pick the stream quality, up to 1080p, to suit your connection"
+                ]
+            },
+            {
+                "id": "recite",
+                "title": "Recite, and it *corrects you*",
+                "subtitle": "A memorization test that follows you word by word (beta)",
+                "items": [
+                    "Recite from memory: the app follows each word and marks every mistake in its place on the page",
+                    "Works offline, and your voice stays on your device",
+                    "Verses to review and a score for every session"
+                ],
+                "note": "In the Quran Holder, Tajweed Mushaf and Shamarly Mushaf apps."
+            },
             {
                 "id": "meaning",
                 "title": "The *meaning* of every verse",

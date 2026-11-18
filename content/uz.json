@@ -14,7 +14,7 @@
     },
     "hero": {
         "title": "Siz bilgan *Mushaf*, yonida esa kerakli barcha narsa",
-        "subtitle": "Har bir xatm uchun tanlash mumkin bo'lgan 25+ Mushaf, 50+ tafsir va tarjima kitobi hamda 200+ qori, bitta ilovada. Bepul, reklamasiz.",
+        "subtitle": "Har bir xatm uchun tanlash mumkin bo'lgan 25+ Mushaf, 50+ tafsir va tarjima kitobi, 200+ qori, jonli Qur'on radiosi va televideniyesi hamda yodlash testi, bitta ilovada. Bepul, reklamasiz.",
         "cta": "Bepul yuklab olish",
         "ctaSecondary": "Mushafingizni tanlang",
         "platforms": "iPhone, iPad, Android, Mac va Windows uchun.",
@@ -59,6 +59,37 @@
         "subtitle": "Beshala Mushafda ham bir xil vositalar bor.",
         "screensNote": "Skrinshotlarda ilovaning inglizcha interfeysi koʻrsatilgan; ilova oʻzbek tilida ham mavjud.",
         "scenes": [
+            {
+                "id": "radio",
+                "title": "Qur'on radiosi, *jonli*",
+                "subtitle": "80+ stansiya: tilovat, tafsir va tarjimalar",
+                "items": [
+                    "Misr, Saudiya Arabistoni, BAA va boshqa mamlakatlarning rasmiy Qur'on radiolari",
+                    "Tafsir va Qur'on ilmlari, ma'nolar tarjimasi, qiroatlar va zikrlar stansiyalari",
+                    "Stansiya yoki mamlakat bo'yicha qidiring, sevimlilaringizni ro'yxat boshida saqlang"
+                ]
+            },
+            {
+                "id": "tv",
+                "title": "*Ikki muqaddas masjid* jonli",
+                "subtitle": "Qur'on TV kanallari, siz tanlagan sifatda",
+                "items": [
+                    "Makkadan Qur'on kanali va Madinadan Sunnat kanali",
+                    "Iqro va Huda kabi ilmiy kanallar",
+                    "Ulanishingizga mos efir sifatini tanlang, 1080p gacha"
+                ]
+            },
+            {
+                "id": "recite",
+                "title": "Yoddan o'qing, *ilova tuzatadi*",
+                "subtitle": "Sizni so'zma-so'z kuzatadigan yodlash testi (beta)",
+                "items": [
+                    "Yoddan o'qing: ilova har bir so'zni kuzatadi va har bir xatoni sahifada o'z joyida belgilaydi",
+                    "Internetsiz ishlaydi, ovozingiz qurilmangizdan chiqmaydi",
+                    "Takrorlash uchun oyatlar va har bir seans natijasi"
+                ],
+                "note": "Quran Holder, Tajvid Mushafi va Shamarli Mushafi ilovalarida."
+            },
             {
                 "id": "meaning",
                 "title": "Har bir oyatning *maʼnosi*",

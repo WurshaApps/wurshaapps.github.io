@@ -81,6 +81,7 @@ What we already have and should reuse:
 | W11 | Edition rows | **Release promo cards** (2026-11-11): each edition is a row with its promo card from the latest release (the v37 post's images, `public/editions/<id>-promo.webp`), its store badges, and for the specialized editions its Mushafs; the cropped page thumbnails are gone |
 | W12 | No download section (2026-11-11) | Each edition row carries all its downloads: the App Store and Google Play badges plus, for the main app only (2026-11-12), Mac and Windows buttons drawn to match them; each specialized edition instead has a note (`downloads.desktopNote`) linking Mac and Windows users to the main app's row, `#main-app`, which has all its Mushafs and features. The download table and the header's Download link are gone; `#downloads` is an empty anchor at the editions for old links |
 | W13 | Edition rows, no tag line (2026-11-12) | The riwaya · series line under each edition's name is removed (and its `riwaya` / `series` fields); the name and its one-line description stay. This replaces W7's "Hafs riwaya labels stay" |
+| W14 | v38 features lead the story (2026-11-18) | The hero subtitle names live Quran radio and TV and the memorization test; the story opens with three scenes for them (`radio`, `tv`, `recite`) before the seven store scenes. Their screens are the v38 promo screens in Arabic UI only (`ar` set on every page); `recite` notes the three apps that have it (Quran Holder, Tajweed, Shamarly) |
 
 ### 3.1 Principles
 

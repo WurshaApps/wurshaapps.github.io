@@ -14,7 +14,7 @@
     },
     "hero": {
         "title": "Tanıdığınız *Mushaf*, ətrafındakı hər şeylə birlikdə",
-        "subtitle": "Hər xətm üçün seçə biləcəyiniz 25-dən çox Mushaf, 50-dən çox təfsir və tərcümə kitabı və 200-dən çox qari bir tətbiqdə. Pulsuz və reklamsız.",
+        "subtitle": "Hər xətm üçün seçə biləcəyiniz 25-dən çox Mushaf, 50-dən çox təfsir və tərcümə kitabı, 200-dən çox qari, canlı Quran radiosu və televiziyası, və əzbər testi bir tətbiqdə. Pulsuz və reklamsız.",
         "cta": "Pulsuz yükləyin",
         "ctaSecondary": "Mushafınızı seçin",
         "platforms": "iPhone, iPad, Android, Mac və Windows üçün.",
@@ -59,6 +59,37 @@
         "subtitle": "Beş Mushafın hamısında eyni alətlər var.",
         "screensNote": "Ekran görüntüləri tətbiqin ingilis dilindəki interfeysini göstərir; tətbiq azərbaycan dilində də mövcuddur.",
         "scenes": [
+            {
+                "id": "radio",
+                "title": "Quran radiosu, *canlı*",
+                "subtitle": "80+ stansiya: tilavət, təfsir və tərcümələr",
+                "items": [
+                    "Misir, Səudiyyə Ərəbistanı, BƏƏ və digər ölkələrdən rəsmi Quran radioları",
+                    "Təfsir və Quran elmləri, məna tərcümələri, qiraətlər və zikrlər üçün stansiyalar",
+                    "Stansiya və ya ölkə üzrə axtarın, sevimlilərinizi siyahının başında saxlayın"
+                ]
+            },
+            {
+                "id": "tv",
+                "title": "*İki Müqəddəs Məscid* canlı",
+                "subtitle": "Quran TV kanalları, seçdiyiniz keyfiyyətdə",
+                "items": [
+                    "Məkkədən Quran kanalı və Mədinədən Sünnə kanalı",
+                    "İqra və Huda kimi elmi kanallar",
+                    "Bağlantınıza uyğun yayım keyfiyyətini seçin, 1080p-yə qədər"
+                ]
+            },
+            {
+                "id": "recite",
+                "title": "Əzbər oxuyun, *səhvinizi düzəltsin*",
+                "subtitle": "Sizi söz-söz izləyən əzbər testi (beta)",
+                "items": [
+                    "Əzbərdən oxuyun: tətbiq hər sözü izləyir və hər səhvi səhifədə yerində işarələyir",
+                    "İnternetsiz işləyir, səsiniz cihazınızdan çıxmır",
+                    "Təkrar üçün ayələr və hər seansın nəticəsi"
+                ],
+                "note": "Quran Hafizi, Təcvidli Mushaf və Şəmərli Mushafı tətbiqlərində."
+            },
             {
                 "id": "meaning",
                 "title": "Hər ayənin *mənası*",

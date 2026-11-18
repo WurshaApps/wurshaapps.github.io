@@ -70,12 +70,15 @@ export function badge(platform: 'ios' | 'android', lang: string): string {
 /**
  * Screenshots come in two sets (scripts/import-shots.mjs): English UI for LTR pages, Arabic UI for RTL
  * pages. Captions are page text, so every language gets its own words over the same few images.
- * The memorize scene exists in Arabic only (its audio menu is Arabic in every UI language).
+ * The memorize scene exists in Arabic only (its audio menu is Arabic in every UI language), and so do the
+ * radio, tv and recite scenes (from the v38 promo screens, wursha-assets/promo/38.0.0/screens).
  */
 export function shotSet(dir: Direction): 'en' | 'ar' {
     return dir === 'rtl' ? 'ar' : 'en';
 }
 
+const ARABIC_ONLY = new Set<SceneId>(['radio', 'tv', 'recite', 'memorize']);
+
 export function sceneImage(scene: SceneId, dir: Direction): string {
-    return `shots/${scene === 'memorize' ? 'ar' : shotSet(dir)}/${scene}.webp`;
+    return `shots/${ARABIC_ONLY.has(scene) ? 'ar' : shotSet(dir)}/${scene}.webp`;
 }

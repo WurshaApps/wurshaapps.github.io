@@ -3,7 +3,7 @@ import { I18nService } from '../i18n/i18n.service';
 import { sceneImage } from '../shared/catalog';
 import { HlComponent } from '../shared/hl.component';
 
-/** The store's screenshot story, in the same order; captions are page text over shared screenshots. */
+/** The v38 features (radio, TV, memorization test), then the store's screenshot story in its order; captions are page text over shared screenshots. */
 @Component({
     selector: 'app-story',
     imports: [HlComponent],

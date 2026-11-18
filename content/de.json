@@ -14,7 +14,7 @@
     },
     "hero": {
         "title": "Der *Mushaf*, den du kennst, mit allem, was dazugehört",
-        "subtitle": "Über 25 Mushafs zur Wahl für jede Khatma, über 50 Tafsir- und Übersetzungswerke und über 200 Rezitatoren in einer App. Kostenlos und ohne Werbung.",
+        "subtitle": "Über 25 Mushafs zur Wahl für jede Khatma, über 50 Tafsir- und Übersetzungswerke, über 200 Rezitatoren, Quran-Radio und Quran-TV live und ein Auswendiglern-Test in einer App. Kostenlos und ohne Werbung.",
         "cta": "Kostenlos herunterladen",
         "ctaSecondary": "Wähle deinen Mushaf",
         "platforms": "Für iPhone, iPad, Android, Mac und Windows.",
@@ -59,6 +59,37 @@
         "subtitle": "Alle fünf Mushafs haben dieselben Werkzeuge.",
         "screensNote": "Die Screenshots zeigen die englische Oberfläche der App; die App gibt es auch auf Deutsch.",
         "scenes": [
+            {
+                "id": "radio",
+                "title": "Quran-Radio, *live*",
+                "subtitle": "80+ Sender: Rezitation, Tafsir und Übersetzungen",
+                "items": [
+                    "Offizielle Quran-Radiosender aus Ägypten, Saudi-Arabien, den VAE und weiteren Ländern",
+                    "Sender für Tafsir und Quranwissenschaften, Bedeutungsübersetzungen, Qira'at und Adhkar",
+                    "Suche nach Sender oder Land, und Ihre Favoriten stehen oben"
+                ]
+            },
+            {
+                "id": "tv",
+                "title": "Die *beiden heiligen Moscheen* live",
+                "subtitle": "Quran-TV-Sender in der Qualität Ihrer Wahl",
+                "items": [
+                    "Der Quran-Sender aus Mekka und der Sunna-Sender aus Medina",
+                    "Wissenschaftliche Sender wie Iqraa und Huda",
+                    "Wählen Sie die Streamqualität passend zu Ihrer Verbindung, bis 1080p"
+                ]
+            },
+            {
+                "id": "recite",
+                "title": "Rezitieren, und die App *korrigiert Sie*",
+                "subtitle": "Ein Auswendiglern-Test, der Wort für Wort mitgeht (Beta)",
+                "items": [
+                    "Rezitieren Sie aus dem Gedächtnis: Die App folgt jedem Wort und markiert jeden Fehler an seiner Stelle auf der Seite",
+                    "Funktioniert offline, und Ihre Stimme bleibt auf Ihrem Gerät",
+                    "Verse zum Wiederholen und ein Ergebnis für jede Sitzung"
+                ],
+                "note": "In den Apps Quran Holder, Tajwid-Mushaf und Shamarly-Mushaf."
+            },
             {
                 "id": "meaning",
                 "title": "Die *Bedeutung* jedes Verses",

@@ -23,6 +23,8 @@ const SETS = {
     ar: { dir: 'rtl', folder: 'ar-SA' },
     en: { dir: 'ltr', folder: 'en-US' },
 };
+// radio.webp, tv.webp and recite.webp (ar only) are not made here: they are the v38 promo screens
+// (wursha-assets/promo/38.0.0/screens: radio-play, tv-player, recite-mushaf) resized to 560 wide.
 const SCENES = ['meaning', 'tartil', 'memorize', 'night', 'tracks', 'athkar', 'share'];
 
 // iPhone 6.9" final (1290x2796): the device's size and position depend on the caption, so find the

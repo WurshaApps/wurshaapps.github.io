@@ -313,7 +313,7 @@
                 },
                 "scenes": {
                     "type": "array",
-                    "minItems": 7,
+                    "minItems": 10,
                     "items": {
                         "type": "object",
                         "additionalProperties": false,
@@ -326,6 +326,9 @@
                         "properties": {
                             "id": {
                                 "enum": [
+                                    "radio",
+                                    "tv",
+                                    "recite",
                                     "meaning",
                                     "tartil",
                                     "memorize",
@@ -359,10 +362,10 @@
                             }
                         }
                     },
-                    "maxItems": 7
+                    "maxItems": 10
                 }
             },
-            "description": "Feature scenes in the App Store screenshot order. `screensNote` explains which UI language the screenshots show (empty in en/ar)."
+            "description": "Feature scenes: the v38 features (radio, tv, recite), then the App Store screenshot order. `screensNote` explains which UI language the screenshots show (empty in en/ar)."
         },
         "library": {
             "type": "object",

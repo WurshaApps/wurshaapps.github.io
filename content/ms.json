@@ -14,7 +14,7 @@
     },
     "hero": {
         "title": "*Mushaf* yang anda kenali, dengan segala yang mengiringinya",
-        "subtitle": "25+ mushaf untuk dipilih bagi setiap khatam, 50+ kitab tafsir dan terjemahan, dan 200+ qari, dalam satu aplikasi. Percuma, tanpa iklan.",
+        "subtitle": "25+ mushaf untuk dipilih bagi setiap khatam, 50+ kitab tafsir dan terjemahan, 200+ qari, radio dan TV al-Quran secara langsung, serta ujian hafazan, dalam satu aplikasi. Percuma, tanpa iklan.",
         "cta": "Muat turun percuma",
         "ctaSecondary": "Pilih Mushaf anda",
         "platforms": "Untuk iPhone, iPad, Android, Mac dan Windows.",
@@ -59,6 +59,37 @@
         "subtitle": "Alatan yang sama disertakan dengan kelima-lima Mushaf.",
         "screensNote": "Tangkapan skrin menunjukkan antara muka aplikasi dalam bahasa Inggeris; aplikasi ini juga tersedia dalam bahasa Melayu.",
         "scenes": [
+            {
+                "id": "radio",
+                "title": "Radio al-Quran, *secara langsung*",
+                "subtitle": "80+ stesen: bacaan, tafsir dan terjemahan",
+                "items": [
+                    "Radio al-Quran rasmi dari Mesir, Arab Saudi, UAE dan negara lain",
+                    "Stesen tafsir dan ulum al-Quran, terjemahan makna, qiraat dan zikir",
+                    "Cari mengikut stesen atau negara, dan simpan kegemaran anda di bahagian atas"
+                ]
+            },
+            {
+                "id": "tv",
+                "title": "*Dua Masjid Suci* secara langsung",
+                "subtitle": "Saluran TV al-Quran, dalam kualiti pilihan anda",
+                "items": [
+                    "Saluran al-Quran dari Makkah dan saluran Sunnah dari Madinah",
+                    "Saluran ilmiah seperti Iqraa dan Huda",
+                    "Pilih kualiti siaran yang sesuai dengan sambungan anda, sehingga 1080p"
+                ]
+            },
+            {
+                "id": "recite",
+                "title": "Tasmik hafalan, *aplikasi membetulkan*",
+                "subtitle": "Ujian hafazan yang mengikut anda perkataan demi perkataan (beta)",
+                "items": [
+                    "Baca dari hafalan: aplikasi mengikut setiap perkataan dan menandakan setiap kesilapan di tempatnya pada halaman",
+                    "Berfungsi tanpa internet, dan suara anda kekal dalam peranti anda",
+                    "Ayat untuk diulang kaji dan skor bagi setiap sesi"
+                ],
+                "note": "Dalam aplikasi Quran Holder, Mushaf Tajwid dan Mushaf Shamarly."
+            },
             {
                 "id": "meaning",
                 "title": "*Makna* setiap ayat",

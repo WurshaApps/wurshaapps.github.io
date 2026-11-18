@@ -14,7 +14,7 @@
     },
     "hero": {
         "title": "Bildiğiniz *Mushaf*, etrafındaki her şeyle birlikte",
-        "subtitle": "Her hatim için seçebileceğiniz 25'ten fazla Mushaf, 50'den fazla tefsir ve meal kitabı ve 200'ü aşkın kâri tek bir uygulamada. Ücretsiz ve reklamsız.",
+        "subtitle": "Her hatim için seçebileceğiniz 25'ten fazla Mushaf, 50'den fazla tefsir ve meal kitabı, 200'ü aşkın kâri, canlı Kuran radyosu ve televizyonu, ve ezber testi tek bir uygulamada. Ücretsiz ve reklamsız.",
         "cta": "Ücretsiz indirin",
         "ctaSecondary": "Mushafınızı seçin",
         "platforms": "iPhone, iPad, Android, Mac ve Windows için.",
@@ -59,6 +59,37 @@
         "subtitle": "Beş Mushafın hepsinde aynı araçlar var.",
         "screensNote": "Ekran görüntüleri uygulamanın İngilizce arayüzünü gösterir; uygulama Türkçe olarak da kullanılabilir.",
         "scenes": [
+            {
+                "id": "radio",
+                "title": "Kuran radyosu, *canlı*",
+                "subtitle": "80+ istasyon: tilavet, tefsir ve mealler",
+                "items": [
+                    "Mısır, Suudi Arabistan, BAE ve diğer ülkelerden resmî Kuran radyoları",
+                    "Tefsir ve Kuran ilimleri, meal, kıraat ve zikir istasyonları",
+                    "İstasyon veya ülkeye göre arayın, favorilerinizi listenin başında tutun"
+                ]
+            },
+            {
+                "id": "tv",
+                "title": "*Harameyn* canlı",
+                "subtitle": "Kuran TV kanalları, seçtiğiniz kalitede",
+                "items": [
+                    "Mekke'den Kuran kanalı ve Medine'den Sünnet kanalı",
+                    "İkra ve Huda gibi ilmî kanallar",
+                    "Bağlantınıza uygun yayın kalitesini seçin, 1080p'ye kadar"
+                ]
+            },
+            {
+                "id": "recite",
+                "title": "Ezberden okuyun, *uygulama düzeltsin*",
+                "subtitle": "Sizi kelime kelime takip eden ezber testi (beta)",
+                "items": [
+                    "Ezberden okuyun: uygulama her kelimeyi takip eder ve her hatayı sayfada yerinde işaretler",
+                    "İnternetsiz çalışır, sesiniz cihazınızdan çıkmaz",
+                    "Tekrar edilecek ayetler ve her oturum için bir puan"
+                ],
+                "note": "Kur'an Hafızı, Tecvidli Mushaf ve Şemerli Mushafı uygulamalarında."
+            },
             {
                 "id": "meaning",
                 "title": "Her ayetin *anlamı*",

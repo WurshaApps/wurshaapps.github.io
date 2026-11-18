@@ -14,7 +14,7 @@
     },
     "hero": {
         "title": "Le *Mushaf* que vous connaissez, et tout ce qui l'accompagne",
-        "subtitle": "Plus de 25 Mushafs à choisir pour chaque khatma, plus de 50 livres de tafsir et de traduction et plus de 200 récitants, dans une seule application. Gratuite, sans publicité.",
+        "subtitle": "Plus de 25 Mushafs à choisir pour chaque khatma, plus de 50 livres de tafsir et de traduction, plus de 200 récitants, la radio et la télévision du Coran en direct, et un test de mémorisation, dans une seule application. Gratuite, sans publicité.",
         "cta": "Télécharger gratuitement",
         "ctaSecondary": "Choisir votre Mushaf",
         "platforms": "Pour iPhone, iPad, Android, Mac et Windows.",
@@ -59,6 +59,37 @@
         "subtitle": "Les mêmes outils accompagnent les cinq Mushafs.",
         "screensNote": "Les captures montrent l'interface anglaise de l'application ; l'application est aussi disponible en français.",
         "scenes": [
+            {
+                "id": "radio",
+                "title": "La radio du Coran, *en direct*",
+                "subtitle": "80+ stations : récitation, tafsir et traductions",
+                "items": [
+                    "Les radios officielles du Coran d'Égypte, d'Arabie saoudite, des Émirats et d'ailleurs",
+                    "Des stations de tafsir et de sciences du Coran, de traduction des sens, de qira'at et d'adhkar",
+                    "Recherchez par station ou par pays, et gardez vos favorites en tête de liste"
+                ]
+            },
+            {
+                "id": "tv",
+                "title": "Les *deux saintes mosquées* en direct",
+                "subtitle": "Les chaînes du Coran, dans la qualité de votre choix",
+                "items": [
+                    "La chaîne du Coran depuis La Mecque et la chaîne de la Sunna depuis Médine",
+                    "Des chaînes de savoir comme Iqraa et Huda",
+                    "Choisissez la qualité du flux selon votre connexion, jusqu'à 1080p"
+                ]
+            },
+            {
+                "id": "recite",
+                "title": "Récitez, l'application *vous corrige*",
+                "subtitle": "Un test de mémorisation qui vous suit mot à mot (bêta)",
+                "items": [
+                    "Récitez de mémoire : l'application suit chaque mot et marque chaque erreur à sa place sur la page",
+                    "Fonctionne hors ligne, et votre voix reste sur votre appareil",
+                    "Des versets à réviser et un score pour chaque séance"
+                ],
+                "note": "Dans les applications Quran Holder, Mushaf Tajwid et Mushaf Shamarly."
+            },
             {
                 "id": "meaning",
                 "title": "Le *sens* de chaque verset",

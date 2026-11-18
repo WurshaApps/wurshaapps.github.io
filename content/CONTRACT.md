@@ -10,7 +10,7 @@ same shape as `en.json` (checked by `npm run check-content`).
 | `nav`       | `header`, `lang-picker`                     | Section links and the language-picker label                       |
 | `hero`      | `hero`                                      | Tagline under the app name, subtitle, two buttons, platforms line, spread alt text, release announcement |
 | `editions`  | `editions`                                  | The main app's row, then the specialized editions' rows with their Mushafs; every row has its downloads |
-| `story`     | `story`                                     | The seven feature scenes, same order as the App Store screenshots |
+| `story`     | `story`                                     | The ten feature scenes: radio, TV and the memorization test (v38), then the App Store screenshots in their order |
 | `library`   | `library`                                   | Four book lists                                                   |
 | `languages` | `library` (languages section)               | Heading and subtitle; names from `locales.ts`                     |
 | `account`   | `account`                                   | Optional account: why to sign in, privacy and deletion links |
@@ -29,7 +29,7 @@ hero:      { title, subtitle, cta, ctaSecondary, platforms, imageAlt, news: { la
 editions:  { title, subtitle, mainLabel, specialTitle, specialSubtitle, layoutsTitle,
              list: { [id in madina|tajweed|warsh|qalon|shamarli]: { name, line } } }
 story:     { title, subtitle, screensNote,
-             scenes: [{ id: meaning|tartil|memorize|night|tracks|athkar|share, title, subtitle, items: string[], note? }] }
+             scenes: [{ id: radio|tv|recite|meaning|tartil|memorize|night|tracks|athkar|share, title, subtitle, items: string[], note? }] }
 library:   { title, subtitle, more, groups: [{ title, items: string[] }] }   // 4 groups
 languages: { title, subtitle }
 account:   { title, subtitle, delete }   // the privacy link reuses footer.privacy
@@ -52,7 +52,7 @@ Notes:
 - `downloads.desktopNote`: under each specialized edition's badges, pointing Mac and Windows users to the main app;
   must contain `{app}`, which becomes the main app's name linked to its row. `downloads.version` labels the blog posts' version.
 - `hero.title` and every `story.scenes[].title`: `*…*` marks the highlighted phrase (gold).
-- `story.scenes` must keep the seven ids in this order; each id picks `public/shots/<set>/<id>.webp`.
+- `story.scenes` must keep the ten ids in this order; each id picks `public/shots/<set>/<id>.webp` (radio, tv, recite and memorize: the `ar` set only).
   `memorize` only exists in the Arabic set (its audio menu is Arabic in every UI language), so non-Arabic
   pages keep its `note`.
 - `story.screensNote`: shown when the screenshots are not in the page's language (empty in en and ar).
