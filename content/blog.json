@@ -2,6 +2,155 @@
     "$schema": "./schemas/blog.schema.json",
     "posts": [
         {
+            "slug": "recite-test",
+            "version": "38.0.0",
+            "date": "2026-11-18",
+            "text": {
+                "en": {
+                    "title": "Memorization test: recite, and Quran Holder follows you word by word",
+                    "summary": "Recite from memory starting at any verse. Quran Holder finds your place, follows you word by word and shows each mistake as you make it, then gives you a result and tracks your progress. It runs on your device, offline. Beta.",
+                    "image": {
+                        "src": "blog/recite-test/00-cover.webp",
+                        "alt": "Memorization test: “Recite your memorization, and Quran Holder follows you word by word”, with a microphone and a Mushaf page with mistakes marked (Arabic)"
+                    },
+                    "sections": [
+                        {
+                            "title": "Start from any verse",
+                            "intro": "Recite from wherever you like: Quran Holder recognizes where you are and follows you from there.",
+                            "items": [],
+                            "image": {
+                                "src": "blog/recite-test/01-anywhere.webp",
+                                "alt": "A Mushaf page with a pin on the first verse of Al Imran: “Found your place” (Arabic)"
+                            }
+                        },
+                        {
+                            "title": "Mistakes show up as you recite",
+                            "intro": "It follows your recitation word by word and shows what you got wrong and what you skipped.",
+                            "items": [
+                                "Each word is marked correct, wrong or skipped",
+                                "Forgot? Ask for the next word"
+                            ],
+                            "image": {
+                                "src": "blog/recite-test/02-live.webp",
+                                "alt": "A magnifier over a mistake marked on a Mushaf page (Arabic)"
+                            }
+                        },
+                        {
+                            "title": "Your result after every session",
+                            "items": [
+                                "Your accuracy and how many words were correct, wrong or skipped",
+                                "Your mistakes verse by verse",
+                                "Listen to recordings of your mistakes, in your own voice"
+                            ],
+                            "image": {
+                                "src": "blog/recite-test/03-result.webp",
+                                "alt": "A session result: 97% accuracy, with the mistakes in Al-Baqarah 2 and 5 and recordings of the mistakes (Arabic)"
+                            }
+                        },
+                        {
+                            "title": "Follow your progress",
+                            "items": [
+                                "Your days in a row this week",
+                                "Your accuracy over the last 30 days",
+                                "A map of the surahs you have recited",
+                                "Verses to review",
+                                "A daily reminder to recite"
+                            ],
+                            "image": {
+                                "src": "blog/recite-test/04-progress.webp",
+                                "alt": "Progress: days this week, sessions, accuracy over 30 days and a map of the surahs (Arabic)"
+                            }
+                        },
+                        {
+                            "title": "On your device, offline",
+                            "intro": "Recitation is recognized on your device, so your voice never leaves it, and the test works without internet after one download. Signed in, your history syncs between your devices.",
+                            "items": [
+                                "In the Hafs Mushafs: the Madina, Shamarly and Tajweed apps",
+                                "On iPhone, iPad and Android",
+                                "Free, with no ads",
+                                "A beta feature: it does not replace reciting to a teacher. We welcome your feedback to improve it."
+                            ],
+                            "image": {
+                                "src": "blog/recite-test/05-private.webp",
+                                "alt": "On your device and offline: your voice stays on your device, a daily reminder and synced history, in the Madina, Shamarly and Tajweed Mushafs (Arabic)"
+                            }
+                        }
+                    ]
+                },
+                "ar": {
+                    "title": "اختبار الحفظ: سمِّع، وحامل القرآن يتابعك كلمةً كلمة",
+                    "summary": "سمِّع حفظك من أي آية، ويتعرّف حامل القرآن على موضعك ويتابعك كلمةً كلمة، ويُظهر الخطأ فورًا، ثم يعطيك نتيجتك ويتابع تقدّمك. يعمل على جهازك ودون إنترنت. ميزة تجريبية.",
+                    "image": {
+                        "src": "blog/recite-test/00-cover.webp",
+                        "alt": "اختبار الحفظ: «سمِّع حفظك، وحامل القرآن يتابعك كلمةً كلمة»، مع ميكروفون وصفحة من المصحف عليها الأخطاء"
+                    },
+                    "sections": [
+                        {
+                            "title": "ابدأ من أي آية",
+                            "intro": "اقرأ من حيث شئت، ويتعرّف حامل القرآن على موضعك ويتابعك.",
+                            "items": [],
+                            "image": {
+                                "src": "blog/recite-test/01-anywhere.webp",
+                                "alt": "صفحة من المصحف عليها علامة عند الآية الأولى من سورة آل عمران: «وجد موضعك»"
+                            }
+                        },
+                        {
+                            "title": "الخطأ يظهر فورًا",
+                            "intro": "يتابع تلاوتك كلمةً كلمة، ويُظهر ما أخطأت فيه وما فاتك.",
+                            "items": [
+                                "كل كلمة: صحيحة أو خطأ أو فائتة",
+                                "نسيت؟ اطلب الكلمة التالية"
+                            ],
+                            "image": {
+                                "src": "blog/recite-test/02-live.webp",
+                                "alt": "عدسة مكبّرة فوق خطأ معلَّم على صفحة من المصحف"
+                            }
+                        },
+                        {
+                            "title": "نتيجتك بعد كل جلسة",
+                            "items": [
+                                "نسبة الدقة وعدد الكلمات الصحيحة والخطأ والفائتة",
+                                "أخطاؤك آيةً آية",
+                                "استمع لتسجيلات أخطائك بصوتك"
+                            ],
+                            "image": {
+                                "src": "blog/recite-test/03-result.webp",
+                                "alt": "نتيجة جلسة: دقة 97%، مع الأخطاء في البقرة 2 و5 وتسجيلات الأخطاء"
+                            }
+                        },
+                        {
+                            "title": "تابع تقدّمك",
+                            "items": [
+                                "أيامك المتتالية هذا الأسبوع",
+                                "دقتك في آخر 30 يومًا",
+                                "خريطة السور",
+                                "آيات للمراجعة",
+                                "تذكير يومي بموعد التسميع"
+                            ],
+                            "image": {
+                                "src": "blog/recite-test/04-progress.webp",
+                                "alt": "التقدّم: أيام الأسبوع وعدد الجلسات والدقة في 30 يومًا وخريطة السور"
+                            }
+                        },
+                        {
+                            "title": "على جهازك، ودون إنترنت",
+                            "intro": "التعرّف على التلاوة يتم على جهازك، فصوتك لا يغادره، ويعمل الاختبار دون إنترنت بعد تنزيل واحد. ومع حسابك يُزامَن سجلّك بين أجهزتك.",
+                            "items": [
+                                "في مصاحف رواية حفص: تطبيقات المدينة والشمرلي والتجويد",
+                                "على iPhone و iPad و Android",
+                                "مجاني تمامًا، بلا إعلانات",
+                                "ميزة تجريبية، لا تغني عن المتابعة مع معلّم. نسعد بملاحظاتكم لتحسينها."
+                            ],
+                            "image": {
+                                "src": "blog/recite-test/05-private.webp",
+                                "alt": "على جهازك ودون إنترنت: صوتك يبقى على جهازك، وتذكير يومي، ومزامنة السجل، في مصاحف المدينة والشمرلي والتجويد"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
             "slug": "v38",
             "version": "38.0.0",
             "date": "2026-11-18",
