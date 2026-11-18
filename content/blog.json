@@ -2,6 +2,151 @@
     "$schema": "./schemas/blog.schema.json",
     "posts": [
         {
+            "slug": "v38",
+            "version": "38.0.0",
+            "date": "2026-11-18",
+            "text": {
+                "en": {
+                    "title": "Listen, watch, and recite your memorization",
+                    "summary": "Quran Holder 38 brings Quran radio with 86 live stations, Quran TV live from the Two Holy Mosques, and a memorization test that follows your recitation word by word, offline. Plus a redesigned side menu, new verse-image designs and a sleep timer.",
+                    "image": {
+                        "src": "blog/v38/00-cover.webp",
+                        "alt": "Quran Holder version 38: “Listen, watch, and recite your memorization”, with Quran TV live from the Grand Mosque, 86 Quran radio stations and the memorization test (Arabic)"
+                    },
+                    "sections": [
+                        {
+                            "title": "📻 Quran radio: 86 live stations",
+                            "intro": "Live Quran radio from Egypt, Saudi Arabia, the UAE and more, a tap away wherever you are.",
+                            "items": [
+                                "Official Quran radio stations",
+                                "Quran sciences and tafsir",
+                                "Translations of the meanings",
+                                "Qira'at, varied recitations and athkar"
+                            ],
+                            "image": {
+                                "src": "blog/v38/01-radio.webp",
+                                "alt": "Quran radio: 86 live stations in official, tafsir, translation, qira'at, recitation and athkar groups, with the Cairo Quran radio playing (Arabic)"
+                            }
+                        },
+                        {
+                            "title": "📺 Quran TV: the Two Holy Mosques, live",
+                            "intro": "Watch the Quran channels live from Makkah and Madinah inside the app, and pick the stream quality that suits your connection, up to 1080p.",
+                            "items": [],
+                            "image": {
+                                "src": "blog/v38/02-tv.webp",
+                                "alt": "Quran TV: the Quran channel live from the Grand Mosque in Makkah, with the Sunnah channel from Madinah (Arabic)"
+                            }
+                        },
+                        {
+                            "title": "🎙️ Memorization test: recite, and it corrects you (beta)",
+                            "intro": "Recite from memory and Quran Holder follows you word by word, marks each mistake as you make it, and lets you carry on. It works offline, and your voice never leaves your device.",
+                            "items": [
+                                "In the Madina, Tajweed and Shamarly apps"
+                            ],
+                            "image": {
+                                "src": "blog/v38/03-recite.webp",
+                                "alt": "The memorization test: a Mushaf page with hidden words, a mistake marked in red and “Well done, carry on” (Arabic)"
+                            }
+                        },
+                        {
+                            "title": "✨ And more",
+                            "items": [
+                                "🗂️ A redesigned side menu built around your current khatma, with its bookmarks and notes",
+                                "🖼️ New designs for sharing verses as an image",
+                                "🌙 A sleep timer that stops the recitation after a set time",
+                                "🎧 More reciters",
+                                "📖 Better quality for the New and Old Madina Mushaf (Madina app)",
+                                "ℹ️ A redesigned About page",
+                                "⚡ Better performance and less battery use"
+                            ],
+                            "image": {
+                                "src": "blog/v38/04-more.webp",
+                                "alt": "Everything you need with the Quran: memorization test, radio, TV, sleep timer, Tartil, tafsir, athkar, verse sharing, khatmas, Mushaf layouts, offline and sync (Arabic)"
+                            }
+                        },
+                        {
+                            "title": "🤍 Free, with no ads, and offline",
+                            "intro": "Every feature is free with no subscription, recitation and reflection come without ads, and the Mushaf, tafsir and memorization test work anywhere, without internet.",
+                            "items": [],
+                            "image": {
+                                "src": "blog/v38/05-promise.webp",
+                                "alt": "Quran Holder, your companion with the Book of Allah: completely free, no ads, offline (Arabic)"
+                            }
+                        }
+                    ]
+                },
+                "ar": {
+                    "title": "اسمع، شاهد، وسمِّع حفظك",
+                    "summary": "في الإصدار 38 من حامل القرآن: راديو القرآن بـ 86 إذاعة مباشرة، وتلفزيون القرآن من الحرمين الشريفين مباشرةً، واختبار الحفظ الذي يتابع تسميعك كلمةً كلمة دون إنترنت. ومعها قائمة جانبية جديدة وتصميمات جديدة لمشاركة الآيات ومؤقّت الإيقاف.",
+                    "image": {
+                        "src": "blog/v38/00-cover.webp",
+                        "alt": "الإصدار 38 من حامل القرآن: «اسمع، شاهد، وسمِّع حفظك»، مع تلفزيون القرآن مباشرةً من المسجد الحرام، و86 إذاعة لراديو القرآن، واختبار الحفظ"
+                    },
+                    "sections": [
+                        {
+                            "title": "📻 راديو القرآن: 86 إذاعة مباشرة",
+                            "intro": "إذاعات القرآن الكريم مباشرةً من مصر والسعودية والإمارات وغيرها، على بُعد لمسة أينما كنت.",
+                            "items": [
+                                "إذاعات القرآن الرسمية",
+                                "علوم القرآن والتفسير",
+                                "ترجمات المعاني",
+                                "القراءات والتلاوات المتنوعة والأذكار"
+                            ],
+                            "image": {
+                                "src": "blog/v38/01-radio.webp",
+                                "alt": "راديو القرآن: 86 إذاعة مباشرة في الإذاعات الرسمية والتفسير وترجمات المعاني والقراءات والتلاوات والأذكار، مع إذاعة القرآن الكريم من القاهرة"
+                            }
+                        },
+                        {
+                            "title": "📺 تلفزيون القرآن: الحرمان الشريفان مباشرةً",
+                            "intro": "شاهد قنوات القرآن مباشرةً من مكة المكرمة والمدينة المنورة داخل التطبيق، واختر جودة البث التي تناسب اتصالك، حتى 1080p.",
+                            "items": [],
+                            "image": {
+                                "src": "blog/v38/02-tv.webp",
+                                "alt": "تلفزيون القرآن: قناة القرآن الكريم مباشرةً من المسجد الحرام، مع قناة السنة النبوية من المدينة المنورة"
+                            }
+                        },
+                        {
+                            "title": "🎙️ اختبار الحفظ: سمِّع ويصحّح لك (تجريبي)",
+                            "intro": "سمِّع من حفظك، ويتابعك حامل القرآن كلمةً كلمة، وينبّهك إلى الخطأ في موضعه، ثم تتابع. يعمل دون إنترنت، وصوتك لا يغادر جهازك.",
+                            "items": [
+                                "في تطبيقات حامل القرآن (مصحف المدينة) ومصحف التجويد ومصحف الشمرلي"
+                            ],
+                            "image": {
+                                "src": "blog/v38/03-recite.webp",
+                                "alt": "اختبار الحفظ: صفحة من المصحف بكلمات مخفية، وخطأ معلَّم بالأحمر، و«أحسنت، تابع»"
+                            }
+                        },
+                        {
+                            "title": "✨ والمزيد",
+                            "items": [
+                                "🗂️ قائمة جانبية بتصميم جديد حول ختمتك الحالية، مع علاماتها وملاحظاتها",
+                                "🖼️ تصميمات جديدة لمشاركة الآيات صورةً",
+                                "🌙 مؤقّت الإيقاف: تتوقف التلاوة بعد وقت تحدده، فتنام على صوت القرآن",
+                                "🎧 المزيد من القرّاء",
+                                "📖 جودة أعلى لمصحف المدينة الجديد والقديم (في حامل القرآن)",
+                                "ℹ️ صفحة «عن التطبيق» بتصميم جديد",
+                                "⚡ أداء أفضل واستهلاك أقل للبطارية"
+                            ],
+                            "image": {
+                                "src": "blog/v38/04-more.webp",
+                                "alt": "كل ما تحتاجه مع القرآن: اختبار الحفظ والراديو والتلفزيون ومؤقّت الإيقاف والترتيل والتفسير والأذكار ومشاركة الآيات والختمات وأشكال المصحف والعمل دون إنترنت والمزامنة"
+                            }
+                        },
+                        {
+                            "title": "🤍 مجاني، بلا إعلانات، ودون إنترنت",
+                            "intro": "كل الميزات مجانية دون اشتراك، والتلاوة والتدبّر دون إعلانات تقاطعك، والمصحف والتفسير واختبار الحفظ تعمل في أي مكان دون إنترنت.",
+                            "items": [],
+                            "image": {
+                                "src": "blog/v38/05-promise.webp",
+                                "alt": "حامل القرآن، رفيقك مع كتاب الله: مجاني تماماً، بلا إعلانات، دون إنترنت"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
             "slug": "v37",
             "version": "37.0.0",
             "date": "2026-11-10",
